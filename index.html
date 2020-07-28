@@ -39,7 +39,8 @@
                 </div>
                 <div class="home-button-side">
                   <div class="tab">
-                    <button class="tablinks" onclick="openCity(event, 'side-tab1')" id="defaultOpen">Dashboard</button>
+                    <button class="tablinks" onclick="openCity(event, 'home')" id="defaultOpen">Home</button>
+                    <button class="tablinks" onclick="openCity(event, 'side-tab1')">Dashboard</button>
                     <button class="tablinks" onclick="openCity(event, 'side-tab2')">Search Book</button>
                     <button class="tablinks" onclick="openCity(event, 'side-tab3')">Profile Management</button>
                     <button class="tablinks" onclick="openCity(event, 'side-tab4')">B2B Management</button>
@@ -51,21 +52,174 @@
             <div class="col-sm-9 pl-0">
               <div class="side-bar-right-main">
                 <div class="home-detail-view">
+                  <div id="home" class="tabcontent">
+                    <div class="home-page-main">
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <div class="home-page-sub"></div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="home-page-sub"></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="home-page-main">
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <div class="d-flex justify-content-between">
+                            <div class="home-page-color box-color1 mr-10"></div>
+                            <div class="home-page-color box-color2 mr-10"></div>
+                            <div class="home-page-color box-color3 mr-10"></div>
+                            <div class="home-page-color box-color4"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="home-page-main">
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <div class="home-page-sub"></div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="home-page-sub"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
                   <div id="side-tab1" class="tabcontent">
-                    <h3>London</h3>
-                    <p>London is the capital city of England.</p>
+                    <div class="">
+                      <div class="d-flex justify-content-between">
+                        <div class="dashboard-page-color box-color1 mr-10">
+                          <img src="img/flight.svg">
+                          <div class="">
+                            <h5>Flight Booking</h5>
+                            <p><b>0</b></p>
+                            <a href="#">B2C Report</a><br>
+                            <a href="#">Agent Report</a><br>
+                            <a href="#">Corporate Report</a>
+                          </div>
+                        </div>
+                        <div class="dashboard-page-color box-color2 mr-10">
+                          <img src="img/hotel.svg">
+                          <div class="">
+                            <h5>Hotel Booking</h5>
+                            <p><b>0</b></p>
+                            <a href="#">B2C Report</a><br>
+                            <a href="#">Agent Report</a><br>
+                            <a href="#">Corporate Report</a>
+                          </div>
+                        </div>
+                        <div class="dashboard-page-color box-color3 mr-10">
+                          <img src="img/car-parking.svg">
+                          <div class="">
+                            <h5>Car Booking</h5>
+                            <p><b>0</b></p>
+                            <a href="#">B2C Report</a><br>
+                            <a href="#">Agent Report</a><br>
+                            <a href="#">Corporate Report</a>
+                          </div>
+                        </div>
+                        <div class="dashboard-page-color box-color4">
+                          <img src="img/beach-umbrella.svg">
+                          <div class="">
+                            <h5>Holiday Booking</h5>
+                            <p><b>0</b></p>
+                            <a href="#">B2C Report</a><br>
+                            <a href="#">Agent Report</a><br>
+                            <a href="#">Corporate Report</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <div class="dashboard-page-color box-color4">
+                          <img src="img/passport.svg">
+                          <div class="">
+                            <h5>Visa</h5>
+                            <p><b>0</b></p>
+                            <a href="#">B2C Report</a><br>
+                            <a href="#">Agent Report</a><br>
+                            <a href="#">Corporate Report</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <div class="dashboard-slider-main">
+                            <div class="swiper-container dashboard-slider">
+                              <div class="swiper-wrapper">
+                                <div class="swiper-slide">Slide 1</div>
+                                <div class="swiper-slide">Slide 2</div>
+                                <div class="swiper-slide">Slide 3</div>
+                                <div class="swiper-slide">Slide 4</div>
+                                <div class="swiper-slide">Slide 5</div>
+                                <div class="swiper-slide">Slide 6</div>
+                                <div class="swiper-slide">Slide 7</div>
+                                <div class="swiper-slide">Slide 8</div>
+                                <div class="swiper-slide">Slide 9</div>
+                                <div class="swiper-slide">Slide 10</div>
+                              </div>
+                              <!-- Add Pagination -->
+                              <div class="swiper-pagination"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="dashboard-chart">
+                            <img src="img/chart1.jpg">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   
                   <div id="side-tab2" class="tabcontent">
-                    <h3>Paris</h3>
-                    <p>Paris is the capital of France.</p> 
+                    <div class="search-book-main">
+                      <div class="search-book-sub">
+                        <p class="mb-30"><b>New Reservation</b></p>
+                        <div class="d-flex justify-content-between">
+                          <div class="search-heading">
+                            <div class="search-circle">
+                              <img src="img/flight.svg">
+                            </div>
+                            <p>Flight</p>
+                          </div>
+                          <div class="search-heading">
+                            <div class="search-circle">
+                              <img src="img/hotel.svg">
+                            </div>
+                            <p>Hotel</p>
+                          </div>
+                          <div class="search-heading">
+                            <div class="search-circle">
+                              <img src="img/car-parking.svg">
+                            </div>
+                            <p>Cab</p>
+                          </div>
+                          <div class="search-heading">
+                            <div class="search-circle">
+                              <img src="img/beach-umbrella.svg">
+                            </div>
+                            <p>Holiday</p>
+                          </div>
+                          <div class="search-heading">
+                            <div class="search-circle">
+                              <img src="img/passport.svg">
+                            </div>
+                            <p>Visa</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   
                   <div id="side-tab3" class="tabcontent">
                     <h3>Tokyo</h3>
                     <p>Tokyo is the capital of Japan.</p>
                   </div>
-                  
+
                   <div id="side-tab4" class="tabcontent">
                     <h3>Paris</h3>
                     <p>Paris is the capital of France.</p> 
@@ -75,41 +229,12 @@
                     <h3>Tokyo</h3>
                     <p>Tokyo is the capital of Japan.</p>
                   </div>
+                  
+                  
                 </div>
               </div>
             </div>
           </div>
-          <!-- <div class="row">
-            <div class="col-3">
-              <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Dashboard</a>
-                <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Search Book</a>
-                <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Profile Management</a>
-                <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">B2B Management</a>
-                <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Booking Management</a>
-              </div>
-            </div>
-            <div class="col-9">
-              <div class="tab-content" id="v-pills-tabContent">
-                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                  <p>Eu dolore ea ullamco dolore Lorem id cupidatat excepteur reprehenderit consectetur elit id dolor proident in cupidatat officia. Voluptate excepteur commodo labore nisi cillum duis aliqua do. Aliqua amet qui mollit consectetur nulla mollit velit aliqua veniam nisi id do Lorem deserunt amet. Culpa ullamco sit adipisicing labore officia magna elit nisi in aute tempor commodo eiusmod.</p>
-                </div>
-                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-                  <p>Eu dolore ea ullamco dolore Lorem id cupidatat excepteur reprehenderit consectetur elit id dolor proident in cupidatat officia. Voluptate excepteur commodo labore nisi cillum duis aliqua do. Aliqua amet qui mollit consectetur nulla mollit velit aliqua veniam nisi id do Lorem deserunt amet. Culpa ullamco sit adipisicing labore officia magna elit nisi in aute tempor commodo eiusmod.Eu dolore ea ullamco dolore Lorem id cupidatat excepteur reprehenderit consectetur elit id dolor proident in cupidatat officia. Voluptate excepteur commodo labore nisi cillum duis aliqua do. Aliqua amet qui mollit consectetur nulla mollit velit aliqua veniam nisi id do Lorem deserunt amet. Culpa ullamco sit adipisicing labore officia magna elit nisi in aute tempor commodo eiusmod.</p>
-                </div>
-                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-                  <p>Eu dolore ea ullamco dolore Lorem id cupidatat excepteur reprehenderit consectetur elit id dolor proident in cupidatat officia. Voluptate excepteur commodo labore nisi cillum duis aliqua do. Aliqua amet qui mollit consectetur nulla mollit velit aliqua veniam nisi id do Lorem deserunt amet. Culpa ullamco sit adipisicing labore officia magna elit nisi in aute tempor commodo eiusmod.</p>
-                  <p>Eu dolore ea ullamco dolore Lorem id cupidatat excepteur reprehenderit consectetur elit id dolor proident in cupidatat officia. Voluptate excepteur commodo labore nisi cillum duis aliqua do. Aliqua amet qui mollit consectetur nulla mollit velit aliqua veniam nisi id do Lorem deserunt amet. Culpa ullamco sit adipisicing labore officia magna elit nisi in aute tempor commodo eiusmod.</p>
-                </div>
-                <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
-                  <p>Eu dolore ea ullamco dolore Lorem id cupidatat excepteur reprehenderit consectetur elit id dolor proident in cupidatat officia. Voluptate excepteur commodo labore nisi cillum duis aliqua do. Aliqua amet qui mollit consectetur nulla mollit velit aliqua veniam nisi id do Lorem deserunt amet. Culpa ullamco sit adipisicing labore officia magna elit nisi in aute tempor commodo eiusmod.</p>
-                  <p>Eu dolore ea ullamco dolore Lorem id cupidatat excepteur reprehenderit consectetur elit id dolor proident in cupidatat officia. Voluptate excepteur commodo labore nisi cillum duis aliqua do. Aliqua amet qui mollit consectetur nulla mollit velit aliqua veniam nisi id do Lorem deserunt amet. Culpa ullamco sit adipisicing labore officia magna elit nisi in aute tempor commodo eiusmod.</p>
-                  <p>Eu dolore ea ullamco dolore Lorem id cupidatat excepteur reprehenderit consectetur elit id dolor proident in cupidatat officia. Voluptate excepteur commodo labore nisi cillum duis aliqua do. Aliqua amet qui mollit consectetur nulla mollit velit aliqua veniam nisi id do Lorem deserunt amet. Culpa ullamco sit adipisicing labore officia magna elit nisi in aute tempor commodo eiusmod.</p>
-                  <p>Eu dolore ea ullamco dolore Lorem id cupidatat excepteur reprehenderit consectetur elit id dolor proident in cupidatat officia. Voluptate excepteur commodo labore nisi cillum duis aliqua do. Aliqua amet qui mollit consectetur nulla mollit velit aliqua veniam nisi id do Lorem deserunt amet. Culpa ullamco sit adipisicing labore officia magna elit nisi in aute tempor commodo eiusmod.</p>
-                </div>
-              </div>
-            </div>
-          </div> -->
         </div>
       </div>
     </div>
@@ -121,11 +246,14 @@
 <script src="js/jquery.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/swiper.min.js"></script>
+
 
 <script>
   function openCity(evt, cityName) {
     var i, tabcontent, tablinks;
+    setTimeout(() => {
+      window.dispatchEvent(new Event('resize'));
+    },10);
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
       tabcontent[i].style.display = "none";
@@ -142,5 +270,24 @@
   document.getElementById("defaultOpen").click();
   </script>
 
+<script src="js/swiper.min.js"></script>
+<script>
+  var swiper = new Swiper('.dashboard-slider', {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>
 
 </html>
