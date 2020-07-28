@@ -1,0 +1,128 @@
+html {
+  margin:0;
+  padding:0;
+  overflow-x:hidden !important;
+}
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+  position: relative;
+}
+
+h1,
+h2,h3,h4,h5,h6,a,p,ul{
+  margin: 0;
+  padding: 0;
+}
+a{
+  transition: all 0.3s linear 0s;
+}
+p{
+  font-size: 15px !important;
+  font-weight: 400 !important;
+  color: #646464 !important;
+}
+
+button{
+  transition: all 0.5s linear 0s;
+  cursor: pointer;
+}
+button:focus{
+  box-shadow: none;
+  outline: none;
+}
+.container{
+  max-width: 1200px !important;
+}
+.side-bar-left-main{
+  background-image: linear-gradient(90deg,#27e2de 0,#2974ef);
+  height: 100%;
+  width: 100%;
+  padding: 15px 10px;
+}
+.side-bar-right-main{
+  background-color: rgb(240, 239, 239);
+  height: 100vh;
+}
+.pr-0{
+  padding-right: 0px !important;
+}
+.pl-0{
+  padding-left: 0px !important;
+}
+.tw-logo h4{
+  color: white;
+  text-transform: uppercase;
+  padding: 15px;
+  border: 1px solid white;
+  margin: 20px 0px;
+  text-align: center;
+}
+.profile-circle{
+  background-color: white;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-circle img{
+  height: 30px;
+  width: auto;
+}
+.profile-main h5{
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  margin-top: 20px;
+}
+.logout-profile img{
+  height: 25px;
+  width: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.mr-20{
+  margin-right: 20px;
+}
+
+.home-button-side .tab {
+  width: 100%;
+}
+
+/* Style the buttons inside the tab */
+.home-button-side .tab button {
+  display: block;
+  background-color: inherit;
+  color: white;
+  padding: 22px 16px;
+  width: 100% !important;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.home-button-side .tab button:hover {
+  box-shadow: 0 1px 8px rgba(0,0,0,.1) ;
+}
+
+/* Create an active/current "tab button" class */
+.home-button-side .tab button.active {
+  box-shadow: 0 1px 8px rgba(0,0,0,.1) ;
+}
+
+/* Style the tab content */
+.home-detail-view .tabcontent {
+  float: left;
+  padding: 0px 12px;
+  width: 100%;
+  border-left: none;
+  height: 300px;
+}
