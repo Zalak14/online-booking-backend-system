@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tekwalker Back-End</title>
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../font/stylesheet.css">
+    <link rel="stylesheet" href="../css/aos.css" />
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+        
+</head>
+<body>
+<section style="overflow: hidden;">
+  <div class="main-div">
+    <div class="left-sidebar-main">
+      <div class="side-bar-left-main">
+        <div class="tw-logo">
+          <h4>Tekwalker</h4>
+        </div>
+        <div class="profile-main">
+          <div class="d-flex justify-content-center profile-sub">
+            <div class="profile-circle">
+              <img src="../img/follow.svg">
+            </div>
+            <h5>Zalak Bhanderi</h5>
+          </div>
+        </div>
+        <div class="home-button-side">
+          <div class="sidebar-button">
+            <ul>
+              <li><a href="../index11.html" class="sidebar-btnlink btn" role="button">Dashboard</a></li>
+              <li><a href="../html/search.html" class="sidebar-btnlink btn" role="button">Search Book</a></li>
+              <li><a href="../html/profile.html" class="sidebar-btnlink btn" role="button">Profile Management</a>
+                <ul class="sub-menu-btn">
+                  <li><a href="../html/profile.html" class="sidebar-btnlink btn" role="button">Company Users</a></li>
+                  <li><a href="../html/company-office-parameter.html" class="sidebar-btnlink btn" role="button">Office Parameters</a></li>
+                  <li><a href="../html/user-access-level.html" class="sidebar-btnlink btn" role="button">Users Access Level</a></li>
+                  <li><a href="../html/company-office-data.html" class="sidebar-btnlink btn" role="button">Company Office data</a></li>
+                </ul>
+              </li>
+              <li><a href="../html/b2b.html" class="sidebar-btnlink btn" role="button">B2B Management</a></li>
+              <li><a href="../html/booking.html" class="sidebar-btnlink btn" role="button">Booking Management</a></li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="right-sidebar-main">
+      <div class="topbar-header">
+       <div class="container pl-0 pr-0">
+         <div class="row">
+           <div class="col-sm-12">
+            <div class="main-header">
+              <h4>Tekwalker</h4>
+              <button class="btn btn-main">Balance</button>
+              
+            </div>
+           </div>
+         </div>
+       </div>
+      </div>
+      <div class="content-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+             <div class="company-office-parameter-main">
+              <h4>Company Office Parameters</h4>
+
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="">
+                    <form>
+                      <div class="form-row">
+                        <div class="form-group col-md-4">
+                          <label>Disabled Destination for search</label>
+                          <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group col-md-4">
+                          <label>Disabled Countires for Payment</label>
+                          <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group col-md-4">
+                          <label>Default Email Sender Name</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+
+                      <div class="form-row">
+                        <div class="form-group col-md-4">
+                          <label>Invoice Prefix</label>
+                          <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group col-md-4">
+                          <label>Deposit Alert Limit</label>
+                          <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group col-md-4">
+                          <label>Default Email Sender Email</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+
+                      <div class="form-row">
+                        <div class="form-group col-md-4">
+                          <label>Open Booking Limit</label>
+                          <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group col-md-4">
+                          <label>Margin on Currency Rate (%)</label>
+                          <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group col-md-4">
+                          <label>Default Email (Automatic email)</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+
+                      <div class="form-row">
+                        <div class="form-group col-md-4">
+                          <label>Credit Line Alert Level</label>
+                          <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group col-md-4">
+                          <label>Credit Line Limit</label>
+                          <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group col-md-4">
+                          <label>B2B Email (Activate / deactivate Companies)</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+
+                      <div class="form-row">
+                        <div class="form-group col-md-4">
+                          <label>Issue Time</label>
+                          <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group col-md-4">
+                          <label>satement Email Recipient</label>
+                          <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group col-md-4">
+                          <label>Hold Deposit</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+
+                      <div class="form-row">
+                        <div class="form-group col-md-4">
+                          <label>Sales Phone</label>
+                          <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group col-md-4">
+                          <label>Payment</label>
+                          <select class="form-control">
+                            <option selected>Choose...</option>
+                            <option>HDFC</option>
+                            <option>Kotak</option>
+                            <option>SBI</option>
+                            <option>Citi</option>
+                            <option>BOB</option>
+                            <option>BOI</option>
+                          </select>
+                        </div>
+                        <div class="form-group col-md-4">
+                          <label>statement Email Copy</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+
+                      <div class="form-row">
+                        <div class="form-group col-md-4">
+                          <label>Statement Issue Frequency</label>
+                          <select class="form-control">
+                            <option selected>Choose...</option>
+                            <option>Daily</option>
+                            <option>Week</option>
+                            <option>Month</option>
+                            <option>Year</option>
+                          </select>
+                        </div>
+                        <div class="form-group col-md-4">
+                          <label>Day of Week</label>
+                          <select class="form-control">
+                            <option selected>Choose...</option>
+                            <option>Sun</option>
+                            <option>Mon</option>
+                            <option>Tue</option>
+                            <option>Wed</option>
+                            <option>Thu</option>
+                            <option>Fri</option>
+                            <option>Sat</option>
+                          </select>
+                        </div>
+                        
+                        <div class="form-group col-md-4">
+                          <label>Language</label>
+                          <select class="form-control">
+                            <option selected>Choose...</option>
+                            <option>English</option>
+                            <option>Hindi</option>
+                            <option>Gujrati</option>
+                            <option>Tamil</option>
+                            <option>Marathi</option>
+                            <option>Kannad</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="form-row">
+                        <div class="form-group col-md-12">
+                          <label>Note</label><br>
+                          <textarea name="" id="" rows="2" class="form-control"></textarea>
+                        </div>
+                      </div>
+
+                      <div class="form-row">
+                        <div class="form-group col-md-12">
+                          <div class="form-check mb-2 mr-sm-2 ml-5">
+                            <input class="form-check-input" type="checkbox" id="inlineFormCheck" style="margin-left: 0;">
+                            <label class="form-check-label" for="inlineFormCheck">
+                              Show Hotel Supplier Logos
+                            </label>
+                          </div>
+                          <div class="form-check mb-2 mr-sm-2 ml-5">
+                            <input class="form-check-input" type="checkbox" id="inlineFormCheck" style="margin-left: 0;">
+                            <label class="form-check-label" for="inlineFormCheck">
+                              Show Flight Suppliers
+                            </label>
+                          </div>
+                          <div class="form-check mb-2 mr-sm-2 ml-5">
+                            <input class="form-check-input" type="checkbox" id="inlineFormCheck" style="margin-left: 0;">
+                            <label class="form-check-label" for="inlineFormCheck">
+                              Credit Card charge mode selection (net price or gross price)
+                            </label>
+                          </div>
+                          <div class="form-check mb-2 mr-sm-2 ml-5">
+                            <input class="form-check-input" type="checkbox" id="inlineFormCheck" style="margin-left: 0;">
+                            <label class="form-check-label" for="inlineFormCheck">
+                              Payment possibility after booking (credit card or deposit)
+                            </label>
+                          </div>
+                          <div class="form-check mb-2 mr-sm-2 ml-5">
+                            <input class="form-check-input" type="checkbox" id="inlineFormCheck" style="margin-left: 0;">
+                            <label class="form-check-label" for="inlineFormCheck">
+                              Classic packages Marketplace
+                            </label>
+                          </div>
+                          
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-start mb-20">
+                        <a href="#" class="btn btn-primary mr-20" role="button">Save</a>
+                        <a href="#" class="btn btn-primary" role="button">Cancel</a>
+                      </div>
+
+                    </form>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="office-credit-line-form">
+                    <h4>Credit Line</h4>
+
+                    <div class="">
+                      <form>
+                        <div class="form-row">
+                          <div class="form-group col-md-4">
+                            <label>Hold Deposit</label>
+                            <input type="text" class="form-control">
+                          </div>
+                          <div class="form-group col-md-4">
+                            <label>Credit Line Limit</label>
+                            <input type="text" class="form-control">
+                          </div>
+                          <div class="form-group col-md-4">
+                            <label>Credit Line Used</label>
+                            <input type="text" class="form-control">
+                          </div>
+                        </div>
+
+                        <div class="form-row">
+                          <div class="form-group col-md-4">
+                            <label>Usable Credit Line</label>
+                            <input type="text" class="form-control">
+                          </div>
+                          <div class="form-group col-md-4">
+                            <label>Credit Line Alert Level</label>
+                            <input type="text" class="form-control">
+                          </div>
+                          <div class="form-group col-md-4">
+                            <label>Open Booking Limit</label>
+                            <input type="text" class="form-control">
+                          </div>
+                        </div>
+
+                        <div class="form-row">
+                          <div class="form-group col-md-4">
+                            <label>Statement Issue Frequency</label>
+                            <select class="form-control">
+                              <option selected>Choose...</option>
+                              <option>Daily</option>
+                              <option>Week</option>
+                              <option>Month</option>
+                              <option>Year</option>
+                            </select>
+                          </div>
+                          <div class="form-group col-md-4">
+                            <label>Day of Week</label>
+                            <select class="form-control">
+                              <option selected>Choose...</option>
+                              <option>Sun</option>
+                              <option>Mon</option>
+                              <option>Tue</option>
+                              <option>Wed</option>
+                              <option>Thu</option>
+                              <option>Fri</option>
+                              <option>Sat</option>
+                            </select>
+                          </div>
+                          <div class="form-group col-md-4">
+                            <label>Issue Time</label>
+                            <input type="text" class="form-control">
+                          </div>
+                        </div>
+
+                        
+
+                        <div class="d-flex justify-content-start mb-20">
+                          <a href="#" class="btn btn-primary mr-20" role="button">Save</a>
+                          <a href="#" class="btn btn-primary" role="button">Cancel</a>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+             </div>
+            </div>
+          </div>
+        </div>
+      
+     
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/popper.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/swiper.min.js"></script>
+
+
+
+</html>
