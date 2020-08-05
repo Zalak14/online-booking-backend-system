@@ -1,14 +1,14 @@
 html {
   margin:0;
   padding:0;
-  overflow-x:hidden !important;
 }
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  overflow-x: hidden;
+ overflow: hidden;
   position: relative;
 }
+
 
 h1,
 h2,h3,h4,h5,h6,a,p,ul{
@@ -32,9 +32,34 @@ button:focus{
   box-shadow: none;
   outline: none;
 }
-.container{
-  max-width: 1200px !important;
+
+.main-div{
+  display: flex;
+  overflow: hidden;
 }
+.left-sidebar-main{
+  background-color: black;
+  flex: 0 0 230px;
+  height: 100vh;
+ max-width: 230px;
+}
+.right-sidebar-main{
+  background-color: gray;
+  flex: 1;
+  max-width: calc(100% - 230px);
+}
+.topbar-header{
+  background-color: greenyellow;
+  height: 76px;
+  width: 100%;
+}
+.content-area{
+  background-color: rgb(240, 239, 239);
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: calc(100vh - 76px);
+}
+
 .side-bar-left-main{
   background-image: linear-gradient(90deg,#27e2de 0,#2974ef);
   height: 100%;
@@ -43,11 +68,7 @@ button:focus{
 }
 .side-bar-right-main{
   background-color: rgb(240, 239, 239);
-  height: 100vh;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  padding-top: 90px;
-  padding-bottom: 50px;
+
 }
 .pr-0{
   padding-right: 0px !important;
@@ -139,11 +160,13 @@ button:focus{
   height: 300px;
 }
 .home-page-sub{
-  height: 245px;
+  height: 100%;
   width: 100%;
   background-color: white;
   box-shadow: 0 1px 8px rgba(0,0,0,.1) ;
   margin-top: 15px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 .box-color1{
   background-image: linear-gradient(to right,#00B4DB,#0083B0);
@@ -266,11 +289,11 @@ button:focus{
 .main-header{
   background-color: white;
   box-shadow: 0 1px 8px rgba(0,0,0,.1) ;
-  position: fixed;
-  top: 0;
   padding: 20px;
   z-index: 1111111111111111111111;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .main-header form.example input[type=text] {
@@ -309,6 +332,7 @@ button:focus{
 .btn-main{
   background: #2196F3;
   border: none;
+  color: white;
 }
 .btn-main:hover{
   background: #0b7dda;
@@ -364,14 +388,14 @@ button:focus{
   color: #2eb96e !important;
 }
 .mt-20{
-  margin-top: 20px;
+  margin-top: 18px;
 }
 .mt-100{
   margin-top: 100px ;
 }
 
 .tab-book {
-  overflow: hidden;
+  overflow: auto;
   background-color: transparent;
   display: flex;
   justify-content: space-between;
@@ -505,14 +529,29 @@ button:focus{
 .color-white{
   color: white !important;
 }
+.sidebar-button li{
+  padding: 15px;
+  background-color: transparent;
+}
+.sidebar-button li a{
+  text-decoration: none;
+  color: white;
+  
+}
+.sidebar-button li:hover{
+  box-shadow: 0 1px 8px rgba(0,0,0,.1) ;
+}
+.sub-menu-btn{
+  list-style: none;
+}
 
-.highcharts-figure, .highcharts-data-table table {
+.monthly-graph .highcharts-figure, .highcharts-data-table table {
   min-width: 850px; 
   max-width: 1000px;
   margin: 1em auto;
 }
 
-.highcharts-data-table table {
+.monthly-graph .highcharts-data-table table {
 font-family: Verdana, sans-serif;
 border-collapse: collapse;
 border: 1px solid #EBEBEB;
@@ -521,21 +560,68 @@ text-align: center;
 width: 100%;
 max-width: 500px;
 }
-.highcharts-data-table caption {
+.monthly-graph .highcharts-data-table caption {
   padding: 1em 0;
   font-size: 1.2em;
   color: #555;
 }
-.highcharts-data-table th {
+.monthly-graph .highcharts-data-table th {
 font-weight: 600;
   padding: 0.5em;
 }
-.highcharts-data-table td, .highcharts-data-table th, .highcharts-data-table caption {
+.monthly-graph .highcharts-data-table td, .highcharts-data-table th, .highcharts-data-table caption {
   padding: 0.5em;
 }
-.highcharts-data-table thead tr, .highcharts-data-table tr:nth-child(even) {
+.monthly-graph .highcharts-data-table thead tr, .highcharts-data-table tr:nth-child(even) {
   background: #f8f8f8;
 }
-.highcharts-data-table tr:hover {
+.monthly-graph .highcharts-data-table tr:hover {
   background: #f1f7ff;
 }
+
+
+
+.monthly-graph1 .highcharts-figure, .highcharts-data-table table {
+  min-width: 320px; 
+  max-width: 660px;
+  margin: 1em auto;
+}
+
+.monthly-graph1 .highcharts-data-table table {
+font-family: Verdana, sans-serif;
+border-collapse: collapse;
+border: 1px solid #EBEBEB;
+margin: 10px auto;
+text-align: center;
+width: 100%;
+max-width: 500px;
+}
+.monthly-graph1 .highcharts-data-table caption {
+  padding: 1em 0;
+  font-size: 1.2em;
+  color: #555;
+}
+.monthly-graph1 .highcharts-data-table th {
+font-weight: 600;
+  padding: 0.5em;
+}
+.monthly-graph1 .highcharts-data-table td, .highcharts-data-table th, .highcharts-data-table caption {
+  padding: 0.5em;
+}
+.monthly-graph1 .highcharts-data-table thead tr, .highcharts-data-table tr:nth-child(even) {
+  background: #f8f8f8;
+}
+.monthly-graph1 .highcharts-data-table tr:hover {
+  background: #f1f7ff;
+}
+
+.search-book-main{
+  margin-top: 50px;
+}
+.company-user-table{
+  margin-top: 50px;
+}
+.company-user-table .table{
+  background-color: white;
+}
+
