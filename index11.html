@@ -54,8 +54,47 @@
           <div class="row">
             <div class="col-sm-12">
               <div class="main-header">
-                <h4>Tekwalker</h4>
-                <button class="btn btn-main">Balance</button>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="#">Trip <span class="sr-only">(current)</span></a>
+                      </li>
+                     
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          My Account
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Setting
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Help</a>
+                      </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                  </div>
+                </nav>
               </div>
             </div>
           </div>
@@ -110,16 +149,16 @@
                   <div class="dashboard-slider-main">
                     <div class="swiper-container dashboard-slider">
                       <div class="swiper-wrapper">
-                        <div class="swiper-slide">Slide 1</div>
-                        <div class="swiper-slide">Slide 2</div>
-                        <div class="swiper-slide">Slide 3</div>
-                        <div class="swiper-slide">Slide 4</div>
-                        <div class="swiper-slide">Slide 5</div>
-                        <div class="swiper-slide">Slide 6</div>
-                        <div class="swiper-slide">Slide 7</div>
-                        <div class="swiper-slide">Slide 8</div>
-                        <div class="swiper-slide">Slide 9</div>
-                        <div class="swiper-slide">Slide 10</div>
+                        <div class="swiper-slide"><p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p></div>
+                        <div class="swiper-slide"><p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p></div>
+                        <div class="swiper-slide"><p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p></div>
+                        <div class="swiper-slide"><p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p></div>
+                        <div class="swiper-slide"><p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p></div>
+                        <div class="swiper-slide"><p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p></div>
+                        <div class="swiper-slide"><p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p></div>
+                        <div class="swiper-slide"><p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p></div>
+                        <div class="swiper-slide"><p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p></div>
+                        <div class="swiper-slide"><p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p></div>
                       </div>
                      
                       <div class="swiper-pagination"></div>
@@ -133,16 +172,16 @@
                     <div class="home-page-sub">
                       <div class="monthly-graph1">
                         <figure class="highcharts-figure">
-                          <div id="container2"></div>
-                          
-                      </figure>
+                          <div id="container2"></div> 
+                        </figure>
                       </div>
                     </div>
                   </div>
                   <div class="col-sm-6">
                     <div class="home-page-sub">
-                      <div class="dashboard-chart">
-                        
+                      <div class="monthly-graph2">
+                        <div id="container3" style="height: 500px; min-width: 310px; max-width: 800px; margin: 0 auto">
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -346,11 +385,18 @@
   </script>
 
 <script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/maps/modules/map.js"></script>
 <script src="https://code.highcharts.com/modules/data.js"></script>
 <script src="https://code.highcharts.com/modules/exporting.js"></script>
 <script src="https://code.highcharts.com/modules/export-data.js"></script>
 <script src="https://code.highcharts.com/modules/accessibility.js"></script>
 
+
+<!-- <script src="https://code.highcharts.com/maps/highmaps.js"></script> -->
+<script src="https://code.highcharts.com/maps/modules/data.js"></script>
+<script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/maps/modules/offline-exporting.js"></script>
+<script src="https://code.highcharts.com/mapdata/custom/world.js"></script>
 
 
 <script>
@@ -428,55 +474,122 @@ responsive: {
 <script>
   Highcharts.chart('container2', {
     chart: {
-        plotBackgroundColor: null,
-        plotBorderWidth: null,
-        plotShadow: false,
-        type: 'pie'
+        type: 'column'
     },
     title: {
-        text: 'Customer Review'
+        text: 'Booking Detail'
     },
-    tooltip: {
-        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+    
+    xAxis: {
+        categories: [
+            'Jan',
+            'Feb',
+            'Mar',
+            'Apr',
+            'May',
+            'Jun',
+            'Jul',
+            'Aug',
+            'Sep',
+            'Oct',
+            'Nov',
+            'Dec'
+        ],
+        crosshair: true
     },
-    accessibility: {
-        point: {
-            valueSuffix: '%'
+    yAxis: {
+        min: 0,
+        title: {
+            text: 'No. of booking'
         }
     },
+    tooltip: {
+        headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+        pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+            '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+        footerFormat: '</table>',
+        shared: true,
+        useHTML: true
+    },
     plotOptions: {
-        pie: {
-            allowPointSelect: true,
-            cursor: 'pointer',
-            dataLabels: {
-                enabled: false
-            },
-            showInLegend: true
+        column: {
+            pointPadding: 0.2,
+            borderWidth: 0
         }
     },
     series: [{
-        name: 'Brands',
-        colorByPoint: true,
-        data: [{
-            name: 'Excellent',
-            y: 51.41,
-            sliced: true,
-            selected: true
-        }, {
-            name: 'Very Good',
-            y: 21.84
-        }, {
-            name: 'Good',
-            y: 10.85
-        }, {
-            name: 'Poor',
-            y: 8.85
-        },  {
-            name: 'Very Poor',
-            y: 7.05
-        }]
+        name: 'Flight',
+        data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
+
+    }, {
+        name: 'Hotel',
+        data: [83.6, 78.8, 98.5, 93.4, 106.0, 84.5, 105.0, 104.3, 91.2, 83.5, 106.6, 92.3]
+
+    }, {
+        name: 'Cab',
+        data: [48.9, 38.8, 39.3, 41.4, 47.0, 48.3, 59.0, 59.6, 52.4, 65.2, 59.3, 51.2]
+
+    }, {
+        name: 'Holiday',
+        data: [42.4, 33.2, 34.5, 39.7, 52.6, 75.5, 57.4, 60.4, 47.6, 39.1, 46.8, 51.1]
+
+    },
+    {
+        name: 'Visa',
+        data: [48.9, 38.8, 39.3, 41.4, 47.0, 48.3, 59.0, 59.6, 52.4, 65.2, 59.3, 51.2]
+
     }]
 });
+</script>
+
+
+
+<script>
+  Highcharts.getJSON('https://cdn.jsdelivr.net/gh/highcharts/highcharts@v7.0.0/samples/data/world-population.json', function (data) {
+
+Highcharts.mapChart('container3', {
+    chart: {
+        borderWidth: 1,
+        map: 'custom/world'
+    },
+
+    title: {
+        text: 'World population 2013 by country'
+    },
+
+    subtitle: {
+        text: 'Demo of Highcharts map with bubbles'
+    },
+
+    legend: {
+        enabled: false
+    },
+
+    mapNavigation: {
+        enabled: true,
+        buttonOptions: {
+            verticalAlign: 'bottom'
+        }
+    },
+
+    series: [{
+        name: 'Countries',
+        color: '#E0E0E0',
+        enableMouseTracking: false
+    }, {
+        type: 'mapbubble',
+        name: 'Population 2016',
+        joinBy: ['iso-a3', 'code3'],
+        data: data,
+        minSize: 4,
+        maxSize: '12%',
+        tooltip: {
+            pointFormat: '{point.properties.hc-a2}: {point.z} thousands'
+        }
+    }]
+});
+});
+
 </script>
 
 </html>

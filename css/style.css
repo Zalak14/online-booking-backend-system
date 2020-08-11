@@ -50,7 +50,7 @@ button:focus{
 }
 .topbar-header{
   background-color: greenyellow;
-  height: 76px;
+  height: 95px;
   width: 100%;
 }
 .content-area{
@@ -58,6 +58,7 @@ button:focus{
   overflow-x: hidden;
   overflow-y: auto;
   height: calc(100vh - 76px);
+  z-index: -1111;
 }
 
 .side-bar-left-main{
@@ -164,7 +165,7 @@ button:focus{
   width: 100%;
   background-color: white;
   box-shadow: 0 1px 8px rgba(0,0,0,.1) ;
-  margin-top: 15px;
+  margin-top: 20px;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -211,17 +212,7 @@ button:focus{
   font-size: 14px;
   font-weight: 400;
 }
-.dashboard-chart{
-  width: 100%;
-  height: 245px;
-  background-color: white;
-  overflow: hidden;
-}
-.dashboard-chart img{
-  height: 245px;
-  width: 100%;
-  object-fit: cover;
-}
+
 .dashboard-slider-main{
   height: 175px;
   width: 100%;
@@ -234,6 +225,9 @@ button:focus{
   width: 100%;
   height: 100%;
   background-image: linear-gradient(to right,#96dd4b 0,#2eb96e 51%,#96dd4b 100%);
+}
+.dashboard-slider-main .swiper-slide p{
+  color: white !important;
 }
 .dashboard-slider-main .swiper-slide {
   text-align: center;
@@ -290,10 +284,8 @@ button:focus{
   background-color: white;
   box-shadow: 0 1px 8px rgba(0,0,0,.1) ;
   padding: 20px;
-  z-index: 1111111111111111111111;
+  z-index: 11111111111111111111111111111111111111111;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
 }
 
 .main-header form.example input[type=text] {
@@ -333,7 +325,9 @@ button:focus{
   background: #2196F3;
   border: none;
   color: white;
+  margin-right: 10px;
 }
+
 .btn-main:hover{
   background: #0b7dda;
 }
@@ -359,6 +353,9 @@ button:focus{
   margin-top: 30px;
   padding: 20px;
   margin-bottom: 50px;
+}
+.home-page-main{
+  margin-top: 40px !important;
 }
 .latest-member{
   text-align: center;
@@ -413,7 +410,6 @@ button:focus{
   font-size: 17px;
   width: 100%;
   background-color: white;
-  margin-right: 10px;
 }
 .mr-0{
   margin-right: 0px !important;
@@ -428,6 +424,9 @@ button:focus{
 .tab-book button.active {
   background-color: rgba(0, 0, 0, 0.5);
  color: white;
+}
+.div-hide-show{
+  display: none;
 }
 
 /* Style the tab content */
@@ -580,46 +579,12 @@ font-weight: 600;
 }
 
 
-
-.monthly-graph1 .highcharts-figure, .highcharts-data-table table {
-  min-width: 320px; 
-  max-width: 660px;
-  margin: 1em auto;
-}
-
-.monthly-graph1 .highcharts-data-table table {
-font-family: Verdana, sans-serif;
-border-collapse: collapse;
-border: 1px solid #EBEBEB;
-margin: 10px auto;
-text-align: center;
-width: 100%;
-max-width: 500px;
-}
-.monthly-graph1 .highcharts-data-table caption {
-  padding: 1em 0;
-  font-size: 1.2em;
-  color: #555;
-}
-.monthly-graph1 .highcharts-data-table th {
-font-weight: 600;
-  padding: 0.5em;
-}
-.monthly-graph1 .highcharts-data-table td, .highcharts-data-table th, .highcharts-data-table caption {
-  padding: 0.5em;
-}
-.monthly-graph1 .highcharts-data-table thead tr, .highcharts-data-table tr:nth-child(even) {
-  background: #f8f8f8;
-}
-.monthly-graph1 .highcharts-data-table tr:hover {
-  background: #f1f7ff;
-}
-
 .search-book-main{
   margin-top: 50px;
 }
 .company-user-table{
   margin-top: 50px;
+  font-size: 14px;
 }
 .company-user-table .table{
   background-color: white;
@@ -657,6 +622,10 @@ font-weight: 600;
 }
 .company-new-user-form{
   margin-top: 20px;
+  margin: 40px;
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
 }
 .company-new-user-form h4{
   margin-bottom: 20px;
@@ -778,5 +747,47 @@ h4{
   margin: 15px 0;
   text-align: center;
   font-size: 20px;
+}
+
+
+
+
+
+.monthly-graph1 .highcharts-figure, .highcharts-data-table table {
+  min-width: 310px; 
+  max-width: 800px;
+  margin: 1em auto;
+}
+
+.monthly-graph1 #container2 {
+  height: 400px;
+}
+
+.monthly-graph1 .highcharts-data-table table {
+font-family: Verdana, sans-serif;
+border-collapse: collapse;
+border: 1px solid #EBEBEB;
+margin: 10px auto;
+text-align: center;
+width: 100%;
+max-width: 500px;
+}
+.monthly-graph1 .highcharts-data-table caption {
+  padding: 1em 0;
+  font-size: 1.2em;
+  color: #555;
+}
+.monthly-graph1 .highcharts-data-table th {
+font-weight: 600;
+  padding: 0.5em;
+}
+.monthly-graph1 .highcharts-data-table td, .highcharts-data-table th, .highcharts-data-table caption {
+  padding: 0.5em;
+}
+.monthly-graph1 .highcharts-data-table thead tr, .highcharts-data-table tr:nth-child(even) {
+  background: #f8f8f8;
+}
+.monthly-graph1 .highcharts-data-table tr:hover {
+  background: #f1f7ff;
 }
 
