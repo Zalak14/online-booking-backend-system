@@ -1083,6 +1083,12 @@ font-weight: 600;
 #panel-menu {
   display: none;
 }
+#flip-menu1{
+  cursor: pointer;
+}
+#panel-menu1 {
+  display: none;
+}
 .mb-50{
   margin-bottom: 50px;
 }
@@ -2412,8 +2418,23 @@ margin-bottom: 20px;
 .holiday-book-btn1{
   bottom: 0 !important;
 }
-
-
+.b2b-edit-main .office-credit-line-form h4{
+width: 20%;
+}
+.b2b-edit-sub{
+  background-color: white;
+  padding: 40px;
+}
+.b2b-profile-img{
+  height: 40px;
+  width: 40px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.b2b-profile-img img{
+  height: 100%;
+  width: 100%;
+}
 
 
 
