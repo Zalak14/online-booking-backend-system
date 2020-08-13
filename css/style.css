@@ -537,11 +537,13 @@ button:focus{
   color: white;
   padding: 15px !important;
 }
-.sidebar-button li:hover{
-  box-shadow: 0 1px 8px rgba(0,0,0,.1) ;
+.sub-menu-btn .btn{
+  font-size: 14px !important
 }
 .sub-menu-btn{
   list-style: none;
+  padding-left: 15px;
+  
 }
 
 .monthly-graph .highcharts-figure, .highcharts-data-table table {
@@ -707,7 +709,11 @@ h4{
   padding: 20px;
   background-image: linear-gradient(to right,#96dd4b 0,#2eb96e 51%,#96dd4b 100%);
   color: white;
-  margin-bottom: 30px;
+  width: 34%;
+}
+.company-office-parameter-main form{
+  background-color: white;
+  padding: 50px;
 }
 
 .office-credit-line-form{
@@ -718,7 +724,7 @@ h4{
   padding: 20px;
   background-image: linear-gradient(to right,#96dd4b 0,#2eb96e 51%,#96dd4b 100%);
   color: white;
-  margin-bottom: 30px;
+  width: 15%;
 }
 .user-access-level-main{
   margin-top: 20px;
@@ -728,7 +734,21 @@ h4{
   padding: 20px;
   background-image: linear-gradient(to right,#96dd4b 0,#2eb96e 51%,#96dd4b 100%);
   color: white;
-  margin-bottom: 30px;
+  width: 22%;
+}
+.user-access-level-sub{
+  padding: 40px;
+  background-color: white;
+}
+.user-access-level-sub .nav-link{
+  padding: 10px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+.nav-pills .nav-link.active, .show > .nav-pills .nav-link{
+  background-image: linear-gradient(to right,#96dd4b 0,#2eb96e 51%,#96dd4b 100%);
+  background-color: transparent;
+
 }
 .company-office-data-main{
   margin-top: 20px;
@@ -738,13 +758,17 @@ h4{
   padding: 20px;
   background-image: linear-gradient(to right,#96dd4b 0,#2eb96e 51%,#96dd4b 100%);
   color: white;
-  margin-bottom: 30px;
+  width: 26%;
+}
+.company-office-data-sub{
+  background-color: white;
+  padding: 40px;
 }
 .border-line{
   border-bottom: 1px solid #c4c4c4;
   border-top: 1px solid #c4c4c4;
   padding: 15px 0;
-  margin: 15px 0;
+  margin: 25px 0;
   text-align: center;
   font-size: 20px;
 }
@@ -1051,6 +1075,12 @@ font-weight: 600;
   
 }
 #panel3 {
+  display: none;
+}
+#flip-menu{
+  cursor: pointer;
+}
+#panel-menu {
   display: none;
 }
 .mb-50{
