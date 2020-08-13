@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tekwalker Back-End</title>
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../font/stylesheet.css">
+    <link rel="stylesheet" href="../css/aos.css" />
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+        
+</head>
+<body>
+<section style="overflow: hidden;">
+  <div class="main-div">
+    <div class="left-sidebar-main">
+      <div class="side-bar-left-main">
+        <div class="tw-logo">
+          <h4>Tekwalker</h4>
+        </div>
+        <div class="profile-main">
+          <div class="d-flex justify-content-center profile-sub">
+            <div class="profile-circle">
+              <img src="../img/follow.svg">
+            </div>
+            <h5>Zalak Bhanderi</h5>
+          </div>
+        </div>
+        <div class="home-button-side">
+          <div class="sidebar-button">
+            <ul>
+              <li><a href="../index11.html" class="sidebar-btnlink btn" role="button">Dashboard</a></li>
+              <li><a href="../html/search.html" class="sidebar-btnlink btn" role="button">Search Book</a></li>
+              <li><a href="../html/profile.html" class="sidebar-btnlink btn" role="button">Profile Management</a>
+                <ul class="sub-menu-btn">
+                  <li><a href="../html/profile.html" class="sidebar-btnlink btn" role="button">Company Users</a></li>
+                </ul>
+              </li>
+              <li><a href="../html/b2b.html" class="sidebar-btnlink btn" role="button">B2B Management</a></li>
+              <li><a href="../html/booking.html" class="sidebar-btnlink btn" role="button">Booking Management</a></li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="right-sidebar-main">
+      <div class="topbar-header">
+       <div class="container pl-0 pr-0">
+         <div class="row">
+           <div class="col-sm-12">
+            <div class="main-header">
+              <h4>Tekwalker</h4>
+              <button class="btn btn-main">Balance</button>
+              
+            </div>
+           </div>
+         </div>
+       </div>
+      </div>
+      <div class="content-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+             <div class="">
+              <div class="searchbox-modify">
+                <p>
+                  <button class="btn btn-modify" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    <div class="d-flex justify-content-start" style="align-items: center;">
+                      <p class="mr-20">New Delhi <img src="../img/double-arrow.svg"> Mumbai</p>
+                      <p>Fri 14 Aug - Sun 16 Aug</p>
+                    </div>
+                    <h5><img src="../img/curriculum-vitae.svg">Modify</h5>
+                  </button>
+                </p>
+                <div class="collapse" id="collapseExample">
+                  <div class="card card-body">
+                    <div class="">
+                      <form>
+                        <div class="form-row color-white">
+                          <div class="form-group col-md-4">
+                            <label for="inputEmail4">From</label>
+                            <input type="text" class="form-control flight-icon" placeholder="City or Airpot"></div>
+                          <div class="form-group col-md-4">
+                            <label for="inputPassword4">To</label>
+                            <input type="text" class="form-control location-icon" placeholder="Country, City or island">
+                          </div>
+                          <div class="form-group col-md-2">
+                            <label for="inputEmail4">Date</label>
+                            <input type="date" class="form-control" id="inputEmail4">
+                          </div>
+                          <div class="form-group col-md-2">
+                            <label for="inputEmail4">Time</label>
+                            <select class="custom-select form-control">
+                              <option selected>Time</option>
+                              <option value="1">1:00</option>
+                              <option value="2">2:00</option>
+                              <option value="3">3:00</option>
+                            </select>
+                          </div>
+                          
+                         <div class="form-group col-md-5">
+                            <div class="dropdown mr-1">
+                                <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                                Which Car
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                                <a class="dropdown-item" href="#">Cheapest</a>
+                                <a class="dropdown-item" href="#">Standard</a>
+                                <a class="dropdown-item" href="#">Premium</a>
+                                </div>
+                            </div>
+                         </div>
+                         <div class="form-group col-md-5">
+                          <div class="dropdown mr-1">
+                              <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                              Payment Method
+                              </button>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                              <a class="dropdown-item" href="#">Visa</a>
+                              <a class="dropdown-item" href="#">MasterCard</a>
+                              <a class="dropdown-item" href="#">Prepaid MasterCard</a>
+                              <a class="dropdown-item" href="#">American Express</a>
+                              <a class="dropdown-item" href="#">Visa Debit</a>
+                              <a class="dropdown-item" href="#">MasterCard Debit</a>
+                              <a class="dropdown-item" href="#">PayPal</a>
+                              <a class="dropdown-item" href="#">Google Pay</a>
+                              <a class="dropdown-item" href="#">Phonepe</a>
+                              </div>
+                          </div>
+                       </div>
+                       <div class="form-group col-md-2">
+                        <div class="dropdown mr-1">
+                          <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                          Currency
+                          </button>
+                          <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                          <a class="dropdown-item" href="#">INR</a>
+                          <a class="dropdown-item" href="#">USD</a>
+                          <a class="dropdown-item" href="#">EUR</a>
+                          </div>
+                      </div>
+                       </div>
+                       <div class="form-group col-md-12 d-flex justify-content-center">
+                        <a href="../html/transfer.html" role="button" class="btn btn-find btn11"> Find</a>
+                      </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="transfer-listing">
+                <div class="flight-route d-flex justify-content-between">
+                  <div class="row" style="width: 100%; padding: 0px; margin: 0px;">
+                    <div class="col-md-3">
+                      <div class="flight-name flight-center">
+                        <img src="../img/car1.png">
+                      </div>
+                    </div>
+                    <div class="col-md-5 col-sm-6">
+                      <div class="car-specification">
+                        <h4>Indica, Swift</h4>
+                        <div class="card-line"></div>
+                        <p>Facility</p>
+                        <ul>
+                          <li class="seat">4 Seater</li>
+                          <li class="bag">1 Bag</li>
+                          <li class="ac">AC</li>
+                        </ul>
+                        <p>Included Tolls and Taxes</p>
+                        <p>Sanitized Cabs</p>
+                      </div>
+                    </div>
+                    
+                    <div class="col-md-4 col-sm-6">
+                      <div class="transfer-dis d-flex justify-content-end">
+                        <img src="../img/discount2.svg">
+                        <small style="color: red;">Save &#x20B9; 1000</small>
+                      </div>
+                      <div class="transfer-price">
+                        <p><del>&#x20B9; 11,800</del></p>
+                        <h2>&#x20B9; 10,800</h2>
+                        <a href="../html/transfer-pay.html" class="btn btn-tw" role="button">Book Now</a>
+                      </div>
+                    </div>
+                </div> 
+              </div>
+
+              <div class="flight-route d-flex justify-content-between">
+                <div class="row" style="width: 100%; padding: 0px; margin: 0px;">
+                  <div class="col-md-3">
+                    <div class="flight-name flight-center">
+                      <img src="../img/car1.png">
+                    </div>
+                  </div>
+                  <div class="col-md-5 col-sm-6">
+                    <div class="car-specification">
+                      <h4>Indica, Swift</h4>
+                      <div class="card-line"></div>
+                      <p>Facility</p>
+                      <ul>
+                        <li class="seat">4 Seater</li>
+                        <li class="bag">1 Bag</li>
+                        <li class="ac">AC</li>
+                      </ul>
+                      <p>Included Tolls and Taxes</p>
+                      <p>Sanitized Cabs</p>
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-4 col-sm-6">
+                    <div class="transfer-dis d-flex justify-content-end">
+                      <img src="../img/discount2.svg">
+                      <small style="color: red;">Save &#x20B9; 1000</small>
+                    </div>
+                    <div class="transfer-price">
+                      <p><del>&#x20B9; 11,800</del></p>
+                      <h2>&#x20B9; 10,800</h2>
+                      <a href="../html/transfer-pay.html" class="btn btn-tw" role="button">Book Now</a>
+                    </div>
+                  </div>
+              </div> 
+            </div>
+
+            <div class="flight-route d-flex justify-content-between">
+              <div class="row" style="width: 100%; padding: 0px; margin: 0px;">
+                <div class="col-md-3">
+                  <div class="flight-name flight-center">
+                    <img src="../img/car1.png">
+                  </div>
+                </div>
+                <div class="col-md-5 col-sm-6">
+                  <div class="car-specification">
+                    <h4>Indica, Swift</h4>
+                    <div class="card-line"></div>
+                    <p>Facility</p>
+                    <ul>
+                      <li class="seat">4 Seater</li>
+                      <li class="bag">1 Bag</li>
+                      <li class="ac">AC</li>
+                    </ul>
+                    <p>Included Tolls and Taxes</p>
+                    <p>Sanitized Cabs</p>
+                  </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6">
+                  <div class="transfer-dis d-flex justify-content-end">
+                    <img src="../img/discount2.svg">
+                    <small style="color: red;">Save &#x20B9; 1000</small>
+                  </div>
+                  <div class="transfer-price">
+                    <p><del>&#x20B9; 11,800</del></p>
+                    <h2>&#x20B9; 10,800</h2>
+                    <a href="../html/transfer-pay.html" class="btn btn-tw" role="button">Book Now</a>
+                  </div>
+                </div>
+            </div> 
+          </div>
+
+          <div class="flight-route d-flex justify-content-between">
+            <div class="row" style="width: 100%; padding: 0px; margin: 0px;">
+              <div class="col-md-3">
+                <div class="flight-name flight-center">
+                  <img src="../img/car1.png">
+                </div>
+              </div>
+              <div class="col-md-5 col-sm-6">
+                <div class="car-specification">
+                  <h4>Indica, Swift</h4>
+                  <div class="card-line"></div>
+                  <p>Facility</p>
+                  <ul>
+                    <li class="seat">4 Seater</li>
+                    <li class="bag">1 Bag</li>
+                    <li class="ac">AC</li>
+                  </ul>
+                  <p>Included Tolls and Taxes</p>
+                  <p>Sanitized Cabs</p>
+                </div>
+              </div>
+              
+              <div class="col-md-4 col-sm-6">
+                <div class="transfer-dis d-flex justify-content-end">
+                  <img src="../img/discount2.svg">
+                  <small style="color: red;">Save &#x20B9; 1000</small>
+                </div>
+                <div class="transfer-price">
+                  <p><del>&#x20B9; 11,800</del></p>
+                  <h2>&#x20B9; 10,800</h2>
+                  <a href="../html/transfer-pay.html" class="btn btn-tw" role="button">Book Now</a>
+                </div>
+              </div>
+          </div> 
+        </div>
+
+        <div class="flight-route d-flex justify-content-between">
+          <div class="row" style="width: 100%; padding: 0px; margin: 0px;">
+            <div class="col-md-3">
+              <div class="flight-name flight-center">
+                <img src="../img/car1.png">
+              </div>
+            </div>
+            <div class="col-md-5 col-sm-6">
+              <div class="car-specification">
+                <h4>Indica, Swift</h4>
+                <div class="card-line"></div>
+                <p>Facility</p>
+                <ul>
+                  <li class="seat">4 Seater</li>
+                  <li class="bag">1 Bag</li>
+                  <li class="ac">AC</li>
+                </ul>
+                <p>Included Tolls and Taxes</p>
+                <p>Sanitized Cabs</p>
+              </div>
+            </div>
+            
+            <div class="col-md-4 col-sm-6">
+              <div class="transfer-dis d-flex justify-content-end">
+                <img src="../img/discount2.svg">
+                <small style="color: red;">Save &#x20B9; 1000</small>
+              </div>
+              <div class="transfer-price">
+                <p><del>&#x20B9; 11,800</del></p>
+                <h2>&#x20B9; 10,800</h2>
+                <a href="../html/transfer-pay.html" class="btn btn-tw" role="button">Book Now</a>
+              </div>
+            </div>
+        </div> 
+      </div>
+
+      <div class="flight-route d-flex justify-content-between">
+        <div class="row" style="width: 100%; padding: 0px; margin: 0px;">
+          <div class="col-md-3">
+            <div class="flight-name flight-center">
+              <img src="../img/car1.png">
+            </div>
+          </div>
+          <div class="col-md-5 col-sm-6">
+            <div class="car-specification">
+              <h4>Indica, Swift</h4>
+              <div class="card-line"></div>
+              <p>Facility</p>
+              <ul>
+                <li class="seat">4 Seater</li>
+                <li class="bag">1 Bag</li>
+                <li class="ac">AC</li>
+              </ul>
+              <p>Included Tolls and Taxes</p>
+              <p>Sanitized Cabs</p>
+            </div>
+          </div>
+          
+          <div class="col-md-4 col-sm-6">
+            <div class="transfer-dis d-flex justify-content-end">
+              <img src="../img/discount2.svg">
+              <small style="color: red;">Save &#x20B9; 1000</small>
+            </div>
+            <div class="transfer-price">
+              <p><del>&#x20B9; 11,800</del></p>
+              <h2>&#x20B9; 10,800</h2>
+              <a href="../html/transfer-pay.html" class="btn btn-tw" role="button">Book Now</a>
+            </div>
+          </div>
+      </div> 
+    </div>
+
+    <div class="mb-50"></div>
+              </div>
+             </div>
+          
+
+              
+
+            </div>
+          </div>
+        </div>
+      
+     
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/popper.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/swiper.min.js"></script>
+
+
+
+</html>

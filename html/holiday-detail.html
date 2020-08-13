@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tekwalker Back-End</title>
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../font/stylesheet.css">
+    <link rel="stylesheet" href="../css/aos.css" />
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+        
+</head>
+<body>
+<section style="overflow: hidden;">
+  <div class="main-div">
+    <div class="left-sidebar-main">
+      <div class="side-bar-left-main">
+        <div class="tw-logo">
+          <h4>Tekwalker</h4>
+        </div>
+        <div class="profile-main">
+          <div class="d-flex justify-content-center profile-sub">
+            <div class="profile-circle">
+              <img src="../img/follow.svg">
+            </div>
+            <h5>Zalak Bhanderi</h5>
+          </div>
+        </div>
+        <div class="home-button-side">
+          <div class="sidebar-button">
+            <ul>
+              <li><a href="../index11.html" class="sidebar-btnlink btn" role="button">Dashboard</a></li>
+              <li><a href="../html/search.html" class="sidebar-btnlink btn" role="button">Search Book</a></li>
+              <li><a href="../html/profile.html" class="sidebar-btnlink btn" role="button">Profile Management</a>
+                <ul class="sub-menu-btn">
+                  <li><a href="../html/profile.html" class="sidebar-btnlink btn" role="button">Company Users</a></li>
+                </ul>
+              </li>
+              <li><a href="../html/b2b.html" class="sidebar-btnlink btn" role="button">B2B Management</a></li>
+              <li><a href="../html/booking.html" class="sidebar-btnlink btn" role="button">Booking Management</a></li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="right-sidebar-main">
+      <div class="topbar-header">
+       <div class="container pl-0 pr-0">
+         <div class="row">
+           <div class="col-sm-12">
+            <div class="main-header">
+              <h4>Tekwalker</h4>
+              <button class="btn btn-main">Balance</button>
+              
+            </div>
+           </div>
+         </div>
+       </div>
+      </div>
+      <div class="content-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="">
+                <div class="searchbox-modify">
+                  <p>
+                    <button class="btn btn-modify" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                      <div class="d-flex justify-content-start" style="align-items: center;">
+                        <p class="mr-20">New Delhi <img src="../img/double-arrow.svg"> Mumbai</p>
+                        <p>Fri 14 Aug - Sun 16 Aug</p>
+                      </div>
+                      <h5><img src="../img/curriculum-vitae.svg">Modify</h5>
+                    </button>
+                  </p>
+                  <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                      <div class="">
+                        <form>
+                          <div class="form-row color-white">
+                            <div class="form-group col-md-4">
+                              <label for="inputEmail4">From</label>
+                              <input type="text" class="form-control flight-icon" placeholder="City or Airpot"></div>
+                            <div class="form-group col-md-4">
+                              <label for="inputPassword4">To</label>
+                              <input type="text" class="form-control location-icon" placeholder="Country, City or island">
+                            </div>
+                            <div class="form-group col-md-2">
+                              <label for="inputEmail4">During</label>
+                              <input type="date" class="form-control" id="inputEmail4">
+                            </div>
+                            <div class="form-group col-md-2">
+                              <label for="inputEmail4">During</label>
+                              <input type="date" class="form-control" id="inputEmail4">
+                            </div>
+                            <div class="form-group col-md-3">
+                              <div class="dropdown mr-1">
+                                  <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                                  0 adult
+                                  </button>
+                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                                  <a class="dropdown-item" href="#">Adult</a>
+                                  <a class="dropdown-item" href="#">children</a>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="form-group col-md-3">
+                              <div class="dropdown mr-1">
+                                  <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                                  Any Class
+                                  </button>
+                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                                  <a class="dropdown-item" href="#">Any Class</a>
+                                  <a class="dropdown-item" href="#">Economy</a>
+                                  <a class="dropdown-item" href="#">Primium Economy</a>
+                                  <a class="dropdown-item" href="#">First Class</a>
+                                  <a class="dropdown-item" href="#">Business</a>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="form-group col-md-3">
+                            <div class="dropdown mr-1">
+                                <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                                Payment Method
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                                <a class="dropdown-item" href="#">Visa</a>
+                                <a class="dropdown-item" href="#">MasterCard</a>
+                                <a class="dropdown-item" href="#">Prepaid MasterCard</a>
+                                <a class="dropdown-item" href="#">American Express</a>
+                                <a class="dropdown-item" href="#">Visa Debit</a>
+                                <a class="dropdown-item" href="#">MasterCard Debit</a>
+                                <a class="dropdown-item" href="#">PayPal</a>
+                                <a class="dropdown-item" href="#">Google Pay</a>
+                                <a class="dropdown-item" href="#">Phonepe</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-3">
+                          <div class="dropdown mr-1">
+                            <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                            Currency
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                            <a class="dropdown-item" href="#">INR</a>
+                            <a class="dropdown-item" href="#">USD</a>
+                            <a class="dropdown-item" href="#">EUR</a>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="form-group col-md-12 d-flex justify-content-center">
+                          <a href="../html/holiday.html" role="button" class="btn btn-find btn11"> Find</a>
+                        </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="holiday-book-btn holiday-book-btn1">
+                  <p><del>&#x20B9; 42000</del></p>
+                  <h2>&#x20B9; 38000</h2>
+                <a href="../html/holiday-pay.html" class="btn btn-find btn11" role="button">Book Now</a>
+              </div>
+                <div class="mb-50">
+                  <div class="row">
+                    <div class="col-md-10">
+                      <div class="">
+                        <div class="hotel-detail-view">
+                          <div class="swiper-container gallery-top">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide" style="background-image:url(../img/11.jpg)"></div>
+                              <div class="swiper-slide" style="background-image:url(../img/22.jpg)"></div>
+                              <div class="swiper-slide" style="background-image:url(../img/33.jpg)"></div>
+                              <div class="swiper-slide" style="background-image:url(../img/44.jpg)"></div>
+                              <div class="swiper-slide" style="background-image:url(../img/55.jpg)"></div>
+                              <div class="swiper-slide" style="background-image:url(../img/66.jpg)"></div>
+                              <div class="swiper-slide" style="background-image:url(../img/77.jpg)"></div>
+                              <div class="swiper-slide" style="background-image:url(../img/88.jpg)"></div>
+                            </div>
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                          </div>
+                          <div class="swiper-container gallery-thumbs">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide" style="background-image:url(../img/11.jpg)"></div>
+                              <div class="swiper-slide" style="background-image:url(../img/22.jpg)"></div>
+                              <div class="swiper-slide" style="background-image:url(../img/33.jpg)"></div>
+                              <div class="swiper-slide" style="background-image:url(../img/44.jpg)"></div>
+                              <div class="swiper-slide" style="background-image:url(../img/55.jpg)"></div>
+                              <div class="swiper-slide" style="background-image:url(../img/66.jpg)"></div>
+                              <div class="swiper-slide" style="background-image:url(../img/77.jpg)"></div>
+                              <div class="swiper-slide" style="background-image:url(../img/88.jpg)"></div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="hotel-detail-slider-sub">
+                          <h4>Family Fun Goa Fully Loaded</h4>
+                          <p><i class='fas fa-map-marker-alt'></i> Goa</p>
+                          <p>Transfers Included | North Goa Sightseeing | South Goa Sightseeing</p>
+                        </div>
+
+                        <div class="">
+                          <div class="hplan">
+                            <div class="tab">
+                              <button class="hplanlinks" onclick="openHolidayplan(event, 'holiday-plan')">Holiday Plan</button>
+                              <button class="hplanlinks" onclick="openHolidayplan(event, 'holiday-policy')">Policy</button>
+                            </div>
+                            <div id="holiday-plan" class="hplancontent search-active">
+                              <div class="hplan-sub-tab">
+                                <button class="sub-hplanlinks active" onclick="openHolidayplansub(event, 'h-plan1')">Day Plan</button>
+                                <button class="sub-hplanlinks" onclick="openHolidayplansub(event, 'h-plan2')">Flight <span>2</span></button>
+                                <button class="sub-hplanlinks" onclick="openHolidayplansub(event, 'h-plan3')">Hotel <span>2</span></button>
+                                <button class="sub-hplanlinks" onclick="openHolidayplansub(event, 'h-plan4')">Transfer <span>2</span></button>
+                                <button class="sub-hplanlinks" onclick="openHolidayplansub(event, 'h-plan5')">Activities <span>3</span></button>
+                              </div>
+                              <div id="h-plan1" class="sub-hplancontent search-active">
+                                <div class="holiday-plan-day1"></div>
+                                <h2>Day 1 - Arrival in Goa</h2>
+                                <div class="flight-route d-flex justify-content-between">
+                                  <div class="row" style="width: 100%; padding: 0px; margin: 0px;">
+                                    <div class="col-md-2 col-sm-3">
+                                      <div class="flight-name flight-name1">
+                                        <img src="../img/indigo.png">
+                                        <div class="flight-name-detail">
+                                          <p>IndiGo</p>
+                                          <small>6E-755</small>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                      <div class="flight-time">
+                                        <div class="">
+                                          <p>17:00</p>
+                                          <small>Mumbai</small>
+                                        </div>
+                                        <img src="../img/ll2.svg">
+                                        <div class="">
+                                          <p>20:00</p>
+                                          <small>New Delhi</small>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-3">
+                                      <div class="flight-hour">
+                                        <p>2h 30m </p>
+                                        <small class="color-blue">Non stop</small>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                      <div class="flight-price flight-price1 d-flex justify-content-end">
+                                        <a href="#" class="mr-20">Remove</a>
+                                        <a href="#">change</a>
+                                      </div>
+                                    </div>
+                                </div> 
+                              </div>
+                              <div class="holiday-route-line"></div>
+                              <div class="flight-route d-flex justify-content-between transfer-dayplan mt-0">
+                                <div class="row" style="width: 100%; padding: 0px; margin: 0px;">
+                                  <div class="col-sm-4">
+                                    <div class="flight-name">
+                                      <img src="../img/car1.png">
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-6">
+                                    <div class="car-specification">
+                                      <h4>Indica, Swift</h4>
+                                      <div class="card-line"></div>
+                                      <p class="mb-10">Airport to hotel in Goa</p>
+                                      <div class="d-flex justify-content-between">
+                                        <div class="mr-20">
+                                          <small>DURATION</small>
+                                          <p>1 hrs</p>
+                                        </div>
+                                        <div class="">
+                                          <small>INCLUDES</small>
+                                          <p>Airport Transfer (Airport to Hotel)</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  
+                                  <div class="col-sm-2">
+                                    <div class="flight-price flight-price1 d-flex justify-content-end">
+                                      <a href="#" class="mr-20">Remove</a>
+                                      <a href="#">change</a>
+                                    </div>
+                                  </div>
+                              </div> 
+                            </div>
+                            <div class="holiday-route-line"></div>
+                            <div class="hotel-detail-main mt-0 mb-0">
+                              <div class="hotel-detail">
+                                <div class="hotel-detail-img">
+                                  <img src="../img/11.jpg">
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                  <div class="hotel-detail-sub mb-10">
+                                    <h3>AMARA VACANZA GRAND INN</h3>
+                                    <span class="heading2">User Rating</span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    <p class="mt-10 mb-10"><i class='fas fa-map-marker-alt'></i>  Goa</p>
+                                    <div class="d-flex justify-content-between">
+                                      <div class="mr-20">
+                                        <small>DATE</small>
+                                        <p>Mon, 12 Oct 2020 - Fri, 16 Oct 2020</p>
+                                      </div>
+                                      <div class="">
+                                        <small>INCLUDES</small>
+                                        <p>Breakfast</p>
+                                      </div>
+                                    </div>
+                                   <div class="mt-10">
+                                    <small>ROOM TYPE</small>
+                                    <p>Amara primium holiday special</p>
+                                   </div>
+                                  </div>
+                                  <div class="hotel-detail-listing-price hotel-detail-listing-price1 hotel-detail-listing-price2">
+                                      <a href="#">change</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="holiday-route-line"></div>
+                            <div class="hotel-detail-main mt-0 mb-0">
+                              <div class="hotel-detail">
+                                <div class="hotel-detail-img">
+                                  <img src="../img/11.jpg">
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                  <div class="hotel-detail-sub mb-10">
+                                    <p>Activity in Goa</p>
+                                    <h3>Goa - Convenience Value Pack - TW</h3>
+                                    <p>Snacks in Car Goan Port Wine , 1 Wet Tissue Packet , 2 Chocolates, 2 Bottle of Water - Oceanic, 1 pack of Chewing gum, and Hand Sanitizer</p>
+                                    
+                                   <div class="mt-10">
+                                    <small>SUITABLE FOR</small>
+                                    <p>Adult, Child, Infant, Teens, Senior</p>
+                                   </div>
+                                  </div>
+                                  <div class="hotel-detail-listing-price hotel-detail-listing-price1 hotel-detail-listing-price3">
+                                      <a href="#" style="float: right;" class="mr-15">Remove</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="holiday-route-line"></div>
+                            <div class="holiday-endday">
+                              <div class="mr-20">
+                                <img src="../img/champagne-glass.svg">
+                                <a href="#">Add Activity</a>
+                              </div>
+                              <div class="">
+                                <p><b>End of day</b></p>
+                                <small>Spend time at leisure or add an activity</small>
+                              </div>
+                            </div>
+                
+                            <h2>Day 2</h2>
+                            <div class="holiday-plan-day2"></div>
+                            <div class="hotel-detail-main mb-0">
+                              <div class="hotel-detail">
+                                <div class="hotel-detail-img">
+                                  <img src="../img/11.jpg">
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                  <div class="hotel-detail-sub">
+                                    <p>Activity in Goa</p>
+                                    <h3>Goa - Convenience Value Pack - TW</h3>
+                                    <p>Snacks in Car Goan Port Wine , 1 Wet Tissue Packet , 2 Chocolates, 2 Bottle of Water - Oceanic, 1 pack of Chewing gum, and Hand Sanitizer</p>
+                                    
+                                   <div class="mt-10">
+                                    <small>SUITABLE FOR</small>
+                                    <p>Adult, Child, Infant, Teens, Senior</p>
+                                   </div>
+                                  </div>
+                                  <div class="hotel-detail-listing-price hotel-detail-listing-price1 hotel-detail-listing-price4">
+                                      <a href="#" style="float: right;" class="mr-15">Remove</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="holiday-route-line"></div>
+                            <div class="holiday-endday">
+                              <div class="mr-20">
+                                <img src="../img/champagne-glass.svg">
+                                <a href="#">Add Activity</a>
+                              </div>
+                              <div class="">
+                                <p><b>End of day</b></p>
+                                <small>Spend time at leisure or add an activity</small>
+                              </div>
+                            </div>
+                
+                            <h2>Day 3</h2>
+                            <div class="holiday-plan-day3"></div>
+                            <div class="hotel-detail-main mb-0">
+                              <div class="hotel-detail">
+                                <div class="hotel-detail-img">
+                                  <img src="../img/11.jpg">
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                  <div class="hotel-detail-sub mb-10">
+                                    <p>Activity in Goa</p>
+                                    <h3>Goa - Convenience Value Pack - TW</h3>
+                                    <p>Snacks in Car Goan Port Wine , 1 Wet Tissue Packet , 2 Chocolates, 2 Bottle of Water - Oceanic, 1 pack of Chewing gum, and Hand Sanitizer</p>
+                                    
+                                   <div class="mt-10">
+                                    <small>SUITABLE FOR</small>
+                                    <p>Adult, Child, Infant, Teens, Senior</p>
+                                   </div>
+                                  </div>
+                                  <div class="hotel-detail-listing-price hotel-detail-listing-price1 hotel-detail-listing-price5 ">
+                                      <a href="#" style="float: right;" class="mr-15">Remove</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="holiday-route-line"></div>
+                            <div class="holiday-endday">
+                              <div class="mr-20">
+                                <img src="../img/champagne-glass.svg">
+                                <a href="#">Add Activity</a>
+                              </div>
+                              <div class="">
+                                <p><b>End of day</b></p>
+                                <small>Spend time at leisure or add an activity</small>
+                              </div>
+                            </div>
+                
+                            <h2>Day 4</h2>
+                
+                            <div class="holiday-endday">
+                              <div class="mr-20">
+                                <img src="../img/champagne-glass.svg">
+                                <a href="#">Add Activity</a>
+                              </div>
+                              <div class="">
+                                <p><b>End of day</b></p>
+                                <small>Spend time at leisure or add an activity</small>
+                              </div>
+                            </div>
+                
+                
+                            <h2>Day 5</h2>
+                            <div class="holiday-plan-day5"></div>
+                            <div class="flight-route d-flex justify-content-between transfer-dayplan">
+                              <div class="row" style="width: 100%; padding: 0px; margin: 0px;">
+                                <div class="col-sm-4">
+                                  <div class="flight-name">
+                                    <img src="../img/car1.png">
+                                  </div>
+                                </div>
+                                <div class="col-sm-6">
+                                  <div class="car-specification">
+                                    <h4>Indica, Swift</h4>
+                                    <div class="card-line"></div>
+                                    <p class="mb-10">Airport to hotel in Goa</p>
+                                    <div class="d-flex justify-content-between">
+                                      <div class="mr-20">
+                                        <small>DURATION</small>
+                                        <p>1 hrs</p>
+                                      </div>
+                                      <div class="">
+                                        <small>INCLUDES</small>
+                                        <p>Airport Transfer (Airport to Hotel)</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                                <div class="col-sm-2">
+                                  <div class="flight-price flight-price1 d-flex justify-content-end">
+                                    <a href="#" class="mr-20">Remove</a>
+                                    <a href="#">change</a>
+                                  </div>
+                                </div>
+                            </div> 
+                          </div>
+                
+                          <div class="holiday-route-line"></div>
+                          <div class="flight-route d-flex justify-content-between mt-0">
+                            <div class="row" style="width: 100%; padding: 0px; margin: 0px;">
+                              <div class="col-md-2 col-sm-3">
+                                <div class="flight-name">
+                                  <img src="../img/indigo.png">
+                                  <div class="flight-name-detail">
+                                    <p>IndiGo</p>
+                                    <small>6E-755</small>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-4 col-sm-6">
+                                <div class="flight-time">
+                                  <div class="">
+                                    <p>17:00</p>
+                                    <small>Mumbai</small>
+                                  </div>
+                                  <img src="../img/ll2.svg">
+                                  <div class="">
+                                    <p>20:00</p>
+                                    <small>New Delhi</small>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-2 col-sm-3">
+                                <div class="flight-hour">
+                                  <p>2h 30m </p>
+                                  <small class="color-blue">Non stop</small>
+                                </div>
+                              </div>
+                              <div class="col-md-4">
+                                <div class="flight-price flight-price1 d-flex justify-content-end">
+                                  <a href="#" class="mr-20">Remove</a>
+                                  <a href="#">change</a>
+                                </div>
+                              </div>
+                          </div> 
+                        </div>
+                              
+                              </div>
+                              <div id="h-plan2" class="sub-hplancontent">
+                                <h2>Day 1 - Arrival in Goa</h2>
+                                <div class="flight-route d-flex justify-content-between">
+                                  <div class="row" style="width: 100%; padding: 0px; margin: 0px;">
+                                    <div class="col-sm-2">
+                                      <div class="flight-name flight-name1">
+                                        <img src="../img/indigo.png">
+                                        <div class="flight-name-detail">
+                                          <p>IndiGo</p>
+                                          <small>6E-755</small>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                      <div class="flight-time">
+                                        <div class="">
+                                          <p>17:00</p>
+                                          <small>Mumbai</small>
+                                        </div>
+                                        <img src="../img/ll2.svg">
+                                        <div class="">
+                                          <p>20:00</p>
+                                          <small>New Delhi</small>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-sm-2">
+                                      <div class="flight-hour">
+                                        <p>2h 30m </p>
+                                        <small>Non stop</small>
+                                      </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                      <div class="flight-price flight-price1 d-flex justify-content-end">
+                                        <a href="#" class="mr-20">Remove</a>
+                                        <a href="#">change</a>
+                                      </div>
+                                    </div>
+                                </div> 
+                              </div>
+                              <h2>Day 5 - Departure from Goa</h2>
+                              <div class="flight-route d-flex justify-content-between">
+                                <div class="row" style="width: 100%; padding: 0px; margin: 0px;">
+                                  <div class="col-sm-2">
+                                    <div class="flight-name flight-name1">
+                                      <img src="../img/indigo.png">
+                                      <div class="flight-name-detail">
+                                        <p>IndiGo</p>
+                                        <small>6E-755</small>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-4">
+                                    <div class="flight-time">
+                                      <div class="">
+                                        <p>17:00</p>
+                                        <small>Mumbai</small>
+                                      </div>
+                                      <img src="../img/ll2.svg">
+                                      <div class="">
+                                        <p>20:00</p>
+                                        <small>New Delhi</small>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-2">
+                                    <div class="flight-hour">
+                                      <p>2h 30m </p>
+                                      <small>Non stop</small>
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-4">
+                                    <div class="flight-price flight-price1 d-flex justify-content-end">
+                                      <a href="#" class="mr-20">Remove</a>
+                                      <a href="#">change</a>
+                                    </div>
+                                  </div>
+                              </div> 
+                            </div> 
+                              </div>
+                              <div id="h-plan3" class="sub-hplancontent">
+                                <h2>Day 1 - Goa</h2>
+                                <div class="hotel-detail-main">
+                                  <div class="hotel-detail">
+                                    <div class="hotel-detail-img">
+                                      <img src="../img/11.jpg">
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                      <div class="hotel-detail-sub">
+                                        <h3>AMARA VACANZA GRAND INN</h3>
+                                        <span class="heading2">User Rating</span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        <p class="mt-10 mb-10"><i class='fas fa-map-marker-alt'></i>  Goa</p>
+                                        <div class="d-flex justify-content-between">
+                                          <div class="mr-20">
+                                            <small>DATE</small>
+                                            <p>Mon, 12 Oct 2020 - Fri, 16 Oct 2020</p>
+                                          </div>
+                                          <div class="">
+                                            <small>INCLUDES</small>
+                                            <p>Breakfast</p>
+                                          </div>
+                                        </div>
+                                       <div class="mt-10">
+                                        <small>ROOM TYPE</small>
+                                        <p>Amara primium holiday special</p>
+                                       </div>
+                                      </div>
+                                      <div class="hotel-detail-listing-price hotel-detail-listing-price1 hotel-detail-listing-price6">
+                                          <a href="#">change</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <h2>Day 3 - Goa</h2>
+                                <div class="hotel-detail-main">
+                                  <div class="hotel-detail">
+                                    <div class="hotel-detail-img">
+                                      <img src="../img/11.jpg">
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                      <div class="hotel-detail-sub">
+                                        <h3>AMARA VACANZA GRAND INN</h3>
+                                        <span class="heading2">User Rating</span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        <p class="mt-10 mb-10"><i class='fas fa-map-marker-alt'></i>  Goa</p>
+                                        <div class="d-flex justify-content-between">
+                                          <div class="mr-20">
+                                            <small>DATE</small>
+                                            <p>Mon, 12 Oct 2020 - Fri, 16 Oct 2020</p>
+                                          </div>
+                                          <div class="">
+                                            <small>INCLUDES</small>
+                                            <p>Breakfast</p>
+                                          </div>
+                                        </div>
+                                       <div class="mt-10">
+                                        <small>ROOM TYPE</small>
+                                        <p>Amara primium holiday special</p>
+                                       </div>
+                                      </div>
+                                      <div class="hotel-detail-listing-price hotel-detail-listing-price1 hotel-detail-listing-price7">
+                                          <a href="#">change</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                
+                
+                              </div>
+                              <div id="h-plan4" class="sub-hplancontent">
+                                <h2>Day 1 - Goa</h2>
+                                <div class="flight-route d-flex justify-content-between transfer-dayplan">
+                                  <div class="row" style="width: 100%; padding: 0px; margin: 0px;">
+                                    <div class="col-sm-4">
+                                      <div class="flight-name">
+                                        <img src="../img/car1.png">
+                                      </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                      <div class="car-specification">
+                                        <h4>Indica, Swift</h4>
+                                        <div class="card-line"></div>
+                                        <p class="mb-10">Airport to hotel in Goa</p>
+                                        <div class="d-flex justify-content-between">
+                                          <div class="mr-20">
+                                            <small>DURATION</small>
+                                            <p>1 hrs</p>
+                                          </div>
+                                          <div class="">
+                                            <small>INCLUDES</small>
+                                            <p>Airport Transfer (Airport to Hotel)</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    
+                                    <div class="col-sm-2">
+                                      <div class="flight-price flight-price1 d-flex justify-content-end">
+                                        <a href="#" class="mr-20">Remove</a>
+                                        <a href="#">change</a>
+                                      </div>
+                                    </div>
+                                </div> 
+                              </div>
+                              <h2>Day 5 - Goa</h2>
+                              <div class="flight-route d-flex justify-content-between transfer-dayplan">
+                                <div class="row" style="width: 100%; padding: 0px; margin: 0px;">
+                                  <div class="col-sm-4">
+                                    <div class="flight-name">
+                                      <img src="../img/car1.png">
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-6">
+                                    <div class="car-specification">
+                                      <h4>Indica, Swift</h4>
+                                      <div class="card-line"></div>
+                                      <p class="mb-10">Airport to hotel in Goa</p>
+                                      <div class="d-flex justify-content-between">
+                                        <div class="mr-20">
+                                          <small>DURATION</small>
+                                          <p>1 hrs</p>
+                                        </div>
+                                        <div class="">
+                                          <small>INCLUDES</small>
+                                          <p>Airport Transfer (Airport to Hotel)</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  
+                                  <div class="col-sm-2">
+                                    <div class="flight-price flight-price1 d-flex justify-content-end">
+                                      <a href="#" class="mr-20">Remove</a>
+                                      <a href="#">change</a>
+                                    </div>
+                                  </div>
+                              </div> 
+                            </div>
+                
+                
+                              </div>
+                              <div id="h-plan5" class="sub-hplancontent">
+                                <h2>Day 1 - Goa</h2>
+                                <div class="hotel-detail-main">
+                                  <div class="hotel-detail">
+                                    <div class="hotel-detail-img">
+                                      <img src="../img/11.jpg">
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                      <div class="hotel-detail-sub">
+                                        <p>Activity in Goa</p>
+                                        <h3>Goa - Convenience Value Pack - TW</h3>
+                                        <p>Snacks in Car Goan Port Wine , 1 Wet Tissue Packet , 2 Chocolates, 2 Bottle of Water - Oceanic, 1 pack of Chewing gum, and Hand Sanitizer</p>
+                                        
+                                       <div class="mt-10">
+                                        <small>SUITABLE FOR</small>
+                                        <p>Adult, Child, Infant, Teens, Senior</p>
+                                       </div>
+                                      </div>
+                                      <div class="hotel-detail-listing-price hotel-detail-listing-price1 hotel-detail-listing-price8">
+                                          <a href="#" style="float: right;" class="mr-15">Remove</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <h2>Day 2 - Goa</h2>
+                                <div class="hotel-detail-main">
+                                  <div class="hotel-detail">
+                                    <div class="hotel-detail-img">
+                                      <img src="../img/11.jpg">
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                      <div class="hotel-detail-sub">
+                                        <p>Activity in Goa</p>
+                                        <h3>Goa - Convenience Value Pack - TW</h3>
+                                        <p class="mt-10">Snacks in Car Goan Port Wine , 1 Wet Tissue Packet , 2 Chocolates, 2 Bottle of Water - Oceanic, 1 pack of Chewing gum, and Hand Sanitizer</p>
+                                        
+                                       <div class="mt-10">
+                                        <small>SUITABLE FOR</small>
+                                        <p>Adult, Child, Infant, Teens, Senior</p>
+                                       </div>
+                                      </div>
+                                      <div class="hotel-detail-listing-price hotel-detail-listing-price1 hotel-detail-listing-price9">
+                                          <a href="#" style="float: right;" class="mr-15">Remove</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <h2>Day 3 - Goa</h2>
+                                <div class="hotel-detail-main">
+                                  <div class="hotel-detail">
+                                    <div class="hotel-detail-img">
+                                      <img src="../img/11.jpg">
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                      <div class="hotel-detail-sub">
+                                        <p>Activity in Goa</p>
+                                        <h3>Goa - Convenience Value Pack - TW</h3>
+                                        <p class="mt-10">Snacks in Car Goan Port Wine , 1 Wet Tissue Packet , 2 Chocolates, 2 Bottle of Water - Oceanic, 1 pack of Chewing gum, and Hand Sanitizer</p>
+                                        
+                                       <div class="mt-10">
+                                        <small>SUITABLE FOR</small>
+                                        <p>Adult, Child, Infant, Teens, Senior</p>
+                                       </div>
+                                      </div>
+                                      <div class="hotel-detail-listing-price hotel-detail-listing-price1 hotel-detail-listing-price10">
+                                          <a href="#" style="float: right;" class="mr-15">Remove</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                
+                              </div>
+                            </div>
+                            
+                            <div id="holiday-policy" class="hplancontent">
+                              <div class="hplancontent-policy">
+                                <h2>CANCELLATION & DATE CHANGE</h2>
+                                <p>How much will it cost to cancel or change the start date after making a booking?</p>
+                                <div class="d-flex justify-content-between dd-block-576">
+                                  <div class="">
+                                    <h2>CANCELLATION</h2>
+                                    <div class="d-flex justify-content-start">
+                                      <div class="hplancontent-policy-cancel mr-20">
+                                        <div class="hplancontent-policy-cancel-color">
+                                          <p>Before</p>
+                                          <p>17th Sep 2020</p>
+                                        </div>
+                                        <p><b>&#x20B9; 6500</b></p>
+                                        <small>Per Person</small><br>
+                                        <small>Cancellation fee</small>
+                                      </div>
+                                      <div class="hplancontent-policy-cancel">
+                                        <div class="hplancontent-policy-cancel-color">
+                                          <p>After</p>
+                                        <p>17th Sep 2020</p>
+                                        </div>
+                                        <p><b>Non Refundable</b></p>
+                                        <small>Cancellation is not allowed.</small>
+                                      </div>
+                                    </div>
+                                    <div class="mt-20">
+                                      <ul>
+                                        <li>These are non-refundable amounts as per the current components attached. In the case of component change/modifications, the policy will change accordingly.</li>
+                                        <li>Please check the exact cancellation and date change policy on the review page before proceeding further.</li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                  <div class="">
+                                    <h2>DATE CHANGE</h2>
+                                    <div class="d-flex justify-content-start">
+                                      <div class="hplancontent-policy-cancel mr-20">
+                                        <div class="hplancontent-policy-cancel-color">
+                                          <p>Before</p>
+                                          <p>17th Sep 2020</p>
+                                        </div>
+                                        <p><b>&#x20B9; 6500</b></p>
+                                        <small>Per Person</small><br>
+                                        <small>Date Change Fee. Fare Difference will be extra.</small>
+                                      </div>
+                                      <div class="hplancontent-policy-cancel">
+                                        <div class="hplancontent-policy-cancel-color">
+                                          <p>After</p>
+                                        <p>17th Sep 2020</p>
+                                        </div>
+                                        <p><b>Non Refundable</b></p>
+                                        <small>Date Change is not allowed.</small>
+                                      </div>
+                                    </div>
+                                    <div class="mt-20">
+                                      <ul>
+                                        <li>These are non-refundable amounts as per the current components attached. In the case of component change/modifications, the policy will change accordingly.</li>
+                                        <li>Please check the exact cancellation and date change policy on the review page before proceeding further.</li>
+                                        <li>Date Change fees don't include any fare change in the components on the new date. Fare difference as applicable will be charged separately.</li>
+                                        <li>Date Change will depend on the availability of the components on the new requested date.</li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="holiday-policy-Exclusions">
+                                  <p><b>Exclusions</b></p>
+                                  <ul>
+                                    <li>Package price does not include Gala dinner charges applicable on Christmas and New Year's Eve</li>
+                                    <li>Before proceeding to payment stage, please do review your package inclusions to confirm that all activities/transfers/sightseeing have been added as per the package and as required by you. Only the add-ons that are captured in the package can be delivered to you, so do ensure that nothing is missed. </li>
+                                  </ul>
+                                  <p><b>Terms and Conditions</b></p>
+                                  <ul>
+                                    <li>If your flights involve a combination of different airlines, you may have to collect your luggage on arrival at the connecting hub and register it again while checking in for the onward journey to your destination.</li>
+                                    <li>Booking rates are subject to change without prior notice.</li>
+                                    <li>Pricing of the booking is based on the age of the passengers. Please make sure you enter the correct age of passengers at the time of booking. Passengers furnishing incorrect age details may incur penalty at the time of travelling.</li>
+                                    <li>Airline seats and hotel rooms are subject to availability at the time of booking.</li>
+                                    <li>In case of unavailability in the listed hotels, arrangement for an alternate accommodation will be made in a hotel of similar standard.</li>
+                                    <li>A maximum of 3 adults are allowed in one room. The third occupant shall be provided a mattress/rollaway bed.</li>
+                                    <li>The itinerary is fixed and cannot be modified. Transportation shall be provided as per the itinerary and will not be at disposal.</li>
+                                    <li>All transfers and sightseeing shall be provided by an exclusive vehicle unless otherwise specified.</li>
+                                    <li>Due to operational reasons, the routing of this tour may be amended. However, all mentioned services will remain unchanged.</li>
+                                    <li>TW reserves the right to modify the itinerary at any point, due to reasons including but not limited to: Force Majeure events, strikes, fairs, festivals, weather conditions, traffic problems, overbooking of hotels / flights, cancellation / re-routing of flights, closure of / entry restrictions at a place of visit, etc. While we will do our best to make suitable alternate arrangements, we would not be held liable for any refunds/compensation claims arising out of this.</li>
+                                    <li>The booking price does not include:
+                                      <ul>
+                                        <li>Expenses of personal nature, such as laundry, telephone calls, room service, alcoholic beverages, mini bar charges, tips, portage, camera fees etc.</li>
+                                        <li>Any meals and services not specifically mentioned in the inclusions.</li>
+                                        <li>Any other items not mentioned under ?Inclusions? are not included in the cost of the booking.</li>
+                                      </ul>
+                                    </li>
+                                    <li>Cost of deviation and cost of extension of the validity on your ticket is not included.</li>
+                                    <li>For queries regarding cancellations and refunds, please refer to our Cancellation Policy.</li>
+                                    <li>Disputes, if any, shall be subject to the exclusive jurisdiction of the courts in New Delhi.</li>
+                                    <li>Package price does not include Gala dinner charges applicable on Christmas and New Year's Eve</li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+
+              
+
+            </div>
+          </div>
+        </div>
+      
+     
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/popper.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/swiper.min.js"></script>
+<script>
+  var galleryThumbs = new Swiper('.gallery-thumbs', {
+    spaceBetween: 10,
+    slidesPerView: 6,
+    loop: true,
+    freeMode: true,
+    slideToClickedSlide: true,
+    loopedSlides: 5, //looped slides should be the same
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+    breakpoints: {
+    1100: {       
+         slidesPerView: 5,   
+      },
+    768:{
+      slidesPerView: 4, 
+    },
+    576:{
+      slidesPerView: 3, 
+    },
+    }
+  });
+  var galleryTop = new Swiper('.gallery-top', {
+    spaceBetween: 10,
+    centeredSlides: true,
+    loop: true,
+    loopedSlides: 5, //looped slides should be the same
+    slideToClickedSlide: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    thumbs: {
+      swiper: galleryThumbs,
+    },
+  });
+</script>
+
+<script>
+  function openHolidayplan(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("hplancontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+      tabcontent[i].className = tabcontent[i].className.replace("search-active", "");
+    }
+    tablinks = document.getElementsByClassName("hplanlinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+  </script>
+
+<script>
+  function openHolidayplansub(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("sub-hplancontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+      tabcontent[i].className = tabcontent[i].className.replace("search-active", "");
+    }
+    tablinks = document.getElementsByClassName("sub-hplanlinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+  </script>
+
+
+</html>

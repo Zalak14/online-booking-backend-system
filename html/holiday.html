@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tekwalker Back-End</title>
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../font/stylesheet.css">
+    <link rel="stylesheet" href="../css/aos.css" />
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+        
+</head>
+<body>
+<section style="overflow: hidden;">
+  <div class="main-div">
+    <div class="left-sidebar-main">
+      <div class="side-bar-left-main">
+        <div class="tw-logo">
+          <h4>Tekwalker</h4>
+        </div>
+        <div class="profile-main">
+          <div class="d-flex justify-content-center profile-sub">
+            <div class="profile-circle">
+              <img src="../img/follow.svg">
+            </div>
+            <h5>Zalak Bhanderi</h5>
+          </div>
+        </div>
+        <div class="home-button-side">
+          <div class="sidebar-button">
+            <ul>
+              <li><a href="../index11.html" class="sidebar-btnlink btn" role="button">Dashboard</a></li>
+              <li><a href="../html/search.html" class="sidebar-btnlink btn" role="button">Search Book</a></li>
+              <li><a href="../html/profile.html" class="sidebar-btnlink btn" role="button">Profile Management</a>
+                <ul class="sub-menu-btn">
+                  <li><a href="../html/profile.html" class="sidebar-btnlink btn" role="button">Company Users</a></li>
+                </ul>
+              </li>
+              <li><a href="../html/b2b.html" class="sidebar-btnlink btn" role="button">B2B Management</a></li>
+              <li><a href="../html/booking.html" class="sidebar-btnlink btn" role="button">Booking Management</a></li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="right-sidebar-main">
+      <div class="topbar-header">
+       <div class="container pl-0 pr-0">
+         <div class="row">
+           <div class="col-sm-12">
+            <div class="main-header">
+              <h4>Tekwalker</h4>
+              <button class="btn btn-main">Balance</button>
+              
+            </div>
+           </div>
+         </div>
+       </div>
+      </div>
+      <div class="content-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+             <div class="">
+                <div class="searchbox-modify">
+                  <p>
+                    <button class="btn btn-modify" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                      <div class="d-flex justify-content-start" style="align-items: center;">
+                        <p class="mr-20">New Delhi <img src="../img/double-arrow.svg"> Mumbai</p>
+                        <p>Fri 14 Aug - Sun 16 Aug</p>
+                      </div>
+                      <h5><img src="../img/curriculum-vitae.svg">Modify</h5>
+                    </button>
+                  </p>
+                  <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                      <div class="">
+                        <form>
+                          <div class="form-row color-white">
+                            <div class="form-group col-md-4">
+                              <label for="inputEmail4">From</label>
+                              <input type="text" class="form-control flight-icon" placeholder="City or Airpot"></div>
+                            <div class="form-group col-md-4">
+                              <label for="inputPassword4">To</label>
+                              <input type="text" class="form-control location-icon" placeholder="Country, City or island">
+                            </div>
+                            <div class="form-group col-md-2">
+                              <label for="inputEmail4">During</label>
+                              <input type="date" class="form-control" id="inputEmail4">
+                            </div>
+                            <div class="form-group col-md-2">
+                              <label for="inputEmail4">During</label>
+                              <input type="date" class="form-control" id="inputEmail4">
+                            </div>
+                            <div class="form-group col-md-3">
+                              <div class="dropdown mr-1">
+                                  <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                                  0 adult
+                                  </button>
+                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                                  <a class="dropdown-item" href="#">Adult</a>
+                                  <a class="dropdown-item" href="#">children</a>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="form-group col-md-3">
+                              <div class="dropdown mr-1">
+                                  <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                                  Any Class
+                                  </button>
+                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                                  <a class="dropdown-item" href="#">Any Class</a>
+                                  <a class="dropdown-item" href="#">Economy</a>
+                                  <a class="dropdown-item" href="#">Primium Economy</a>
+                                  <a class="dropdown-item" href="#">First Class</a>
+                                  <a class="dropdown-item" href="#">Business</a>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="form-group col-md-3">
+                            <div class="dropdown mr-1">
+                                <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                                Payment Method
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                                <a class="dropdown-item" href="#">Visa</a>
+                                <a class="dropdown-item" href="#">MasterCard</a>
+                                <a class="dropdown-item" href="#">Prepaid MasterCard</a>
+                                <a class="dropdown-item" href="#">American Express</a>
+                                <a class="dropdown-item" href="#">Visa Debit</a>
+                                <a class="dropdown-item" href="#">MasterCard Debit</a>
+                                <a class="dropdown-item" href="#">PayPal</a>
+                                <a class="dropdown-item" href="#">Google Pay</a>
+                                <a class="dropdown-item" href="#">Phonepe</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-3">
+                          <div class="dropdown mr-1">
+                            <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                            Currency
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                            <a class="dropdown-item" href="#">INR</a>
+                            <a class="dropdown-item" href="#">USD</a>
+                            <a class="dropdown-item" href="#">EUR</a>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="form-group col-md-12 d-flex justify-content-center">
+                          <a href="../html/holiday.html" role="button" class="btn btn-find btn11"> Find</a>
+                        </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <div class="pg-main pg-main1 pg-main2">
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <div class="pg-slider">
+                                <div class="swiper-container getaways-slider1">
+                                  <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                      <div class="swiper-slide">
+                                        <div class="card" style="width: 13rem;">
+                                          <img src="../img/22.jpg" class="card-img-top" alt="...">
+                                          <div class="card-body">
+                                            <h5 class="card-title card-title1">All Package</h5>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                      <div class="swiper-slide">
+                                        <div class="card" style="width: 13rem;">
+                                          <img src="../img/11.jpg" class="card-img-top" alt="...">
+                                          <div class="card-body">
+                                            <h5 class="card-title card-title1">Family Special Holiday</h5>
+                                          </div>
+                                          
+                                          
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                      <div class="swiper-slide">
+                                        <div class="card" style="width: 13rem;">
+                                          <img src="../img/33.jpg" class="card-img-top" alt="...">
+                                          <div class="card-body">
+                                            <h5 class="card-title card-title1">Luxury</h5>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                      <div class="swiper-slide">
+                                        <div class="card" style="width: 13rem;">
+                                          <img src="../img/44.jpg" class="card-img-top" alt="...">
+                                          <div class="card-body">
+                                            <h5 class="card-title card-title1">Couple Package</h5>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                      <div class="swiper-slide">
+                                        <div class="card" style="width: 13rem;">
+                                          <img src="../img/55.jpg" class="card-img-top" alt="...">
+                                          <div class="card-body">
+                                            <h5 class="card-title card-title1">Soulmate Special</h5>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                      <div class="swiper-slide">
+                                        <div class="card" style="width: 13rem;">
+                                          <img src="../img/66.jpg" class="card-img-top" alt="...">
+                                          <div class="card-body">
+                                            <h5 class="card-title card-title1">Nature</h5>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                      <div class="swiper-slide">
+                                        <div class="card" style="width: 13rem;">
+                                          <img src="../img/77.jpg" class="card-img-top" alt="...">
+                                          <div class="card-body">
+                                            <h5 class="card-title card-title1">Adventure</h5>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                      <div class="swiper-slide">
+                                        <div class="card" style="width: 13rem;">
+                                          <img src="../img/88.jpg" class="card-img-top" alt="...">
+                                          <div class="card-body">
+                                            <h5 class="card-title card-title1">Flight & Hotel</h5>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div> 
+                                  <!-- Add Arrows -->
+                                  <div class="swiper-button-next"></div>
+                                  <div class="swiper-button-prev"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="">
+                  <div class="hotel-detail-main">
+                    <div class="hotel-detail">
+                      <div class="hotel-detail-img">
+                        <img src="../img/11.jpg">
+                      </div>
+                      <div class="d-flex justify-content-between dd-block">
+                        <div class="hotel-detail-sub">
+                          <h3>Family Fun Goa Fully Loaded</h3>
+                          <span class="heading2">3 Night 4 Days</span>
+                          <p class="mt-10 mb-10"><i class='fas fa-map-marker-alt'></i>  Goa</p>
+                          <p>Included at this price</p>
+                          <ul>
+                            <li class="couple">Flights</li>
+                            <li class="parking">Hotels</li>
+                            <li class="wifi">Activity</li>
+                            <li class="restaurant">Transfer</li>
+                          </ul>
+                          
+                          <p class="mt-10 color-pink">Candle Light Dinner for Couple</p>
+                          <p class="mt-10 color-pink">North Goa Sightseeing</p>
+                        </div>
+                        <div class="hotel-detail-listing-price hotel-detail-listing-price1">
+                        <img src="../img/discount2.svg">
+                        <small style="color: red;">Save &#x20B9; 1000</small>
+                        <h4 class="heading1"><del>&#x20B9; 6600</del></h4>
+                        <h4 class="heading">&#x20B9; 5600</h4>
+                        <small>Per Night</small><br>
+                        <a href="../html/holiday-detail.html" class="btn btn-find" role="button">Book Now</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hotel-detail-main">
+                    <div class="hotel-detail">
+                      <div class="hotel-detail-img">
+                        <img src="../img/11.jpg">
+                      </div>
+                      <div class="d-flex justify-content-between dd-block">
+                        <div class="hotel-detail-sub">
+                          <h3>Family Fun Goa Fully Loaded</h3>
+                          <span class="heading2">3 Night 4 Days</span>
+                          <p class="mt-10 mb-10"><i class='fas fa-map-marker-alt'></i>  Goa</p>
+                          <p>Included at this price</p>
+                          <ul>
+                            <li class="couple">Flights</li>
+                            <li class="parking">Hotels</li>
+                            <li class="wifi">Activity</li>
+                            <li class="restaurant">Transfer</li>
+                          </ul>
+                          
+                          <p class="mt-10 color-pink">Candle Light Dinner for Couple</p>
+                          <p class="mt-10 color-pink">North Goa Sightseeing</p>
+                        </div>
+                        <div class="hotel-detail-listing-price hotel-detail-listing-price1">
+                        <img src="../img/discount2.svg">
+                        <small style="color: red;">Save &#x20B9; 1000</small>
+                        <h4 class="heading1"><del>&#x20B9; 6600</del></h4>
+                        <h4 class="heading">&#x20B9; 5600</h4>
+                        <small>Per Night</small><br>
+                        <a href="../html/holiday-detail.html" class="btn btn-find" role="button">Book Now</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hotel-detail-main">
+                    <div class="hotel-detail">
+                      <div class="hotel-detail-img">
+                        <img src="../img/11.jpg">
+                      </div>
+                      <div class="d-flex justify-content-between dd-block">
+                        <div class="hotel-detail-sub">
+                          <h3>Family Fun Goa Fully Loaded</h3>
+                          <span class="heading2">3 Night 4 Days</span>
+                          <p class="mt-10 mb-10"><i class='fas fa-map-marker-alt'></i>  Goa</p>
+                          <p>Included at this price</p>
+                          <ul>
+                            <li class="couple">Flights</li>
+                            <li class="parking">Hotels</li>
+                            <li class="wifi">Activity</li>
+                            <li class="restaurant">Transfer</li>
+                          </ul>
+                          
+                          <p class="mt-10 color-pink">Candle Light Dinner for Couple</p>
+                          <p class="mt-10 color-pink">North Goa Sightseeing</p>
+                        </div>
+                        <div class="hotel-detail-listing-price hotel-detail-listing-price1">
+                        <img src="../img/discount2.svg">
+                        <small style="color: red;">Save &#x20B9; 1000</small>
+                        <h4 class="heading1"><del>&#x20B9; 6600</del></h4>
+                        <h4 class="heading">&#x20B9; 5600</h4>
+                        <small>Per Night</small><br>
+                        <a href="../html/holiday-detail.html" class="btn btn-find" role="button">Book Now</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hotel-detail-main">
+                    <div class="hotel-detail">
+                      <div class="hotel-detail-img">
+                        <img src="../img/11.jpg">
+                      </div>
+                      <div class="d-flex justify-content-between dd-block">
+                        <div class="hotel-detail-sub">
+                          <h3>Family Fun Goa Fully Loaded</h3>
+                          <span class="heading2">3 Night 4 Days</span>
+                          <p class="mt-10 mb-10"><i class='fas fa-map-marker-alt'></i>  Goa</p>
+                          <p>Included at this price</p>
+                          <ul>
+                            <li class="couple">Flights</li>
+                            <li class="parking">Hotels</li>
+                            <li class="wifi">Activity</li>
+                            <li class="restaurant">Transfer</li>
+                          </ul>
+                          
+                          <p class="mt-10 color-pink">Candle Light Dinner for Couple</p>
+                          <p class="mt-10 color-pink">North Goa Sightseeing</p>
+                        </div>
+                        <div class="hotel-detail-listing-price hotel-detail-listing-price1">
+                        <img src="../img/discount2.svg">
+                        <small style="color: red;">Save &#x20B9; 1000</small>
+                        <h4 class="heading1"><del>&#x20B9; 6600</del></h4>
+                        <h4 class="heading">&#x20B9; 5600</h4>
+                        <small>Per Night</small><br>
+                        <a href="../html/holiday-detail.html" class="btn btn-find" role="button">Book Now</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hotel-detail-main">
+                    <div class="hotel-detail">
+                      <div class="hotel-detail-img">
+                        <img src="../img/11.jpg">
+                      </div>
+                      <div class="d-flex justify-content-between dd-block">
+                        <div class="hotel-detail-sub">
+                          <h3>Family Fun Goa Fully Loaded</h3>
+                          <span class="heading2">3 Night 4 Days</span>
+                          <p class="mt-10 mb-10"><i class='fas fa-map-marker-alt'></i>  Goa</p>
+                          <p>Included at this price</p>
+                          <ul>
+                            <li class="couple">Flights</li>
+                            <li class="parking">Hotels</li>
+                            <li class="wifi">Activity</li>
+                            <li class="restaurant">Transfer</li>
+                          </ul>
+                          
+                          <p class="mt-10 color-pink">Candle Light Dinner for Couple</p>
+                          <p class="mt-10 color-pink">North Goa Sightseeing</p>
+                        </div>
+                        <div class="hotel-detail-listing-price hotel-detail-listing-price1">
+                        <img src="../img/discount2.svg">
+                        <small style="color: red;">Save &#x20B9; 1000</small>
+                        <h4 class="heading1"><del>&#x20B9; 6600</del></h4>
+                        <h4 class="heading">&#x20B9; 5600</h4>
+                        <small>Per Night</small><br>
+                        <a href="../html/holiday-detail.html" class="btn btn-find" role="button">Book Now</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="mb-50"></div>
+                </div>
+
+             </div>
+          
+
+              
+
+            </div>
+          </div>
+        </div>
+      
+     
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/popper.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/swiper.min.js"></script>
+<script>
+  var swiper = new Swiper('.getaways-slider1', {
+    slidesPerView: 5,
+    spaceBetween: 30,
+    slidesPerGroup: 5,
+    loop: true,
+    
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+    1100: {       
+         slidesPerView: 4,
+         spaceBetween: 10,
+         slidesPerGroup: 4,     
+      },
+      730: {       
+         slidesPerView: 3,
+         spaceBetween: 10,
+         slidesPerGroup: 3,     
+      },
+      500: {       
+         slidesPerView: 2,
+         spaceBetween: 10,
+         slidesPerGroup: 2,    
+      },
+      400: {       
+         slidesPerView: 1,
+         spaceBetween: 10,
+         slidesPerGroup: 1,     
+      },
+    }
+  });
+</script>
+
+
+</html>

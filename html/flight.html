@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tekwalker Back-End</title>
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../font/stylesheet.css">
+    <link rel="stylesheet" href="../css/aos.css" />
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+        
+</head>
+<body>
+<section style="overflow: hidden;">
+  <div class="main-div">
+    <div class="left-sidebar-main">
+      <div class="side-bar-left-main">
+        <div class="tw-logo">
+          <h4>Tekwalker</h4>
+        </div>
+        <div class="profile-main">
+          <div class="d-flex justify-content-center profile-sub">
+            <div class="profile-circle">
+              <img src="../img/follow.svg">
+            </div>
+            <h5>Zalak Bhanderi</h5>
+          </div>
+        </div>
+        <div class="home-button-side">
+          <div class="sidebar-button">
+            <ul>
+              <li><a href="../index11.html" class="sidebar-btnlink btn" role="button">Dashboard</a></li>
+              <li><a href="../html/search.html" class="sidebar-btnlink btn" role="button">Search Book</a></li>
+              <li><a href="../html/profile.html" class="sidebar-btnlink btn" role="button">Profile Management</a>
+                <ul class="sub-menu-btn">
+                  <li><a href="../html/profile.html" class="sidebar-btnlink btn" role="button">Company Users</a></li>
+                </ul>
+              </li>
+              <li><a href="../html/b2b.html" class="sidebar-btnlink btn" role="button">B2B Management</a></li>
+              <li><a href="../html/booking.html" class="sidebar-btnlink btn" role="button">Booking Management</a></li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="right-sidebar-main">
+      <div class="topbar-header">
+       <div class="container pl-0 pr-0">
+         <div class="row">
+           <div class="col-sm-12">
+            <div class="main-header">
+              <h4>Tekwalker</h4>
+              <button class="btn btn-main">Balance</button>
+              
+            </div>
+           </div>
+         </div>
+       </div>
+      </div>
+      <div class="content-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+             <div class="">
+              <div class="searchbox-modify">
+                <p>
+                  <button class="btn btn-modify" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    <div class="d-flex justify-content-start" style="align-items: center;">
+                      <p class="mr-20">New Delhi <img src="../img/double-arrow.svg"> Mumbai</p>
+                      <p>Fri 14 Aug - Sun 16 Aug</p>
+                    </div>
+                    <h5><img src="../img/curriculum-vitae.svg">Modify</h5>
+                  </button>
+                </p>
+                <div class="collapse" id="collapseExample">
+                  <div class="card card-body">
+                    <div class="">
+                      <div class="tab-book1 tab-book2">
+                        <button class="tablinks-book1 active color-black" onclick="openBook1(event, 'one-way')">One-way</button>
+                        <button class="tablinks-book1 color-black" onclick="openBook1(event, 'return')">Return</button>
+                        <button class="tablinks-book1 color-black" onclick="openBook1(event, 'multicity')">Multicity</button>
+                      </div>
+
+                      <div id="one-way" class="tabcontent-book1 active-flight">
+                        <form>
+                          <div class="form-row">
+                            <div class="form-group col-md-4">
+                              <label for="inputEmail4">From</label>
+                              <input type="text" class="form-control flight-icon" placeholder="City or Airpot"></div>
+                            <div class="form-group col-md-4">
+                              <label for="inputPassword4">To</label>
+                              <input type="text" class="form-control location-icon" placeholder="Country, City or island">
+                            </div>
+                            <div class="form-group col-md-4">
+                              <label for="inputEmail4">Leaving on</label>
+                              <input type="date" class="form-control" id="inputEmail4">
+                            </div>
+                            <div class="form-group col-md-3">
+                              <div class="dropdown mr-1">
+                                  <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                                  0 adult
+                                  </button>
+                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                                  <a class="dropdown-item" href="#">Adult</a>
+                                  <a class="dropdown-item" href="#">children</a>
+                                  </div>
+                              </div>
+                           </div>
+                           <div class="form-group col-md-3">
+                              <div class="dropdown mr-1">
+                                  <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                                  Any Class
+                                  </button>
+                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                                  <a class="dropdown-item" href="#">Any Class</a>
+                                  <a class="dropdown-item" href="#">Economy</a>
+                                  <a class="dropdown-item" href="#">Premium Economy</a>
+                                  <a class="dropdown-item" href="#">First Class</a>
+                                  <a class="dropdown-item" href="#">Business</a>
+                                  </div>
+                              </div>
+                           </div>
+                           <div class="form-group col-md-3">
+                            <div class="dropdown mr-1">
+                                <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                                Payment Method
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                                <a class="dropdown-item" href="#">Visa</a>
+                                <a class="dropdown-item" href="#">MasterCard</a>
+                                <a class="dropdown-item" href="#">Prepaid MasterCard</a>
+                                <a class="dropdown-item" href="#">American Express</a>
+                                <a class="dropdown-item" href="#">Visa Debit</a>
+                                <a class="dropdown-item" href="#">MasterCard Debit</a>
+                                <a class="dropdown-item" href="#">PayPal</a>
+                                <a class="dropdown-item" href="#">Google Pay</a>
+                                <a class="dropdown-item" href="#">Phonepe</a>
+                                </div>
+                            </div>
+                         </div>
+                         <div class="form-group col-md-3">
+                          <div class="dropdown mr-1">
+                            <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                            Currency
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                            <a class="dropdown-item" href="#">INR</a>
+                            <a class="dropdown-item" href="#">USD</a>
+                            <a class="dropdown-item" href="#">EUR</a>
+                            </div>
+                        </div>
+                         </div>
+                         <div class="form-group col-md-12 d-flex justify-content-center">
+                           <a class="btn btn-find btn11" href="../html/flight.html" role="button">Find </a>
+                        </div>
+                          </div>
+                        </form>
+                      </div>
+  
+                      <div id="return" class="tabcontent-book1">
+                        <form>
+                          <div class="form-row">
+                            <div class="form-group col-md-4">
+                              <label for="inputEmail4">From</label>
+                              <input type="text" class="form-control flight-icon" placeholder="City or Airpot"></div>
+                            <div class="form-group col-md-4">
+                              <label for="inputPassword4">To</label>
+                              <input type="text" class="form-control location-icon" placeholder="Country, City or island">
+                            </div>
+                            <div class="form-group col-md-2">
+                              <label for="inputEmail4">Leaving on</label>
+                              <input type="date" class="form-control" id="inputEmail4">
+                            </div>
+                            <div class="form-group col-md-2">
+                              <label for="inputEmail4">Returning on</label>
+                              <input type="date" class="form-control" id="inputEmail4">
+                            </div>
+                            
+                            <div class="form-group col-md-3">
+                              <div class="dropdown mr-1">
+                                  <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                                  0 adult
+                                  </button>
+                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                                  <a class="dropdown-item" href="#">Adult</a>
+                                  <a class="dropdown-item" href="#">children</a>
+                                  </div>
+                              </div>
+                           </div>
+                           <div class="form-group col-md-3">
+                              <div class="dropdown mr-1">
+                                  <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                                  Any Class
+                                  </button>
+                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                                  <a class="dropdown-item" href="#">Any Class</a>
+                                  <a class="dropdown-item" href="#">Economy</a>
+                                  <a class="dropdown-item" href="#">Premium Economy</a>
+                                  <a class="dropdown-item" href="#">First Class</a>
+                                  <a class="dropdown-item" href="#">Business</a>
+                                  </div>
+                              </div>
+                           </div>
+                           <div class="form-group col-md-3">
+                            <div class="dropdown mr-1">
+                                <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                                Payment Method
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                                <a class="dropdown-item" href="#">Visa</a>
+                                <a class="dropdown-item" href="#">MasterCard</a>
+                                <a class="dropdown-item" href="#">Prepaid MasterCard</a>
+                                <a class="dropdown-item" href="#">American Express</a>
+                                <a class="dropdown-item" href="#">Visa Debit</a>
+                                <a class="dropdown-item" href="#">MasterCard Debit</a>
+                                <a class="dropdown-item" href="#">PayPal</a>
+                                <a class="dropdown-item" href="#">Google Pay</a>
+                                <a class="dropdown-item" href="#">Phonepe</a>
+                                </div>
+                            </div>
+                         </div>
+                         <div class="form-group col-md-3">
+                          <div class="dropdown mr-1">
+                            <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                            Currency
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                            <a class="dropdown-item" href="#">INR</a>
+                            <a class="dropdown-item" href="#">USD</a>
+                            <a class="dropdown-item" href="#">EUR</a>
+                            </div>
+                        </div>
+                         </div>
+                         <div class="form-group col-md-12 d-flex justify-content-center">
+                           <a href="../html/flight.html" role="button" class="btn btn-find btn11"> Find</a>
+                        </div>
+                          </div>
+                        </form> 
+                      </div>
+  
+                      <div id="multicity" class="tabcontent-book1">
+                        <form>
+                          <div class="form-row">
+                            <div class="form-group col-md-4">
+                              <label for="inputEmail4">From</label>
+                              <input type="text" class="form-control flight-icon" placeholder="City or Airpot"></div>
+                            <div class="form-group col-md-4">
+                              <label for="inputPassword4">To</label>
+                              <input type="text" class="form-control location-icon" placeholder="Country, City or island">
+                            </div>
+                            <div class="form-group col-md-4">
+                              <label for="inputEmail4">Date</label>
+                              <input type="date" class="form-control" id="inputEmail4">
+                            </div>
+                        
+                            <div class="form-group col-md-4">
+                              <label for="inputEmail4">From</label>
+                              <input type="text" class="form-control flight-icon" placeholder="City or Airpot"></div>
+                            <div class="form-group col-md-4">
+                              <label for="inputPassword4">To</label>
+                              <input type="text" class="form-control location-icon" placeholder="Country, City or island">
+                            </div>
+                            <div class="form-group col-md-4">
+                              <label for="inputEmail4">Date</label>
+                              <input type="date" class="form-control" id="inputEmail4">
+                            </div>
+                            
+          
+                            <div class="form-group col-md-3">
+                              <div class="dropdown mr-1">
+                                  <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                                  0 adult
+                                  </button>
+                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                                  <a class="dropdown-item" href="#">Adult</a>
+                                  <a class="dropdown-item" href="#">children</a>
+                                  </div>
+                              </div>
+                           </div>
+                           <div class="form-group col-md-3">
+                              <div class="dropdown mr-1">
+                                  <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                                  Any Class
+                                  </button>
+                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                                  <a class="dropdown-item" href="#">Any Class</a>
+                                  <a class="dropdown-item" href="#">Economy</a>
+                                  <a class="dropdown-item" href="#">Premium Economy</a>
+                                  <a class="dropdown-item" href="#">First Class</a>
+                                  <a class="dropdown-item" href="#">Business</a>
+                                  </div>
+                              </div>
+                           </div>
+                           <div class="form-group col-md-3">
+                            <div class="dropdown mr-1">
+                                <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                                Payment Method
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                                <a class="dropdown-item" href="#">Visa</a>
+                                <a class="dropdown-item" href="#">MasterCard</a>
+                                <a class="dropdown-item" href="#">Prepaid MasterCard</a>
+                                <a class="dropdown-item" href="#">American Express</a>
+                                <a class="dropdown-item" href="#">Visa Debit</a>
+                                <a class="dropdown-item" href="#">MasterCard Debit</a>
+                                <a class="dropdown-item" href="#">PayPal</a>
+                                <a class="dropdown-item" href="#">Google Pay</a>
+                                <a class="dropdown-item" href="#">Phonepe</a>
+                                </div>
+                            </div>
+                         </div>
+                         <div class="form-group col-md-3">
+                          <div class="dropdown mr-1">
+                            <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                            Currency
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                            <a class="dropdown-item" href="#">INR</a>
+                            <a class="dropdown-item" href="#">USD</a>
+                            <a class="dropdown-item" href="#">EUR</a>
+                            </div>
+                        </div>
+                         </div>
+                         <div class="form-group col-md-12 d-flex justify-content-center">
+                          <button class="btn btn-find btn11 mr-20">Add city</button>
+                          <a href="../html/flight.html" role="button" class="btn btn-find btn11"> Find</a>
+                        </div>
+                          </div>
+                        </form>
+                      </div>
+
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flight-search-slider">
+                <div class="swiper-container flight-search-slide">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="flight-search-slider-sub">
+                        <p>Mon, 3 Aug</p>
+                        <p class="mt-5"><b>&#x20B9; 4000</b></p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="flight-search-slider-sub">
+                        <p>Tue, 4 Aug</p>
+                        <p class="mt-5"><b>&#x20B9; 4000</b></p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="flight-search-slider-sub">
+                        <p>Wed, 5 Aug</p>
+                        <p class="mt-5"><b>&#x20B9; 4000</b></p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="flight-search-slider-sub">
+                        <p>Thu, 6 Aug</p>
+                        <p class="mt-5"><b>&#x20B9; 4000</b></p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="flight-search-slider-sub">
+                        <p>Fri, 7 Aug</p>
+                        <p class="mt-5"><b>&#x20B9; 4000</b></p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="flight-search-slider-sub">
+                        <p>Sat, 8 Aug</p>
+                        <p class="mt-5"><b>&#x20B9; 4000</b></p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="flight-search-slider-sub">
+                        <p>Sun, 9 Aug</p>
+                        <p class="mt-5"><b>&#x20B9; 4000</b></p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="flight-search-slider-sub">
+                        <p>Mon, 10 Aug</p>
+                        <p class="mt-5"><b>&#x20B9; 4000</b></p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="flight-search-slider-sub">
+                        <p>Tue, 11 Aug</p>
+                        <p class="mt-5"><b>&#x20B9; 4000</b></p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="flight-search-slider-sub">
+                        <p>Wed, 12 Aug</p>
+                        <p class="mt-5"><b>&#x20B9; 4000</b></p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="flight-search-slider-sub">
+                        <p>Thu, 12 Aug</p>
+                        <p class="mt-5"><b>&#x20B9; 4000</b></p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="flight-search-slider-sub">
+                        <p>Fri, 13 Aug</p>
+                        <p class="mt-5"><b>&#x20B9; 4000</b></p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="flight-search-slider-sub">
+                        <p>Sat, 14 Aug</p>
+                        <p class="mt-5"><b>&#x20B9; 4000</b></p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="flight-search-slider-sub">
+                        <p>Sun, 15 Aug</p>
+                        <p class="mt-5"><b>&#x20B9; 4000</b></p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="flight-search-slider-sub">
+                        <p>Mon, 16 Aug</p>
+                        <p class="mt-5"><b>&#x20B9; 4000</b></p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide"><div class="flight-search-slider-sub">
+                      <p>Tue, 17 Aug</p>
+                      <p class="mt-5"><b>&#x20B9; 4000</b></p>
+                    </div></div>
+                    <div class="swiper-slide">
+                      <div class="flight-search-slider-sub">
+                        <p>Wed, 18 Aug</p>
+                        <p class="mt-5"><b>&#x20B9; 4000</b></p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="flight-search-slider-sub">
+                        <p>Thu, 19 Aug</p>
+                        <p class="mt-5"><b>&#x20B9; 4000</b></p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="flight-search-slider-sub">
+                        <p>Fri, 20 Aug</p>
+                        <p class="mt-5"><b>&#x20B9; 4000</b></p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="flight-search-slider-sub">
+                        <p>Sat, 21 Aug</p>
+                        <p class="mt-5"><b>&#x20B9; 4000</b></p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="flight-search-slider-sub">
+                        <p>Sun, 22 Aug</p>
+                        <p class="mt-5"><b>&#x20B9; 4000</b></p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Add Arrows -->
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+              </div>
+
+              <div class="">
+                <div class="flight-route d-flex justify-content-between">
+                  <div class="row" style="width: 100%; padding: 0px; margin: 0px;">
+                    <div class="col-md-2 col-sm-6">
+                      <div class="flight-name">
+                        <img src="../img/indigo.png">
+                        <div class="flight-name-detail">
+                          <p>IndiGo</p>
+                          <small>6E-755</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                      <div class="flight-time">
+                        <div class="">
+                          <p>17:00</p>
+                          <small>Mumbai</small>
+                        </div>
+                        <img src="../img/ll2.svg">
+                        <div class="">
+                          <p>20:00</p>
+                          <small>New Delhi</small>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="col-md-2 col-sm-6">
+                      <div class="flight-hour">
+                        <p>2h 30m </p>
+                        <small class="color-blue">Non stop</small>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                      <div class="flight-price d-flex justify-content-end">
+                        <h2>&#x20B9; 10,800</h2>
+                        <a href="../html/flight-pay.html" class="btn btn-tw" role="button">Book Now</a>
+                        
+                      </div>
+                    </div>
+                    <div class="col-sm-12">
+                      <div class="flight-route-detail d-flex justify-content-between">
+                        <div class="flight-slide">
+                          <a id="flip">Flight Detail</a>
+                        </div>
+                        
+                        <div class="d-flex justify-content-around" style="display: flex; align-items: center;">
+                          <div class="ecase d-flex justify-content-between">
+                            <a href="#"><small>Free Cancellation</small></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div> 
+              </div>
+
+              <div id="panel" class="route-detail-main" >
+                <div class="row">
+                  <div class="col-md-7 pr-0">
+                    <div class="slide-header">
+                      <h4>Flight Detail</h4>
+                    </div>
+                    <div class="flight-slide-open">
+                      
+                      <div class="d-flex justify-content-between dd-block" style="border-bottom: 1px solid #b3b1b1; margin: 20px 0px;">
+                        <div class="flight-slide-open-img">
+                          <img src="../img/indigo.png">
+                          <div class="">
+                            <p>IndiGo, 6E-212 <small>(Economy)</small></p>
+                            <small>Airbus A320-100</small>
+                          </div>
+                        </div>
+                        <div class="flight-slide-open-facility-img">
+                          <img src="../img/eid-mubarak.svg">
+                          <img src="../img/wifi.svg">
+                          <img src="../img/seat.svg">
+                          <img src="../img/plug.svg">
+                          <img src="../img/youtube.svg">
+                        </div>
+                        
+                      </div>
+                      <div class="d-flex justify-content-between" style="padding-left: 10px; margin-bottom: 20px; width: 100%;">
+                        <div class="route-slide-detail">
+                          <p>New Delhi (DEL)</p>
+                          <p>10:10</p>
+                          <p>Wed, 15 Jul 2020</p>
+                          <p>Indira Gandhi,T-3</p>
+                        </div>
+                        <div class="route-slide-detail-line">
+                          <p>1h 20m</p>
+                          <div class="slide-line"></div>
+                          <p>Non Stop</p>
+                        </div>
+                        <div class="route-slide-detail">
+                          <p>New Delhi (DEL)</p>
+                          <p>10:10</p>
+                          <p>Wed, 15 Jul 2020</p>
+                          <p>Indira Gandhi,T-3</p>
+                        </div>
+                        
+                      </div>
+                      <div class="route-baggage">
+                        <p>Checkin Baggage: <span>20 kgs</span></p>
+                        <small class="no-meal">No Meal Fare</small>
+                      </div>
+                      <div class="route-baggage1">
+                        <p>Change plane at Jaipur (JAI), Connecting Time: 2h 20m</p>
+                      </div>
+                      <div class="d-flex justify-content-between dd-block" style="border-bottom: 1px solid #b3b1b1; margin: 20px 0px;">
+                        <div class="flight-slide-open-img">
+                          <img src="../img/indigo.png">
+                          <div class="">
+                            <p>IndiGo, 6E-212 <small>(Economy)</small></p>
+                            <small>Airbus A320-100</small>
+                          </div>
+                        </div>
+                        <div class="flight-slide-open-facility-img">
+                          <img src="../img/eid-mubarak.svg">
+                          <img src="../img/wifi.svg">
+                          <img src="../img/seat.svg">
+                          <img src="../img/plug.svg">
+                          <img src="../img/youtube.svg">
+                        </div>
+                        
+                      </div>
+                      <div class="d-flex justify-content-between" style="padding-left: 10px; margin-bottom: 20px; width: 100%;">
+                        <div class="route-slide-detail">
+                          <p>New Delhi (DEL)</p>
+                          <p>10:10</p>
+                          <p>Wed, 15 Jul 2020</p>
+                          <p>Indira Gandhi,T-3</p>
+                        </div>
+                        <div class="route-slide-detail-line">
+                          <p>1h 20m</p>
+                          <div class="slide-line"></div>
+                          <p>Non Stop</p>
+                        </div>
+                        <div class="route-slide-detail">
+                          <p>New Delhi (DEL)</p>
+                          <p>10:10</p>
+                          <p>Wed, 15 Jul 2020</p>
+                          <p>Indira Gandhi,T-3</p>
+                        </div>
+                        
+                      </div>
+                      <div class="route-baggage" style="margin-bottom: 20px;">
+                        <p>Checkin Baggage: <span>20 kgs</span></p>
+                        <small class="no-meal">No Meal Fare</small>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-5 pl-0">
+                    <div class="summary-btn-detail">
+                      <div class="tabdetail">
+                        <button class="detailtablinks active" onclick="openDetail(event, 'summary')">Fare Summary</button>
+                        <button class="detailtablinks" onclick="openDetail(event, 'rule')">Fare Rules</button>
+                        
+                      </div>
+                      <div id="summary" class="detailtabcontent search-active">
+                        <div class="route-summary">
+                          <p>Fare Summary : </p>
+                          <small>Adult x 1</small>
+                        </div>
+                        <div class="route-summary">
+                          <p>Base Fare : </p>
+                          <small>&#x20B9; 4,902	</small>
+                        </div>
+                        <div class="route-summary summary-line">
+                          <p>Fees & Taxes : </p>
+                          <small>&#x20B9; 670</small>
+                        </div>
+                        <div class="d-flex justify-content-between summary-line route-summary">
+                          <p>You Pay : </p>
+                          <p>&#x20B9; 5578 </p>
+                        </div>
+                        <div class="route-summary">
+                          <small>Note: Total fare displayed above has been rounded off and may show a slight difference from actual fare.</small>
+                        </div>
+                        <div class="btn-book">
+                          <button class="btn">Book</button>
+                        </div>
+                      </div>
+                      
+                      <div id="rule" class="detailtabcontent">
+                       <div class="route-summary summary-line">
+                         <h6>DEL-JAI-BOM</h6>
+                       </div>
+                       <p style="color: white !important;">Airline Cancellation Fee</p>
+                       <div class="route-rule summary-line">
+                        
+                        <div class="">
+                          <p>Duration*</p>
+                          <small>0 hour to 2 hours</small><br>
+                          <small>2 hours to 4 days</small><br>
+                          <small>>4 days</small>
+                        </div>
+                        <div class="">
+                          <p>Per Passenger</p>
+                          <small>Non-Refundable</small><br>
+                          <small>&#x20B9; 3,500</small><br>
+                          <small>&#x20B9; 3,500</small>
+                        </div>
+                       </div>
+                       <p style="color: white !important;">Airline Date Change Fee</p>
+                       <div class="route-rule">
+                        <div class="">
+                          <p>Duration*</p>
+                          <small>2 hours to 4 days</small><br>
+                          <small>>4 days</small>
+                        </div>
+                        <div class="">
+                          <p>Per Passenger</p>
+                          <small>&#x20B9; 3,500</small><br>
+                          <small>&#x20B9; 3,500</small>
+                        </div>
+                       </div>
+                       <div class="rule-note">
+                         <small>We would recommend that you reschedule/cancel your tickets atleast 72 hours prior to the flight departure</small>
+                       </div>
+                       <p style="color: white !important;">Yatra Service Fee (YSF)**</p>
+                       <small style="color: white !important;">(charged per passenger in addition to airline fee as applicable)</small>
+                       <div class="rule-note-detail summary-line">
+                         <div class="d-flex justify-content-between">
+                           <small>Online Cancellation Service Fee</small>
+                           <small>&#x20B9; 400</small>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                          <small>Online Cancellation Service Fee</small>
+                          <small>&#x20B9; 400</small>
+                       </div>
+                       <div class="d-flex justify-content-between">
+                        <small>Online Rescheduling Service Fee</small>
+                        <small>&#x20B9; 400</small>
+                     </div>
+                     <div class="d-flex justify-content-between">
+                      <small>Online Rescheduling Service Fee</small>
+                      <small>&#x20B9; 1200</small>
+                   </div>
+                       </div>
+                       <div class="rule-note2">
+                         <small>* Prior to the date/time of departure.</small><br>
+                         <small>**Please note: Yatra service fee is over and above the airline cancellation fee due to which refund type may vary.</small>
+                       </div>
+                       <div class="btn-book">
+                        <button class="btn">Book</button>
+                      </div>
+                       
+    
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flight-route d-flex justify-content-between">
+                <div class="row" style="width: 100%; padding: 0px; margin: 0px;">
+                  <div class="col-md-2 col-sm-6">
+                    <div class="flight-name">
+                      <img src="../img/indigo.png">
+                      <div class="flight-name-detail">
+                        <p>IndiGo</p>
+                        <small>6E-755</small>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-sm-6">
+                    <div class="flight-time">
+                      <div class="">
+                        <p>17:00</p>
+                        <small>Mumbai</small>
+                      </div>
+                      <img src="../img/ll2.svg">
+                      <div class="">
+                        <p>20:00</p>
+                        <small>New Delhi</small>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-2 col-sm-6">
+                    <div class="flight-hour">
+                      <p>2h 30m </p>
+                      <small class="color-blue">Non stop</small>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-sm-6">
+                    <div class="flight-price d-flex justify-content-end">
+                      <h2>&#x20B9; 10,800</h2>
+                      <a href="../html/flight-pay.html" class="btn btn-tw" role="button">Book Now</a>
+                      
+                    </div>
+                  </div>
+                  <div class="col-sm-12">
+                    <div class="flight-route-detail d-flex justify-content-between">
+                      <div class="flight-slide">
+                        <a id="flip">Flight Detail</a>
+                      </div>
+                      
+                      <div class="d-flex justify-content-around" style="display: flex; align-items: center;">
+                        <div class="ecase d-flex justify-content-between">
+                          <a href="#"><small>Free Cancellation</small></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div> 
+            </div>
+            <div class="flight-route d-flex justify-content-between">
+              <div class="row" style="width: 100%; padding: 0px; margin: 0px;">
+                <div class="col-md-2 col-sm-6">
+                  <div class="flight-name">
+                    <img src="../img/indigo.png">
+                    <div class="flight-name-detail">
+                      <p>IndiGo</p>
+                      <small>6E-755</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <div class="flight-time">
+                    <div class="">
+                      <p>17:00</p>
+                      <small>Mumbai</small>
+                    </div>
+                    <img src="../img/ll2.svg">
+                    <div class="">
+                      <p>20:00</p>
+                      <small>New Delhi</small>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col-md-2 col-sm-6">
+                  <div class="flight-hour">
+                    <p>2h 30m </p>
+                    <small class="color-blue">Non stop</small>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <div class="flight-price d-flex justify-content-end">
+                    <h2>&#x20B9; 10,800</h2>
+                    <a href="../html/flight-pay.html" class="btn btn-tw" role="button">Book Now</a>
+                    
+                  </div>
+                </div>
+                <div class="col-sm-12">
+                  <div class="flight-route-detail d-flex justify-content-between">
+                    <div class="flight-slide">
+                      <a id="flip">Flight Detail</a>
+                    </div>
+                    
+                    <div class="d-flex justify-content-around" style="display: flex; align-items: center;">
+                      <div class="ecase d-flex justify-content-between">
+                        <a href="#"><small>Free Cancellation</small></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div> 
+          </div>
+          <div class="flight-route d-flex justify-content-between">
+            <div class="row" style="width: 100%; padding: 0px; margin: 0px;">
+              <div class="col-md-2 col-sm-6">
+                <div class="flight-name">
+                  <img src="../img/indigo.png">
+                  <div class="flight-name-detail">
+                    <p>IndiGo</p>
+                    <small>6E-755</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <div class="flight-time">
+                  <div class="">
+                    <p>17:00</p>
+                    <small>Mumbai</small>
+                  </div>
+                  <img src="../img/ll2.svg">
+                  <div class="">
+                    <p>20:00</p>
+                    <small>New Delhi</small>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-md-2 col-sm-6">
+                <div class="flight-hour">
+                  <p>2h 30m </p>
+                  <small class="color-blue">Non stop</small>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <div class="flight-price d-flex justify-content-end">
+                  <h2>&#x20B9; 10,800</h2>
+                  <a href="../html/flight-pay.html" class="btn btn-tw" role="button">Book Now</a>
+                  
+                </div>
+              </div>
+              <div class="col-sm-12">
+                <div class="flight-route-detail d-flex justify-content-between">
+                  <div class="flight-slide">
+                    <a id="flip">Flight Detail</a>
+                  </div>
+                  
+                  <div class="d-flex justify-content-around" style="display: flex; align-items: center;">
+                    <div class="ecase d-flex justify-content-between">
+                      <a href="#"><small>Free Cancellation</small></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div> 
+        </div>
+        <div class="flight-route d-flex justify-content-between">
+          <div class="row" style="width: 100%; padding: 0px; margin: 0px;">
+            <div class="col-md-2 col-sm-6">
+              <div class="flight-name">
+                <img src="../img/indigo.png">
+                <div class="flight-name-detail">
+                  <p>IndiGo</p>
+                  <small>6E-755</small>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="flight-time">
+                <div class="">
+                  <p>17:00</p>
+                  <small>Mumbai</small>
+                </div>
+                <img src="../img/ll2.svg">
+                <div class="">
+                  <p>20:00</p>
+                  <small>New Delhi</small>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-2 col-sm-6">
+              <div class="flight-hour">
+                <p>2h 30m </p>
+                <small class="color-blue">Non stop</small>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="flight-price d-flex justify-content-end">
+                <h2>&#x20B9; 10,800</h2>
+                <a href="../html/flight-pay.html" class="btn btn-tw" role="button">Book Now</a>
+                
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="flight-route-detail d-flex justify-content-between">
+                <div class="flight-slide">
+                  <a id="flip">Flight Detail</a>
+                </div>
+                
+                <div class="d-flex justify-content-around" style="display: flex; align-items: center;">
+                  <div class="ecase d-flex justify-content-between">
+                    <a href="#"><small>Free Cancellation</small></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div> 
+      </div>
+      <div class="flight-route d-flex justify-content-between">
+        <div class="row" style="width: 100%; padding: 0px; margin: 0px;">
+          <div class="col-md-2 col-sm-6">
+            <div class="flight-name">
+              <img src="../img/indigo.png">
+              <div class="flight-name-detail">
+                <p>IndiGo</p>
+                <small>6E-755</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="flight-time">
+              <div class="">
+                <p>17:00</p>
+                <small>Mumbai</small>
+              </div>
+              <img src="../img/ll2.svg">
+              <div class="">
+                <p>20:00</p>
+                <small>New Delhi</small>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-2 col-sm-6">
+            <div class="flight-hour">
+              <p>2h 30m </p>
+              <small class="color-blue">Non stop</small>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="flight-price d-flex justify-content-end">
+              <h2>&#x20B9; 10,800</h2>
+              <a href="../html/flight-pay.html" class="btn btn-tw" role="button">Book Now</a>
+              
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <div class="flight-route-detail d-flex justify-content-between">
+              <div class="flight-slide">
+                <a id="flip">Flight Detail</a>
+              </div>
+              
+              <div class="d-flex justify-content-around" style="display: flex; align-items: center;">
+                <div class="ecase d-flex justify-content-between">
+                  <a href="#"><small>Free Cancellation</small></a>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div> 
+    </div>
+
+    <div class="mb-50"></div>
+    
+
+            
+
+              </div>
+
+             </div>
+          
+
+              
+
+            </div>
+          </div>
+        </div>
+      
+     
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/popper.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/swiper.min.js"></script>
+
+<script>
+  function openBook1(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent-book1");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+      tabcontent[i].className = tabcontent[i].className.replace("active-flight", "");
+    }
+    tablinks = document.getElementsByClassName("tablinks-book1");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+  </script>
+
+<script>
+  var swiper = new Swiper('.flight-search-slide', {
+    slidesPerView: 7,
+    slidesPerGroup: 7,
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+    800: {       
+         slidesPerView: 6,
+         slidesPerGroup: 6,    
+      },
+      777: {       
+         slidesPerView: 5,
+         slidesPerGroup: 5,    
+      },
+      550: {       
+         slidesPerView: 4,
+         slidesPerGroup: 4,    
+      },
+      455: {       
+         slidesPerView: 3,
+         slidesPerGroup: 3,    
+      },
+      360: {       
+         slidesPerView: 2,
+         slidesPerGroup: 2,    
+      },
+    }
+  });
+</script>
+<script> 
+  $(document).ready(function(){
+    $("#flip").click(function(){
+      $("#panel").slideToggle("slow");
+    });
+  });
+  </script>
+
+  <script>
+    function openDetail(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("detailtabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+      tabcontent[i].className = tabcontent[i].className.replace("search-active", "");
+    }
+    tablinks = document.getElementsByClassName("detailtablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+  </script>
+
+</html>

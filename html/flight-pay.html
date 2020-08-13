@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tekwalker Back-End</title>
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../font/stylesheet.css">
+    <link rel="stylesheet" href="../css/aos.css" />
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+        
+</head>
+<body>
+<section style="overflow: hidden;">
+  <div class="main-div">
+    <div class="left-sidebar-main">
+      <div class="side-bar-left-main">
+        <div class="tw-logo">
+          <h4>Tekwalker</h4>
+        </div>
+        <div class="profile-main">
+          <div class="d-flex justify-content-center profile-sub">
+            <div class="profile-circle">
+              <img src="../img/follow.svg">
+            </div>
+            <h5>Zalak Bhanderi</h5>
+          </div>
+        </div>
+        <div class="home-button-side">
+          <div class="sidebar-button">
+            <ul>
+              <li><a href="../index11.html" class="sidebar-btnlink btn" role="button">Dashboard</a></li>
+              <li><a href="../html/search.html" class="sidebar-btnlink btn" role="button">Search Book</a></li>
+              <li><a href="../html/profile.html" class="sidebar-btnlink btn" role="button">Profile Management</a>
+                <ul class="sub-menu-btn">
+                  <li><a href="../html/profile.html" class="sidebar-btnlink btn" role="button">Company Users</a></li>
+                </ul>
+              </li>
+              <li><a href="../html/b2b.html" class="sidebar-btnlink btn" role="button">B2B Management</a></li>
+              <li><a href="../html/booking.html" class="sidebar-btnlink btn" role="button">Booking Management</a></li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="right-sidebar-main">
+      <div class="topbar-header">
+       <div class="container pl-0 pr-0">
+         <div class="row">
+           <div class="col-sm-12">
+            <div class="main-header">
+              <h4>Tekwalker</h4>
+              <button class="btn btn-main">Balance</button>
+              
+            </div>
+           </div>
+         </div>
+       </div>
+      </div>
+      <div class="content-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+             <div class="">
+              <div class="payment-main-div">
+                <div class="row">
+                  <div class="col-xl-9">
+                    <div class="payment-detail">
+                      <div class="accordion" id="accordionExample">
+                        <div class="card">
+                          <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link" type="button"  aria-expanded="true" aria-controls="collapseOne">
+                                Add passenger Detail
+                              </button>
+                            </h2>
+                          </div>
+                      
+                          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                              <h4>Add passenger   1</h4>
+                              <form class="d-flex justify-content-start">
+                                <div class="radio">
+                                  <label><input type="radio" name="optradio" style="margin-right: 10px;" checked>Mr.</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="optradio" style="margin-right: 10px;">Ms.</label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="optradio" style="margin-right: 10px;">Mrs.</label>
+                                </div>
+                              </form>
+        
+                              <form>
+                                <div class="form-group">
+                                  <label for="usr">First Name:</label>
+                                  <input type="text" class="form-control" id="usr" placeholder="Enter your first name and middle name if you">
+                                </div>
+                                <div class="form-group">
+                                  <label for="pwd">Last Name:</label>
+                                  <input type="text" class="form-control" id="usr" placeholder="Enter your last name">
+                                </div>
+                
+                              </form>
+        
+                              <a href="../html/flight-payment.html" class="btn btn-tw" role="button">Continue to Add-ons</a>
+        
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link collapsed" type="button"  aria-expanded="false" aria-controls="collapseTwo">
+                                6E add-ons
+                              </button>
+                            </h2>
+                          </div>
+                          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                              <div class="btn-continue">
+                                <a href="../html/flight-payment.html" class="btn btn-tw" role="button">Continue to Protection</a>
+                              </div>
+        
+                              
+                              <div class="payment-addon-main">
+                                
+                                <div class="payment-addon">
+                                  <div class="row">
+                                    <div class="col-md-4">
+                                      <div class="payment-addon-img">
+                                        <img src="../img/hotel-poster.svg" class="card-img-top" alt="...">
+                                      </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-9">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Hotel Booking </h5>
+                                        <p class="card-text">
+                                          The Hotel Booking facility is also available Here.
+                                          <a href="#">Read More</a>
+                                        </p>
+                                      </div> 
+                                    </div>
+                                    <div class="col-md-2 col-sm-3">
+                                      <a href="#" class="btn btn-primary btn-add" role="button">Add To Hotel</a>
+                                    </div>
+                                  </div>
+                                </div>
+                               
+                              </div>
+                              <div class="payment-addon-main">
+                                
+                                <div class="payment-addon">
+                                  <div class="row">
+                                    <div class="col-md-4">
+                                      <div class="payment-addon-img">
+                                        <img src="../img/taxi.jpg">
+                                      </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-9">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Car Booking</h5>
+                                        <p>
+                                          The Car Booking facility is also available Here.
+                                          <a href="#">Read More</a>
+                                        </p>
+                                      </div> 
+                                    </div>
+                                    <div class="col-md-2 col-sm-3">
+                                      <a href="#" class="btn btn-primary btn-add" role="button">Add To Car</a>
+                                    </div>
+                                  </div>
+                                </div>
+                               
+                              </div>
+                              <div class="payment-addon-main">
+                                
+                                <div class="payment-addon">
+                                  <div class="row">
+                                    <div class="col-md-4">
+                                      <div class="payment-addon-img">
+                                        <img src="../img/fast-f.svg" class="card-img-top" alt="...">
+                                      </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-9">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Fast Forward</h5>
+                                        <p class="card-text">Check-in first and get your bag(s) before anyone else. In case of a connecting flight, this service will be applied on the entire journey.</p>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-3">
+                                      <a href="#" class="btn btn-primary btn-add" role="button">Add To Trip</a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+        
+                              
+                              <div class="payment-addon-main">
+                                
+                                <div class="payment-addon">
+                                  <div class="row">
+                                    <div class="col-md-4">
+                                      <div class="payment-addon-img">
+                                        <img src="../img/add33.jpg" class="card-img-top" alt="...">
+                                      </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-9">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Excess Baggage</h5>
+                                        <p class="card-text">Pre-book your excess baggage for a hassle-free travel and save more.</p>
+                                      </div> 
+                                    </div>
+                                    <div class="col-md-2 col-sm-3">
+                                      <a href="#" class="btn btn-primary btn-add" role="button">Add To Trip</a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+        
+                              <div class="payment-addon-main">
+                                
+                                <div class="payment-addon">
+                                  <div class="row">
+                                    <div class="col-md-4">
+                                      <div class="payment-addon-img">
+                                        <img src="../img/add11.jpg" class="card-img-top" alt="...">
+                                      </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-9">
+                                      <div class="card-body">
+                                        <h5 class="card-title">IndiGo Promise</h5>
+                                        <p class="card-text">Protect yourself against flight delay & baggage loss. <a href="#">More Details</a></p>
+                                      </div> 
+                                    </div>
+                                    <div class="col-md-2 col-sm-3">
+                                      <a href="#" class="btn btn-primary btn-add" role="button">Add for &#x20B9; 49</a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+        
+                              <div class="payment-addon-main">
+                                
+                                <div class="payment-addon">
+                                  <div class="row">
+                                    <div class="col-md-4">
+                                      <div class="payment-addon-img">
+                                        <img src="../img/add55.jpg" class="card-img-top" alt="...">
+                                      </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-9">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Travel Assistance</h5>
+                                        <p class="card-text">
+                                          <ul>
+                                            <li>Domestic Roadside Assistance</li>
+                                            <li>Domestic Medical Assistance</li>
+                                            <li>Complimentary Travel Insurance including hospitalization also for <span>COVID-19</span></li>
+                                          </ul>
+                                          <a href="#">Read More</a>
+                                        </p>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-3">
+                                      <a href="#" class="btn btn-primary btn-add" role="button">Add To Trip</a>
+                                    </div>
+                                  </div>
+                                  
+                                </div>
+                               
+                              </div>
+        
+                              
+        
+                              
+                              <div class="btn-continue">
+                                <a href="../html/flight-payment.html" class="btn btn-tw" role="button">Continue to Protection</a>
+                              </div>
+                              
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header" id="headingFour" data-toggle="collapse" data-target="#collapseFour">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link" type="button"  aria-expanded="true" aria-controls="collapseFour">
+                                Travel Protection
+                              </button>
+                            </h2>
+                          </div>
+                      
+                          <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                            <div class="card-body">
+                              <div class="">
+                                <input type="checkbox">
+                                <label>Yes, Add Travel Protection to protect my trip (Rs.269 per traveller)</label><br>
+                                <p class="color-green">6000+ travellers on Yatra protect their trip daily.</p>
+                                <p class="mt-20 mb-10">Cover Includes:</p>
+                                <div class="d-flex justify-content-between dd-block">
+                                  <div class="flight-protection">
+                                    <div class="protection-circle1">
+                                      <div class="protection-circle">
+                                        <img src="../img/deposit.svg">
+                                      </div>
+                                    </div>
+                                    <p>Loss of Deposite</p>
+                                    <p>Claim upto 20,000</p>
+                                  </div>
+                                  <div class="flight-protection">
+                                    <div class="protection-circle1">
+                                      <div class="protection-circle">
+                                        <img src="../img/delay.svg">
+                                      </div>
+                                    </div>
+                                    <p>Loss of Deposite</p>
+                                    <p>Claim upto 20,000</p>
+                                  </div>
+                                  <div class="flight-protection">
+                                    <div class="protection-circle1">
+                                      <div class="protection-circle">
+                                        <img src="../img/travel.svg">
+                                      </div>
+                                    </div>
+                                    <p>Loss of Deposite</p>
+                                    <p>Claim upto 20,000</p>
+                                  </div>
+                                  <div class="flight-protection">
+                                    <div class="protection-circle1">
+                                      <div class="protection-circle">
+                                        <img src="../img/ambulance.svg">
+                                      </div>
+                                    </div>
+                                    <p>Loss of Deposite</p>
+                                    <p>Claim upto 20,000</p>
+                                  </div>
+                                  <div class="flight-protection">
+                                    <div class="protection-circle1">
+                                      <div class="protection-circle">
+                                        <img src="../img/deposit.svg">
+                                      </div>
+                                    </div>
+                                    <p>Roadside & Medical</p>
+                                    <p>Assistance</p>
+                                  </div>
+                                </div>
+                                <p class="mt-20">Note: Travel Protection is applicable only for Indian citizens below the age of 70 years. <a href="#">Terms & Conditions</a></p>
+                                <div class="d-flex justify-content-start protection-insu">
+                                  <img src="../img/Covermore.jpg" class="mr-20">
+                                  <img src="../img/bharti.jpg">
+                                </div>
+                              </div>
+                              
+        
+                             
+        
+                              <a href="../html/flight-payment.html" class="btn btn-tw" role="button">Continue to Seat Select</a>
+        
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header" id="headingThree" data-toggle="collapse" data-target="#collapseThree">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link collapsed" type="button"   aria-expanded="false" aria-controls="collapseThree">
+                                seat select
+                              </button>
+                            </h2>
+                          </div>
+                          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                              <div class="seat-select-color">
+                                <ul>
+                                  <li><img src="../img/seat-2.svg" alt=""> Free</li>
+                                  <li><img src="../img/seat-1.svg" alt=""> Occupied</li>
+                                  <li><img src="../img/seat-3.svg" alt=""> &#x20B9; 350</li>
+                                  <li><img src="../img/seat-4.svg" alt=""> &#x20B9; 250</li>
+                                  <li><img src="../img/seat-5.svg" alt=""> &#x20B9; 150</li>
+                                  
+                                </ul>
+                              </div>
+                              <div class="seat-select">
+                                <ul class="seat-select-num">
+                                  <li><button>F</button></li>
+                                  <li><button>E</button></li>
+                                  <li><button>D</button></li>
+                                  <li><button></button></li>
+                                  <li><button>C</button></li>
+                                  <li><button>B</button></li>
+                                  <li><button>A</button></li>
+                                </ul>
+                                <ul>
+                                  <li><button><img src="../img/seat-3.svg"><span class="tooltiptext">&#x20B9; 350</span></button></li>
+                                  <li><button><img src="../img/seat-2.svg"><span class="tooltiptext">Free</span></button></li>
+                                  <li><button><img src="../img/seat-3.svg"><span class="tooltiptext">&#x20B9; 350</span></button></li>
+                                  <li><button>1</button></li>
+                                  <li><button><img src="../img/seat-3.svg"><span class="tooltiptext">&#x20B9; 350</span></button></li>
+                                  <li><button><img src="../img/seat-2.svg"><span class="tooltiptext">Free</span></button></li>
+                                  <li><button><img src="../img/seat-3.svg"><span class="tooltiptext">&#x20B9; 350</span></button></li>
+                                </ul>
+                                <ul>
+                                  <li><button><img src="../img/seat-3.svg"><span class="tooltiptext">&#x20B9; 350</span></button></li>
+                                  <li><button><img src="../img/seat-2.svg"><span class="tooltiptext">Free</span></button></li>
+                                  <li><button><img src="../img/seat-3.svg"><span class="tooltiptext">&#x20B9; 350</span></button></li>
+                                  <li><button>2</button></li>
+                                  <li><button><img src="../img/seat-3.svg"><span class="tooltiptext">&#x20B9; 350</span></button></li>
+                                  <li><button><img src="../img/seat-2.svg"><span class="tooltiptext">Free</span></button></li>
+                                  <li><button><img src="../img/seat-3.svg"><span class="tooltiptext">&#x20B9; 350</span></button></li>
+                                </ul>
+                                <ul>
+                                  <li><button><img src="../img/seat-3.svg"><span class="tooltiptext">&#x20B9; 350</span></button></li>
+                                  <li><button><img src="../img/seat-2.svg"><span class="tooltiptext">Free</span></button></li>
+                                  <li><button><img src="../img/seat-3.svg"><span class="tooltiptext">&#x20B9; 350</span></button></li>
+                                  <li><button>3</button></li>
+                                  <li><button><img src="../img/seat-3.svg"><span class="tooltiptext">&#x20B9; 350</span></button></li>
+                                  <li><button><img src="../img/seat-2.svg"><span class="tooltiptext">Free</span></button></li>
+                                  <li><button><img src="../img/seat-3.svg"><span class="tooltiptext">&#x20B9; 350</span></button></li>
+                                </ul>
+                                <ul>
+                                  <li><button><img src="../img/seat-3.svg"><span class="tooltiptext">&#x20B9; 350</span></button></li>
+                                  <li><button><img src="../img/seat-2.svg"><span class="tooltiptext">Free</span></button></li>
+                                  <li><button><img src="../img/seat-3.svg"><span class="tooltiptext">&#x20B9; 350</span></button></li>
+                                  <li><button>4</button></li>
+                                  <li><button><img src="../img/seat-3.svg"><span class="tooltiptext">&#x20B9; 350</span></button></li>
+                                  <li><button><img src="../img/seat-2.svg"><span class="tooltiptext">Free</span></button></li>
+                                  <li><button><img src="../img/seat-3.svg"><span class="tooltiptext">&#x20B9; 350</span></button></li>
+                                </ul>
+                                <ul>
+                                  <li><button><img src="../img/seat-3.svg"><span class="tooltiptext">&#x20B9; 350</span></button></li>
+                                  <li><button><img src="../img/seat-2.svg"><span class="tooltiptext">Free</span></button></li>
+                                  <li><button><img src="../img/seat-3.svg"><span class="tooltiptext">&#x20B9; 350</span></button></li>
+                                  <li><button>5</button></li>
+                                  <li><button><img src="../img/seat-3.svg"><span class="tooltiptext">&#x20B9; 350</span></button></li>
+                                  <li><button><img src="../img/seat-2.svg"><span class="tooltiptext">Free</span></button></li>
+                                  <li><button><img src="../img/seat-3.svg"><span class="tooltiptext">&#x20B9; 350</span></button></li>
+                                </ul>
+                                <ul>
+                                  <li><button><img src="../img/seat-3.svg"><span class="tooltiptext">&#x20B9; 350</span></button></li>
+                                  <li><button><img src="../img/seat-2.svg"><span class="tooltiptext">Free</span></button></li>
+                                  <li><button><img src="../img/seat-3.svg"><span class="tooltiptext">&#x20B9; 350</span></button></li>
+                                  <li><button>6</button></li>
+                                  <li><button><img src="../img/seat-3.svg"><span class="tooltiptext">&#x20B9; 350</span></button></li>
+                                  <li><button><img src="../img/seat-2.svg"><span class="tooltiptext">Free</span></button></li>
+                                  <li><button><img src="../img/seat-3.svg"><span class="tooltiptext">&#x20B9; 350</span></button></li>
+                                </ul>
+                                <ul>
+                                  <li><button><img src="../img/seat-3.svg"><span class="tooltiptext">&#x20B9; 350</span></button></li>
+                                  <li><button><img src="../img/seat-2.svg"><span class="tooltiptext">Free</span></button></li>
+                                  <li><button><img src="../img/seat-3.svg"><span class="tooltiptext">&#x20B9; 350</span></button></li>
+                                  <li><button>7</button></li>
+                                  <li><button><img src="../img/seat-3.svg"><span class="tooltiptext">&#x20B9; 350</span></button></li>
+                                  <li><button><img src="../img/seat-2.svg"><span class="tooltiptext">Free</span></button></li>
+                                  <li><button><img src="../img/seat-3.svg"><span class="tooltiptext">&#x20B9; 350</span></button></li>
+                                </ul>
+                                <ul>
+                                  <li><button><img src="../img/seat-3.svg"><span class="tooltiptext">&#x20B9; 350</span></button></li>
+                                  <li><button><img src="../img/seat-2.svg"><span class="tooltiptext">Free</span></button></li>
+                                  <li><button><img src="../img/seat-3.svg"><span class="tooltiptext">&#x20B9; 350</span></button></li>
+                                  <li><button>8</button></li>
+                                  <li><button><img src="../img/seat-3.svg"><span class="tooltiptext">&#x20B9; 350</span></button></li>
+                                  <li><button><img src="../img/seat-2.svg"><span class="tooltiptext">Free</span></button></li>
+                                  <li><button><img src="../img/seat-3.svg"><span class="tooltiptext">&#x20B9; 350</span></button></li>
+                                </ul>
+                                <ul>
+                                  <li><button><img src="../img/seat-3.svg"><span class="tooltiptext">&#x20B9; 350</span></button></li>
+                                  <li><button><img src="../img/seat-2.svg"><span class="tooltiptext">Free</span></button></li>
+                                  <li><button><img src="../img/seat-3.svg"><span class="tooltiptext">&#x20B9; 350</span></button></li>
+                                  <li><button>9</button></li>
+                                  <li><button><img src="../img/seat-3.svg"><span class="tooltiptext">&#x20B9; 350</span></button></li>
+                                  <li><button><img src="../img/seat-2.svg"><span class="tooltiptext">Free</span></button></li>
+                                  <li><button><img src="../img/seat-3.svg"><span class="tooltiptext">&#x20B9; 350</span></button></li>
+                                </ul>
+                                <ul>
+                                  <li><button><img src="../img/seat-3.svg"><span class="tooltiptext">&#x20B9; 350</span></button></li>
+                                  <li><button><img src="../img/seat-2.svg"><span class="tooltiptext">Free</span></button></li>
+                                  <li><button><img src="../img/seat-3.svg"><span class="tooltiptext">&#x20B9; 350</span></button></li>
+                                  <li><button>10</button></li>
+                                  <li><button><img src="../img/seat-3.svg"><span class="tooltiptext">&#x20B9; 350</span></button></li>
+                                  <li><button><img src="../img/seat-2.svg"><span class="tooltiptext">Free</span></button></li>
+                                  <li><button><img src="../img/seat-3.svg"><span class="tooltiptext">&#x20B9; 350</span></button></li>
+                                </ul>
+                                <ul>
+                                  <li><button><img src="../img/seat-4.svg"><span class="tooltiptext">&#x20B9; 250</span></button></li>
+                                  <li><button><img src="../img/seat-2.svg"><span class="tooltiptext">Free</span></button></li>
+                                  <li><button><img src="../img/seat-4.svg"><span class="tooltiptext">&#x20B9; 250</span></button></li>
+                                  <li><button>11</button></li>
+                                  <li><button><img src="../img/seat-4.svg"><span class="tooltiptext">&#x20B9; 250</span></button></li>
+                                  <li><button><img src="../img/seat-2.svg"><span class="tooltiptext">Free</span></button></li>
+                                  <li><button><img src="../img/seat-4.svg"><span class="tooltiptext">&#x20B9; 250</span></button></li>
+                                </ul>
+                                <ul>
+                                  <li><button><img src="../img/seat-4.svg"><span class="tooltiptext">&#x20B9; 250</span></button></li>
+                                  <li><button><img src="../img/seat-2.svg"><span class="tooltiptext">Free</span></button></li>
+                                  <li><button><img src="../img/seat-4.svg"><span class="tooltiptext">&#x20B9; 250</span></button></li>
+                                  <li><button>12</button></li>
+                                  <li><button><img src="../img/seat-4.svg"><span class="tooltiptext">&#x20B9; 250</span></button></li>
+                                  <li><button><img src="../img/seat-2.svg"><span class="tooltiptext">Free</span></button></li>
+                                  <li><button><img src="../img/seat-4.svg"><span class="tooltiptext">&#x20B9; 250</span></button></li>
+                                </ul>
+                                <ul>
+                                  <li><button><img src="../img/seat-4.svg"><span class="tooltiptext">&#x20B9; 250</span></button></li>
+                                  <li><button><img src="../img/seat-2.svg"><span class="tooltiptext">Free</span></button></li>
+                                  <li><button><img src="../img/seat-4.svg"><span class="tooltiptext">&#x20B9; 250</span></button></li>
+                                  <li><button>13</button></li>
+                                  <li><button><img src="../img/seat-4.svg"><span class="tooltiptext">&#x20B9; 250</span></button></li>
+                                  <li><button><img src="../img/seat-2.svg"><span class="tooltiptext">Free</span></button></li>
+                                  <li><button><img src="../img/seat-4.svg"><span class="tooltiptext">&#x20B9; 250</span></button></li>
+                                </ul>
+                                <ul>
+                                  <li><button><img src="../img/seat-4.svg"><span class="tooltiptext">&#x20B9; 250</span></button></li>
+                                  <li><button><img src="../img/seat-2.svg"><span class="tooltiptext">Free</span></button></li>
+                                  <li><button><img src="../img/seat-4.svg"><span class="tooltiptext">&#x20B9; 250</span></button></li>
+                                  <li><button>14</button></li>
+                                  <li><button><img src="../img/seat-4.svg"><span class="tooltiptext">&#x20B9; 250</span></button></li>
+                                  <li><button><img src="../img/seat-2.svg"><span class="tooltiptext">Free</span></button></li>
+                                  <li><button><img src="../img/seat-4.svg"><span class="tooltiptext">&#x20B9; 250</span></button></li>
+                                </ul>
+                                <ul>
+                                  <li><button><img src="../img/seat-4.svg"><span class="tooltiptext">&#x20B9; 250</span></button></li>
+                                  <li><button><img src="../img/seat-2.svg"><span class="tooltiptext">Free</span></button></li>
+                                  <li><button><img src="../img/seat-4.svg"><span class="tooltiptext">&#x20B9; 250</span></button></li>
+                                  <li><button>15</button></li>
+                                  <li><button><img src="../img/seat-4.svg"><span class="tooltiptext">&#x20B9; 250</span></button></li>
+                                  <li><button><img src="../img/seat-2.svg"><span class="tooltiptext">Free</span></button></li>
+                                  <li><button><img src="../img/seat-4.svg"><span class="tooltiptext">&#x20B9; 250</span></button></li>
+                                </ul>
+                                <ul>
+                                  <li><button><img src="../img/seat-4.svg"><span class="tooltiptext">&#x20B9; 250</span></button></li>
+                                  <li><button><img src="../img/seat-2.svg"><span class="tooltiptext">Free</span></button></li>
+                                  <li><button><img src="../img/seat-4.svg"><span class="tooltiptext">&#x20B9; 250</span></button></li>
+                                  <li><button>16</button></li>
+                                  <li><button><img src="../img/seat-4.svg"><span class="tooltiptext">&#x20B9; 250</span></button></li>
+                                  <li><button><img src="../img/seat-2.svg"><span class="tooltiptext">Free</span></button></li>
+                                  <li><button><img src="../img/seat-4.svg"><span class="tooltiptext">&#x20B9; 250</span></button></li>
+                                </ul>
+                                <ul>
+                                  <li><button><img src="../img/seat-4.svg"><span class="tooltiptext">&#x20B9; 250</span></button></li>
+                                  <li><button><img src="../img/seat-2.svg"><span class="tooltiptext">Free</span></button></li>
+                                  <li><button><img src="../img/seat-4.svg"><span class="tooltiptext">&#x20B9; 250</span></button></li>
+                                  <li><button>17</button></li>
+                                  <li><button><img src="../img/seat-4.svg"><span class="tooltiptext">&#x20B9; 250</span></button></li>
+                                  <li><button><img src="../img/seat-2.svg"><span class="tooltiptext">Free</span></button></li>
+                                  <li><button><img src="../img/seat-4.svg"><span class="tooltiptext">&#x20B9; 250</span></button></li>
+                                </ul>
+                                <ul>
+                                  <li><button><img src="../img/seat-4.svg"><span class="tooltiptext">&#x20B9; 250</span></button></li>
+                                  <li><button><img src="../img/seat-2.svg"><span class="tooltiptext">Free</span></button></li>
+                                  <li><button><img src="../img/seat-4.svg"><span class="tooltiptext">&#x20B9; 250</span></button></li>
+                                  <li><button>18</button></li>
+                                  <li><button><img src="../img/seat-4.svg"><span class="tooltiptext">&#x20B9; 250</span></button></li>
+                                  <li><button><img src="../img/seat-2.svg"><span class="tooltiptext">Free</span></button></li>
+                                  <li><button><img src="../img/seat-4.svg"><span class="tooltiptext">&#x20B9; 250</span></button></li>
+                                </ul>
+                                <ul>
+                                  <li><button><img src="../img/seat-4.svg"><span class="tooltiptext">&#x20B9; 250</span></button></li>
+                                  <li><button><img src="../img/seat-2.svg"><span class="tooltiptext">Free</span></button></li>
+                                  <li><button><img src="../img/seat-4.svg"><span class="tooltiptext">&#x20B9; 250</span></button></li>
+                                  <li><button>19</button></li>
+                                  <li><button><img src="../img/seat-4.svg"><span class="tooltiptext">&#x20B9; 250</span></button></li>
+                                  <li><button><img src="../img/seat-2.svg"><span class="tooltiptext">Free</span></button></li>
+                                  <li><button><img src="../img/seat-4.svg"><span class="tooltiptext">&#x20B9; 250</span></button></li>
+                                </ul>
+                                <ul>
+                                  <li><button><img src="../img/seat-4.svg"><span class="tooltiptext">&#x20B9; 250</span></button></li>
+                                  <li><button><img src="../img/seat-2.svg"><span class="tooltiptext">Free</span></button></li>
+                                  <li><button><img src="../img/seat-4.svg"><span class="tooltiptext">&#x20B9; 250</span></button></li>
+                                  <li><button>20</button></li>
+                                  <li><button><img src="../img/seat-4.svg"><span class="tooltiptext">&#x20B9; 250</span></button></li>
+                                  <li><button><img src="../img/seat-2.svg"><span class="tooltiptext">Free</span></button></li>
+                                  <li><button><img src="../img/seat-4.svg"><span class="tooltiptext">&#x20B9; 250</span></button></li>
+                                </ul>
+                                <ul>
+                                  <li><button><img src="../img/seat-5.svg"><span class="tooltiptext">&#x20B9; 150</span></button></li>
+                                  <li><button><img src="../img/seat-2.svg"><span class="tooltiptext">Free</span></button></li>
+                                  <li><button><img src="../img/seat-5.svg"><span class="tooltiptext">&#x20B9; 150</span></button></li>
+                                  <li><button>21</button></li>
+                                  <li><button><img src="../img/seat-5.svg"><span class="tooltiptext">&#x20B9; 150</span></button></li>
+                                  <li><button><img src="../img/seat-2.svg"><span class="tooltiptext">Free</span></button></li>
+                                  <li><button><img src="../img/seat-5.svg"><span class="tooltiptext">&#x20B9; 150</span></button></li>
+                                </ul>
+                                <ul>
+                                  <li><button><img src="../img/seat-5.svg"><span class="tooltiptext">&#x20B9; 150</span></button></li>
+                                  <li><button><img src="../img/seat-2.svg"><span class="tooltiptext">Free</span></button></li>
+                                  <li><button><img src="../img/seat-5.svg"><span class="tooltiptext">&#x20B9; 150</span></button></li>
+                                  <li><button>22</button></li>
+                                  <li><button><img src="../img/seat-5.svg"><span class="tooltiptext">&#x20B9; 150</span></button></li>
+                                  <li><button><img src="../img/seat-2.svg"><span class="tooltiptext">Free</span></button></li>
+                                  <li><button><img src="../img/seat-5.svg"><span class="tooltiptext">&#x20B9; 150</span></button></li>
+                                </ul>
+                                <ul>
+                                  <li><button><img src="../img/seat-5.svg"><span class="tooltiptext">&#x20B9; 150</span></button></li>
+                                  <li><button><img src="../img/seat-2.svg"><span class="tooltiptext">Free</span></button></li>
+                                  <li><button><img src="../img/seat-5.svg"><span class="tooltiptext">&#x20B9; 150</span></button></li>
+                                  <li><button>23</button></li>
+                                  <li><button><img src="../img/seat-5.svg"><span class="tooltiptext">&#x20B9; 150</span></button></li>
+                                  <li><button><img src="../img/seat-2.svg"><span class="tooltiptext">Free</span></button></li>
+                                  <li><button><img src="../img/seat-5.svg"><span class="tooltiptext">&#x20B9; 150</span></button></li>
+                                </ul>
+                                <ul>
+                                  <li><button><img src="../img/seat-5.svg"><span class="tooltiptext">&#x20B9; 150</span></button></li>
+                                  <li><button><img src="../img/seat-2.svg"><span class="tooltiptext">Free</span></button></li>
+                                  <li><button><img src="../img/seat-5.svg"><span class="tooltiptext">&#x20B9; 150</span></button></li>
+                                  <li><button>24</button></li>
+                                  <li><button><img src="../img/seat-5.svg"><span class="tooltiptext">&#x20B9; 150</span></button></li>
+                                  <li><button><img src="../img/seat-2.svg"><span class="tooltiptext">Free</span></button></li>
+                                  <li><button><img src="../img/seat-5.svg"><span class="tooltiptext">&#x20B9; 150</span></button></li>
+                                </ul>
+                                <ul>
+                                  <li><button><img src="../img/seat-5.svg"><span class="tooltiptext">&#x20B9; 150</span></button></li>
+                                  <li><button><img src="../img/seat-2.svg"><span class="tooltiptext">Free</span></button></li>
+                                  <li><button><img src="../img/seat-5.svg"><span class="tooltiptext">&#x20B9; 150</span></button></li>
+                                  <li><button>25</button></li>
+                                  <li><button><img src="../img/seat-5.svg"><span class="tooltiptext">&#x20B9; 150</span></button></li>
+                                  <li><button><img src="../img/seat-2.svg"><span class="tooltiptext">Free</span></button></li>
+                                  <li><button><img src="../img/seat-5.svg"><span class="tooltiptext">&#x20B9; 150</span></button></li>
+                                </ul>
+                                <ul>
+                                  <li><button><img src="../img/seat-5.svg"><span class="tooltiptext">&#x20B9; 150</span></button></li>
+                                  <li><button><img src="../img/seat-2.svg"><span class="tooltiptext">Free</span></button></li>
+                                  <li><button><img src="../img/seat-5.svg"><span class="tooltiptext">&#x20B9; 150</span></button></li>
+                                  <li><button>26</button></li>
+                                  <li><button><img src="../img/seat-5.svg"><span class="tooltiptext">&#x20B9; 150</span></button></li>
+                                  <li><button><img src="../img/seat-2.svg"><span class="tooltiptext">Free</span></button></li>
+                                  <li><button><img src="../img/seat-5.svg"><span class="tooltiptext">&#x20B9; 150</span></button></li>
+                                </ul>
+                                <ul>
+                                  <li><button><img src="../img/seat-5.svg"><span class="tooltiptext">&#x20B9; 150</span></button></li>
+                                  <li><button><img src="../img/seat-2.svg"><span class="tooltiptext">Free</span></button></li>
+                                  <li><button><img src="../img/seat-5.svg"><span class="tooltiptext">&#x20B9; 150</span></button></li>
+                                  <li><button>27</button></li>
+                                  <li><button><img src="../img/seat-5.svg"><span class="tooltiptext">&#x20B9; 150</span></button></li>
+                                  <li><button><img src="../img/seat-2.svg"><span class="tooltiptext">Free</span></button></li>
+                                  <li><button><img src="../img/seat-5.svg"><span class="tooltiptext">&#x20B9; 150</span></button></li>
+                                </ul>
+                                <ul>
+                                  <li><button><img src="../img/seat-5.svg"><span class="tooltiptext">&#x20B9; 150</span></button></li>
+                                  <li><button><img src="../img/seat-2.svg"><span class="tooltiptext">Free</span></button></li>
+                                  <li><button><img src="../img/seat-5.svg"><span class="tooltiptext">&#x20B9; 150</span></button></li>
+                                  <li><button>28</button></li>
+                                  <li><button><img src="../img/seat-5.svg"><span class="tooltiptext">&#x20B9; 150</span></button></li>
+                                  <li><button><img src="../img/seat-2.svg"><span class="tooltiptext">Free</span></button></li>
+                                  <li><button><img src="../img/seat-5.svg"><span class="tooltiptext">&#x20B9; 150</span></button></li>
+                                </ul>
+                                <ul>
+                                  <li><button><img src="../img/seat-5.svg"><span class="tooltiptext">&#x20B9; 150</span></button></li>
+                                  <li><button><img src="../img/seat-2.svg"><span class="tooltiptext">Free</span></button></li>
+                                  <li><button><img src="../img/seat-5.svg"><span class="tooltiptext">&#x20B9; 150</span></button></li>
+                                  <li><button>29</button></li>
+                                  <li><button><img src="../img/seat-5.svg"><span class="tooltiptext">&#x20B9; 150</span></button></li>
+                                  <li><button><img src="../img/seat-2.svg"><span class="tooltiptext">Free</span></button></li>
+                                  <li><button><img src="../img/seat-5.svg"><span class="tooltiptext">&#x20B9; 150</span></button></li>
+                                </ul>
+                                <ul>
+                                  <li><button><img src="../img/seat-5.svg"><span class="tooltiptext">&#x20B9; 150</span></button></li>
+                                  <li><button><img src="../img/seat-2.svg"><span class="tooltiptext">Free</span></button></li>
+                                  <li><button><img src="../img/seat-5.svg"><span class="tooltiptext">&#x20B9; 150</span></button></li>
+                                  <li><button>30</button></li>
+                                  <li><button><img src="../img/seat-5.svg"><span class="tooltiptext">&#x20B9; 150</span></button></li>
+                                  <li><button><img src="../img/seat-2.svg"><span class="tooltiptext">Free</span></button></li>
+                                  <li><button><img src="../img/seat-5.svg"><span class="tooltiptext">&#x20B9; 150</span></button></li>
+                                </ul>
+                                <ul>
+                                  <li><button><img src="../img/seat-5.svg"><span class="tooltiptext">&#x20B9; 150</span></button></li>
+                                  <li><button><img src="../img/seat-2.svg"><span class="tooltiptext">Free</span></button></li>
+                                  <li><button><img src="../img/seat-5.svg"><span class="tooltiptext">&#x20B9; 150</span></button></li>
+                                  <li><button>31</button></li>
+                                  <li><button><img src="../img/seat-5.svg"><span class="tooltiptext">&#x20B9; 150</span></button></li>
+                                  <li><button><img src="../img/seat-2.svg"><span class="tooltiptext">Free</span></button></li>
+                                  <li><button><img src="../img/seat-5.svg"><span class="tooltiptext">&#x20B9; 150</span></button></li>
+                                </ul>
+                              </div>
+                              <div class="btn-continue">
+                                <a href="../html/payment.html" class="btn btn-tw" role="button">Continue to Payment</a>
+                              </div>
+                            </div>
+                           
+                          </div>
+                        </div>
+                        
+        
+                      </div>
+                    </div>
+                  </div>
+        
+        
+                  <div class="col-xl-3">
+                    <div class="mt-50">
+                      <div class="payment-fare">
+                        <h5>Fare detail</h5>
+                      <div >
+                        <div class="d-flex justify-content-between">
+                          <p>Fare Base (1 Traveller)</p>
+                          <p>&#x20B9; 3400</p>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                          <p>Fee & Surcharges</p>
+                          <p>&#x20B9; 890</p>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                          <p>GST</p>
+                          <p>&#x20B9; 171</p>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                          <p>Airline Fuel Surcharges</p>
+                          <p>&#x20B9; 300</p>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                          <p>User Devlopment Fees</p>
+                          <p>&#x20B9; 420</p>
+                        </div>
+                        <div class="total-font d-flex justify-content-between">
+                          <p>Total Fare</p>
+                          <p>&#x20B9; 4420</p>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                          <p>Add Ons</p>
+                          <p>&#x20B9; 10</p>
+                        </div>
+                        <div class="total-font d-flex justify-content-between">
+                          <p>Total Pay:</p>
+                          <p>&#x20B9; 4271</p>
+                        </div>
+        
+        
+                      </div>
+                      </div>
+                      <div class="payment-promo-code">
+                        <div class="">
+                          <h5>Promo Code</h5>
+                          <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <button class="btn btn-outline-secondary" type="button">Apply</button>
+                            </div>
+                            <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+                          </div>
+                          <div class="">
+                              <input type="radio" id="male" name="gender" value="male">
+                              <label class="radio-design" for="male">ICICI2020</label><br>
+                              <small>Get Flat 12% OFF on using ICICI Bank Credit Card.</small>
+                              <small> <a href="#">Terms & Conditions Apply</a></small><br>
+                              <input type="radio" id="female" name="gender" value="female">
+                              <label for="female" class="radio-design">FLYMONSOON</label><br>
+                              <small>Get Flat 12% OFF on using ICICI Bank Credit Card.</small>
+                              <small> <a href="#">Terms & Conditions Apply</a></small><br>
+                            
+                            <a href="#">View All</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+             </div>
+          
+
+              
+
+            </div>
+          </div>
+        </div>
+      
+     
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/popper.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/swiper.min.js"></script>
+
+
+
+</html>
