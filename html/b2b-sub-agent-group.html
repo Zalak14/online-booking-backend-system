@@ -78,9 +78,19 @@
               <div class="company-user-table">
                 <div class="company-user-table-title">
                   <h4>Company Users</h4>
-                  <a href="company-new-user.html" role="button" class="btn">New User</a>
+                  <a href="b2b-sub-agent-new-user.html" role="button" class="btn">New User</a>
                 </div>
-                <table class="table table-bordered">
+                <div class="company-show-entries">
+                  <p>Show
+                    <input type="number" min="0" style="width: 60px;" class="form-control">
+                    entries
+                  </p>
+                  <div class="d-flex justify-content-lg-start" style="align-items: center;">
+                    <p class="mr-10">Search: </p>
+                    <input type="text" class="form-control">
+                  </div>
+                </div>
+                <table class="table table-hover">
                   <thead> 
                     <tr>
                       <th scope="col">#</th>
@@ -315,6 +325,14 @@
                     </tr>
                   </tbody>
                 </table>
+                <div class="company-show-entries mb-50">
+                  <p>Showing 1 to 10 of 15 </p>
+                  <div class="company-show-entries-sub" style="align-items: center;">
+                    <a href="#" class="previous">&laquo; Previous</a>
+                    <a href="#" class="next">Next &raquo;</a>
+                  </div>
+                </div>
+
               </div>
              </div>
           

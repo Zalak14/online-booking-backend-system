@@ -35,15 +35,20 @@
             <ul>
               <li><a href="../index11.html" class="sidebar-btnlink btn" role="button">Dashboard</a></li>
               <li><a href="../html/search.html" class="sidebar-btnlink btn" role="button">Search Book</a></li>
-              <li><a href="../html/profile.html" class="sidebar-btnlink btn" role="button">Profile Management</a>
-                <ul class="sub-menu-btn">
+              <li id="flip-menu"><a href="#" class="sidebar-btnlink btn"  role="button">Profile Management</a>
+                <ul class="sub-menu-btn" id="panel-menu">
                   <li><a href="../html/profile.html" class="sidebar-btnlink btn" role="button">Company Users</a></li>
                   <li><a href="../html/company-office-parameter.html" class="sidebar-btnlink btn" role="button">Office Parameters</a></li>
                   <li><a href="../html/user-access-level.html" class="sidebar-btnlink btn" role="button">Users Access Level</a></li>
                   <li><a href="../html/company-office-data.html" class="sidebar-btnlink btn" role="button">Company Office data</a></li>
                 </ul>
               </li>
-              <li><a href="../html/b2b.html" class="sidebar-btnlink btn" role="button">B2B Management</a></li>
+              <li><a href="#" class="sidebar-btnlink btn" role="button">B2B Management</a>
+                <ul class="sub-menu-btn">
+                  <li><a href="../html/b2b-parameter-cat.html" class="sidebar-btnlink btn" role="button">B2B parameter categories</a></li>
+                  <li><a href="../html/b2b-sub-agent-group.html" class="sidebar-btnlink btn" role="button">Sub agent group</a></li>
+                </ul>
+              </li>
               <li><a href="../html/booking.html" class="sidebar-btnlink btn" role="button">Booking Management</a></li>
             </ul>
           </div>
@@ -69,140 +74,63 @@
         <div class="container">
           <div class="row">
             <div class="col-sm-12">
-              <div class="company-office-data-main">
-                <button class="btn btn-heading">Company Office Data</button>
-                <div class="company-office-data-sub">
+             <div class="">
+              <div class="travel-office-new-user-form">
+                <button class="btn btn-heading">New Office</button>
+                <div class="travel-office-new-user-form-sub">
+                  <div class="border-line">
+                    <label><b>Company office data</b></label>
+                  </div>
                   <form>
-                    <div class="border-line">
-                      <label><b>General manager</b></label>
-                    </div>
                     <div class="form-row">
-                      <div class="form-group col-md-2">
-                        <label>Title</label>
+                      <div class="form-group col-md-6">
+                        <label>Sub agent group</label>
                         <select class="form-control">
                           <option selected>Choose...</option>
-                          <option>Mr.</option>
-                          <option>Mrs</option>
-                          <option>Ms.</option>
                         </select>
                       </div>
-                      <div class="form-group col-md-5">
-                        <label>First name</label>
-                        <input type="text" class="form-control">
-                      </div>
-                      <div class="form-group col-md-5">
-                        <label>Last name</label>
-                        <input type="text" class="form-control">
-                      </div>
-                    </div>
-                    <div class="form-row">
-                      <div class="form-group col-md-4">
-                        <label>Phone</label>
-                        <input type="text" class="form-control">
-                      </div>
-                      <div class="form-group col-md-4">
-                        <label>Registration number</label>
-                        <input type="text" class="form-control">
-                      </div>
-                      <div class="form-group col-md-4">
-                        <label>Tax number</label>
-                        <input type="text" class="form-control">
-                      </div>
-                    </div>
-                    <div class="form-row">
-                      <div class="form-group col-md-4">
-                        <label>Country</label>
+                      <div class="form-group col-md-6">
+                        <label>Office type</label>
                         <select class="form-control">
                           <option selected>Choose...</option>
-                          <option>...</option>
                         </select>
                       </div>
-                      <div class="form-group col-md-4">
-                        <label>State</label>
-                        <select class="form-control">
-                          <option selected>Choose...</option>
-                          <option>...</option>
-                        </select>
-                      </div>
-                      <div class="form-group col-md-4">
-                        <label>City</label>
-                        <input type="text" class="form-control">
-                      </div>
-                    </div>
-                    <div class="form-row">
-                      <div class="form-group col-md-4">
-                        <label>Zip / Post code</label>
-                        <input type="text" class="form-control">
-                      </div>
-                      <div class="form-group col-md-8">
-                        <label>Address</label>
-                        <input type="text" class="form-control">
-                      </div>
-                    </div>
-                    <div class="form-row">
-                      <div class="form-group col-md-4">
-                        <label>Language</label>
-                          <select class="form-control">
-                            <option selected>Choose...</option>
-                            <option>English</option>
-                            <option>Hindi</option>
-                            <option>Gujrati</option>
-                            <option>Tamil</option>
-                            <option>Marathi</option>
-                            <option>Kannad</option>
-                          </select>
-                      </div>
-                      <div class="form-group col-md-4">
-                        <label>Time zone</label>
-                          <select class="form-control">
-                            <option selected>Choose...</option>
-                            <option>...</option>
-                          </select>
-                      </div>
-                      <div class="form-group col-md-4">
-                        <label>Website URL</label>
-                        <input type="text" class="form-control">
-                      </div>
-                    </div>
-                    <div class="form-row">
-                      <div class="form-group col-md-4">
-                        <label>Official company email</label>
-                        <input type="text" class="form-control">
-                      </div>
-                      <div class="form-group col-md-4">
-                        <label>Phone</label>
-                        <input type="text" class="form-control">
-                      </div>
-                      <div class="form-group col-md-4">
-                        <label>Fax</label>
-                        <input type="text" class="form-control">
-                      </div>
-                    </div>
-                    <div class="form-row">
-                      <div class="form-group col-md-4">
-                        <label>Skype</label>
-                        <input type="text" class="form-control">
-                      </div>
-                      <div class="form-group col-md-4">
-                        <label>GST number</label>
-                        <input type="text" class="form-control">
-                      </div>
-                      <div class="form-group col-md-4">
-                        <label>GST email</label>
-                        <input type="text" class="form-control">
-                      </div>
-                    </div>
-
-                    <div class="border-line">
-                      <label><b>Company Detail</b></label>
                     </div>
                     <div class="form-row">
                       <div class="form-group col-md-6">
-                        <label>Office trade name</label>
+                        <label>Contracted by</label>
+                        <select class="form-control">
+                          <option selected>Choose...</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label>Key account manager</label>
+                        <select class="form-control">
+                          <option selected>Choose...</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label>Sales Manager</label>
+                        <select class="form-control">
+                          <option selected>Choose...</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label>Office will be deactiveted after</label>
+                        <select class="form-control">
+                          <option selected>Choose...</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label>office agencies Name</label>
                         <input type="text" class="form-control">
                       </div>
                       <div class="form-group col-md-6">
-                        <label>Official company Name</label>
+                        <label>Offical company name</label>
                         <input type="text" class="form-control">
                       </div>
                     </div>
@@ -211,66 +139,168 @@
                         <label>Office ID</label>
                         <input type="text" class="form-control">
                       </div>
+                    </div>
+                    <div class="">
+                      <input type="radio" name="12">
+                      <label class="mr-20">Existing company</label>
+                      <input type="radio" name="12">
+                      <label>To be created company / individual company</label>
+                    </div>
+                    <div class="border-line">
+                      <label><b>Contact Person</b></label>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-1">
+                        <label>Title</label>
+                        <select class="form-control">
+                          <option selected>Choose...</option>
+                          <option selected>Mrs.</option>
+                          <option selected>Mr.</option>
+                          <option selected>Ms.</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-md-5">
+                        <label>First Name</label>
+                        <input type="text" class="form-control">
+                      </div>
                       <div class="form-group col-md-6">
-                        <label>Key account manager</label>
+                        <label>Last Name</label>
                         <input type="text" class="form-control">
                       </div>
                     </div>
-                    
-
-                    <div class="border-line">
-                      <label><b>Invoice data</b></label>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label>Email</label>
+                        <input type="text" class="form-control">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label>Phone</label>
+                        <input type="text" class="form-control">
+                      </div>
                     </div>
                     <div class="form-row">
-                      <div class="form-group col-md-4">
-                        <label>Invoice country</label>
+                      <div class="form-group col-md-6">
+                        <label>Register number</label>
+                        <input type="text" class="form-control">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label>Tax number</label>
+                        <input type="text" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label>Country</label>
                         <select class="form-control">
                           <option selected>Choose...</option>
-                          <option>...</option>
+                          <option selected>India</option>
+                          <option selected>USA</option>
+                          <option selected>Canada</option>
                         </select>
                       </div>
-                      <div class="form-group col-md-4">
+                      <div class="form-group col-md-6">
+                        <label>State</label>
+                        <select class="form-control">
+                          <option selected>Choose...</option>
+                          <option selected>Gujarat</option>
+                          <option selected>Tamilnadu</option>
+                          <option selected>Karnataka</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label>City</label>
+                        <input type="text" class="form-control">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label>Zip / Post code</label>
+                        <input type="text" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label>Address line 1</label>
+                        <input type="text" class="form-control">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label>Address line 2</label>
+                        <input type="text" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label>Emergency phone number</label>
+                        <input type="text" class="form-control">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label>Skype</label>
+                        <input type="text" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label>GST number</label>
+                        <input type="text" class="form-control">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label>GST e-mail</label>
+                        <input type="text" class="form-control">
+                      </div>
+                    </div>
+                    <div class="border-line">
+                      <label><b>Invoice Detail</b></label>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label>Invoice Country</label>
+                        <input type="text" class="form-control">
+                      </div>
+                      <div class="form-group col-md-6">
                         <label>Invoice city</label>
                         <input type="text" class="form-control">
                       </div>
-                      <div class="form-group col-md-4">
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
                         <label>Invoice zip</label>
                         <input type="text" class="form-control">
                       </div>
-                    </div>
-                    <div class="form-row">
-                      <div class="form-group col-md-12">
+                      <div class="form-group col-md-6">
                         <label>Invoice address</label>
                         <input type="text" class="form-control">
                       </div>
                     </div>
+
                     <div class="border-line">
-                      <label><b>Bank Details appearing on invoice</b></label>
+                      <label><b>Bank Detail</b></label>
                     </div>
                     <div class="form-row">
-                      <div class="form-group col-md-4">
+                      <div class="form-group col-md-6">
                         <label>Bank name</label>
                         <input type="text" class="form-control">
                       </div>
-                      <div class="form-group col-md-4">
+                      <div class="form-group col-md-6">
                         <label>Branch</label>
-                        <input type="text" class="form-control">
-                      </div>
-                      <div class="form-group col-md-4">
-                        <label>Swift</label>
                         <input type="text" class="form-control">
                       </div>
                     </div>
                     <div class="form-row">
-                      <div class="form-group col-md-4">
+                      <div class="form-group col-md-6">
+                        <label>SWIFT</label>
+                        <input type="text" class="form-control">
+                      </div>
+                      <div class="form-group col-md-6">
                         <label>Bank account number</label>
                         <input type="text" class="form-control">
                       </div>
-                      <div class="form-group col-md-4">
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
                         <label>IBAN</label>
                         <input type="text" class="form-control">
                       </div>
-                      <div class="form-group col-md-4">
+                      <div class="form-group col-md-6">
                         <label>Beneficiary name</label>
                         <input type="text" class="form-control">
                       </div>
@@ -282,7 +312,7 @@
                       </div>
                     </div>
 
-                    
+
                     <div class="d-flex justify-content-start mb-20">
                       <a href="../html/profile.html" class="btn btn-primary mr-20" role="button">Save</a>
                       <a href="../html/profile.html" class="btn btn-primary" role="button">Cancel</a>
@@ -292,6 +322,11 @@
                   </form>
                 </div>
               </div>
+             </div>
+          
+
+              
+
             </div>
           </div>
         </div>
@@ -308,7 +343,13 @@
 <script src="../js/popper.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
 <script src="../js/swiper.min.js"></script>
-
+<script> 
+  $(document).ready(function(){
+    $("#flip-menu").click(function(){
+      $("#panel-menu").slideToggle("slow");
+    });
+  });
+  </script>
 
 
 </html>

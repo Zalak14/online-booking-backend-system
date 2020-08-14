@@ -1,0 +1,1750 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tekwalker Back-End</title>
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../font/stylesheet.css">
+    <link rel="stylesheet" href="../css/aos.css" />
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+        
+</head>
+<body>
+<section style="overflow: hidden;">
+  <div class="main-div">
+    <div class="left-sidebar-main">
+      <div class="side-bar-left-main">
+        <div class="tw-logo">
+          <h4>Tekwalker</h4>
+        </div>
+        <div class="profile-main">
+          <div class="d-flex justify-content-center profile-sub">
+            <div class="profile-circle">
+              <img src="../img/follow.svg">
+            </div>
+            <h5>Zalak Bhanderi</h5>
+          </div>
+        </div>
+        <div class="home-button-side">
+          <div class="sidebar-button">
+            <ul>
+              <li><a href="../index11.html" class="sidebar-btnlink btn" role="button">Dashboard</a></li>
+              <li><a href="../html/search.html" class="sidebar-btnlink btn" role="button">Search Book</a></li>
+              <li id="flip-menu"><a href="#" class="sidebar-btnlink btn"  role="button">Profile Management</a>
+                <ul class="sub-menu-btn" id="panel-menu">
+                  <li><a href="../html/profile.html" class="sidebar-btnlink btn" role="button">Company Users</a></li>
+                  <li><a href="../html/company-office-parameter.html" class="sidebar-btnlink btn" role="button">Office Parameters</a></li>
+                  <li><a href="../html/user-access-level.html" class="sidebar-btnlink btn" role="button">Users Access Level</a></li>
+                  <li><a href="../html/company-office-data.html" class="sidebar-btnlink btn" role="button">Company Office data</a></li>
+                </ul>
+              </li>
+              <li><a href="#" class="sidebar-btnlink btn" role="button">B2B Management</a>
+                <ul class="sub-menu-btn">
+                  <li><a href="../html/b2b-parameter-cat.html" class="sidebar-btnlink btn" role="button">B2B parameter categories</a></li>
+                  <li><a href="../html/b2b-sub-agent-group.html" class="sidebar-btnlink btn" role="button">Sub agent group</a></li>
+                </ul>
+              </li>
+              <li><a href="../html/booking.html" class="sidebar-btnlink btn" role="button">Booking Management</a></li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="right-sidebar-main">
+      <div class="topbar-header">
+       <div class="container pl-0 pr-0">
+         <div class="row">
+           <div class="col-sm-12">
+            <div class="main-header">
+              <h4>Tekwalker</h4>
+              <button class="btn btn-main">Balance</button>
+              
+            </div>
+           </div>
+         </div>
+       </div>
+      </div>
+      <div class="content-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+             <div class="mt-50 b2b-travel-office-main">
+              <ul class="nav nav-tabs" id="myTab" >
+                <li class="nav-item">
+                  <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Travel Partner</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Whitelabel Partner</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Corporate Partner</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="xml-tab" data-toggle="tab" href="#xml" role="tab" aria-controls="xml" aria-selected="false">XML API</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="multi-tab" data-toggle="tab" href="#multi" role="tab" aria-controls="multi" aria-selected="false">Multi Partner</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="diss-tab" data-toggle="tab" href="#diss" role="tab" aria-controls="diss" aria-selected="false">Disabled Partner</a>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                  <div class="">
+                    <div class="company-show-entries">
+                      <p>Show
+                        <input type="number" min="0" value="10" style="width: 60px;" class="form-control">
+                        entries
+                      </p>
+                      <div class="d-flex justify-content-lg-start" style="align-items: center;">
+                        <a href="../html/b2b-travel-office-new-user.html" role="button" class="btn btn-primary">New User</a>
+                      </div>
+                    </div>
+                    <table class="table table-hover table-travel-office">
+                      <thead> 
+                        <tr>
+                          <th>#</th>
+                          <th>Registered</th>
+                          <th>Sub agent Group</th>
+                          <th>Office id</th>
+                          <th>Official company name</th>
+                          <th>Payment provider</th>
+                          <th>Location</th>
+                          <th>Last login</th>
+                          <th>Sign in</th>
+                          <th>Deposit</th>
+                          <th>Activated</th>
+                          <th>Options</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>14 Sep 20 09:20</td>
+                          <td>XML API Test</td>
+                          <td>AS12SD</td>
+                          <td>Yatra travel</td>
+                          <td>Bank 1</td>
+                          <td>India</td>
+                          <td>14 Sep 20 09:20</p></td>
+                          <td>5</td>
+                          <td>1000</td>
+                          <td>Yes</td>
+                          <td>
+                            <div class="d-flex justify-content-center">
+                              <div class="option-circle mr-20">
+                                <a href="../html/b2b-travel-office-edit-user.html"><img src="../img/edit.svg"></a>
+                              </div>
+                              <div class="option-circle trash">
+                                <img src="../img/trash.svg" alt="">
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>14 Sep 20 09:20</td>
+                          <td>XML API Test</td>
+                          <td>AS12SD</td>
+                          <td>Yatra travel</td>
+                          <td>Bank 1</td>
+                          <td>India</td>
+                          <td>14 Sep 20 09:20</p></td>
+                          <td>5</td>
+                          <td>1000</td>
+                          <td>Yes</td>
+                          <td>
+                            <div class="d-flex justify-content-center">
+                              <div class="option-circle mr-20">
+                                <a href="../html/b2b-travel-office-edit-user.html"><img src="../img/edit.svg"></a>
+                              </div>
+                              <div class="option-circle trash">
+                                <img src="../img/trash.svg" alt="">
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>14 Sep 20 09:20</td>
+                          <td>XML API Test</td>
+                          <td>AS12SD</td>
+                          <td>Yatra travel</td>
+                          <td>Bank 1</td>
+                          <td>India</td>
+                          <td>14 Sep 20 09:20</p></td>
+                          <td>5</td>
+                          <td>1000</td>
+                          <td>Yes</td>
+                          <td>
+                            <div class="d-flex justify-content-center">
+                              <div class="option-circle mr-20">
+                                <a href="../html/b2b-travel-office-edit-user.html"><img src="../img/edit.svg"></a>
+                              </div>
+                              <div class="option-circle trash">
+                                <img src="../img/trash.svg" alt="">
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>14 Sep 20 09:20</td>
+                          <td>XML API Test</td>
+                          <td>AS12SD</td>
+                          <td>Yatra travel</td>
+                          <td>Bank 1</td>
+                          <td>India</td>
+                          <td>14 Sep 20 09:20</p></td>
+                          <td>5</td>
+                          <td>1000</td>
+                          <td>Yes</td>
+                          <td>
+                            <div class="d-flex justify-content-center">
+                              <div class="option-circle mr-20">
+                                <a href="../html/b2b-travel-office-edit-user.html"><img src="../img/edit.svg"></a>
+                              </div>
+                              <div class="option-circle trash">
+                                <img src="../img/trash.svg" alt="">
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>5</td>
+                          <td>14 Sep 20 09:20</td>
+                          <td>XML API Test</td>
+                          <td>AS12SD</td>
+                          <td>Yatra travel</td>
+                          <td>Bank 1</td>
+                          <td>India</td>
+                          <td>14 Sep 20 09:20</p></td>
+                          <td>5</td>
+                          <td>1000</td>
+                          <td>Yes</td>
+                          <td>
+                            <div class="d-flex justify-content-center">
+                              <div class="option-circle mr-20">
+                                <a href="../html/b2b-travel-office-edit-user.html"><img src="../img/edit.svg"></a>
+                              </div>
+                              <div class="option-circle trash">
+                                <img src="../img/trash.svg" alt="">
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>6</td>
+                          <td>14 Sep 20 09:20</td>
+                          <td>XML API Test</td>
+                          <td>AS12SD</td>
+                          <td>Yatra travel</td>
+                          <td>Bank 1</td>
+                          <td>India</td>
+                          <td>14 Sep 20 09:20</p></td>
+                          <td>5</td>
+                          <td>1000</td>
+                          <td>Yes</td>
+                          <td>
+                            <div class="d-flex justify-content-center">
+                              <div class="option-circle mr-20">
+                                <a href="../html/b2b-travel-office-edit-user.html"><img src="../img/edit.svg"></a>
+                              </div>
+                              <div class="option-circle trash">
+                                <img src="../img/trash.svg" alt="">
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>7</td>
+                          <td>14 Sep 20 09:20</td>
+                          <td>XML API Test</td>
+                          <td>AS12SD</td>
+                          <td>Yatra travel</td>
+                          <td>Bank 1</td>
+                          <td>India</td>
+                          <td>14 Sep 20 09:20</p></td>
+                          <td>5</td>
+                          <td>1000</td>
+                          <td>Yes</td>
+                          <td>
+                            <div class="d-flex justify-content-center">
+                              <div class="option-circle mr-20">
+                                <a href="../html/b2b-travel-office-edit-user.html"><img src="../img/edit.svg"></a>
+                              </div>
+                              <div class="option-circle trash">
+                                <img src="../img/trash.svg" alt="">
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>8</td>
+                          <td>14 Sep 20 09:20</td>
+                          <td>XML API Test</td>
+                          <td>AS12SD</td>
+                          <td>Yatra travel</td>
+                          <td>Bank 1</td>
+                          <td>India</td>
+                          <td>14 Sep 20 09:20</p></td>
+                          <td>5</td>
+                          <td>1000</td>
+                          <td>Yes</td>
+                          <td>
+                            <div class="d-flex justify-content-center">
+                              <div class="option-circle mr-20">
+                                <a href="../html/b2b-travel-office-edit-user.html"><img src="../img/edit.svg"></a>
+                              </div>
+                              <div class="option-circle trash">
+                                <img src="../img/trash.svg" alt="">
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>9</td>
+                          <td>14 Sep 20 09:20</td>
+                          <td>XML API Test</td>
+                          <td>AS12SD</td>
+                          <td>Yatra travel</td>
+                          <td>Bank 1</td>
+                          <td>India</td>
+                          <td>14 Sep 20 09:20</p></td>
+                          <td>5</td>
+                          <td>1000</td>
+                          <td>Yes</td>
+                          <td>
+                            <div class="d-flex justify-content-center">
+                              <div class="option-circle mr-20">
+                                <a href="../html/b2b-travel-office-edit-user.html"><img src="../img/edit.svg"></a>
+                              </div>
+                              <div class="option-circle trash">
+                                <img src="../img/trash.svg" alt="">
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>10</td>
+                          <td>14 Sep 20 09:20</td>
+                          <td>XML API Test</td>
+                          <td>AS12SD</td>
+                          <td>Yatra travel</td>
+                          <td>Bank 1</td>
+                          <td>India</td>
+                          <td>14 Sep 20 09:20</p></td>
+                          <td>5</td>
+                          <td>1000</td>
+                          <td>Yes</td>
+                          <td>
+                            <div class="d-flex justify-content-center">
+                              <div class="option-circle mr-20">
+                                <a href="../html/b2b-travel-office-edit-user.html"><img src="../img/edit.svg"></a>
+                              </div>
+                              <div class="option-circle trash">
+                                <img src="../img/trash.svg" alt="">
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div class="company-show-entries mb-50">
+                      <p>Showing 1 to 10 of 15 </p>
+                      <div class="company-show-entries-sub" style="align-items: center;">
+                        <a href="#" class="previous">&laquo; Previous</a>
+                        <a href="#" class="next">Next &raquo;</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                  <div class="">
+                    <div class="company-show-entries">
+                      <p>Show
+                        <input type="number" min="0" value="10" style="width: 60px;" class="form-control">
+                        entries
+                      </p>
+                      <div class="d-flex justify-content-lg-start" style="align-items: center;">
+                        <a href="../html/b2b-travel-office-new-user.html" role="button" class="btn btn-primary">New User</a>
+                      </div>
+                    </div>
+                    <table class="table table-hover table-travel-office">
+                      <thead> 
+                        <tr>
+                          <th>#</th>
+                          <th>Registered</th>
+                          <th>Sub agent Group</th>
+                          <th>Office id</th>
+                          <th>Official company name</th>
+                          <th>Payment provider</th>
+                          <th>Location</th>
+                          <th>Last login</th>
+                          <th>Sign in</th>
+                          <th>Deposit</th>
+                          <th>Activated</th>
+                          <th>Options</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>14 Sep 20 09:20</td>
+                          <td>XML API Test</td>
+                          <td>AS12SD</td>
+                          <td>Yatra travel</td>
+                          <td>Bank 1</td>
+                          <td>India</td>
+                          <td>14 Sep 20 09:20</p></td>
+                          <td>5</td>
+                          <td>1000</td>
+                          <td>Yes</td>
+                          <td>
+                            <div class="d-flex justify-content-center">
+                              <div class="option-circle mr-20">
+                                <a href="../html/b2b-travel-office-edit-user.html"><img src="../img/edit.svg"></a>
+                              </div>
+                              <div class="option-circle trash">
+                                <img src="../img/trash.svg" alt="">
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>14 Sep 20 09:20</td>
+                          <td>XML API Test</td>
+                          <td>AS12SD</td>
+                          <td>Yatra travel</td>
+                          <td>Bank 1</td>
+                          <td>India</td>
+                          <td>14 Sep 20 09:20</p></td>
+                          <td>5</td>
+                          <td>1000</td>
+                          <td>Yes</td>
+                          <td>
+                            <div class="d-flex justify-content-center">
+                              <div class="option-circle mr-20">
+                                <a href="../html/b2b-travel-office-edit-user.html"><img src="../img/edit.svg"></a>
+                              </div>
+                              <div class="option-circle trash">
+                                <img src="../img/trash.svg" alt="">
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>14 Sep 20 09:20</td>
+                          <td>XML API Test</td>
+                          <td>AS12SD</td>
+                          <td>Yatra travel</td>
+                          <td>Bank 1</td>
+                          <td>India</td>
+                          <td>14 Sep 20 09:20</p></td>
+                          <td>5</td>
+                          <td>1000</td>
+                          <td>Yes</td>
+                          <td>
+                            <div class="d-flex justify-content-center">
+                              <div class="option-circle mr-20">
+                                <a href="../html/b2b-travel-office-edit-user.html"><img src="../img/edit.svg"></a>
+                              </div>
+                              <div class="option-circle trash">
+                                <img src="../img/trash.svg" alt="">
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>14 Sep 20 09:20</td>
+                          <td>XML API Test</td>
+                          <td>AS12SD</td>
+                          <td>Yatra travel</td>
+                          <td>Bank 1</td>
+                          <td>India</td>
+                          <td>14 Sep 20 09:20</p></td>
+                          <td>5</td>
+                          <td>1000</td>
+                          <td>Yes</td>
+                          <td>
+                            <div class="d-flex justify-content-center">
+                              <div class="option-circle mr-20">
+                                <a href="../html/b2b-travel-office-edit-user.html"><img src="../img/edit.svg"></a>
+                              </div>
+                              <div class="option-circle trash">
+                                <img src="../img/trash.svg" alt="">
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>5</td>
+                          <td>14 Sep 20 09:20</td>
+                          <td>XML API Test</td>
+                          <td>AS12SD</td>
+                          <td>Yatra travel</td>
+                          <td>Bank 1</td>
+                          <td>India</td>
+                          <td>14 Sep 20 09:20</p></td>
+                          <td>5</td>
+                          <td>1000</td>
+                          <td>Yes</td>
+                          <td>
+                            <div class="d-flex justify-content-center">
+                              <div class="option-circle mr-20">
+                                <a href="../html/b2b-travel-office-edit-user.html"><img src="../img/edit.svg"></a>
+                              </div>
+                              <div class="option-circle trash">
+                                <img src="../img/trash.svg" alt="">
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>6</td>
+                          <td>14 Sep 20 09:20</td>
+                          <td>XML API Test</td>
+                          <td>AS12SD</td>
+                          <td>Yatra travel</td>
+                          <td>Bank 1</td>
+                          <td>India</td>
+                          <td>14 Sep 20 09:20</p></td>
+                          <td>5</td>
+                          <td>1000</td>
+                          <td>Yes</td>
+                          <td>
+                            <div class="d-flex justify-content-center">
+                              <div class="option-circle mr-20">
+                                <a href="../html/b2b-travel-office-edit-user.html"><img src="../img/edit.svg"></a>
+                              </div>
+                              <div class="option-circle trash">
+                                <img src="../img/trash.svg" alt="">
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>7</td>
+                          <td>14 Sep 20 09:20</td>
+                          <td>XML API Test</td>
+                          <td>AS12SD</td>
+                          <td>Yatra travel</td>
+                          <td>Bank 1</td>
+                          <td>India</td>
+                          <td>14 Sep 20 09:20</p></td>
+                          <td>5</td>
+                          <td>1000</td>
+                          <td>Yes</td>
+                          <td>
+                            <div class="d-flex justify-content-center">
+                              <div class="option-circle mr-20">
+                                <a href="../html/b2b-travel-office-edit-user.html"><img src="../img/edit.svg"></a>
+                              </div>
+                              <div class="option-circle trash">
+                                <img src="../img/trash.svg" alt="">
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>8</td>
+                          <td>14 Sep 20 09:20</td>
+                          <td>XML API Test</td>
+                          <td>AS12SD</td>
+                          <td>Yatra travel</td>
+                          <td>Bank 1</td>
+                          <td>India</td>
+                          <td>14 Sep 20 09:20</p></td>
+                          <td>5</td>
+                          <td>1000</td>
+                          <td>Yes</td>
+                          <td>
+                            <div class="d-flex justify-content-center">
+                              <div class="option-circle mr-20">
+                                <a href="../html/b2b-travel-office-edit-user.html"><img src="../img/edit.svg"></a>
+                              </div>
+                              <div class="option-circle trash">
+                                <img src="../img/trash.svg" alt="">
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>9</td>
+                          <td>14 Sep 20 09:20</td>
+                          <td>XML API Test</td>
+                          <td>AS12SD</td>
+                          <td>Yatra travel</td>
+                          <td>Bank 1</td>
+                          <td>India</td>
+                          <td>14 Sep 20 09:20</p></td>
+                          <td>5</td>
+                          <td>1000</td>
+                          <td>Yes</td>
+                          <td>
+                            <div class="d-flex justify-content-center">
+                              <div class="option-circle mr-20">
+                                <a href="../html/b2b-travel-office-edit-user.html"><img src="../img/edit.svg"></a>
+                              </div>
+                              <div class="option-circle trash">
+                                <img src="../img/trash.svg" alt="">
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>10</td>
+                          <td>14 Sep 20 09:20</td>
+                          <td>XML API Test</td>
+                          <td>AS12SD</td>
+                          <td>Yatra travel</td>
+                          <td>Bank 1</td>
+                          <td>India</td>
+                          <td>14 Sep 20 09:20</p></td>
+                          <td>5</td>
+                          <td>1000</td>
+                          <td>Yes</td>
+                          <td>
+                            <div class="d-flex justify-content-center">
+                              <div class="option-circle mr-20">
+                                <a href="../html/b2b-travel-office-edit-user.html"><img src="../img/edit.svg"></a>
+                              </div>
+                              <div class="option-circle trash">
+                                <img src="../img/trash.svg" alt="">
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div class="company-show-entries mb-50">
+                      <p>Showing 1 to 10 of 15 </p>
+                      <div class="company-show-entries-sub" style="align-items: center;">
+                        <a href="#" class="previous">&laquo; Previous</a>
+                        <a href="#" class="next">Next &raquo;</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                  <div class="">
+                    <div class="company-show-entries">
+                      <p>Show
+                        <input type="number" min="0" value="10" style="width: 60px;" class="form-control">
+                        entries
+                      </p>
+                      <div class="d-flex justify-content-lg-start" style="align-items: center;">
+                        <a href="../html/b2b-travel-office-new-user.html" role="button" class="btn btn-primary">New User</a>
+                      </div>
+                    </div>
+                    <table class="table table-hover table-travel-office">
+                      <thead> 
+                        <tr>
+                          <th>#</th>
+                          <th>Registered</th>
+                          <th>Sub agent Group</th>
+                          <th>Office id</th>
+                          <th>Official company name</th>
+                          <th>Payment provider</th>
+                          <th>Location</th>
+                          <th>Last login</th>
+                          <th>Sign in</th>
+                          <th>Deposit</th>
+                          <th>Activated</th>
+                          <th>Options</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>14 Sep 20 09:20</td>
+                          <td>XML API Test</td>
+                          <td>AS12SD</td>
+                          <td>Yatra travel</td>
+                          <td>Bank 1</td>
+                          <td>India</td>
+                          <td>14 Sep 20 09:20</p></td>
+                          <td>5</td>
+                          <td>1000</td>
+                          <td>Yes</td>
+                          <td>
+                            <div class="d-flex justify-content-center">
+                              <div class="option-circle mr-20">
+                                <a href="../html/b2b-travel-office-edit-user.html"><img src="../img/edit.svg"></a>
+                              </div>
+                              <div class="option-circle trash">
+                                <img src="../img/trash.svg" alt="">
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>14 Sep 20 09:20</td>
+                          <td>XML API Test</td>
+                          <td>AS12SD</td>
+                          <td>Yatra travel</td>
+                          <td>Bank 1</td>
+                          <td>India</td>
+                          <td>14 Sep 20 09:20</p></td>
+                          <td>5</td>
+                          <td>1000</td>
+                          <td>Yes</td>
+                          <td>
+                            <div class="d-flex justify-content-center">
+                              <div class="option-circle mr-20">
+                                <a href="../html/b2b-travel-office-edit-user.html"><img src="../img/edit.svg"></a>
+                              </div>
+                              <div class="option-circle trash">
+                                <img src="../img/trash.svg" alt="">
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>14 Sep 20 09:20</td>
+                          <td>XML API Test</td>
+                          <td>AS12SD</td>
+                          <td>Yatra travel</td>
+                          <td>Bank 1</td>
+                          <td>India</td>
+                          <td>14 Sep 20 09:20</p></td>
+                          <td>5</td>
+                          <td>1000</td>
+                          <td>Yes</td>
+                          <td>
+                            <div class="d-flex justify-content-center">
+                              <div class="option-circle mr-20">
+                                <a href="../html/b2b-travel-office-edit-user.html"><img src="../img/edit.svg"></a>
+                              </div>
+                              <div class="option-circle trash">
+                                <img src="../img/trash.svg" alt="">
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>14 Sep 20 09:20</td>
+                          <td>XML API Test</td>
+                          <td>AS12SD</td>
+                          <td>Yatra travel</td>
+                          <td>Bank 1</td>
+                          <td>India</td>
+                          <td>14 Sep 20 09:20</p></td>
+                          <td>5</td>
+                          <td>1000</td>
+                          <td>Yes</td>
+                          <td>
+                            <div class="d-flex justify-content-center">
+                              <div class="option-circle mr-20">
+                                <a href="../html/b2b-travel-office-edit-user.html"><img src="../img/edit.svg"></a>
+                              </div>
+                              <div class="option-circle trash">
+                                <img src="../img/trash.svg" alt="">
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>5</td>
+                          <td>14 Sep 20 09:20</td>
+                          <td>XML API Test</td>
+                          <td>AS12SD</td>
+                          <td>Yatra travel</td>
+                          <td>Bank 1</td>
+                          <td>India</td>
+                          <td>14 Sep 20 09:20</p></td>
+                          <td>5</td>
+                          <td>1000</td>
+                          <td>Yes</td>
+                          <td>
+                            <div class="d-flex justify-content-center">
+                              <div class="option-circle mr-20">
+                                <a href="../html/b2b-travel-office-edit-user.html"><img src="../img/edit.svg"></a>
+                              </div>
+                              <div class="option-circle trash">
+                                <img src="../img/trash.svg" alt="">
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>6</td>
+                          <td>14 Sep 20 09:20</td>
+                          <td>XML API Test</td>
+                          <td>AS12SD</td>
+                          <td>Yatra travel</td>
+                          <td>Bank 1</td>
+                          <td>India</td>
+                          <td>14 Sep 20 09:20</p></td>
+                          <td>5</td>
+                          <td>1000</td>
+                          <td>Yes</td>
+                          <td>
+                            <div class="d-flex justify-content-center">
+                              <div class="option-circle mr-20">
+                                <a href="../html/b2b-travel-office-edit-user.html"><img src="../img/edit.svg"></a>
+                              </div>
+                              <div class="option-circle trash">
+                                <img src="../img/trash.svg" alt="">
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>7</td>
+                          <td>14 Sep 20 09:20</td>
+                          <td>XML API Test</td>
+                          <td>AS12SD</td>
+                          <td>Yatra travel</td>
+                          <td>Bank 1</td>
+                          <td>India</td>
+                          <td>14 Sep 20 09:20</p></td>
+                          <td>5</td>
+                          <td>1000</td>
+                          <td>Yes</td>
+                          <td>
+                            <div class="d-flex justify-content-center">
+                              <div class="option-circle mr-20">
+                                <a href="../html/b2b-travel-office-edit-user.html"><img src="../img/edit.svg"></a>
+                              </div>
+                              <div class="option-circle trash">
+                                <img src="../img/trash.svg" alt="">
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>8</td>
+                          <td>14 Sep 20 09:20</td>
+                          <td>XML API Test</td>
+                          <td>AS12SD</td>
+                          <td>Yatra travel</td>
+                          <td>Bank 1</td>
+                          <td>India</td>
+                          <td>14 Sep 20 09:20</p></td>
+                          <td>5</td>
+                          <td>1000</td>
+                          <td>Yes</td>
+                          <td>
+                            <div class="d-flex justify-content-center">
+                              <div class="option-circle mr-20">
+                                <a href="../html/b2b-travel-office-edit-user.html"><img src="../img/edit.svg"></a>
+                              </div>
+                              <div class="option-circle trash">
+                                <img src="../img/trash.svg" alt="">
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>9</td>
+                          <td>14 Sep 20 09:20</td>
+                          <td>XML API Test</td>
+                          <td>AS12SD</td>
+                          <td>Yatra travel</td>
+                          <td>Bank 1</td>
+                          <td>India</td>
+                          <td>14 Sep 20 09:20</p></td>
+                          <td>5</td>
+                          <td>1000</td>
+                          <td>Yes</td>
+                          <td>
+                            <div class="d-flex justify-content-center">
+                              <div class="option-circle mr-20">
+                                <a href="../html/b2b-travel-office-edit-user.html"><img src="../img/edit.svg"></a>
+                              </div>
+                              <div class="option-circle trash">
+                                <img src="../img/trash.svg" alt="">
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>10</td>
+                          <td>14 Sep 20 09:20</td>
+                          <td>XML API Test</td>
+                          <td>AS12SD</td>
+                          <td>Yatra travel</td>
+                          <td>Bank 1</td>
+                          <td>India</td>
+                          <td>14 Sep 20 09:20</p></td>
+                          <td>5</td>
+                          <td>1000</td>
+                          <td>Yes</td>
+                          <td>
+                            <div class="d-flex justify-content-center">
+                              <div class="option-circle mr-20">
+                                <a href="../html/b2b-travel-office-edit-user.html"><img src="../img/edit.svg"></a>
+                              </div>
+                              <div class="option-circle trash">
+                                <img src="../img/trash.svg" alt="">
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div class="company-show-entries mb-50">
+                      <p>Showing 1 to 10 of 15 </p>
+                      <div class="company-show-entries-sub" style="align-items: center;">
+                        <a href="#" class="previous">&laquo; Previous</a>
+                        <a href="#" class="next">Next &raquo;</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="xml" role="tabpanel" aria-labelledby="xml-tab">
+                  <div class="">
+                    <div class="company-show-entries">
+                      <p>Show
+                        <input type="number" min="0" value="10" style="width: 60px;" class="form-control">
+                        entries
+                      </p>
+                      <div class="d-flex justify-content-lg-start" style="align-items: center;">
+                        <a href="../html/b2b-travel-office-new-user.html" role="button" class="btn btn-primary">New User</a>
+                      </div>
+                    </div>
+                    <table class="table table-hover table-travel-office">
+                      <thead> 
+                        <tr>
+                          <th>#</th>
+                          <th>Registered</th>
+                          <th>Sub agent Group</th>
+                          <th>Office id</th>
+                          <th>Official company name</th>
+                          <th>Payment provider</th>
+                          <th>Location</th>
+                          <th>Last login</th>
+                          <th>Sign in</th>
+                          <th>Deposit</th>
+                          <th>Activated</th>
+                          <th>Options</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>14 Sep 20 09:20</td>
+                          <td>XML API Test</td>
+                          <td>AS12SD</td>
+                          <td>Yatra travel</td>
+                          <td>Bank 1</td>
+                          <td>India</td>
+                          <td>14 Sep 20 09:20</p></td>
+                          <td>5</td>
+                          <td>1000</td>
+                          <td>Yes</td>
+                          <td>
+                            <div class="d-flex justify-content-center">
+                              <div class="option-circle mr-20">
+                                <a href="../html/b2b-travel-office-edit-user.html"><img src="../img/edit.svg"></a>
+                              </div>
+                              <div class="option-circle trash">
+                                <img src="../img/trash.svg" alt="">
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>14 Sep 20 09:20</td>
+                          <td>XML API Test</td>
+                          <td>AS12SD</td>
+                          <td>Yatra travel</td>
+                          <td>Bank 1</td>
+                          <td>India</td>
+                          <td>14 Sep 20 09:20</p></td>
+                          <td>5</td>
+                          <td>1000</td>
+                          <td>Yes</td>
+                          <td>
+                            <div class="d-flex justify-content-center">
+                              <div class="option-circle mr-20">
+                                <a href="../html/b2b-travel-office-edit-user.html"><img src="../img/edit.svg"></a>
+                              </div>
+                              <div class="option-circle trash">
+                                <img src="../img/trash.svg" alt="">
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>14 Sep 20 09:20</td>
+                          <td>XML API Test</td>
+                          <td>AS12SD</td>
+                          <td>Yatra travel</td>
+                          <td>Bank 1</td>
+                          <td>India</td>
+                          <td>14 Sep 20 09:20</p></td>
+                          <td>5</td>
+                          <td>1000</td>
+                          <td>Yes</td>
+                          <td>
+                            <div class="d-flex justify-content-center">
+                              <div class="option-circle mr-20">
+                                <a href="../html/b2b-travel-office-edit-user.html"><img src="../img/edit.svg"></a>
+                              </div>
+                              <div class="option-circle trash">
+                                <img src="../img/trash.svg" alt="">
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>14 Sep 20 09:20</td>
+                          <td>XML API Test</td>
+                          <td>AS12SD</td>
+                          <td>Yatra travel</td>
+                          <td>Bank 1</td>
+                          <td>India</td>
+                          <td>14 Sep 20 09:20</p></td>
+                          <td>5</td>
+                          <td>1000</td>
+                          <td>Yes</td>
+                          <td>
+                            <div class="d-flex justify-content-center">
+                              <div class="option-circle mr-20">
+                                <a href="../html/b2b-travel-office-edit-user.html"><img src="../img/edit.svg"></a>
+                              </div>
+                              <div class="option-circle trash">
+                                <img src="../img/trash.svg" alt="">
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>5</td>
+                          <td>14 Sep 20 09:20</td>
+                          <td>XML API Test</td>
+                          <td>AS12SD</td>
+                          <td>Yatra travel</td>
+                          <td>Bank 1</td>
+                          <td>India</td>
+                          <td>14 Sep 20 09:20</p></td>
+                          <td>5</td>
+                          <td>1000</td>
+                          <td>Yes</td>
+                          <td>
+                            <div class="d-flex justify-content-center">
+                              <div class="option-circle mr-20">
+                                <a href="../html/b2b-travel-office-edit-user.html"><img src="../img/edit.svg"></a>
+                              </div>
+                              <div class="option-circle trash">
+                                <img src="../img/trash.svg" alt="">
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>6</td>
+                          <td>14 Sep 20 09:20</td>
+                          <td>XML API Test</td>
+                          <td>AS12SD</td>
+                          <td>Yatra travel</td>
+                          <td>Bank 1</td>
+                          <td>India</td>
+                          <td>14 Sep 20 09:20</p></td>
+                          <td>5</td>
+                          <td>1000</td>
+                          <td>Yes</td>
+                          <td>
+                            <div class="d-flex justify-content-center">
+                              <div class="option-circle mr-20">
+                                <a href="../html/b2b-travel-office-edit-user.html"><img src="../img/edit.svg"></a>
+                              </div>
+                              <div class="option-circle trash">
+                                <img src="../img/trash.svg" alt="">
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>7</td>
+                          <td>14 Sep 20 09:20</td>
+                          <td>XML API Test</td>
+                          <td>AS12SD</td>
+                          <td>Yatra travel</td>
+                          <td>Bank 1</td>
+                          <td>India</td>
+                          <td>14 Sep 20 09:20</p></td>
+                          <td>5</td>
+                          <td>1000</td>
+                          <td>Yes</td>
+                          <td>
+                            <div class="d-flex justify-content-center">
+                              <div class="option-circle mr-20">
+                                <a href="../html/b2b-travel-office-edit-user.html"><img src="../img/edit.svg"></a>
+                              </div>
+                              <div class="option-circle trash">
+                                <img src="../img/trash.svg" alt="">
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>8</td>
+                          <td>14 Sep 20 09:20</td>
+                          <td>XML API Test</td>
+                          <td>AS12SD</td>
+                          <td>Yatra travel</td>
+                          <td>Bank 1</td>
+                          <td>India</td>
+                          <td>14 Sep 20 09:20</p></td>
+                          <td>5</td>
+                          <td>1000</td>
+                          <td>Yes</td>
+                          <td>
+                            <div class="d-flex justify-content-center">
+                              <div class="option-circle mr-20">
+                                <a href="../html/b2b-travel-office-edit-user.html"><img src="../img/edit.svg"></a>
+                              </div>
+                              <div class="option-circle trash">
+                                <img src="../img/trash.svg" alt="">
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>9</td>
+                          <td>14 Sep 20 09:20</td>
+                          <td>XML API Test</td>
+                          <td>AS12SD</td>
+                          <td>Yatra travel</td>
+                          <td>Bank 1</td>
+                          <td>India</td>
+                          <td>14 Sep 20 09:20</p></td>
+                          <td>5</td>
+                          <td>1000</td>
+                          <td>Yes</td>
+                          <td>
+                            <div class="d-flex justify-content-center">
+                              <div class="option-circle mr-20">
+                                <a href="../html/b2b-travel-office-edit-user.html"><img src="../img/edit.svg"></a>
+                              </div>
+                              <div class="option-circle trash">
+                                <img src="../img/trash.svg" alt="">
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>10</td>
+                          <td>14 Sep 20 09:20</td>
+                          <td>XML API Test</td>
+                          <td>AS12SD</td>
+                          <td>Yatra travel</td>
+                          <td>Bank 1</td>
+                          <td>India</td>
+                          <td>14 Sep 20 09:20</p></td>
+                          <td>5</td>
+                          <td>1000</td>
+                          <td>Yes</td>
+                          <td>
+                            <div class="d-flex justify-content-center">
+                              <div class="option-circle mr-20">
+                                <a href="../html/b2b-travel-office-edit-user.html"><img src="../img/edit.svg"></a>
+                              </div>
+                              <div class="option-circle trash">
+                                <img src="../img/trash.svg" alt="">
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div class="company-show-entries mb-50">
+                      <p>Showing 1 to 10 of 15 </p>
+                      <div class="company-show-entries-sub" style="align-items: center;">
+                        <a href="#" class="previous">&laquo; Previous</a>
+                        <a href="#" class="next">Next &raquo;</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="multi" role="tabpanel" aria-labelledby="multi-tab">
+                  <div class="">
+                    <div class="company-show-entries">
+                      <p>Show
+                        <input type="number" min="0" value="10" style="width: 60px;" class="form-control">
+                        entries
+                      </p>
+                      <div class="d-flex justify-content-lg-start" style="align-items: center;">
+                        <a href="../html/b2b-travel-office-new-user.html" role="button" class="btn btn-primary">New User</a>
+                      </div>
+                    </div>
+                    <table class="table table-hover table-travel-office">
+                      <thead> 
+                        <tr>
+                          <th>#</th>
+                          <th>Registered</th>
+                          <th>Sub agent Group</th>
+                          <th>Office id</th>
+                          <th>Official company name</th>
+                          <th>Payment provider</th>
+                          <th>Location</th>
+                          <th>Last login</th>
+                          <th>Sign in</th>
+                          <th>Deposit</th>
+                          <th>Activated</th>
+                          <th>Options</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>14 Sep 20 09:20</td>
+                          <td>XML API Test</td>
+                          <td>AS12SD</td>
+                          <td>Yatra travel</td>
+                          <td>Bank 1</td>
+                          <td>India</td>
+                          <td>14 Sep 20 09:20</p></td>
+                          <td>5</td>
+                          <td>1000</td>
+                          <td>Yes</td>
+                          <td>
+                            <div class="d-flex justify-content-center">
+                              <div class="option-circle mr-20">
+                                <a href="../html/b2b-travel-office-edit-user.html"><img src="../img/edit.svg"></a>
+                              </div>
+                              <div class="option-circle trash">
+                                <img src="../img/trash.svg" alt="">
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>14 Sep 20 09:20</td>
+                          <td>XML API Test</td>
+                          <td>AS12SD</td>
+                          <td>Yatra travel</td>
+                          <td>Bank 1</td>
+                          <td>India</td>
+                          <td>14 Sep 20 09:20</p></td>
+                          <td>5</td>
+                          <td>1000</td>
+                          <td>Yes</td>
+                          <td>
+                            <div class="d-flex justify-content-center">
+                              <div class="option-circle mr-20">
+                                <a href="../html/b2b-travel-office-edit-user.html"><img src="../img/edit.svg"></a>
+                              </div>
+                              <div class="option-circle trash">
+                                <img src="../img/trash.svg" alt="">
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>14 Sep 20 09:20</td>
+                          <td>XML API Test</td>
+                          <td>AS12SD</td>
+                          <td>Yatra travel</td>
+                          <td>Bank 1</td>
+                          <td>India</td>
+                          <td>14 Sep 20 09:20</p></td>
+                          <td>5</td>
+                          <td>1000</td>
+                          <td>Yes</td>
+                          <td>
+                            <div class="d-flex justify-content-center">
+                              <div class="option-circle mr-20">
+                                <a href="../html/b2b-travel-office-edit-user.html"><img src="../img/edit.svg"></a>
+                              </div>
+                              <div class="option-circle trash">
+                                <img src="../img/trash.svg" alt="">
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>14 Sep 20 09:20</td>
+                          <td>XML API Test</td>
+                          <td>AS12SD</td>
+                          <td>Yatra travel</td>
+                          <td>Bank 1</td>
+                          <td>India</td>
+                          <td>14 Sep 20 09:20</p></td>
+                          <td>5</td>
+                          <td>1000</td>
+                          <td>Yes</td>
+                          <td>
+                            <div class="d-flex justify-content-center">
+                              <div class="option-circle mr-20">
+                                <a href="../html/b2b-travel-office-edit-user.html"><img src="../img/edit.svg"></a>
+                              </div>
+                              <div class="option-circle trash">
+                                <img src="../img/trash.svg" alt="">
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>5</td>
+                          <td>14 Sep 20 09:20</td>
+                          <td>XML API Test</td>
+                          <td>AS12SD</td>
+                          <td>Yatra travel</td>
+                          <td>Bank 1</td>
+                          <td>India</td>
+                          <td>14 Sep 20 09:20</p></td>
+                          <td>5</td>
+                          <td>1000</td>
+                          <td>Yes</td>
+                          <td>
+                            <div class="d-flex justify-content-center">
+                              <div class="option-circle mr-20">
+                                <a href="../html/b2b-travel-office-edit-user.html"><img src="../img/edit.svg"></a>
+                              </div>
+                              <div class="option-circle trash">
+                                <img src="../img/trash.svg" alt="">
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>6</td>
+                          <td>14 Sep 20 09:20</td>
+                          <td>XML API Test</td>
+                          <td>AS12SD</td>
+                          <td>Yatra travel</td>
+                          <td>Bank 1</td>
+                          <td>India</td>
+                          <td>14 Sep 20 09:20</p></td>
+                          <td>5</td>
+                          <td>1000</td>
+                          <td>Yes</td>
+                          <td>
+                            <div class="d-flex justify-content-center">
+                              <div class="option-circle mr-20">
+                                <a href="../html/b2b-travel-office-edit-user.html"><img src="../img/edit.svg"></a>
+                              </div>
+                              <div class="option-circle trash">
+                                <img src="../img/trash.svg" alt="">
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>7</td>
+                          <td>14 Sep 20 09:20</td>
+                          <td>XML API Test</td>
+                          <td>AS12SD</td>
+                          <td>Yatra travel</td>
+                          <td>Bank 1</td>
+                          <td>India</td>
+                          <td>14 Sep 20 09:20</p></td>
+                          <td>5</td>
+                          <td>1000</td>
+                          <td>Yes</td>
+                          <td>
+                            <div class="d-flex justify-content-center">
+                              <div class="option-circle mr-20">
+                                <a href="../html/b2b-travel-office-edit-user.html"><img src="../img/edit.svg"></a>
+                              </div>
+                              <div class="option-circle trash">
+                                <img src="../img/trash.svg" alt="">
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>8</td>
+                          <td>14 Sep 20 09:20</td>
+                          <td>XML API Test</td>
+                          <td>AS12SD</td>
+                          <td>Yatra travel</td>
+                          <td>Bank 1</td>
+                          <td>India</td>
+                          <td>14 Sep 20 09:20</p></td>
+                          <td>5</td>
+                          <td>1000</td>
+                          <td>Yes</td>
+                          <td>
+                            <div class="d-flex justify-content-center">
+                              <div class="option-circle mr-20">
+                                <a href="../html/b2b-travel-office-edit-user.html"><img src="../img/edit.svg"></a>
+                              </div>
+                              <div class="option-circle trash">
+                                <img src="../img/trash.svg" alt="">
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>9</td>
+                          <td>14 Sep 20 09:20</td>
+                          <td>XML API Test</td>
+                          <td>AS12SD</td>
+                          <td>Yatra travel</td>
+                          <td>Bank 1</td>
+                          <td>India</td>
+                          <td>14 Sep 20 09:20</p></td>
+                          <td>5</td>
+                          <td>1000</td>
+                          <td>Yes</td>
+                          <td>
+                            <div class="d-flex justify-content-center">
+                              <div class="option-circle mr-20">
+                                <a href="../html/b2b-travel-office-edit-user.html"><img src="../img/edit.svg"></a>
+                              </div>
+                              <div class="option-circle trash">
+                                <img src="../img/trash.svg" alt="">
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>10</td>
+                          <td>14 Sep 20 09:20</td>
+                          <td>XML API Test</td>
+                          <td>AS12SD</td>
+                          <td>Yatra travel</td>
+                          <td>Bank 1</td>
+                          <td>India</td>
+                          <td>14 Sep 20 09:20</p></td>
+                          <td>5</td>
+                          <td>1000</td>
+                          <td>Yes</td>
+                          <td>
+                            <div class="d-flex justify-content-center">
+                              <div class="option-circle mr-20">
+                                <a href="../html/b2b-travel-office-edit-user.html"><img src="../img/edit.svg"></a>
+                              </div>
+                              <div class="option-circle trash">
+                                <img src="../img/trash.svg" alt="">
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div class="company-show-entries mb-50">
+                      <p>Showing 1 to 10 of 15 </p>
+                      <div class="company-show-entries-sub" style="align-items: center;">
+                        <a href="#" class="previous">&laquo; Previous</a>
+                        <a href="#" class="next">Next &raquo;</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="diss" role="tabpanel" aria-labelledby="diss-tab">
+                  <div class="">
+                    <div class="company-show-entries">
+                      <p>Show
+                        <input type="number" min="0" value="10" style="width: 60px;" class="form-control">
+                        entries
+                      </p>
+                      <div class="d-flex justify-content-lg-start" style="align-items: center;">
+                        <a href="../html/b2b-travel-office-new-user.html" role="button" class="btn btn-primary">New User</a>
+                      </div>
+                    </div>
+                    <table class="table table-hover table-travel-office">
+                      <thead> 
+                        <tr>
+                          <th>#</th>
+                          <th>Registered</th>
+                          <th>Sub agent Group</th>
+                          <th>Office id</th>
+                          <th>Official company name</th>
+                          <th>Payment provider</th>
+                          <th>Location</th>
+                          <th>Last login</th>
+                          <th>Sign in</th>
+                          <th>Deposit</th>
+                          <th>Activated</th>
+                          <th>Options</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>14 Sep 20 09:20</td>
+                          <td>XML API Test</td>
+                          <td>AS12SD</td>
+                          <td>Yatra travel</td>
+                          <td>Bank 1</td>
+                          <td>India</td>
+                          <td>14 Sep 20 09:20</p></td>
+                          <td>5</td>
+                          <td>1000</td>
+                          <td>Yes</td>
+                          <td>
+                            <div class="d-flex justify-content-center">
+                              <div class="option-circle mr-20">
+                                <a href="../html/b2b-travel-office-edit-user.html"><img src="../img/edit.svg"></a>
+                              </div>
+                              <div class="option-circle trash">
+                                <img src="../img/trash.svg" alt="">
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>14 Sep 20 09:20</td>
+                          <td>XML API Test</td>
+                          <td>AS12SD</td>
+                          <td>Yatra travel</td>
+                          <td>Bank 1</td>
+                          <td>India</td>
+                          <td>14 Sep 20 09:20</p></td>
+                          <td>5</td>
+                          <td>1000</td>
+                          <td>Yes</td>
+                          <td>
+                            <div class="d-flex justify-content-center">
+                              <div class="option-circle mr-20">
+                                <a href="../html/b2b-travel-office-edit-user.html"><img src="../img/edit.svg"></a>
+                              </div>
+                              <div class="option-circle trash">
+                                <img src="../img/trash.svg" alt="">
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>14 Sep 20 09:20</td>
+                          <td>XML API Test</td>
+                          <td>AS12SD</td>
+                          <td>Yatra travel</td>
+                          <td>Bank 1</td>
+                          <td>India</td>
+                          <td>14 Sep 20 09:20</p></td>
+                          <td>5</td>
+                          <td>1000</td>
+                          <td>Yes</td>
+                          <td>
+                            <div class="d-flex justify-content-center">
+                              <div class="option-circle mr-20">
+                                <a href="../html/b2b-travel-office-edit-user.html"><img src="../img/edit.svg"></a>
+                              </div>
+                              <div class="option-circle trash">
+                                <img src="../img/trash.svg" alt="">
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>14 Sep 20 09:20</td>
+                          <td>XML API Test</td>
+                          <td>AS12SD</td>
+                          <td>Yatra travel</td>
+                          <td>Bank 1</td>
+                          <td>India</td>
+                          <td>14 Sep 20 09:20</p></td>
+                          <td>5</td>
+                          <td>1000</td>
+                          <td>Yes</td>
+                          <td>
+                            <div class="d-flex justify-content-center">
+                              <div class="option-circle mr-20">
+                                <a href="../html/b2b-travel-office-edit-user.html"><img src="../img/edit.svg"></a>
+                              </div>
+                              <div class="option-circle trash">
+                                <img src="../img/trash.svg" alt="">
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>5</td>
+                          <td>14 Sep 20 09:20</td>
+                          <td>XML API Test</td>
+                          <td>AS12SD</td>
+                          <td>Yatra travel</td>
+                          <td>Bank 1</td>
+                          <td>India</td>
+                          <td>14 Sep 20 09:20</p></td>
+                          <td>5</td>
+                          <td>1000</td>
+                          <td>Yes</td>
+                          <td>
+                            <div class="d-flex justify-content-center">
+                              <div class="option-circle mr-20">
+                                <a href="../html/b2b-travel-office-edit-user.html"><img src="../img/edit.svg"></a>
+                              </div>
+                              <div class="option-circle trash">
+                                <img src="../img/trash.svg" alt="">
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>6</td>
+                          <td>14 Sep 20 09:20</td>
+                          <td>XML API Test</td>
+                          <td>AS12SD</td>
+                          <td>Yatra travel</td>
+                          <td>Bank 1</td>
+                          <td>India</td>
+                          <td>14 Sep 20 09:20</p></td>
+                          <td>5</td>
+                          <td>1000</td>
+                          <td>Yes</td>
+                          <td>
+                            <div class="d-flex justify-content-center">
+                              <div class="option-circle mr-20">
+                                <a href="../html/b2b-travel-office-edit-user.html"><img src="../img/edit.svg"></a>
+                              </div>
+                              <div class="option-circle trash">
+                                <img src="../img/trash.svg" alt="">
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>7</td>
+                          <td>14 Sep 20 09:20</td>
+                          <td>XML API Test</td>
+                          <td>AS12SD</td>
+                          <td>Yatra travel</td>
+                          <td>Bank 1</td>
+                          <td>India</td>
+                          <td>14 Sep 20 09:20</p></td>
+                          <td>5</td>
+                          <td>1000</td>
+                          <td>Yes</td>
+                          <td>
+                            <div class="d-flex justify-content-center">
+                              <div class="option-circle mr-20">
+                                <a href="../html/b2b-travel-office-edit-user.html"><img src="../img/edit.svg"></a>
+                              </div>
+                              <div class="option-circle trash">
+                                <img src="../img/trash.svg" alt="">
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>8</td>
+                          <td>14 Sep 20 09:20</td>
+                          <td>XML API Test</td>
+                          <td>AS12SD</td>
+                          <td>Yatra travel</td>
+                          <td>Bank 1</td>
+                          <td>India</td>
+                          <td>14 Sep 20 09:20</p></td>
+                          <td>5</td>
+                          <td>1000</td>
+                          <td>Yes</td>
+                          <td>
+                            <div class="d-flex justify-content-center">
+                              <div class="option-circle mr-20">
+                                <a href="../html/b2b-travel-office-edit-user.html"><img src="../img/edit.svg"></a>
+                              </div>
+                              <div class="option-circle trash">
+                                <img src="../img/trash.svg" alt="">
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>9</td>
+                          <td>14 Sep 20 09:20</td>
+                          <td>XML API Test</td>
+                          <td>AS12SD</td>
+                          <td>Yatra travel</td>
+                          <td>Bank 1</td>
+                          <td>India</td>
+                          <td>14 Sep 20 09:20</p></td>
+                          <td>5</td>
+                          <td>1000</td>
+                          <td>Yes</td>
+                          <td>
+                            <div class="d-flex justify-content-center">
+                              <div class="option-circle mr-20">
+                                <a href="../html/b2b-travel-office-edit-user.html"><img src="../img/edit.svg"></a>
+                              </div>
+                              <div class="option-circle trash">
+                                <img src="../img/trash.svg" alt="">
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>10</td>
+                          <td>14 Sep 20 09:20</td>
+                          <td>XML API Test</td>
+                          <td>AS12SD</td>
+                          <td>Yatra travel</td>
+                          <td>Bank 1</td>
+                          <td>India</td>
+                          <td>14 Sep 20 09:20</p></td>
+                          <td>5</td>
+                          <td>1000</td>
+                          <td>Yes</td>
+                          <td>
+                            <div class="d-flex justify-content-center">
+                              <div class="option-circle mr-20">
+                                <a href="../html/b2b-travel-office-edit-user.html"><img src="../img/edit.svg"></a>
+                              </div>
+                              <div class="option-circle trash">
+                                <img src="../img/trash.svg" alt="">
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div class="company-show-entries mb-50">
+                      <p>Showing 1 to 10 of 15 </p>
+                      <div class="company-show-entries-sub" style="align-items: center;">
+                        <a href="#" class="previous">&laquo; Previous</a>
+                        <a href="#" class="next">Next &raquo;</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             </div>
+          
+
+              
+
+            </div>
+          </div>
+        </div>
+      
+     
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/popper.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/swiper.min.js"></script>
+<script> 
+  $(document).ready(function(){
+    $("#flip-menu").click(function(){
+      $("#panel-menu").slideToggle("slow");
+    });
+  });
+  </script>
+
+
+</html>

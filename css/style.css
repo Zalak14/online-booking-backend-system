@@ -606,7 +606,7 @@ font-weight: 600;
   width: auto;
 }
 .company-user-table-title{
-  padding: 20px;
+  padding: 15px;
   background-image: linear-gradient(to right,#96dd4b 0,#2eb96e 51%,#96dd4b 100%);
   color: white;
   margin: 0 1px;
@@ -702,40 +702,80 @@ font-weight: 600;
   margin-bottom: 20px;
 }
 h4{
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 600;
 }
-.company-office-parameter-main h4{
-  padding: 20px;
+.btn-heading{
+  padding: 12px;
   background-image: linear-gradient(to right,#96dd4b 0,#2eb96e 51%,#96dd4b 100%);
   color: white;
-  width: 34%;
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 500;
 }
+
 .company-office-parameter-main form{
   background-color: white;
   padding: 50px;
+}
+.company-show-entries{
+  margin: 20px 0;
+  padding: 15px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.table th, .table td {
+  padding: 10px 10px;
+  vertical-align: middle;
+  border-top: 1px solid #e9ecef;
+}
+.table-hover tbody tr:hover{
+  background-color: white;
+  background-image: linear-gradient(to right,#96dd4b 0,#2eb96e 51%,#96dd4b 100%);
+  color: white;
+}
+.company-show-entries .form-control{
+  padding: 4px;
+  display: initial;
+}
+.company-show-entries-sub{
+  display: flex;
+  justify-content: start;
+}
+.company-show-entries-sub a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+.company-show-entries-sub a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.company-show-entries-sub .previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.company-show-entries-sub .next {
+  background-color: #4CAF50;
+  color: white;
 }
 
 .office-credit-line-form{
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.office-credit-line-form h4{
-  padding: 20px;
-  background-image: linear-gradient(to right,#96dd4b 0,#2eb96e 51%,#96dd4b 100%);
-  color: white;
-  width: 15%;
-}
+
+
 .user-access-level-main{
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.user-access-level-main h4{
-  padding: 20px;
-  background-image: linear-gradient(to right,#96dd4b 0,#2eb96e 51%,#96dd4b 100%);
-  color: white;
-  width: 22%;
-}
+
 .user-access-level-sub{
   padding: 40px;
   background-color: white;
@@ -745,21 +785,12 @@ h4{
   margin-bottom: 20px;
   font-weight: 600;
 }
-.nav-pills .nav-link.active, .show > .nav-pills .nav-link{
-  background-image: linear-gradient(to right,#96dd4b 0,#2eb96e 51%,#96dd4b 100%);
-  background-color: transparent;
 
-}
 .company-office-data-main{
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.company-office-data-main h4{
-  padding: 20px;
-  background-image: linear-gradient(to right,#96dd4b 0,#2eb96e 51%,#96dd4b 100%);
-  color: white;
-  width: 26%;
-}
+
 .company-office-data-sub{
   background-color: white;
   padding: 40px;
@@ -2418,9 +2449,7 @@ margin-bottom: 20px;
 .holiday-book-btn1{
   bottom: 0 !important;
 }
-.b2b-edit-main .office-credit-line-form h4{
-width: 20%;
-}
+
 .b2b-edit-sub{
   background-color: white;
   padding: 40px;
@@ -2435,7 +2464,82 @@ width: 20%;
   height: 100%;
   width: 100%;
 }
-
+.b2b-travel-office-main .nav{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  background: black;
+  
+}
+.b2b-travel-office-main .nav a{
+  color: white !important;
+  text-align: center;
+}
+.b2b-travel-office-main .nav .nav-item{
+  width: 100%;
+}
+.b2b-travel-office-main .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link{
+  color: black !important;
+  border-radius: 0px;
+  border-color: transparent;
+}
+.b2b-travel-office-main .nav-tabs .nav-link:hover{
+  border-color: transparent;
+}
+.table-travel-office{
+  background-color: white;
+}
+.table-travel-office th{
+font-size: 14px;
+padding: 10px 4px;
+}
+.table-travel-office td{
+  font-size: 14px;
+  }
+  .travel-office-new-user-form{
+    margin-top: 40px;
+  }
+  .travel-office-new-user-form .travel-office-new-user-form-sub{
+    padding: 50px;
+    background-color: white;
+  }
+.travel-office-edit-user-form-sub{
+  padding: 20px 50px;
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.b2b-loyality-main h4{
+  background-image: linear-gradient(to right,#96dd4b 0,#2eb96e 51%,#96dd4b 100%);
+  padding: 15px;
+  color: white;
+  font-size: 18px;
+  margin-top: 50px;
+}
+.b2b-loyality-sub{
+  background-color: white;
+}
+.mr-15{
+  margin-right: 15px;
+}
+.mr-15{
+  margin-bottom: 15px;
+}
+.b2b-loyality-sub-multipoint{
+  margin-top: 20px;
+  margin-left: 10px;
+}
+.b2b-loyality-sub-multipoint .input-group{
+  align-items: center;
+  display: flex;
+  background: gainsboro;
+  border: 1px solid gainsboro;
+  
+}
+.b2b-loyality-sub-multipoint .input-group-text{
+  font-size: 14px;
+  padding: 5px;
+}
 
 
 
