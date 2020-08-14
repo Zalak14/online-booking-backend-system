@@ -769,6 +769,10 @@ h4{
   margin-top: 20px;
   margin-bottom: 20px;
 }
+.office-credit-line-form1{
+  background-color: white;
+  padding: 50px;
+}
 
 
 .user-access-level-main{
@@ -2466,9 +2470,7 @@ margin-bottom: 20px;
 }
 .b2b-travel-office-main .nav{
   display: flex;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  background: black;
+  flex-wrap: wrap;
   
 }
 .b2b-travel-office-main .nav a{
@@ -2476,7 +2478,8 @@ margin-bottom: 20px;
   text-align: center;
 }
 .b2b-travel-office-main .nav .nav-item{
-  width: 100%;
+  margin-bottom: 20px;
+  background: black;
 }
 .b2b-travel-office-main .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link{
   color: black !important;
@@ -2522,8 +2525,14 @@ padding: 10px 4px;
 .mr-15{
   margin-right: 15px;
 }
-.mr-15{
+.mb-15{
   margin-bottom: 15px;
+}
+.mt-10{
+  margin-top: 10px !important;
+}
+.ml-12{
+  margin-left: 12px;
 }
 .b2b-loyality-sub-multipoint{
   margin-top: 20px;
@@ -2539,6 +2548,9 @@ padding: 10px 4px;
 .b2b-loyality-sub-multipoint .input-group-text{
   font-size: 14px;
   padding: 5px;
+}
+.loyality-new-user-form{
+  width: 60%;
 }
 
 

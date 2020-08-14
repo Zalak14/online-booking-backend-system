@@ -79,22 +79,31 @@
               <div class=" b2b-travel-office-main">
                 <ul class="nav nav-tabs" id="myTab" >
                   <li class="nav-item">
-                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Travel Partner</a>
+                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Company office data</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Whitelabel Partner</a>
+                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Office parameter</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Corporate Partner</a>
+                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">User</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" id="xml-tab" data-toggle="tab" href="#xml" role="tab" aria-controls="xml" aria-selected="false">XML API</a>
+                    <a class="nav-link" id="xml-tab" data-toggle="tab" href="#xml" role="tab" aria-controls="xml" aria-selected="false">Deposit and prepayment</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" id="multi-tab" data-toggle="tab" href="#multi" role="tab" aria-controls="multi" aria-selected="false">Multi Partner</a>
+                    <a class="nav-link" id="multi-tab" data-toggle="tab" href="#multi" role="tab" aria-controls="multi" aria-selected="false">Statement of account</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" id="diss-tab" data-toggle="tab" href="#diss" role="tab" aria-controls="diss" aria-selected="false">Disabled Partner</a>
+                    <a class="nav-link" id="credit-line-tab" data-toggle="tab" href="#credit-line" role="tab" aria-controls="credit-line" aria-selected="false">Credit line</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="statements-tab" data-toggle="tab" href="#statements" role="tab" aria-controls="statements" aria-selected="false">Credit line statements</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="transactions-tab" data-toggle="tab" href="#transactions" role="tab" aria-controls="transactions" aria-selected="false">Credit card transactions</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="documents-tab" data-toggle="tab" href="#documents" role="tab" aria-controls="documents" aria-selected="false">Documents</a>
                   </li>
                 </ul>
                 <div class="tab-content" id="myTabContent">
@@ -348,497 +357,370 @@
                   </div>
                   <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                     <div class="">
-                      <div class="travel-office-edit-user-form-sub">
-                        <div class="border-line">
-                          <label><b>Company office data</b></label>
+                      <div class="company-office-parameter-main">
+          
+                        <div class="row">
+                          <div class="col-sm-12">
+                            <div class="">
+                              <form>
+                                <div class="form-row">
+                                  <div class="form-group col-md-4">
+                                    <label>Disabled Destination for search</label>
+                                    <input type="text" class="form-control">
+                                  </div>
+                                  <div class="form-group col-md-4">
+                                    <label>Disabled Countires for Payment</label>
+                                    <input type="text" class="form-control">
+                                  </div>
+                                  <div class="form-group col-md-4">
+                                    <label>Default Email Sender Name</label>
+                                    <input type="text" class="form-control">
+                                  </div>
+                                </div>
+          
+                                <div class="form-row">
+                                  <div class="form-group col-md-4">
+                                    <label>Invoice Prefix</label>
+                                    <input type="text" class="form-control">
+                                  </div>
+                                  <div class="form-group col-md-4">
+                                    <label>Deposit Alert Limit</label>
+                                    <input type="text" class="form-control">
+                                  </div>
+                                  <div class="form-group col-md-4">
+                                    <label>Default Email Sender Email</label>
+                                    <input type="text" class="form-control">
+                                  </div>
+                                </div>
+          
+                                <div class="form-row">
+                                  <div class="form-group col-md-4">
+                                    <label>Open Booking Limit</label>
+                                    <input type="text" class="form-control">
+                                  </div>
+                                  <div class="form-group col-md-4">
+                                    <label>Margin on Currency Rate (%)</label>
+                                    <input type="text" class="form-control">
+                                  </div>
+                                  <div class="form-group col-md-4">
+                                    <label>Default Email (Automatic email)</label>
+                                    <input type="text" class="form-control">
+                                  </div>
+                                </div>
+          
+                                <div class="form-row">
+                                  <div class="form-group col-md-4">
+                                    <label>Credit Line Alert Level</label>
+                                    <input type="text" class="form-control">
+                                  </div>
+                                  <div class="form-group col-md-4">
+                                    <label>Credit Line Limit</label>
+                                    <input type="text" class="form-control">
+                                  </div>
+                                  <div class="form-group col-md-4">
+                                    <label>B2B Email (Activate / deactivate Companies)</label>
+                                    <input type="text" class="form-control">
+                                  </div>
+                                </div>
+          
+                                <div class="form-row">
+                                  <div class="form-group col-md-4">
+                                    <label>Issue Time</label>
+                                    <input type="text" class="form-control">
+                                  </div>
+                                  <div class="form-group col-md-4">
+                                    <label>satement Email Recipient</label>
+                                    <input type="text" class="form-control">
+                                  </div>
+                                  <div class="form-group col-md-4">
+                                    <label>Hold Deposit</label>
+                                    <input type="text" class="form-control">
+                                  </div>
+                                </div>
+          
+                                <div class="form-row">
+                                  <div class="form-group col-md-4">
+                                    <label>Sales Phone</label>
+                                    <input type="text" class="form-control">
+                                  </div>
+                                  <div class="form-group col-md-4">
+                                    <label>Payment</label>
+                                    <select class="form-control">
+                                      <option selected>Choose...</option>
+                                      <option>HDFC</option>
+                                      <option>Kotak</option>
+                                      <option>SBI</option>
+                                      <option>Citi</option>
+                                      <option>BOB</option>
+                                      <option>BOI</option>
+                                    </select>
+                                  </div>
+                                  <div class="form-group col-md-4">
+                                    <label>statement Email Copy</label>
+                                    <input type="text" class="form-control">
+                                  </div>
+                                </div>
+          
+                                <div class="form-row">
+                                  <div class="form-group col-md-4">
+                                    <label>Statement Issue Frequency</label>
+                                    <select class="form-control">
+                                      <option selected>Choose...</option>
+                                      <option>Daily</option>
+                                      <option>Week</option>
+                                      <option>Month</option>
+                                      <option>Year</option>
+                                    </select>
+                                  </div>
+                                  <div class="form-group col-md-4">
+                                    <label>Day of Week</label>
+                                    <select class="form-control">
+                                      <option selected>Choose...</option>
+                                      <option>Sun</option>
+                                      <option>Mon</option>
+                                      <option>Tue</option>
+                                      <option>Wed</option>
+                                      <option>Thu</option>
+                                      <option>Fri</option>
+                                      <option>Sat</option>
+                                    </select>
+                                  </div>
+                                  
+                                  <div class="form-group col-md-4">
+                                    <label>Language</label>
+                                    <select class="form-control">
+                                      <option selected>Choose...</option>
+                                      <option>English</option>
+                                      <option>Hindi</option>
+                                      <option>Gujrati</option>
+                                      <option>Tamil</option>
+                                      <option>Marathi</option>
+                                      <option>Kannad</option>
+                                    </select>
+                                  </div>
+                                </div>
+          
+                                <div class="form-row">
+                                  <div class="form-group col-md-12">
+                                    <label>Note</label><br>
+                                    <textarea name="" id="" rows="2" class="form-control"></textarea>
+                                  </div>
+                                </div>
+          
+                                <div class="form-row">
+                                  <div class="form-group col-md-12">
+                                    <div class="form-check mb-2 mr-sm-2 ml-5">
+                                      <input class="form-check-input" type="checkbox" id="inlineFormCheck" style="margin-left: 0;">
+                                      <label class="form-check-label" for="inlineFormCheck">
+                                        Show Hotel Supplier Logos
+                                      </label>
+                                    </div>
+                                    <div class="form-check mb-2 mr-sm-2 ml-5">
+                                      <input class="form-check-input" type="checkbox" id="inlineFormCheck" style="margin-left: 0;">
+                                      <label class="form-check-label" for="inlineFormCheck">
+                                        Show Flight Suppliers
+                                      </label>
+                                    </div>
+                                    <div class="form-check mb-2 mr-sm-2 ml-5">
+                                      <input class="form-check-input" type="checkbox" id="inlineFormCheck" style="margin-left: 0;">
+                                      <label class="form-check-label" for="inlineFormCheck">
+                                        Credit Card charge mode selection (net price or gross price)
+                                      </label>
+                                    </div>
+                                    <div class="form-check mb-2 mr-sm-2 ml-5">
+                                      <input class="form-check-input" type="checkbox" id="inlineFormCheck" style="margin-left: 0;">
+                                      <label class="form-check-label" for="inlineFormCheck">
+                                        Payment possibility after booking (credit card or deposit)
+                                      </label>
+                                    </div>
+                                    <div class="form-check mb-2 mr-sm-2 ml-5">
+                                      <input class="form-check-input" type="checkbox" id="inlineFormCheck" style="margin-left: 0;">
+                                      <label class="form-check-label" for="inlineFormCheck">
+                                        Classic packages Marketplace
+                                      </label>
+                                    </div>
+                                    
+                                  </div>
+                                </div>
+                                <div class="d-flex justify-content-start mb-20">
+                                  <a href="#" class="btn btn-primary mr-20" role="button">Save</a>
+                                  <a href="#" class="btn btn-primary" role="button">Cancel</a>
+                                </div>
+          
+                              </form>
+                            </div>
+                          </div>
                         </div>
-                        <form>
-                          <div class="form-row">
-                            <div class="form-group col-md-6">
-                              <label>Sub agent group</label>
-                              <select class="form-control">
-                                <option selected>Choose...</option>
-                              </select>
-                            </div>
-                            <div class="form-group col-md-6">
-                              <label>Office type</label>
-                              <select class="form-control">
-                                <option selected>Choose...</option>
-                              </select>
-                            </div>
-                          </div>
-                          <div class="form-row">
-                            <div class="form-group col-md-6">
-                              <label>Contracted by</label>
-                              <select class="form-control">
-                                <option selected>Choose...</option>
-                              </select>
-                            </div>
-                            <div class="form-group col-md-6">
-                              <label>Key account manager</label>
-                              <select class="form-control">
-                                <option selected>Choose...</option>
-                              </select>
-                            </div>
-                          </div>
-                          <div class="form-row">
-                            <div class="form-group col-md-6">
-                              <label>Sales Manager</label>
-                              <select class="form-control">
-                                <option selected>Choose...</option>
-                              </select>
-                            </div>
-                            <div class="form-group col-md-6">
-                              <label>Office will be deactiveted after</label>
-                              <select class="form-control">
-                                <option selected>Choose...</option>
-                              </select>
-                            </div>
-                          </div>
-                          <div class="form-row">
-                            <div class="form-group col-md-6">
-                              <label>office agencies Name</label>
-                              <input type="text" class="form-control">
-                            </div>
-                            <div class="form-group col-md-6">
-                              <label>Offical company name</label>
-                              <input type="text" class="form-control">
-                            </div>
-                          </div>
-                          <div class="form-row">
-                            <div class="form-group col-md-6">
-                              <label>Office ID</label>
-                              <input type="text" class="form-control">
-                            </div>
-                          </div>
-                          <div class="">
-                            <input type="radio" name="12">
-                            <label class="mr-20">Existing company</label>
-                            <input type="radio" name="12">
-                            <label>To be created company / individual company</label>
-                          </div>
-                          <div class="border-line">
-                            <label><b>Contact Person</b></label>
-                          </div>
-                          <div class="form-row">
-                            <div class="form-group col-md-1">
-                              <label>Title</label>
-                              <select class="form-control">
-                                <option selected>Choose...</option>
-                                <option selected>Mrs.</option>
-                                <option selected>Mr.</option>
-                                <option selected>Ms.</option>
-                              </select>
-                            </div>
-                            <div class="form-group col-md-5">
-                              <label>First Name</label>
-                              <input type="text" class="form-control">
-                            </div>
-                            <div class="form-group col-md-6">
-                              <label>Last Name</label>
-                              <input type="text" class="form-control">
-                            </div>
-                          </div>
-                          <div class="form-row">
-                            <div class="form-group col-md-6">
-                              <label>Email</label>
-                              <input type="text" class="form-control">
-                            </div>
-                            <div class="form-group col-md-6">
-                              <label>Phone</label>
-                              <input type="text" class="form-control">
-                            </div>
-                          </div>
-                          <div class="form-row">
-                            <div class="form-group col-md-6">
-                              <label>Register number</label>
-                              <input type="text" class="form-control">
-                            </div>
-                            <div class="form-group col-md-6">
-                              <label>Tax number</label>
-                              <input type="text" class="form-control">
-                            </div>
-                          </div>
-                          <div class="form-row">
-                            <div class="form-group col-md-6">
-                              <label>Country</label>
-                              <select class="form-control">
-                                <option selected>Choose...</option>
-                                <option selected>India</option>
-                                <option selected>USA</option>
-                                <option selected>Canada</option>
-                              </select>
-                            </div>
-                            <div class="form-group col-md-6">
-                              <label>State</label>
-                              <select class="form-control">
-                                <option selected>Choose...</option>
-                                <option selected>Gujarat</option>
-                                <option selected>Tamilnadu</option>
-                                <option selected>Karnataka</option>
-                              </select>
-                            </div>
-                          </div>
-                          <div class="form-row">
-                            <div class="form-group col-md-6">
-                              <label>City</label>
-                              <input type="text" class="form-control">
-                            </div>
-                            <div class="form-group col-md-6">
-                              <label>Zip / Post code</label>
-                              <input type="text" class="form-control">
-                            </div>
-                          </div>
-                          <div class="form-row">
-                            <div class="form-group col-md-6">
-                              <label>Address line 1</label>
-                              <input type="text" class="form-control">
-                            </div>
-                            <div class="form-group col-md-6">
-                              <label>Address line 2</label>
-                              <input type="text" class="form-control">
-                            </div>
-                          </div>
-                          <div class="form-row">
-                            <div class="form-group col-md-6">
-                              <label>Emergency phone number</label>
-                              <input type="text" class="form-control">
-                            </div>
-                            <div class="form-group col-md-6">
-                              <label>Skype</label>
-                              <input type="text" class="form-control">
-                            </div>
-                          </div>
-                          <div class="form-row">
-                            <div class="form-group col-md-6">
-                              <label>GST number</label>
-                              <input type="text" class="form-control">
-                            </div>
-                            <div class="form-group col-md-6">
-                              <label>GST e-mail</label>
-                              <input type="text" class="form-control">
-                            </div>
-                          </div>
-                          <div class="border-line">
-                            <label><b>Invoice Detail</b></label>
-                          </div>
-                          <div class="form-row">
-                            <div class="form-group col-md-6">
-                              <label>Invoice Country</label>
-                              <input type="text" class="form-control">
-                            </div>
-                            <div class="form-group col-md-6">
-                              <label>Invoice city</label>
-                              <input type="text" class="form-control">
-                            </div>
-                          </div>
-                          <div class="form-row">
-                            <div class="form-group col-md-6">
-                              <label>Invoice zip</label>
-                              <input type="text" class="form-control">
-                            </div>
-                            <div class="form-group col-md-6">
-                              <label>Invoice address</label>
-                              <input type="text" class="form-control">
-                            </div>
-                          </div>
-      
-                          <div class="border-line">
-                            <label><b>Bank Detail</b></label>
-                          </div>
-                          <div class="form-row">
-                            <div class="form-group col-md-6">
-                              <label>Bank name</label>
-                              <input type="text" class="form-control">
-                            </div>
-                            <div class="form-group col-md-6">
-                              <label>Branch</label>
-                              <input type="text" class="form-control">
-                            </div>
-                          </div>
-                          <div class="form-row">
-                            <div class="form-group col-md-6">
-                              <label>SWIFT</label>
-                              <input type="text" class="form-control">
-                            </div>
-                            <div class="form-group col-md-6">
-                              <label>Bank account number</label>
-                              <input type="text" class="form-control">
-                            </div>
-                          </div>
-                          <div class="form-row">
-                            <div class="form-group col-md-6">
-                              <label>IBAN</label>
-                              <input type="text" class="form-control">
-                            </div>
-                            <div class="form-group col-md-6">
-                              <label>Beneficiary name</label>
-                              <input type="text" class="form-control">
-                            </div>
-                          </div>
-                          <div class="form-row">
-                            <div class="form-group col-md-12">
-                              <label>Bank details</label>
-                              <input type="text" class="form-control">
-                            </div>
-                          </div>
-      
-      
-                          <div class="d-flex justify-content-start mb-20">
-                            <a href="../html/profile.html" class="btn btn-primary mr-20" role="button">Save</a>
-                            <a href="../html/profile.html" class="btn btn-primary" role="button">Cancel</a>
-                            
-                          </div>
-                          
-                        </form>
-                      </div>
+          
+                        
+          
+                       </div>
                      </div>
                   </div>
                   <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
                     <div class="">
-                      <div class="travel-office-edit-user-form-sub">
-                        <div class="border-line">
-                          <label><b>Company office data</b></label>
+                      <div class="company-user-table">
+                        <div class="company-user-table-title">
+                          <h4>Users</h4>
+                          <a href="company-new-user.html" role="button" class="btn">New User</a>
                         </div>
-                        <form>
-                          <div class="form-row">
-                            <div class="form-group col-md-6">
-                              <label>Sub agent group</label>
-                              <select class="form-control">
-                                <option selected>Choose...</option>
-                              </select>
-                            </div>
-                            <div class="form-group col-md-6">
-                              <label>Office type</label>
-                              <select class="form-control">
-                                <option selected>Choose...</option>
-                              </select>
-                            </div>
+                        <div class="company-show-entries">
+                          <p>Show
+                            <input type="number" min="0" style="width: 60px;" class="form-control">
+                            entries
+                          </p>
+                          <div class="d-flex justify-content-lg-start" style="align-items: center;">
+                            <p class="mr-10">Search: </p>
+                            <input type="text" class="form-control">
                           </div>
-                          <div class="form-row">
-                            <div class="form-group col-md-6">
-                              <label>Contracted by</label>
-                              <select class="form-control">
-                                <option selected>Choose...</option>
-                              </select>
-                            </div>
-                            <div class="form-group col-md-6">
-                              <label>Key account manager</label>
-                              <select class="form-control">
-                                <option selected>Choose...</option>
-                              </select>
-                            </div>
+                        </div>
+                        <table class="table table-hover">
+                          <thead> 
+                            <tr>
+                              <th scope="col">#</th>
+                              <th scope="col">Image</th>
+                              <th scope="col">Name</th>
+                              <th scope="col">Access Level</th>
+                              <th scope="col">Email</th>
+                              <th scope="col">Create Date</th>
+                              <th scope="col">Last Signin</th>
+                              <th scope="col">Point</th>
+                              <th scope="col">Options</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row">1</th>
+                              <td>
+                                <div class="b2b-profile-img">
+                                  <img src="../img/profile1.jpeg">
+                                </div>
+                              </td>
+                              <td>Mark</td>
+                              <td>Admin</td>
+                              <td>zalak@gmail.com</td>
+                              <td>2 Jan 2020, 09:12</td>
+                              <td>2 Feb 2020, 09:12</td>
+                              <td>0</td>
+                              <td>
+                                <div class="d-flex justify-content-between">
+                                  <div class="option-circle">
+                                    <img src="../img/edit.svg">
+                                  </div>
+                                  <div class="option-circle trash">
+                                    <img src="../img/trash.svg" alt="">
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">2</th>
+                              <td>
+                                <div class="b2b-profile-img">
+                                  <img src="../img/profile2.jpeg">
+                                </div>
+                              </td>
+                              <td>Jacob</td>
+                              <td>Admin</td>
+                              <td>zalak@gmail.com</td>
+                              <td>2 Jan 2020, 09:12</td>
+                              <td>2 Feb 2020, 09:12</td>
+                              <td>0</td>
+                              <td>
+                                <div class="d-flex justify-content-between">
+                                  <div class="option-circle">
+                                    <img src="../img/edit.svg">
+                                  </div>
+                                  <div class="option-circle trash">
+                                    <img src="../img/trash.svg" alt="">
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">3</th>
+                              <td>
+                                <div class="b2b-profile-img">
+                                  <img src="../img/profile1.jpeg">
+                                </div>
+                              </td>
+                              <td>Larry</td>
+                              <td>Admin</td>
+                              <td>zalak@gmail.com</td>
+                              <td>2 Jan 2020, 09:12</td>
+                              <td>2 Feb 2020, 09:12</td>
+                              <td>0</td>
+                              <td>
+                                <div class="d-flex justify-content-between">
+                                  <div class="option-circle">
+                                    <img src="../img/edit.svg">
+                                  </div>
+                                  <div class="option-circle trash">
+                                    <img src="../img/trash.svg" alt="">
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">4</th>
+                              <td>
+                                <div class="b2b-profile-img">
+                                  <img src="../img/profile2.jpeg">
+                                </div>
+                              </td>
+                              <td>Mark</td>
+                              <td>Admin</td>
+                              <td>zalak@gmail.com</td>
+                              <td>2 Jan 2020, 09:12</td>
+                              <td>2 Feb 2020, 09:12</td>
+                              <td>0</td>
+                              <td>
+                                <div class="d-flex justify-content-between">
+                                  <div class="option-circle">
+                                    <img src="../img/edit.svg">
+                                  </div>
+                                  <div class="option-circle trash">
+                                    <img src="../img/trash.svg" alt="">
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">5</th>
+                              <td>
+                                <div class="b2b-profile-img">
+                                  <img src="../img/profile1.jpeg">
+                                </div>
+                              </td>
+                              <td>Jacob</td>
+                              <td>Admin</td>
+                              <td>zalak@gmail.com</td>
+                              <td>2 Jan 2020, 09:12</td>
+                              <td>2 Feb 2020, 09:12</td>
+                              <td>0</td>
+                              <td>
+                                <div class="d-flex justify-content-between">
+                                  <div class="option-circle">
+                                    <img src="../img/edit.svg">
+                                  </div>
+                                  <div class="option-circle trash">
+                                    <img src="../img/trash.svg" alt="">
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                           
+                          </tbody>
+                        </table>
+                        <div class="company-show-entries mb-50">
+                          <p>Showing 1 to 5 of 15 </p>
+                          <div class="company-show-entries-sub" style="align-items: center;">
+                            <a href="#" class="previous">&laquo; Previous</a>
+                            <a href="#" class="next">Next &raquo;</a>
                           </div>
-                          <div class="form-row">
-                            <div class="form-group col-md-6">
-                              <label>Sales Manager</label>
-                              <select class="form-control">
-                                <option selected>Choose...</option>
-                              </select>
-                            </div>
-                            <div class="form-group col-md-6">
-                              <label>Office will be deactiveted after</label>
-                              <select class="form-control">
-                                <option selected>Choose...</option>
-                              </select>
-                            </div>
-                          </div>
-                          <div class="form-row">
-                            <div class="form-group col-md-6">
-                              <label>office agencies Name</label>
-                              <input type="text" class="form-control">
-                            </div>
-                            <div class="form-group col-md-6">
-                              <label>Offical company name</label>
-                              <input type="text" class="form-control">
-                            </div>
-                          </div>
-                          <div class="form-row">
-                            <div class="form-group col-md-6">
-                              <label>Office ID</label>
-                              <input type="text" class="form-control">
-                            </div>
-                          </div>
-                          <div class="">
-                            <input type="radio" name="12">
-                            <label class="mr-20">Existing company</label>
-                            <input type="radio" name="12">
-                            <label>To be created company / individual company</label>
-                          </div>
-                          <div class="border-line">
-                            <label><b>Contact Person</b></label>
-                          </div>
-                          <div class="form-row">
-                            <div class="form-group col-md-1">
-                              <label>Title</label>
-                              <select class="form-control">
-                                <option selected>Choose...</option>
-                                <option selected>Mrs.</option>
-                                <option selected>Mr.</option>
-                                <option selected>Ms.</option>
-                              </select>
-                            </div>
-                            <div class="form-group col-md-5">
-                              <label>First Name</label>
-                              <input type="text" class="form-control">
-                            </div>
-                            <div class="form-group col-md-6">
-                              <label>Last Name</label>
-                              <input type="text" class="form-control">
-                            </div>
-                          </div>
-                          <div class="form-row">
-                            <div class="form-group col-md-6">
-                              <label>Email</label>
-                              <input type="text" class="form-control">
-                            </div>
-                            <div class="form-group col-md-6">
-                              <label>Phone</label>
-                              <input type="text" class="form-control">
-                            </div>
-                          </div>
-                          <div class="form-row">
-                            <div class="form-group col-md-6">
-                              <label>Register number</label>
-                              <input type="text" class="form-control">
-                            </div>
-                            <div class="form-group col-md-6">
-                              <label>Tax number</label>
-                              <input type="text" class="form-control">
-                            </div>
-                          </div>
-                          <div class="form-row">
-                            <div class="form-group col-md-6">
-                              <label>Country</label>
-                              <select class="form-control">
-                                <option selected>Choose...</option>
-                                <option selected>India</option>
-                                <option selected>USA</option>
-                                <option selected>Canada</option>
-                              </select>
-                            </div>
-                            <div class="form-group col-md-6">
-                              <label>State</label>
-                              <select class="form-control">
-                                <option selected>Choose...</option>
-                                <option selected>Gujarat</option>
-                                <option selected>Tamilnadu</option>
-                                <option selected>Karnataka</option>
-                              </select>
-                            </div>
-                          </div>
-                          <div class="form-row">
-                            <div class="form-group col-md-6">
-                              <label>City</label>
-                              <input type="text" class="form-control">
-                            </div>
-                            <div class="form-group col-md-6">
-                              <label>Zip / Post code</label>
-                              <input type="text" class="form-control">
-                            </div>
-                          </div>
-                          <div class="form-row">
-                            <div class="form-group col-md-6">
-                              <label>Address line 1</label>
-                              <input type="text" class="form-control">
-                            </div>
-                            <div class="form-group col-md-6">
-                              <label>Address line 2</label>
-                              <input type="text" class="form-control">
-                            </div>
-                          </div>
-                          <div class="form-row">
-                            <div class="form-group col-md-6">
-                              <label>Emergency phone number</label>
-                              <input type="text" class="form-control">
-                            </div>
-                            <div class="form-group col-md-6">
-                              <label>Skype</label>
-                              <input type="text" class="form-control">
-                            </div>
-                          </div>
-                          <div class="form-row">
-                            <div class="form-group col-md-6">
-                              <label>GST number</label>
-                              <input type="text" class="form-control">
-                            </div>
-                            <div class="form-group col-md-6">
-                              <label>GST e-mail</label>
-                              <input type="text" class="form-control">
-                            </div>
-                          </div>
-                          <div class="border-line">
-                            <label><b>Invoice Detail</b></label>
-                          </div>
-                          <div class="form-row">
-                            <div class="form-group col-md-6">
-                              <label>Invoice Country</label>
-                              <input type="text" class="form-control">
-                            </div>
-                            <div class="form-group col-md-6">
-                              <label>Invoice city</label>
-                              <input type="text" class="form-control">
-                            </div>
-                          </div>
-                          <div class="form-row">
-                            <div class="form-group col-md-6">
-                              <label>Invoice zip</label>
-                              <input type="text" class="form-control">
-                            </div>
-                            <div class="form-group col-md-6">
-                              <label>Invoice address</label>
-                              <input type="text" class="form-control">
-                            </div>
-                          </div>
-      
-                          <div class="border-line">
-                            <label><b>Bank Detail</b></label>
-                          </div>
-                          <div class="form-row">
-                            <div class="form-group col-md-6">
-                              <label>Bank name</label>
-                              <input type="text" class="form-control">
-                            </div>
-                            <div class="form-group col-md-6">
-                              <label>Branch</label>
-                              <input type="text" class="form-control">
-                            </div>
-                          </div>
-                          <div class="form-row">
-                            <div class="form-group col-md-6">
-                              <label>SWIFT</label>
-                              <input type="text" class="form-control">
-                            </div>
-                            <div class="form-group col-md-6">
-                              <label>Bank account number</label>
-                              <input type="text" class="form-control">
-                            </div>
-                          </div>
-                          <div class="form-row">
-                            <div class="form-group col-md-6">
-                              <label>IBAN</label>
-                              <input type="text" class="form-control">
-                            </div>
-                            <div class="form-group col-md-6">
-                              <label>Beneficiary name</label>
-                              <input type="text" class="form-control">
-                            </div>
-                          </div>
-                          <div class="form-row">
-                            <div class="form-group col-md-12">
-                              <label>Bank details</label>
-                              <input type="text" class="form-control">
-                            </div>
-                          </div>
-      
-      
-                          <div class="d-flex justify-content-start mb-20">
-                            <a href="../html/profile.html" class="btn btn-primary mr-20" role="button">Save</a>
-                            <a href="../html/profile.html" class="btn btn-primary" role="button">Cancel</a>
-                            
-                          </div>
-                          
-                        </form>
+                        </div>
+          
+          
                       </div>
                      </div>
                   </div>
@@ -1338,7 +1220,580 @@
                       </div>
                      </div>
                   </div>
-                  <div class="tab-pane fade" id="diss" role="tabpanel" aria-labelledby="diss-tab">
+                  <div class="tab-pane fade" id="credit-line" role="tabpanel" aria-labelledby="credit-line-tab">
+                    <div class="">
+                      <div class="office-credit-line-form office-credit-line-form1">
+    
+                        <div class="">
+                          <form>
+                            <div class="form-row">
+                              <div class="form-group col-md-4">
+                                <label>Hold Deposit</label>
+                                <input type="text" class="form-control">
+                              </div>
+                              <div class="form-group col-md-4">
+                                <label>Credit Line Limit</label>
+                                <input type="text" class="form-control">
+                              </div>
+                              <div class="form-group col-md-4">
+                                <label>Credit Line Used</label>
+                                <input type="text" class="form-control">
+                              </div>
+                            </div>
+    
+                            <div class="form-row">
+                              <div class="form-group col-md-4">
+                                <label>Usable Credit Line</label>
+                                <input type="text" class="form-control">
+                              </div>
+                              <div class="form-group col-md-4">
+                                <label>Credit Line Alert Level</label>
+                                <input type="text" class="form-control">
+                              </div>
+                              <div class="form-group col-md-4">
+                                <label>Open Booking Limit</label>
+                                <input type="text" class="form-control">
+                              </div>
+                            </div>
+    
+                            <div class="form-row">
+                              <div class="form-group col-md-4">
+                                <label>Statement Issue Frequency</label>
+                                <select class="form-control">
+                                  <option selected>Choose...</option>
+                                  <option>Daily</option>
+                                  <option>Week</option>
+                                  <option>Month</option>
+                                  <option>Year</option>
+                                </select>
+                              </div>
+                              <div class="form-group col-md-4">
+                                <label>Day of Week</label>
+                                <select class="form-control">
+                                  <option selected>Choose...</option>
+                                  <option>Sun</option>
+                                  <option>Mon</option>
+                                  <option>Tue</option>
+                                  <option>Wed</option>
+                                  <option>Thu</option>
+                                  <option>Fri</option>
+                                  <option>Sat</option>
+                                </select>
+                              </div>
+                              <div class="form-group col-md-4">
+                                <label>Issue Time</label>
+                                <input type="text" class="form-control">
+                              </div>
+                            </div>
+    
+                            
+    
+                            <div class="d-flex justify-content-start">
+                              <a href="#" class="btn btn-primary mr-20" role="button">Save</a>
+                              <a href="#" class="btn btn-primary" role="button">Cancel</a>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                     </div>
+                  </div>
+                  <div class="tab-pane fade" id="statements" role="tabpanel" aria-labelledby="statements-tab">
+                    <div class="">
+                      <div class="travel-office-edit-user-form-sub">
+                        <div class="border-line">
+                          <label><b>Company office data</b></label>
+                        </div>
+                        <form>
+                          <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label>Sub agent group</label>
+                              <select class="form-control">
+                                <option selected>Choose...</option>
+                              </select>
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label>Office type</label>
+                              <select class="form-control">
+                                <option selected>Choose...</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label>Contracted by</label>
+                              <select class="form-control">
+                                <option selected>Choose...</option>
+                              </select>
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label>Key account manager</label>
+                              <select class="form-control">
+                                <option selected>Choose...</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label>Sales Manager</label>
+                              <select class="form-control">
+                                <option selected>Choose...</option>
+                              </select>
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label>Office will be deactiveted after</label>
+                              <select class="form-control">
+                                <option selected>Choose...</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label>office agencies Name</label>
+                              <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label>Offical company name</label>
+                              <input type="text" class="form-control">
+                            </div>
+                          </div>
+                          <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label>Office ID</label>
+                              <input type="text" class="form-control">
+                            </div>
+                          </div>
+                          <div class="">
+                            <input type="radio" name="12">
+                            <label class="mr-20">Existing company</label>
+                            <input type="radio" name="12">
+                            <label>To be created company / individual company</label>
+                          </div>
+                          <div class="border-line">
+                            <label><b>Contact Person</b></label>
+                          </div>
+                          <div class="form-row">
+                            <div class="form-group col-md-1">
+                              <label>Title</label>
+                              <select class="form-control">
+                                <option selected>Choose...</option>
+                                <option selected>Mrs.</option>
+                                <option selected>Mr.</option>
+                                <option selected>Ms.</option>
+                              </select>
+                            </div>
+                            <div class="form-group col-md-5">
+                              <label>First Name</label>
+                              <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label>Last Name</label>
+                              <input type="text" class="form-control">
+                            </div>
+                          </div>
+                          <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label>Email</label>
+                              <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label>Phone</label>
+                              <input type="text" class="form-control">
+                            </div>
+                          </div>
+                          <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label>Register number</label>
+                              <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label>Tax number</label>
+                              <input type="text" class="form-control">
+                            </div>
+                          </div>
+                          <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label>Country</label>
+                              <select class="form-control">
+                                <option selected>Choose...</option>
+                                <option selected>India</option>
+                                <option selected>USA</option>
+                                <option selected>Canada</option>
+                              </select>
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label>State</label>
+                              <select class="form-control">
+                                <option selected>Choose...</option>
+                                <option selected>Gujarat</option>
+                                <option selected>Tamilnadu</option>
+                                <option selected>Karnataka</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label>City</label>
+                              <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label>Zip / Post code</label>
+                              <input type="text" class="form-control">
+                            </div>
+                          </div>
+                          <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label>Address line 1</label>
+                              <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label>Address line 2</label>
+                              <input type="text" class="form-control">
+                            </div>
+                          </div>
+                          <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label>Emergency phone number</label>
+                              <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label>Skype</label>
+                              <input type="text" class="form-control">
+                            </div>
+                          </div>
+                          <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label>GST number</label>
+                              <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label>GST e-mail</label>
+                              <input type="text" class="form-control">
+                            </div>
+                          </div>
+                          <div class="border-line">
+                            <label><b>Invoice Detail</b></label>
+                          </div>
+                          <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label>Invoice Country</label>
+                              <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label>Invoice city</label>
+                              <input type="text" class="form-control">
+                            </div>
+                          </div>
+                          <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label>Invoice zip</label>
+                              <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label>Invoice address</label>
+                              <input type="text" class="form-control">
+                            </div>
+                          </div>
+      
+                          <div class="border-line">
+                            <label><b>Bank Detail</b></label>
+                          </div>
+                          <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label>Bank name</label>
+                              <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label>Branch</label>
+                              <input type="text" class="form-control">
+                            </div>
+                          </div>
+                          <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label>SWIFT</label>
+                              <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label>Bank account number</label>
+                              <input type="text" class="form-control">
+                            </div>
+                          </div>
+                          <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label>IBAN</label>
+                              <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label>Beneficiary name</label>
+                              <input type="text" class="form-control">
+                            </div>
+                          </div>
+                          <div class="form-row">
+                            <div class="form-group col-md-12">
+                              <label>Bank details</label>
+                              <input type="text" class="form-control">
+                            </div>
+                          </div>
+      
+      
+                          <div class="d-flex justify-content-start mb-20">
+                            <a href="../html/profile.html" class="btn btn-primary mr-20" role="button">Save</a>
+                            <a href="../html/profile.html" class="btn btn-primary" role="button">Cancel</a>
+                            
+                          </div>
+                          
+                        </form>
+                      </div>
+                     </div>
+                  </div>
+                  <div class="tab-pane fade" id="transactions" role="tabpanel" aria-labelledby="transactions-tab">
+                    <div class="">
+                      <div class="travel-office-edit-user-form-sub">
+                        <div class="border-line">
+                          <label><b>Company office data</b></label>
+                        </div>
+                        <form>
+                          <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label>Sub agent group</label>
+                              <select class="form-control">
+                                <option selected>Choose...</option>
+                              </select>
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label>Office type</label>
+                              <select class="form-control">
+                                <option selected>Choose...</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label>Contracted by</label>
+                              <select class="form-control">
+                                <option selected>Choose...</option>
+                              </select>
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label>Key account manager</label>
+                              <select class="form-control">
+                                <option selected>Choose...</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label>Sales Manager</label>
+                              <select class="form-control">
+                                <option selected>Choose...</option>
+                              </select>
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label>Office will be deactiveted after</label>
+                              <select class="form-control">
+                                <option selected>Choose...</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label>office agencies Name</label>
+                              <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label>Offical company name</label>
+                              <input type="text" class="form-control">
+                            </div>
+                          </div>
+                          <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label>Office ID</label>
+                              <input type="text" class="form-control">
+                            </div>
+                          </div>
+                          <div class="">
+                            <input type="radio" name="12">
+                            <label class="mr-20">Existing company</label>
+                            <input type="radio" name="12">
+                            <label>To be created company / individual company</label>
+                          </div>
+                          <div class="border-line">
+                            <label><b>Contact Person</b></label>
+                          </div>
+                          <div class="form-row">
+                            <div class="form-group col-md-1">
+                              <label>Title</label>
+                              <select class="form-control">
+                                <option selected>Choose...</option>
+                                <option selected>Mrs.</option>
+                                <option selected>Mr.</option>
+                                <option selected>Ms.</option>
+                              </select>
+                            </div>
+                            <div class="form-group col-md-5">
+                              <label>First Name</label>
+                              <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label>Last Name</label>
+                              <input type="text" class="form-control">
+                            </div>
+                          </div>
+                          <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label>Email</label>
+                              <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label>Phone</label>
+                              <input type="text" class="form-control">
+                            </div>
+                          </div>
+                          <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label>Register number</label>
+                              <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label>Tax number</label>
+                              <input type="text" class="form-control">
+                            </div>
+                          </div>
+                          <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label>Country</label>
+                              <select class="form-control">
+                                <option selected>Choose...</option>
+                                <option selected>India</option>
+                                <option selected>USA</option>
+                                <option selected>Canada</option>
+                              </select>
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label>State</label>
+                              <select class="form-control">
+                                <option selected>Choose...</option>
+                                <option selected>Gujarat</option>
+                                <option selected>Tamilnadu</option>
+                                <option selected>Karnataka</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label>City</label>
+                              <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label>Zip / Post code</label>
+                              <input type="text" class="form-control">
+                            </div>
+                          </div>
+                          <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label>Address line 1</label>
+                              <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label>Address line 2</label>
+                              <input type="text" class="form-control">
+                            </div>
+                          </div>
+                          <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label>Emergency phone number</label>
+                              <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label>Skype</label>
+                              <input type="text" class="form-control">
+                            </div>
+                          </div>
+                          <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label>GST number</label>
+                              <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label>GST e-mail</label>
+                              <input type="text" class="form-control">
+                            </div>
+                          </div>
+                          <div class="border-line">
+                            <label><b>Invoice Detail</b></label>
+                          </div>
+                          <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label>Invoice Country</label>
+                              <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label>Invoice city</label>
+                              <input type="text" class="form-control">
+                            </div>
+                          </div>
+                          <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label>Invoice zip</label>
+                              <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label>Invoice address</label>
+                              <input type="text" class="form-control">
+                            </div>
+                          </div>
+      
+                          <div class="border-line">
+                            <label><b>Bank Detail</b></label>
+                          </div>
+                          <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label>Bank name</label>
+                              <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label>Branch</label>
+                              <input type="text" class="form-control">
+                            </div>
+                          </div>
+                          <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label>SWIFT</label>
+                              <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label>Bank account number</label>
+                              <input type="text" class="form-control">
+                            </div>
+                          </div>
+                          <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label>IBAN</label>
+                              <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label>Beneficiary name</label>
+                              <input type="text" class="form-control">
+                            </div>
+                          </div>
+                          <div class="form-row">
+                            <div class="form-group col-md-12">
+                              <label>Bank details</label>
+                              <input type="text" class="form-control">
+                            </div>
+                          </div>
+      
+      
+                          <div class="d-flex justify-content-start mb-20">
+                            <a href="../html/profile.html" class="btn btn-primary mr-20" role="button">Save</a>
+                            <a href="../html/profile.html" class="btn btn-primary" role="button">Cancel</a>
+                            
+                          </div>
+                          
+                        </form>
+                      </div>
+                     </div>
+                  </div>
+                  <div class="tab-pane fade" id="documents" role="tabpanel" aria-labelledby="documents-tab">
                     <div class="">
                       <div class="travel-office-edit-user-form-sub">
                         <div class="border-line">
