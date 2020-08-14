@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tekwalker Back-End</title>
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../font/stylesheet.css">
+    <link rel="stylesheet" href="../css/aos.css" />
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+        
+</head>
+<body>
+<section style="overflow: hidden;">
+  <div class="main-div">
+    <div class="left-sidebar-main">
+      <div class="side-bar-left-main">
+        <div class="tw-logo">
+          <h4>Tekwalker</h4>
+        </div>
+        <div class="profile-main">
+          <div class="d-flex justify-content-center profile-sub">
+            <div class="profile-circle">
+              <img src="../img/follow.svg">
+            </div>
+            <h5>Zalak Bhanderi</h5>
+          </div>
+        </div>
+        <div class="home-button-side">
+          <div class="sidebar-button">
+            <ul>
+              <li><a href="../index11.html" class="sidebar-btnlink btn" role="button">Dashboard</a></li>
+              <li><a href="../html/search.html" class="sidebar-btnlink btn" role="button">Search Book</a></li>
+              <li id="flip-menu"><a href="#" class="sidebar-btnlink btn"  role="button">Profile Management</a>
+                <ul class="sub-menu-btn" id="panel-menu">
+                  <li><a href="../html/profile.html" class="sidebar-btnlink btn" role="button">Company Users</a></li>
+                  <li><a href="../html/company-office-parameter.html" class="sidebar-btnlink btn" role="button">Office Parameters</a></li>
+                  <li><a href="../html/user-access-level.html" class="sidebar-btnlink btn" role="button">Users Access Level</a></li>
+                  <li><a href="../html/company-office-data.html" class="sidebar-btnlink btn" role="button">Company Office data</a></li>
+                </ul>
+              </li>
+              <li><a href="#" class="sidebar-btnlink btn" role="button">B2B Management</a>
+                <ul class="sub-menu-btn">
+                  <li><a href="../html/b2b-parameter-cat.html" class="sidebar-btnlink btn" role="button">B2B parameter categories</a></li>
+                  <li><a href="../html/b2b-sub-agent-group.html" class="sidebar-btnlink btn" role="button">Sub agent group</a></li>
+                </ul>
+              </li>
+              <li><a href="../html/booking.html" class="sidebar-btnlink btn" role="button">Booking Management</a></li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="right-sidebar-main">
+      <div class="topbar-header">
+       <div class="container pl-0 pr-0">
+         <div class="row">
+           <div class="col-sm-12">
+            <div class="main-header">
+              <h4>Tekwalker</h4>
+              <button class="btn btn-main">Balance</button>
+              
+            </div>
+           </div>
+         </div>
+       </div>
+      </div>
+      <div class="content-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+             <div class="">
+               
+               <div class="company-user-table">
+                <button class="btn btn-heading">B2B agent list</button>
+                <div class="company-show-entries">
+                  <p>Show
+                    <input type="number" min="0" value="10" style="width: 60px;" class="form-control">
+                    entries
+                  </p>
+                  <div class="d-flex justify-content-lg-start" style="align-items: center;">
+                    <p class="mr-10">Search: </p>
+                    <input type="text" class="form-control">
+                  </div>
+                </div>
+                <table class="table table-hover">
+                  <thead> 
+                    <tr>
+                      <th scope="col">Sno</th>
+                      <th scope="col">Image</th>
+                      <th scope="col">Agency Name</th>
+                      <th scope="col">Agency ID</th>
+                      <th scope="col">Agent Name</th>
+                      <th scope="col">Commission(%)</th>
+                      <th scope="col">Contact</th>
+                      <th scope="col">Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>
+                        <div class="b2b-profile-img">
+                          <img src="../img/profile1.jpeg">
+                        </div>
+                      </td>
+                      <td>Mark</td>
+                      <td>TM1583390840</td>
+                      <td>Mr Vinay</td>
+                      <td>Flight:0 Hotel:0 Transfers:0</td>
+                      <td>9876543210</td>
+                      <td>
+                        <a href="../html/b2b-commission.html" role="button" class="btn btn-success"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Update</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>
+                        <div class="b2b-profile-img">
+                          <img src="../img/profile2.jpeg">
+                        </div>
+                      </td>
+                      <td>Mark</td>
+                      <td>TM1583390840</td>
+                      <td>Mr Vinay</td>
+                      <td>Flight:0 Hotel:0 Transfers:0</td>
+                      <td>9876543210</td>
+                      <td>
+                        <a href="../html/b2b-commission.html" role="button" class="btn btn-success"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Update</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>
+                        <div class="b2b-profile-img">
+                          <img src="../img/profile1.jpeg">
+                        </div>
+                      </td>
+                      <td>Mark</td>
+                      <td>TM1583390840</td>
+                      <td>Mr Vinay</td>
+                      <td>Flight:0 Hotel:0 Transfers:0</td>
+                      <td>9876543210</td>
+                      <td>
+                        <a href="../html/b2b-commission.html" role="button" class="btn btn-success"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Update</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">4</th>
+                      <td>
+                        <div class="b2b-profile-img">
+                          <img src="../img/profile2.jpeg">
+                        </div>
+                      </td>
+                      <td>Mark</td>
+                      <td>TM1583390840</td>
+                      <td>Mr Vinay</td>
+                      <td>Flight:0 Hotel:0 Transfers:0</td>
+                      <td>9876543210</td>
+                      <td>
+                        <a href="../html/b2b-commission.html" role="button" class="btn btn-success"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Update</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">5</th>
+                      <td>
+                        <div class="b2b-profile-img">
+                          <img src="../img/profile1.jpeg">
+                        </div>
+                      </td>
+                      <td>Mark</td>
+                      <td>TM1583390840</td>
+                      <td>Mr Vinay</td>
+                      <td>Flight:0 Hotel:0 Transfers:0</td>
+                      <td>9876543210</td>
+                      <td>
+                        <a href="../html/b2b-commission.html" role="button" class="btn btn-success"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Update</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">6</th>
+                      <td>
+                        <div class="b2b-profile-img">
+                          <img src="../img/profile2.jpeg">
+                        </div>
+                      </td>
+                      <td>Mark</td>
+                      <td>TM1583390840</td>
+                      <td>Mr Vinay</td>
+                      <td>Flight:0 Hotel:0 Transfers:0</td>
+                      <td>9876543210</td>
+                      <td>
+                        <a href="../html/b2b-commission.html" role="button" class="btn btn-success"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Update</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">7</th>
+                      <td>
+                        <div class="b2b-profile-img">
+                          <img src="../img/profile1.jpeg">
+                        </div>
+                      </td>
+                      <td>Mark</td>
+                      <td>TM1583390840</td>
+                      <td>Mr Vinay</td>
+                      <td>Flight:0 Hotel:0 Transfers:0</td>
+                      <td>9876543210</td>
+                      <td>
+                        <a href="../html/b2b-commission.html" role="button" class="btn btn-success"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Update</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">8</th>
+                      <td>
+                        <div class="b2b-profile-img">
+                          <img src="../img/profile2.jpeg">
+                        </div>
+                      </td>
+                      <td>Mark</td>
+                      <td>TM1583390840</td>
+                      <td>Mr Vinay</td>
+                      <td>Flight:0 Hotel:0 Transfers:0</td>
+                      <td>9876543210</td>
+                      <td>
+                        <a href="../html/b2b-commission.html" role="button" class="btn btn-success"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Update</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">9</th>
+                      <td>
+                        <div class="b2b-profile-img">
+                          <img src="../img/profile1.jpeg">
+                        </div>
+                      </td>
+                      <td>Mark</td>
+                      <td>TM1583390840</td>
+                      <td>Mr Vinay</td>
+                      <td>Flight:0 Hotel:0 Transfers:0</td>
+                      <td>9876543210</td>
+                      <td>
+                        <a href="../html/b2b-commission.html" role="button" class="btn btn-success"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Update</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">10</th>
+                      <td>
+                        <div class="b2b-profile-img">
+                          <img src="../img/profile2.jpeg">
+                        </div>
+                      </td>
+                      <td>Mark</td>
+                      <td>TM1583390840</td>
+                      <td>Mr Vinay</td>
+                      <td>Flight:0 Hotel:0 Transfers:0</td>
+                      <td>9876543210</td>
+                      <td>
+                        <a href="../html/b2b-commission.html" role="button" class="btn btn-success"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Update</a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="company-show-entries mb-50">
+                  <p>Showing 1 to 10 of 15 </p>
+                  <div class="company-show-entries-sub" style="align-items: center;">
+                    <a href="#" class="previous">&laquo; Previous</a>
+                    <a href="#" class="next">Next &raquo;</a>
+                  </div>
+                </div>
+  
+  
+              </div>
+             </div>
+          
+
+              
+
+            </div>
+          </div>
+        </div>
+      
+     
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/popper.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/swiper.min.js"></script>
+<script> 
+  $(document).ready(function(){
+    $("#flip-menu").click(function(){
+      $("#panel-menu").slideToggle("slow");
+    });
+  });
+  </script>
+
+
+</html>
