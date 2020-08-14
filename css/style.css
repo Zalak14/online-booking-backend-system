@@ -189,6 +189,9 @@ button:focus{
 .ml-10{
   margin-left: 10px;
 }
+.ml-30{
+  margin-left: 30px;
+}
 .dashboard-page-color{
   height: 130px;
   width: 237px;
@@ -1127,6 +1130,12 @@ font-weight: 600;
   cursor: pointer;
 }
 #panel-menu1 {
+  display: none;
+}
+#flip-menu2{
+  cursor: pointer;
+}
+#panel-menu2 {
   display: none;
 }
 .mb-50{
@@ -2600,5 +2609,24 @@ padding: 10px 4px;
   display: flex;
   justify-content: flex-end;
 }
-
+.bm-b2b-report-main .nav{
+  flex-wrap: wrap !important;
+  justify-content: unset !important;
+  display: flex !important;
+}
+.b2b-inquiries-main .b2b-travel-office-main .bm-b2b-report-main .nav .nav-item
+{
+  width: auto !important;
+  margin-right: 20px;
+  background-color: white;
+  box-shadow: 0 1px 8px rgba(0,0,0,.1) ;
+  color: black;
+  border-radius: 5px;
+}
+.b2b-inquiries-main .b2b-travel-office-main .bm-b2b-report-main .nav .nav-item .nav-link{
+  color: black !important;
+}
+.b2b-inquiries-main .b2b-travel-office-main .bm-b2b-report-main .nav-pills .nav-link.active, .show > .nav-pills .nav-link{
+  color: white !important;
+}
 

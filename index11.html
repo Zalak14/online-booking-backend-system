@@ -55,7 +55,13 @@
                   <li><a href="html/b2b-markup.html" class="sidebar-btnlink btn" role="button">Markup</a></li>
                 </ul>
               </li>
-              <li><a href="html/booking.html" class="sidebar-btnlink btn" role="button">Booking Management</a></li>
+              <li id="flip-menu2"><a href="#" class="sidebar-btnlink btn" role="button">Booking Management</a>
+                <ul class="sub-menu-btn" id="panel-menu2">
+                  <li><a href="html/bm-all-booking.html" class="sidebar-btnlink btn" role="button">All booking</a></li>
+                  <li><a href="html/bm-b2b-report.html" class="sidebar-btnlink btn" role="button">B2B Report</a></li>
+                  <li><a href="html/bm-b2c-report.html" class="sidebar-btnlink btn" role="button">B2C Report</a></li>
+                </ul>
+              </li>
             </ul>
           </div>
           
@@ -321,6 +327,13 @@
       });
     });
     </script>
+    <script> 
+      $(document).ready(function(){
+        $("#flip-menu2").click(function(){
+          $("#panel-menu2").slideToggle("slow");
+        });
+      });
+      </script>
 <script>
   var swiper = new Swiper('.dashboard-slider', {
     spaceBetween: 30,
