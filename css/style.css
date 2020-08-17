@@ -1,6 +1,8 @@
 html {
   margin:0;
   padding:0;
+  --scrollbarBG: #2974ef;
+  --thumbBG: #6399f0;
 }
 body {
   margin: 0;
@@ -68,6 +70,21 @@ button:focus{
   padding: 15px 10px;
   overflow-y: scroll;
   overflow-x: hidden;
+}
+.side-bar-left-main::-webkit-scrollbar {
+  width: 11px;
+}
+.side-bar-left-main {
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+.side-bar-left-main::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+.side-bar-left-main::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG) ;
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG);
 }
 .side-bar-right-main{
   background-color: rgb(240, 239, 239);
@@ -2628,5 +2645,28 @@ padding: 10px 4px;
 }
 .b2b-inquiries-main .b2b-travel-office-main .bm-b2b-report-main .nav-pills .nav-link.active, .show > .nav-pills .nav-link{
   color: white !important;
+}
+.b2b-report-ref{
+  font-size: 14px;
+}
+.b2b-report-status{
+  background-color: orange;
+  color: white;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+/* .table-responsive{
+  overflow-y: hidden;
+  overflow-x: scroll;
+} */
+.mb-10{
+  margin-bottom: 10px;
+}
+.b2b-report-icon{
+  font-size: 20px;
+  color: #17C666;
+}
+.table-hover tbody tr:hover .b2b-report-icon{
+  color: white;
 }
 

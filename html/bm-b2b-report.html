@@ -103,9 +103,9 @@
                             <li class="nav-item">
                               <a class="nav-link active" id="today-tab" data-toggle="pill" href="#today" role="tab" aria-controls="today" aria-selected="true">Today Search</a>
                             </li>
-                            <li class="nav-item">
+                            <!-- <li class="nav-item">
                               <a class="nav-link" id="day-tab" data-toggle="pill" href="#day" role="tab" aria-controls="day" aria-selected="false">Last Day Search</a>
-                            </li>
+                            </li> -->
                             <li class="nav-item">
                               <a class="nav-link" id="week-tab" data-toggle="pill" href="#week" role="tab" aria-controls="week" aria-selected="false">One Week Search</a>
                             </li>
@@ -177,49 +177,222 @@
                                       <table class="table table-hover">
                                         <thead> 
                                           <tr>
-                                            <th scope="col">No</th>
-                                            <th scope="col">Reference No</th>
-                                            <th scope="col">Status</th>
-                                            <th scope="col">Pax Details</th>
-                                            <th scope="col">PNR</th>
-                                            <th scope="col">From</th>
-                                            <th scope="col">To</th>
-                                            <th scope="col">Type</th>
-                                            <th scope="col">BookedOn</th>
-                                            <th scope="col">Travel date</th>
-                                            <th scope="col">Comm.Fare</th>
-                                            <th scope="col">Commission</th>
-                                            <th scope="col">NetFare</th>
-                                            <th scope="col">Convenience Fee</th>
-                                            <th scope="col">Discount</th>
-                                            <th scope="col">paid amount</th>
-                                            <th scope="col">Action</th>
+                                            <th >#</th>
+                                            <th >Reference No</th>
+                                            <th >Pax Details</th>
+                                            <th >From</th>
+                                            <th >To</th>
+                                            <th >BookedOn</th>
+                                            <th >Travel date</th>
+                                            <th >Fare Detail</th>
+                                            <th >Action</th>
                                           </tr>
                                         </thead>
                                         <tbody>
                                           <tr>
-                                            <th scope="row">1</th>
-                                            <!-- <td>
-                                              <div class="b2b-profile-img">
-                                                <img src="../img/profile1.jpeg">
+                                            <td>
+                                              <div class="b2b-report-icon">
+                                                <i class="fas fa-plane"></i>
                                               </div>
                                             </td>
-                                            <td>Mark</td>
-                                            <td>Admin</td>
-                                            <td>zalak@gmail.com</td>
-                                            <td>2 Jan 2020, 09:12</td>
-                                            <td>2 Feb 2020, 09:12</td>
-                                            <td>0</td>
                                             <td>
-                                              <div class="d-flex justify-content-between">
-                                                <div class="option-circle">
-                                                  <img src="../img/edit.svg">
-                                                </div>
-                                                <div class="option-circle trash">
-                                                  <img src="../img/trash.svg" alt="">
-                                                </div>
+                                              <div class="b2b-report-ref">
+                                                <label>FB24-195003-455467</label>
+                                                <div class="b2b-report-status mb-10">BOOKING_INPROGRESS</div>
+                                                <label>PNR: 0</label><br>
+                                                <label>Type: 0</label>
                                               </div>
-                                            </td> -->
+                                            </td>
+                                            <td>
+                                              <label>Mr Ayush Vidhale</label><br>
+                                              <label>flinkman1337@gmail.com</label><br>
+                                              <label>8104990356</label>
+                                            </td>
+                                            <td><label>DEL</label></td>
+                                            <td><label>BOM</label></td>
+                                            <td>2 Feb 20</td>
+                                            <td>2 Feb 20</td>
+                                            <td>
+                                              <div class="">
+                                                <label>Comm. Fare: 5450.1</label><br>
+                                                <label>Commission: 70.5</label><br>
+                                                <label>NetFare: 5450.7</label><br>
+                                                <label>Convenience Fee: 100</label><br>
+                                                <label>Discount: 100.3</label><br>
+                                                <label>Paid amount: 0</label>
+                                              </div>
+                                            </td>
+                                            <td>
+                                              <div style="display: block;">
+                                                <button class="btn btn-info mb-10"><i class="fas fa-envelope-open-text"></i> Email</button><br>
+                                                <button class="btn btn-info mb-10"><i class="fas fa-file-pdf"></i> PDF</button><br>
+                                                <button class="btn btn-info"><i class="fas fa-receipt"></i> Voucher</button>
+                                              </div>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td>
+                                              <div class="b2b-report-icon">
+                                                <i class="fas fa-plane"></i>
+                                              </div>
+                                            </td>
+                                            <td>
+                                              <div class="b2b-report-ref">
+                                                <label>FB24-195003-455467</label>
+                                                <div class="b2b-report-status mb-10">BOOKING_INPROGRESS</div>
+                                                <label>PNR: 0</label><br>
+                                                <label>Type: 0</label>
+                                              </div>
+                                            </td>
+                                            <td>
+                                              <label>Mr Ayush Vidhale</label><br>
+                                              <label>flinkman1337@gmail.com</label><br>
+                                              <label>8104990356</label>
+                                            </td>
+                                            <td><label>DEL</label></td>
+                                            <td><label>BOM</label></td>
+                                            <td>2 Feb 20</td>
+                                            <td>2 Feb 20</td>
+                                            <td>
+                                              <div class="">
+                                                <label>Comm. Fare: 5450.1</label><br>
+                                                <label>Commission: 70.5</label><br>
+                                                <label>NetFare: 5450.7</label><br>
+                                                <label>Convenience Fee: 100</label><br>
+                                                <label>Discount: 100.3</label><br>
+                                                <label>Paid amount: 0</label>
+                                              </div>
+                                            </td>
+                                            <td>
+                                              <div style="display: block;">
+                                                <button class="btn btn-info mb-10"><i class="fas fa-envelope-open-text"></i> Email</button><br>
+                                                <button class="btn btn-info mb-10"><i class="fas fa-file-pdf"></i> PDF</button><br>
+                                                <button class="btn btn-info"><i class="fas fa-receipt"></i> Voucher</button>
+                                              </div>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td>
+                                              <div class="b2b-report-icon">
+                                                <i class="fas fa-plane"></i>
+                                              </div>
+                                            </td>
+                                            <td>
+                                              <div class="b2b-report-ref">
+                                                <label>FB24-195003-455467</label>
+                                                <div class="b2b-report-status mb-10">BOOKING_INPROGRESS</div>
+                                                <label>PNR: 0</label><br>
+                                                <label>Type: 0</label>
+                                              </div>
+                                            </td>
+                                            <td>
+                                              <label>Mr Ayush Vidhale</label><br>
+                                              <label>flinkman1337@gmail.com</label><br>
+                                              <label>8104990356</label>
+                                            </td>
+                                            <td><label>DEL</label></td>
+                                            <td><label>BOM</label></td>
+                                            <td>2 Feb 20</td>
+                                            <td>2 Feb 20</td>
+                                            <td>
+                                              <div class="">
+                                                <label>Comm. Fare: 5450.1</label><br>
+                                                <label>Commission: 70.5</label><br>
+                                                <label>NetFare: 5450.7</label><br>
+                                                <label>Convenience Fee: 100</label><br>
+                                                <label>Discount: 100.3</label><br>
+                                                <label>Paid amount: 0</label>
+                                              </div>
+                                            </td>
+                                            <td>
+                                              <div style="display: block;">
+                                                <button class="btn btn-info mb-10"><i class="fas fa-envelope-open-text"></i> Email</button><br>
+                                                <button class="btn btn-info mb-10"><i class="fas fa-file-pdf"></i> PDF</button><br>
+                                                <button class="btn btn-info"><i class="fas fa-receipt"></i> Voucher</button>
+                                              </div>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td>
+                                              <div class="b2b-report-icon">
+                                                <i class="fas fa-plane"></i>
+                                              </div>
+                                            </td>
+                                            <td>
+                                              <div class="b2b-report-ref">
+                                                <label>FB24-195003-455467</label>
+                                                <div class="b2b-report-status mb-10">BOOKING_INPROGRESS</div>
+                                                <label>PNR: 0</label><br>
+                                                <label>Type: 0</label>
+                                              </div>
+                                            </td>
+                                            <td>
+                                              <label>Mr Ayush Vidhale</label><br>
+                                              <label>flinkman1337@gmail.com</label><br>
+                                              <label>8104990356</label>
+                                            </td>
+                                            <td><label>DEL</label></td>
+                                            <td><label>BOM</label></td>
+                                            <td>2 Feb 20</td>
+                                            <td>2 Feb 20</td>
+                                            <td>
+                                              <div class="">
+                                                <label>Comm. Fare: 5450.1</label><br>
+                                                <label>Commission: 70.5</label><br>
+                                                <label>NetFare: 5450.7</label><br>
+                                                <label>Convenience Fee: 100</label><br>
+                                                <label>Discount: 100.3</label><br>
+                                                <label>Paid amount: 0</label>
+                                              </div>
+                                            </td>
+                                            <td>
+                                              <div style="display: block;">
+                                                <button class="btn btn-info mb-10"><i class="fas fa-envelope-open-text"></i> Email</button><br>
+                                                <button class="btn btn-info mb-10"><i class="fas fa-file-pdf"></i> PDF</button><br>
+                                                <button class="btn btn-info"><i class="fas fa-receipt"></i> Voucher</button>
+                                              </div>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td>
+                                              <div class="b2b-report-icon">
+                                                <i class="fas fa-plane"></i>
+                                              </div>
+                                            </td>
+                                            <td>
+                                              <div class="b2b-report-ref">
+                                                <label>FB24-195003-455467</label>
+                                                <div class="b2b-report-status mb-10">BOOKING_INPROGRESS</div>
+                                                <label>PNR: 0</label><br>
+                                                <label>Type: 0</label>
+                                              </div>
+                                            </td>
+                                            <td>
+                                              <label>Mr Ayush Vidhale</label><br>
+                                              <label>flinkman1337@gmail.com</label><br>
+                                              <label>8104990356</label>
+                                            </td>
+                                            <td><label>DEL</label></td>
+                                            <td><label>BOM</label></td>
+                                            <td>2 Feb 20</td>
+                                            <td>2 Feb 20</td>
+                                            <td>
+                                              <div class="">
+                                                <label>Comm. Fare : 5450.1</label><br>
+                                                <label>Commission : 70.5</label><br>
+                                                <label>NetFare : 5450.7</label><br>
+                                                <label>Convenience Fee : 100</label><br>
+                                                <label>Discount : 100.3</label><br>
+                                                <label>Paid amount : 0</label>
+                                              </div>
+                                            </td>
+                                            <td>
+                                              <div style="display: block;">
+                                                <button class="btn btn-info mb-10"><i class="fas fa-envelope-open-text"></i> Email</button><br>
+                                                <button class="btn btn-info mb-10"><i class="fas fa-file-pdf"></i> PDF</button><br>
+                                                <button class="btn btn-info"><i class="fas fa-receipt"></i> Voucher</button>
+                                              </div>
+                                            </td>
                                           </tr>
                                           
                                         </tbody>
@@ -227,7 +400,7 @@
                                     </div>
                                     
                                     <div class="company-show-entries mb-50">
-                                      <p>Showing 1 to 10 of 15 </p>
+                                      <p>Showing 1 to 5 of 15 </p>
                                       <div class="company-show-entries-sub" style="align-items: center;">
                                         <a href="#" class="previous">&laquo; Previous</a>
                                         <a href="#" class="next">Next &raquo;</a>
@@ -502,6 +675,7 @@
 <script src="../js/popper.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
 <script src="../js/swiper.min.js"></script>
+<script src="https://kit.fontawesome.com/1dd16d19ea.js" crossorigin="anonymous"></script>
 <script> 
   $(document).ready(function(){
     $("#flip-menu").click(function(){
