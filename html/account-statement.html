@@ -74,11 +74,535 @@
         <div class="container">
           <div class="row">
             <div class="col-sm-12">
-             
-          
-
-              
-
+             <div class="account-statement-current">
+              <div class="mt-50">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="current-tab" data-toggle="tab" href="#current" role="tab" aria-controls="current" aria-selected="true">Current statement</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="ledger-tab" data-toggle="tab" href="#ledger" role="tab" aria-controls="ledger" aria-selected="false">Ledger</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="outstanding-tab" data-toggle="tab" href="#outstanding" role="tab" aria-controls="outstanding" aria-selected="false">Outstanding Report</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="monthly-tab" data-toggle="tab" href="#monthly" role="tab" aria-controls="monthly" aria-selected="false">Monthly statement</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="receipt-tab" data-toggle="tab" href="#receipt" role="tab" aria-controls="receipt" aria-selected="false">Receipt</a>
+                  </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                  <div class="tab-pane fade show active" id="current" role="tabpanel" aria-labelledby="current-tab">
+                    <div class="account-statement-current-main">
+                      <div class="account-statement-current-sub">
+                        <div class="">
+                          <h6>AAAgent by bstaff</h6>
+                          <h6>K5A</h6>
+                          <p>Agent creation by bstaff</p>
+                          <p>ravis111123@gmail.com</p>
+                          <p>9897965490</p>
+                        </div>
+                        <div class="account-statement-current-img">
+                          <label class="mr-10"><i class="fas fa-file-pdf"></i></label>
+                          <label><i class="fas fa-file-alt"></i></label>
+                        </div>
+                      </div>
+                      <div class="">
+                        <table class="table">
+                          <thead class="thead-dark">
+                            <tr>
+                              <th scope="col">#</th>
+                              <th scope="col">Statement date</th>
+                              <th scope="col">Allocated limit</th>
+                              <th scope="col">Credit used</th>
+                              <th scope="col">Available limit</th>
+                              <th scope="col">Available temp limit</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row">1</th>
+                              <td>15 Jul 20</td>
+                              <td>2000000</td>
+                              <td>65218</td>
+                              <td>1934781</td>
+                              <td>0.00</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="ledger" role="tabpanel" aria-labelledby="ledger-tab">
+                    <div class="">
+                      <div class="account-statement-current-sub">
+                        <div class="">
+                          <h6>AAAgent by bstaff</h6>
+                          <h6>K5A</h6>
+                          <p>Agent creation by bstaff</p>
+                          <p>ravis111123@gmail.com</p>
+                          <p>9897965490</p>
+                        </div>
+                        <div class="account-statement-current-img">
+                          <label class="mr-10"><i class="fas fa-file-pdf"></i></label>
+                          <label><i class="fas fa-file-alt"></i></label>
+                        </div>
+                      </div>
+                      <div class="">
+                        <form>
+                          <div class="form-row">
+                            <div class="form-group col-md-4">
+                              <label>Select From</label>
+                              <input type="date" class="form-control">
+                            </div>
+                            <div class="form-group col-md-4">
+                              <label>Upto</label>
+                              <input type="date" class="form-control">
+                            </div>
+                          </div>
+                          <div class="form-row">
+                            <div class="form-group">
+                              <label></label>
+                              <button class="btn btn-success">Get detail</button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="outstanding" role="tabpanel" aria-labelledby="outstanding-tab">
+                    <div class="account-statement-current-main">
+                      <div class="account-statement-current-sub">
+                        <div class="">
+                          <h6>AAAgent by bstaff</h6>
+                          <h6>K5A</h6>
+                          <p>Agent creation by bstaff</p>
+                          <p>ravis111123@gmail.com</p>
+                          <p>9897965490</p>
+                        </div>
+                        <div class="account-statement-current-img">
+                          <label class="mr-10"><i class="fas fa-file-pdf"></i></label>
+                          <label><i class="fas fa-file-alt"></i></label>
+                        </div>
+                      </div>
+                      <div class="">
+                        <table class="table">
+                          <thead class="thead-dark">
+                            <tr>
+                              <th scope="col">#</th>
+                              <th scope="col">Allocated limit</th>
+                              <th scope="col">Credit used</th>
+                              <th scope="col">Available limit</th>
+                              <th scope="col">Available temp limit</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row">1</th>
+                              <td>2000000</td>
+                              <td>65218</td>
+                              <td>1934781</td>
+                              <td>0.00</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        
+                      </div>
+                    </div>
+                    <div class="">
+                      <table class="table table-current">
+                        <thead class="thead-dark">
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Invoice id</th>
+                            <th scope="col">Booking id</th>
+                            <th scope="col">Supplier conf.no</th>
+                            <th scope="col">Service name</th>
+                            <th scope="col">Guest name</th>
+                            <th scope="col">Amount</th>
+                            <th scope="col">Adjustment Amount</th>
+                            <th scope="col">Outstanding Amount</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>MATes18MTy654</td>
+                            <td>MATes18MTy678</td>
+                            <td>165690781</td>
+                            <td>Alexandra Hotel</td>
+                            <td>aa ab</td>
+                            <td>295.67</td>
+                            <td>24.46</td>
+                            <td>271.17</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>MATes18MTy654</td>
+                            <td>MATes18MTy678</td>
+                            <td>165690781</td>
+                            <td>Alexandra Hotel</td>
+                            <td>aa ab</td>
+                            <td>295.67</td>
+                            <td>24.46</td>
+                            <td>271.17</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>MATes18MTy654</td>
+                            <td>MATes18MTy678</td>
+                            <td>165690781</td>
+                            <td>Alexandra Hotel</td>
+                            <td>aa ab</td>
+                            <td>295.67</td>
+                            <td>24.46</td>
+                            <td>271.17</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">4</th>
+                            <td>MATes18MTy654</td>
+                            <td>MATes18MTy678</td>
+                            <td>165690781</td>
+                            <td>Alexandra Hotel</td>
+                            <td>aa ab</td>
+                            <td>295.67</td>
+                            <td>24.46</td>
+                            <td>271.17</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">5</th>
+                            <td>MATes18MTy654</td>
+                            <td>MATes18MTy678</td>
+                            <td>165690781</td>
+                            <td>Alexandra Hotel</td>
+                            <td>aa ab</td>
+                            <td>295.67</td>
+                            <td>24.46</td>
+                            <td>271.17</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="monthly" role="tabpanel" aria-labelledby="monthly-tab">
+                    <div class="">
+                      <div class="account-statement-current-main">
+                        <div class="account-statement-current-sub">
+                          <div class="">
+                            <h6>AAAgent by bstaff</h6>
+                            <h6>K5A</h6>
+                            <p>Agent creation by bstaff</p>
+                            <p>ravis111123@gmail.com</p>
+                            <p>9897965490</p>
+                          </div>
+                          <div class="account-statement-current-img">
+                            <label class="mr-10"><i class="fas fa-file-pdf"></i></label>
+                            <label><i class="fas fa-file-alt"></i></label>
+                          </div>
+                        </div>
+                        <div class="">
+                          <form>
+                            <div class="form-row">
+                              <div class="form-group col-md-6">
+                                <label>Select Month</label>
+                                <select class="custom-select">
+                                  <option selected>Choose...</option>
+                                  <option value="1">Jan</option>
+                                  <option value="2">Feb</option>
+                                  <option value="3">Mar</option>
+                                  <option value="4">Apr</option>
+                                  <option value="5">May</option>
+                                  <option value="6">Jun</option>
+                                  <option value="7">Jul</option>
+                                  <option value="8">Aug</option>
+                                  <option value="9">Sep</option>
+                                  <option value="10">Oct</option>
+                                  <option value="11">Nov</option>
+                                  <option value="12">Dec</option>
+                                </select>
+                              </div>
+                            </div>
+                          </form>
+                          <table class="table">
+                            <thead class="thead-dark">
+                              <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Allocated limit</th>
+                                <th scope="col">Credit used</th>
+                                <th scope="col">Available limit</th>
+                                <th scope="col">Available temp limit</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>2000000</td>
+                                <td>65218</td>
+                                <td>1934781</td>
+                                <td>0.00</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          
+                        </div>
+                      </div>
+                      <div class="">
+                        <table class="table table-current">
+                          <thead class="thead-dark">
+                            <tr>
+                              <th scope="col">Date and time</th>
+                              <th scope="col">Transaction Description</th>
+                              <th scope="col">Debit</th>
+                              <th scope="col">Credit</th>
+                              <th scope="col">Balance</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td><p>12 Feb  20 18:50</p></td>
+                              <td>
+                                <div class="">
+                                  <p><b>Service name:</b> London - Dubai</p>
+                                  <p><b>Trip:</b> Round trip</p>
+                                  <p><b>Guest name:</b> Ankit test</p>
+                                  <p><b>Departure:</b> 22 Feb 20</p>
+                                  <p><b>Return:</b> 26 Feb 20</p>
+                                  <p>Online booking (flight) with booking MATes18MTy654 against invoice no MATes18MTy678.</p>
+                                </div>
+                              </td>
+                              <td><p>467.57</p></td>
+                              <td><p>0.00</p></td>
+                              <td><p>9885.64</p></td>
+                            </tr>
+                            <tr>
+                              <td><p>12 Feb  20 18:50</p></td>
+                              <td>
+                                <div class="">
+                                  <p><b>Service name:</b> London - Dubai</p>
+                                  <p><b>Trip:</b> Round trip</p>
+                                  <p><b>Guest name:</b> Ankit test</p>
+                                  <p><b>Departure:</b> 22 Feb 20</p>
+                                  <p><b>Return:</b> 26 Feb 20</p>
+                                  <p>Online booking (flight) with booking MATes18MTy654 against invoice no MATes18MTy678.</p>
+                                </div>
+                              </td>
+                              <td><p>467.57</p></td>
+                              <td><p>0.00</p></td>
+                              <td><p>9885.64</p></td>
+                            </tr>
+                            <tr>
+                              <td><p>12 Feb  20 18:50</p></td>
+                              <td>
+                                <div class="">
+                                  <p><b>Service name:</b> London - Dubai</p>
+                                  <p><b>Trip:</b> Round trip</p>
+                                  <p><b>Guest name:</b> Ankit test</p>
+                                  <p><b>Departure:</b> 22 Feb 20</p>
+                                  <p><b>Return:</b> 26 Feb 20</p>
+                                  <p>Online booking (flight) with booking MATes18MTy654 against invoice no MATes18MTy678.</p>
+                                </div>
+                              </td>
+                              <td><p>467.57</p></td>
+                              <td><p>0.00</p></td>
+                              <td><p>9885.64</p></td>
+                            </tr>
+                            <tr>
+                              <td><p>12 Feb  20 18:50</p></td>
+                              <td>
+                                <div class="">
+                                  <p><b>Service name:</b> London - Dubai</p>
+                                  <p><b>Trip:</b> Round trip</p>
+                                  <p><b>Guest name:</b> Ankit test</p>
+                                  <p><b>Departure:</b> 22 Feb 20</p>
+                                  <p><b>Return:</b> 26 Feb 20</p>
+                                  <p>Online booking (flight) with booking MATes18MTy654 against invoice no MATes18MTy678.</p>
+                                </div>
+                              </td>
+                              <td><p>467.57</p></td>
+                              <td><p>0.00</p></td>
+                              <td><p>9885.64</p></td>
+                            </tr>
+                            <tr>
+                              <td><p>12 Feb  20 18:50</p></td>
+                              <td>
+                                <div class="">
+                                  <p><b>Service name:</b> London - Dubai</p>
+                                  <p><b>Trip:</b> Round trip</p>
+                                  <p><b>Guest name:</b> Ankit test</p>
+                                  <p><b>Departure:</b> 22 Feb 20</p>
+                                  <p><b>Return:</b> 26 Feb 20</p>
+                                  <p>Online booking (flight) with booking MATes18MTy654 against invoice no MATes18MTy678.</p>
+                                </div>
+                              </td>
+                              <td><p>467.57</p></td>
+                              <td><p>0.00</p></td>
+                              <td><p>9885.64</p></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="receipt" role="tabpanel" aria-labelledby="receipt-tab">
+                    <div class="">
+                      <div class="">
+                        <form>
+                          <div class="form-row">
+                            <div class="form-group col-md-4">
+                              <label>Transaction date from</label>
+                              <input type="date" class="form-control">
+                            </div>
+                            <div class="form-group col-md-4">
+                              <label>Transaction date to</label>
+                              <input type="date" class="form-control">
+                            </div>
+                            <div class="form-group col-md-4">
+                              <label>Invoice id</label>
+                              <input type="text" class="form-control">
+                            </div>
+                          </div>
+                          <label><b>Transaction types</b></label>
+                          <div class="form-row">
+                            <input type="checkbox" class="from-control" style="margin: 5px;">
+                            <label>Invoicewise</label>
+                          </div>
+                          <div class="form-row">
+                            <input type="checkbox" class="from-control" style="margin: 5px;">
+                            <label>Lumsum</label>
+                          </div>
+                          <div class="form-row">
+                            <input type="checkbox" class="from-control" style="margin: 5px;">
+                            <label>Direct Payment</label>
+                          </div>
+                          <div class="form-row">
+                            <button class="btn btn-success">Get deatil</button>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="">
+                        <div class="company-show-entries">
+                          <p>Show
+                            <input type="number" min="0" value="10" style="width: 60px;" class="form-control">
+                            entries
+                          </p>
+                          <div class="d-flex justify-content-lg-start" style="align-items: center;">
+                            <p class="mr-10">Search: </p>
+                            <input type="text" class="form-control">
+                          </div>
+                        </div>
+                        <div class="">
+                          <table class="table table-current">
+                            <thead class="thead-dark">
+                              <tr>
+                                <th scope="col">S.No</th>
+                                <th scope="col">Transaction Id</th>
+                                <th scope="col">Transaction date</th>
+                                <th scope="col">Transaction mode</th>
+                                <th scope="col">Transaction type</th>
+                                <th scope="col">Invoice id</th>
+                                <th scope="col">Invoice Amount</th>
+                                <th scope="col">Paid Amount</th>
+                                <th scope="col">Invoice Payment Status</th>
+                                <th>User</th>
+                                <th>User Remarks</th>
+                                <th>Approved by</th>
+                                <th>Approved on</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>dfghjjj</td>
+                                <td>09 Fed 20</td>
+                                <td>Cash</td>
+                                <td>Invoicewise</td>
+                                <td>MATes18MTy654</td>
+                                <td>95.67</td>
+                                <td>95.67</td>
+                                <td>Full</td>
+                                <td>mainagent</td>
+                                <td>test</td>
+                                <td>Rishi6788</td>
+                                <td>09 Feb 20</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">2</th>
+                                <td>dfghjjj</td>
+                                <td>09 Fed 20</td>
+                                <td>Cash</td>
+                                <td>Invoicewise</td>
+                                <td>MATes18MTy654</td>
+                                <td>95.67</td>
+                                <td>95.67</td>
+                                <td>Full</td>
+                                <td>mainagent</td>
+                                <td>test</td>
+                                <td>Rishi6788</td>
+                                <td>09 Feb 20</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">3</th>
+                                <td>dfghjjj</td>
+                                <td>09 Fed 20</td>
+                                <td>Cash</td>
+                                <td>Invoicewise</td>
+                                <td>MATes18MTy654</td>
+                                <td>95.67</td>
+                                <td>95.67</td>
+                                <td>Full</td>
+                                <td>mainagent</td>
+                                <td>test</td>
+                                <td>Rishi6788</td>
+                                <td>09 Feb 20</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">4</th>
+                                <td>dfghjjj</td>
+                                <td>09 Fed 20</td>
+                                <td>Cash</td>
+                                <td>Invoicewise</td>
+                                <td>MATes18MTy654</td>
+                                <td>95.67</td>
+                                <td>95.67</td>
+                                <td>Full</td>
+                                <td>mainagent</td>
+                                <td>test</td>
+                                <td>Rishi6788</td>
+                                <td>09 Feb 20</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">5</th>
+                                <td>dfghjjj</td>
+                                <td>09 Fed 20</td>
+                                <td>Cash</td>
+                                <td>Invoicewise</td>
+                                <td>MATes18MTy654</td>
+                                <td>95.67</td>
+                                <td>95.67</td>
+                                <td>Full</td>
+                                <td>mainagent</td>
+                                <td>test</td>
+                                <td>Rishi6788</td>
+                                <td>09 Feb 20</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <div class="company-show-entries mb-50">
+                          <p>Showing 1 to 10 of 15 </p>
+                          <div class="company-show-entries-sub" style="align-items: center;">
+                            <a href="#" class="previous">&laquo; Previous</a>
+                            <a href="#" class="next">Next &raquo;</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             </div>
             </div>
           </div>
         </div>

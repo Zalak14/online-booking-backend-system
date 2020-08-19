@@ -299,26 +299,334 @@
                <div class="">
                 <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                   <li class="nav-item">
-                    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">General</a>
+                    <a class="nav-link active" id="pills-general-tab" data-toggle="pill" href="#pills-general" role="tab" aria-controls="pills-general" aria-selected="true">General</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Pricing</a>
+                    <a class="nav-link" id="pills-price-tab" data-toggle="pill" href="#pills-price" role="tab" aria-controls="pills-price" aria-selected="false">Pricing</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Invoices</a>
+                    <a class="nav-link" id="pills-invoice-tab" data-toggle="pill" href="#pills-invoice" role="tab" aria-controls="pills-invoice" aria-selected="false">Invoices</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Notification</a>
+                    <a class="nav-link" id="pills-notification-tab" data-toggle="pill" href="#pills-notification" role="tab" aria-controls="pills-notification" aria-selected="false">Notification</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Customer comments</a>
+                    <a class="nav-link" id="pills-comment-tab" data-toggle="pill" href="#pills-comment" role="tab" aria-controls="pills-comment" aria-selected="false">Customer comments</a>
                   </li>
                   
                 </ul>
                 <div class="tab-content" id="pills-tabContent">
-                  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">...</div>
-                  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
-                  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+                  <div class="tab-pane fade show active" id="pills-general" role="tabpanel" aria-labelledby="pills-general-tab">
+                    <div class="bm-all-booking-deatil-table">
+                      <div class="company-show-entries">
+                        <p><i class="fas fa-id-card"></i> Booked Items</p>
+                        <div class="d-flex justify-content-lg-start" style="align-items: center;">
+                          <p class="mr-10"><i class="fas fa-calendar-minus"></i> 22 Feb 20 09:50</p>
+                          <p class="mr-10">White label test</p>
+                          <p>Booking owner: <button class="btn btn-b btn-success">Tetiana ovchinnikova</button></p>
+                         
+                        </div>
+                      </div>
+                      <div class="table-responsive">
+                        <table class="table">
+                          <thead class="thead-dark">
+                            <tr>
+                              <th>Type</th>
+                              <th>Booking Id</th>
+                              <th>Booking status</th>
+                              <th>Document status</th>
+                              <th>Deadline</th>
+                              <th>Paid by agency</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td><i class="fas fa-plane"></i> MRD CN, CHN, TS, HK</td>
+                              <td><a href="#">31HCPC6</a></td>
+                              <td>
+                                <button class="btn btn-danger">Cancelled</button>
+                              </td>
+                              <td>
+                                <button class="btn btn-success"><i class="fas fa-check"></i></i></button>
+                              </td>
+                              <td>
+                                <label>12 Feb 20 09:12</label>
+                              </td>
+                              <td>
+                                <button class="btn btn-danger">Not paid</button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td><i class="fas fa-plane"></i> MRD CN, CHN, TS, HK</td>
+                              <td><a href="#">31HCPC6</a></td>
+                              <td>
+                                <button class="btn btn-success">Success</button>
+                              </td>
+                              <td>
+                                <button class="btn btn-danger"><i class="fas fa-times"></i></button>
+                              </td>
+                              <td>
+                                <label>12 Feb 20 09:12</label>
+                              </td>
+                              <td>
+                                <button class="btn btn-success">Paid</button>
+                              </td>
+                            </tr>
+                            
+                          </tbody>
+                        </table>
+                      </div>
+
+                      <div class="company-show-entries">
+                        <p><i class="fas fa-id-card"></i> Passanger data</p>
+                        
+                      </div>
+                      <div class="table-responsive">
+                        <table class="table">
+                          <thead class="thead-dark">
+                            <tr>
+                              <th>#</th>
+                              <th>Type</th>
+                              <th>Name</th>
+                              <th>Birthdate</th>
+                              <th>Nationality</th>
+                              <th>Passport number</th>
+                              <th>Options</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>Adult</td>
+                              <td>MR. Ankit Shah</td>
+                              <td><label>12 Sep 1995</label></td>
+                              <td>
+                                <label>Morocco</label>
+                              </td>
+                              <td><label>VX35673D34</label></td>
+                              <td>
+                                <button class="btn btn-success" data-toggle="modal" data-target="#exampleModalCenter4"><i class="fas fa-edit"></i></button>
+                                <div class="modal fade" id="exampleModalCenter4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                  <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">Passanger Data</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                          <span aria-hidden="true">&times;</span>
+                                        </button>
+                                      </div>
+                                      <div class="modal-body">
+                                        <div class="">
+                                          <form>
+                                            <div class="form-row">
+                                              <div class="form-group col-md-4">
+                                                <label>Type</label>
+                                                <select class="form-control">
+                                                  <option selected>Choose...</option>
+                                                  <option>Adult</option>
+                                                  <option>Child</option>
+                                                </select>
+                                              </div>
+                                              <div class="form-group col-md-4">
+                                                <label>Name</label>
+                                                <input type="text" class="form-control">
+                                              </div>
+                                              <div class="form-group col-md-4">
+                                                <label>Birthdate</label>
+                                                <input class="form-control" type="date">
+                                              </div>
+                                            </div>
+                                            <div class="form-row">
+                                              <div class="form-group col-md-4">
+                                                <label>Nationality</label>
+                                                <select class="form-control">
+                                                  <option selected>Choose...</option>
+                                                  <option>Indian</option>
+                                                  <option>Mexican</option>
+                                                </select>
+                                              </div>
+                                              <div class="form-group col-md-4">
+                                                <label>Passport Number</label>
+                                                <input type="text" class="form-control">
+                                              </div>
+                                              
+                                            </div>
+                                            
+                                          </form>
+                                        </div>
+                                      </div>
+                                      <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td>Adult</td>
+                              <td>MR. Ankit Shah</td>
+                              <td><label>12 Sep 1995</label></td>
+                              <td>
+                                <label>Morocco</label>
+                              </td>
+                              <td><label>VX35673D34</label></td>
+                              <td>
+                                <button class="btn btn-success" data-toggle="modal" data-target="#exampleModalCenter5"><i class="fas fa-edit"></i></button>
+                                <div class="modal fade" id="exampleModalCenter5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                  <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">Passanger Data</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                          <span aria-hidden="true">&times;</span>
+                                        </button>
+                                      </div>
+                                      <div class="modal-body">
+                                        <div class="">
+                                          <form>
+                                            <div class="form-row">
+                                              <div class="form-group col-md-4">
+                                                <label>Type</label>
+                                                <select class="form-control">
+                                                  <option selected>Choose...</option>
+                                                  <option>Adult</option>
+                                                  <option>Child</option>
+                                                </select>
+                                              </div>
+                                              <div class="form-group col-md-4">
+                                                <label>Name</label>
+                                                <input type="text" class="form-control">
+                                              </div>
+                                              <div class="form-group col-md-4">
+                                                <label>Birthdate</label>
+                                                <input class="form-control" type="date">
+                                              </div>
+                                            </div>
+                                            <div class="form-row">
+                                              <div class="form-group col-md-4">
+                                                <label>Nationality</label>
+                                                <select class="form-control">
+                                                  <option selected>Choose...</option>
+                                                  <option>Indian</option>
+                                                  <option>Mexican</option>
+                                                </select>
+                                              </div>
+                                              <div class="form-group col-md-4">
+                                                <label>Passport Number</label>
+                                                <input type="text" class="form-control">
+                                              </div>
+                                              
+                                            </div>
+                                            
+                                          </form>
+                                        </div>
+                                      </div>
+                                      <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="company-show-entries mb-50">
+                        <p>Showing 2 to 2 of 2 </p>
+                        <div class="company-show-entries-sub" style="align-items: center;">
+                          <a href="#" class="previous">&laquo; Previous</a>
+                          <a href="#" class="next">Next &raquo;</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="pills-price" role="tabpanel" aria-labelledby="pills-price-tab">2...</div>
+                  <div class="tab-pane fade" id="pills-invoice" role="tabpanel" aria-labelledby="pills-invoice-tab">
+                    <div class="bm-all-booking-deatil-invoice">
+                      <form>
+                        <div class="form-row">
+                          <div class="form-group col-md-4">
+                            <label>Invoice country</label>
+                            <select class="form-control">
+                              <option selected>Choose...</option>
+                              <option>...</option>
+                            </select>
+                          </div>
+                          <div class="form-group col-md-4">
+                            <label>Invoice city</label>
+                            <input type="text" class="form-control">
+                          </div>
+                          <div class="form-group col-md-4">
+                            <label>Invoice zip</label>
+                            <input type="text" class="form-control">
+                          </div>
+                        </div>
+                        <div class="form-row">
+                          <div class="form-group col-md-12">
+                            <label>Invoice address</label>
+                            <input type="text" class="form-control">
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-end">
+                          <button class="btn btn-primary mr-10">Save</button>
+                          <button class="btn btn-primary">Cancel</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="pills-notification" role="tabpanel" aria-labelledby="pills-notification-tab">
+                    <div class="">
+                      <div class="bm-all-booking-deatil-notification">
+                        <p><i class="fas fa-plane"></i>  Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                      </div>
+                      <div class="bm-all-booking-deatil-notification">
+                        <p><i class="fas fa-hotel"></i>  Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                      </div>
+                      <div class="bm-all-booking-deatil-notification">
+                        <p><i class="fas fa-car"></i>  Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                      </div>
+                      <div class="bm-all-booking-deatil-notification">
+                        <i class="far fa-futbol"></i>  Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                      </div>
+                      <div class="bm-all-booking-deatil-notification">
+                        <p><i class="fab fa-cc-visa"></i>  Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="pills-comment" role="tabpanel" aria-labelledby="pills-comment-tab">
+                    <div class="">
+                      <div class="bm-all-booking-deatil-review">
+                        <h3>Excellent Stay</h3>
+                        <p class="review-p">Ankit Shah , Jun 01, 2020</p>
+                        <p>Excellent service, excellent cleanliness.</p>
+                        <button class="btn btn-review">4.5</button>
+                      </div>
+                      <div class="bm-all-booking-deatil-review">
+                        <h3>Excellent Service</h3>
+                        <p class="review-p">Ankit Shah , Jun 01, 2020</p>
+                        <p>Excellent service, excellent cleanliness.</p>
+                        <button class="btn btn-review">4.5</button>
+                      </div>
+                      <div class="bm-all-booking-deatil-review">
+                        <h3>Excellent Work</h3>
+                        <p class="review-p">Ankit Shah , Jun 01, 2020</p>
+                        <p>Excellent service, excellent cleanliness.</p>
+                        <button class="btn btn-review">4.5</button>
+                      </div>
+                      <div class="bm-all-booking-deatil-review">
+                        <h3>Excellent Stay</h3>
+                        <p class="review-p">Ankit Shah , Jun 01, 2020</p>
+                        <p>Excellent service, excellent cleanliness.</p>
+                        <button class="btn btn-review">4.5</button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                </div>
              

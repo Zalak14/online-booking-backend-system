@@ -2661,10 +2661,10 @@ padding: 10px 4px;
   padding: 5px 10px;
   font-size: 12px;
 }
-/* .table-responsive{
+.account-bank-detail-main .table-responsive{
   overflow-y: hidden;
   overflow-x: scroll;
-} */
+}
 .mb-10{
   margin-bottom: 10px;
 }
@@ -2701,6 +2701,9 @@ padding: 10px 4px;
 .btn-warning{
   color: white;
 }
+.btn-warning:hover{
+  color: white;
+}
 .bm-all-booking-comment{
   background-color: black;
   color: white;
@@ -2715,4 +2718,98 @@ padding: 10px 4px;
 }
 .bm-all-booking-deatil-main .modal-dialog{
   max-width: 750px;
+}
+.bm-all-booking-deatil-table .table{
+  background-color: white;
+}
+.bm-all-booking-deatil-table .btn{
+  font-size: 14px;
+  padding: 5px 10px;
+}
+.bm-all-booking-deatil-notification{
+  padding: 15px 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 1px 8px rgba(0,0,0,.1);
+  margin-bottom: 15px;
+}
+.bm-all-booking-deatil-notification:hover{
+  box-shadow: 0 1px 8px rgba(153, 102, 255, 0.7);
+}
+.bm-all-booking-deatil-review{
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 1px 8px rgba(0,0,0,.1);
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+.bm-all-booking-deatil-review h3{
+  font-size: 20px;
+  font-weight: 600;
+  background: -webkit-linear-gradient(right,#7491ff,#0ac3fa 48%,#4addea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.bm-all-booking-deatil-review .review-p{
+  color: #bebcbc !important;
+}
+.bm-all-booking-deatil-review .btn-review{
+background-color: transparent;
+border: 1px solid #0ac3fa;
+border-radius: 5px;
+float: right;
+margin-top: -60px;
+}
+.bm-all-booking-deatil-review:hover{
+  box-shadow: 0 1px 8px rgba(153, 102, 255, 0.7);
+}
+.bm-all-booking-deatil-invoice{
+  background-color: white;
+  padding: 20px;
+}
+.account-statement-current-main{
+  background-color: white;
+}
+.account-statement-current-sub{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: white;
+}
+.account-statement-current-sub h6{
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.account-statement-current-img label{
+  font-size: 40px;
+  color: #646464;
+}
+.account-statement-current .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link{
+  border-color: transparent !important;
+}
+.account-statement-current .nav-tabs{
+  border: none !important;
+}
+.account-statement-current-main .table{
+background-color: white;
+}
+.account-statement-current form{
+  background-color: white;
+  padding: 20px;
+}
+.table-current{
+  background-color: white;
+  margin: 30px 0;
+}
+.table-current th{
+  font-size: 14px;
+  font-weight: 500 !important;
+}
+.table-current td{
+  font-size: 14px;
+  vertical-align: top;
+}
+.p-20{
+  padding: 20px;
 }
