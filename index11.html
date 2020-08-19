@@ -62,6 +62,12 @@
                   <li><a href="html/bm-b2c-report.html" class="sidebar-btnlink btn" role="button">B2C Report</a></li>
                 </ul>
               </li>
+              <li id="flip-menu3"><a href="#" class="sidebar-btnlink btn" role="button">Account Management</a>
+                <ul class="sub-menu-btn" id="panel-menu3">
+                  <li><a href="html/account-statement.html" class="sidebar-btnlink btn" role="button">Account Statement</a></li>
+                  <li><a href="html/account-bank-detail.html" class="sidebar-btnlink btn" role="button">Account Bank detail</a></li>
+                </ul>
+              </li>
             </ul>
           </div>
           
@@ -334,6 +340,13 @@
         });
       });
       </script>
+      <script> 
+        $(document).ready(function(){
+          $("#flip-menu3").click(function(){
+            $("#panel-menu3").slideToggle("slow");
+          });
+        });
+        </script>
 <script>
   var swiper = new Swiper('.dashboard-slider', {
     spaceBetween: 30,

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tekwalker Back-End</title>
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../font/stylesheet.css">
+    <link rel="stylesheet" href="../css/aos.css" />
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+        
+</head>
+<body>
+<section style="overflow: hidden;">
+  <div class="main-div">
+    <div class="left-sidebar-main">
+      <div class="side-bar-left-main">
+        <div class="tw-logo">
+          <h4>Tekwalker</h4>
+        </div>
+        <div class="profile-main">
+          <div class="d-flex justify-content-center profile-sub">
+            <div class="profile-circle">
+              <img src="../img/follow.svg">
+            </div>
+            <h5>Zalak Bhanderi</h5>
+          </div>
+        </div>
+        <div class="home-button-side">
+          <div class="sidebar-button">
+            <ul>
+              <li><a href="../index11.html" class="sidebar-btnlink btn" role="button">Dashboard</a></li>
+              <li><a href="../html/search.html" class="sidebar-btnlink btn" role="button">Search Book</a></li>
+              <li id="flip-menu"><a href="#" class="sidebar-btnlink btn"  role="button">Profile Management</a>
+                <ul class="sub-menu-btn" id="panel-menu">
+                  <li><a href="../html/profile.html" class="sidebar-btnlink btn" role="button">Company Users</a></li>
+                  <li><a href="../html/company-office-parameter.html" class="sidebar-btnlink btn" role="button">Office Parameters</a></li>
+                  <li><a href="../html/user-access-level.html" class="sidebar-btnlink btn" role="button">Users Access Level</a></li>
+                  <li><a href="../html/company-office-data.html" class="sidebar-btnlink btn" role="button">Company Office data</a></li>
+                </ul>
+              </li>
+              <li><a href="#" class="sidebar-btnlink btn" role="button">B2B Management</a>
+                <ul class="sub-menu-btn">
+                  <li><a href="../html/b2b-parameter-cat.html" class="sidebar-btnlink btn" role="button">B2B parameter categories</a></li>
+                  <li><a href="../html/b2b-sub-agent-group.html" class="sidebar-btnlink btn" role="button">Sub agent group</a></li>
+                </ul>
+              </li>
+              <li><a href="../html/booking.html" class="sidebar-btnlink btn" role="button">Booking Management</a></li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="right-sidebar-main">
+      <div class="topbar-header">
+       <div class="container pl-0 pr-0">
+         <div class="row">
+           <div class="col-sm-12">
+            <div class="main-header">
+              <h4>Tekwalker</h4>
+              <button class="btn btn-main">Balance</button>
+              
+            </div>
+           </div>
+         </div>
+       </div>
+      </div>
+      <div class="content-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+             <div class="mt-50 bm-all-booking-deatil-main">
+               <div class="mb-20 bm-all-booking-deatil-paymode">
+                  <button class="btn btn-primary" style="width: 100%;" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    Payment and issue
+                  </button>
+                <div class="collapse" id="collapseExample">
+                  <div class="card card-body">
+                    <button class="btn mb-10" data-toggle="modal" data-target="#exampleModalCenter">Request cancel / rebook flight</button>
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Call Center Request</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="">
+                              <form>
+                                <div class="form-row">
+                                  <div class="form-group col-md-4">
+                                    <label>Request Number</label>
+                                    <input type="text" class="form-control">
+                                  </div>
+                                  <div class="form-group col-md-4">
+                                    <label>Request Time</label>
+                                    <input type="text" class="form-control">
+                                  </div>
+                                  <div class="form-group col-md-4">
+                                    <label>Type</label>
+                                    <select class="form-control">
+                                      <option selected>Choose...</option>
+                                      <option>Change / Rebook</option>
+                                      <option>Cancel / Refund/</option>
+                                      <option>Additional service </option>
+                                      <option>Issue booking</option>
+                                    </select>
+                                  </div>
+                                </div>
+                                <div class="form-row">
+                                  <div class="form-group col-md-4">
+                                    <label>Status</label>
+                                    <select class="form-control">
+                                      <option selected>Choose...</option>
+                                      <option>...</option>
+                                    </select>
+                                  </div>
+                                  <div class="form-group col-md-4">
+                                    <label>Request Action</label>
+                                    <select class="form-control">
+                                      <option selected>Choose...</option>
+                                      <option>...</option>
+                                    </select>
+                                  </div>
+                                  <div class="form-group col-md-4">
+                                    <label>File upload</label>
+                                    <input type="file" id="myFile" name="filename">
+                                  </div>
+                                </div>
+                                <div class="form-row">
+                                  <div class="form-group col-md-12">
+                                    <label>Comment</label>
+                                    <textarea class="form-control"></textarea>
+                                  </div>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <button class="btn btn-light-font mb-10">Flight invoice issue</button>
+                    <button class="btn btn-light-font mb-10">Paid by</button>
+                    <button class="btn btn-light-font mb-10">Charge booking manually</button>
+                    <button class="btn mb-10" data-toggle="modal" data-target="#exampleModalCenter1">booking fee manually</button>
+                    <div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Call Center Request</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="">
+                              <form>
+                                <div class="form-row">
+                                  <div class="form-group col-md-4">
+                                    <label>Request Number</label>
+                                    <input type="text" class="form-control">
+                                  </div>
+                                  <div class="form-group col-md-4">
+                                    <label>Request Time</label>
+                                    <input type="text" class="form-control">
+                                  </div>
+                                  <div class="form-group col-md-4">
+                                    <label>Type</label>
+                                    <select class="form-control">
+                                      <option selected>Choose...</option>
+                                      <option>Change / Rebook</option>
+                                      <option>Cancel / Refund/</option>
+                                      <option>Additional service </option>
+                                      <option>Issue booking</option>
+                                    </select>
+                                  </div>
+                                </div>
+                                <div class="form-row">
+                                  <div class="form-group col-md-4">
+                                    <label>Status</label>
+                                    <select class="form-control">
+                                      <option selected>Choose...</option>
+                                      <option>...</option>
+                                    </select>
+                                  </div>
+                                  <div class="form-group col-md-4">
+                                    <label>Request Action</label>
+                                    <select class="form-control">
+                                      <option selected>Choose...</option>
+                                      <option>...</option>
+                                  </div>
+                                  <div class="form-group col-md-4">
+                                    <label>File upload</label>
+                                    <input type="file">
+                                  </div>
+                                </div>
+                                <div class="form-row">
+                                  <div class="form-group col-md-12">
+                                    <label>Comment</label>
+                                    <textarea class="form-control"></textarea>
+                                  </div>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="btn mb-10" data-toggle="modal" data-target="#exampleModalCenter2">Print flight booking</button>
+                    <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Call Center Request</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="">
+                              <form>
+                                <div class="form-row">
+                                  <div class="form-group col-md-4">
+                                    <label>Request Number</label>
+                                    <input type="text" class="form-control">
+                                  </div>
+                                  <div class="form-group col-md-4">
+                                    <label>Request Time</label>
+                                    <input type="text" class="form-control">
+                                  </div>
+                                  <div class="form-group col-md-4">
+                                    <label>Type</label>
+                                    <select class="form-control">
+                                      <option selected>Choose...</option>
+                                      <option>Change / Rebook</option>
+                                      <option>Cancel / Refund/</option>
+                                      <option>Additional service </option>
+                                      <option>Issue booking</option>
+                                    </select>
+                                  </div>
+                                </div>
+                                <div class="form-row">
+                                  <div class="form-group col-md-4">
+                                    <label>Status</label>
+                                    <select class="form-control">
+                                      <option selected>Choose...</option>
+                                      <option>...</option>
+                                    </select>
+                                  </div>
+                                  <div class="form-group col-md-4">
+                                    <label>Request Action</label>
+                                    <select class="form-control">
+                                      <option selected>Choose...</option>
+                                      <option>...</option>
+                                  </div>
+                                  <div class="form-group col-md-4">
+                                    <label>File upload</label>
+                                    <input type="file" id="myFile" name="filename">
+                                  </div>
+                                </div>
+                                <div class="form-row">
+                                  <div class="form-group col-md-12">
+                                    <label>Comment</label>
+                                    <textarea class="form-control"></textarea>
+                                  </div>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="btn btn-light-font mb-10">Flight canceled</button>
+                  </div>
+                </div>
+               </div>
+               <div class="">
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">General</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Invoices</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Notification</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Customer comments</a>
+                  </li>
+                  
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">...</div>
+                  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+                  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+                </div>
+               </div>
+             
+              
+             </div>
+            </div>
+          </div>
+        </div>
+      
+     
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/popper.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/swiper.min.js"></script>
+<script> 
+  $(document).ready(function(){
+    $("#flip-menu").click(function(){
+      $("#panel-menu").slideToggle("slow");
+    });
+  });
+  </script>
+
+
+</html>

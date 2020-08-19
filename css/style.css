@@ -1155,6 +1155,12 @@ font-weight: 600;
 #panel-menu2 {
   display: none;
 }
+#flip-menu3{
+  cursor: pointer;
+}
+#panel-menu3 {
+  display: none;
+}
 .mb-50{
   margin-bottom: 50px;
 }
@@ -2669,4 +2675,44 @@ padding: 10px 4px;
 .table-hover tbody tr:hover .b2b-report-icon{
   color: white;
 }
-
+.thead-dark{
+  background-color: black;
+  color: white;
+  
+}
+.thead-dark th{
+  font-weight: 500 !important;
+}
+.bm-all-booking-main .table td{
+  vertical-align: top !important;
+}
+.bm-all-booking-main .btn-b{
+  font-size: 13px;
+  font-weight: 400;
+  padding: 5px;
+}
+.bm-all-booking-main .btn{
+  font-size: 14px;
+  padding: 5px;
+}
+.bm-all-booking-main label{
+  font-size: 14px;
+}
+.btn-warning{
+  color: white;
+}
+.bm-all-booking-comment{
+  background-color: black;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.bm-all-booking-main .table{
+  background-color: white;
+}
+.btn-light-font{
+  color: rgb(173, 173, 173);
+}
+.bm-all-booking-deatil-main .modal-dialog{
+  max-width: 750px;
+}
