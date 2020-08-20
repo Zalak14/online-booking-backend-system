@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tekwalker Back-End</title>
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../font/stylesheet.css">
+    <link rel="stylesheet" href="../css/aos.css" />
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+        
+</head>
+<body>
+<section style="overflow: hidden;">
+  <div class="main-div">
+    <div class="left-sidebar-main">
+      <div class="side-bar-left-main">
+        <div class="tw-logo">
+          <h4>Tekwalker</h4>
+        </div>
+        <div class="profile-main">
+          <div class="d-flex justify-content-center profile-sub">
+            <div class="profile-circle">
+              <img src="../img/follow.svg">
+            </div>
+            <h5>Zalak Bhanderi</h5>
+          </div>
+        </div>
+        <div class="home-button-side">
+          <div class="sidebar-button">
+            <ul>
+              <li><a href="../index11.html" class="sidebar-btnlink btn" role="button">Dashboard</a></li>
+              <li><a href="../html/search.html" class="sidebar-btnlink btn" role="button">Search Book</a></li>
+              <li id="flip-menu"><a href="#" class="sidebar-btnlink btn"  role="button">Profile Management</a>
+                <ul class="sub-menu-btn" id="panel-menu">
+                  <li><a href="../html/profile.html" class="sidebar-btnlink btn" role="button">Company Users</a></li>
+                  <li><a href="../html/company-office-parameter.html" class="sidebar-btnlink btn" role="button">Office Parameters</a></li>
+                  <li><a href="../html/user-access-level.html" class="sidebar-btnlink btn" role="button">Users Access Level</a></li>
+                  <li><a href="../html/company-office-data.html" class="sidebar-btnlink btn" role="button">Company Office data</a></li>
+                </ul>
+              </li>
+              <li id="flip-menu1"><a href="#" class="sidebar-btnlink btn" role="button">B2B Management</a>
+                <ul class="sub-menu-btn" id="panel-menu1">
+                  <li><a href="../html/b2b-parameter-cat.html" class="sidebar-btnlink btn" role="button">B2B parameter categories</a></li>
+                  <li><a href="../html/b2b-sub-agent-group.html" class="sidebar-btnlink btn" role="button">Sub agent group</a></li>
+                  <li><a href="../html/b2b-travel-office.html" class="sidebar-btnlink btn" role="button">Travel office management</a></li>
+                  <li><a href="../html/b2b-loyality.html" class="sidebar-btnlink btn" role="button">Loyality</a></li>
+                  <li><a href="../html/b2b-inquiries.html" class="sidebar-btnlink btn" role="button">Inquiries</a></li>
+                  <li><a href="../html/b2b-commission.html" class="sidebar-btnlink btn" role="button">B2B agent Commission</a></li>
+                  <li><a href="../html/b2b-agent-list.html" class="sidebar-btnlink btn" role="button">B2B agent list</a></li>
+                  <li><a href="../html/b2b-markup.html" class="sidebar-btnlink btn" role="button">Markup</a></li>
+                </ul>
+              </li>
+              <li id="flip-menu2"><a href="#" class="sidebar-btnlink btn" role="button">Booking Management</a>
+                <ul class="sub-menu-btn" id="panel-menu2">
+                  <li><a href="../html/bm-all-booking.html" class="sidebar-btnlink btn" role="button">All booking</a></li>
+                  <li><a href="../html/bm-b2b-report.html" class="sidebar-btnlink btn" role="button">B2B Report</a></li>
+                  <li><a href="../html/bm-b2c-report.html" class="sidebar-btnlink btn" role="button">B2C Report</a></li>
+                </ul>
+              </li>
+              <li id="flip-menu3"><a href="#" class="sidebar-btnlink btn" role="button">Account Management</a>
+                <ul class="sub-menu-btn" id="panel-menu3">
+                  <li><a href="../html/account-statement.html" class="sidebar-btnlink btn" role="button">Account Statement</a></li>
+                  <li><a href="../html/account-bank-detail.html" class="sidebar-btnlink btn" role="button">Account Bank detail</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="right-sidebar-main">
+      <div class="topbar-header">
+       <div class="container pl-0 pr-0">
+         <div class="row">
+           <div class="col-sm-12">
+            <div class="main-header">
+              <h4>Tekwalker</h4>
+              <button class="btn btn-main">Balance</button>
+              
+            </div>
+           </div>
+         </div>
+       </div>
+      </div>
+      <div class="content-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+             <div class="mt-50">
+               <div class="">
+                 <h4 class="mt-20 mb-20 btn-heading">Currency Converter</h4>
+                 <div class="table-responsive bg-white">
+                  <table class="table">
+                    <thead class="thead-dark">
+                      <tr>
+                        <th scope="col">S.No.</th>
+                        <th scope="col">Currency</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">ROE with INR as base Currency</th>
+                        <th scope="col">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>INR</td>
+                        <td>
+                          <select class="custom-select" id="inputGroupSelect01">
+                            <option selected>Active</option>
+                            <option value="1">Inactive</option>
+                          </select>
+                        </td>
+                        <td>
+                          <input type="text" value="1.00" class="form-control" style="width: 40%;">
+                        </td>
+                        <td>
+                          <button class="btn btn-success">Update</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>AED</td>
+                        <td>
+                          <select class="custom-select" id="inputGroupSelect01">
+                            <option selected>Active</option>
+                            <option value="1">Inactive</option>
+                          </select>
+                        </td>
+                        <td>
+                          <input type="text" value="20.00" class="form-control" style="width: 40%;">
+                        </td>
+                        <td>
+                          <button class="btn btn-success">Update</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>AUD</td>
+                        <td>
+                          <select class="custom-select" id="inputGroupSelect01">
+                            <option selected>Active</option>
+                            <option value="1">Inactive</option>
+                          </select>
+                        </td>
+                        <td>
+                          <input type="text" value="49.00" class="form-control" style="width: 40%;">
+                        </td>
+                        <td>
+                          <button class="btn btn-success">Update</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">4</th>
+                        <td>BBD</td>
+                        <td>
+                          <select class="custom-select" id="inputGroupSelect01">
+                            <option selected>Active</option>
+                            <option value="1">Inactive</option>
+                          </select>
+                        </td>
+                        <td>
+                          <input type="text" value="37.00" class="form-control" style="width: 40%;">
+                        </td>
+                        <td>
+                          <button class="btn btn-success">Update</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">5</th>
+                        <td>BHD</td>
+                        <td>
+                          <select class="custom-select" id="inputGroupSelect01">
+                            <option selected>Active</option>
+                            <option value="1">Inactive</option>
+                          </select>
+                        </td>
+                        <td>
+                          <input type="text" value="190.00" class="form-control" style="width: 40%;">
+                        </td>
+                        <td>
+                          <button class="btn btn-success">Update</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">6</th>
+                        <td>BOB</td>
+                        <td>
+                          <select class="custom-select" id="inputGroupSelect01">
+                            <option selected>Active</option>
+                            <option value="1">Inactive</option>
+                          </select>
+                        </td>
+                        <td>
+                          <input type="text" value="10.00" class="form-control" style="width: 40%;">
+                        </td>
+                        <td>
+                          <button class="btn btn-success">Update</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">7</th>
+                        <td>BRL</td>
+                        <td>
+                          <select class="custom-select" id="inputGroupSelect01">
+                            <option selected>Active</option>
+                            <option value="1">Inactive</option>
+                          </select>
+                        </td>
+                        <td>
+                          <input type="text" value="13.00" class="form-control" style="width: 40%;">
+                        </td>
+                        <td>
+                          <button class="btn btn-success">Update</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">8</th>
+                        <td>CAD</td>
+                        <td>
+                          <select class="custom-select" id="inputGroupSelect01">
+                            <option selected>Active</option>
+                            <option value="1">Inactive</option>
+                          </select>
+                        </td>
+                        <td>
+                          <input type="text" value="54.00" class="form-control" style="width: 40%;">
+                        </td>
+                        <td>
+                          <button class="btn btn-success">Update</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">9</th>
+                        <td>CHF</td>
+                        <td>
+                          <select class="custom-select" id="inputGroupSelect01">
+                            <option selected>Active</option>
+                            <option value="1">Inactive</option>
+                          </select>
+                        </td>
+                        <td>
+                          <input type="text" value="82.00" class="form-control" style="width: 40%;">
+                        </td>
+                        <td>
+                          <button class="btn btn-success">Update</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">10</th>
+                        <td>CLP</td>
+                        <td>
+                          <select class="custom-select" id="inputGroupSelect01">
+                            <option selected>Active</option>
+                            <option value="1">Inactive</option>
+                          </select>
+                        </td>
+                        <td>
+                          <input type="text" value="0.00" class="form-control" style="width: 40%;">
+                        </td>
+                        <td>
+                          <button class="btn btn-success">Update</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">11</th>
+                        <td>CNY</td>
+                        <td>
+                          <select class="custom-select" id="inputGroupSelect01">
+                            <option selected>Active</option>
+                            <option value="1">Inactive</option>
+                          </select>
+                        </td>
+                        <td>
+                          <input type="text" value="10.00" class="form-control" style="width: 40%;">
+                        </td>
+                        <td>
+                          <button class="btn btn-success">Update</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">12</th>
+                        <td>CZK</td>
+                        <td>
+                          <select class="custom-select" id="inputGroupSelect01">
+                            <option selected>Active</option>
+                            <option value="1">Inactive</option>
+                          </select>
+                        </td>
+                        <td>
+                          <input type="text" value="0.00" class="form-control" style="width: 40%;">
+                        </td>
+                        <td>
+                          <button class="btn btn-success">Update</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">13</th>
+                        <td>DKK</td>
+                        <td>
+                          <select class="custom-select" id="inputGroupSelect01">
+                            <option selected>Active</option>
+                            <option value="1">Inactive</option>
+                          </select>
+                        </td>
+                        <td>
+                          <input type="text" value="3.94" class="form-control" style="width: 40%;">
+                        </td>
+                        <td>
+                          <button class="btn btn-success">Update</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">14</th>
+                        <td>EGP</td>
+                        <td>
+                          <select class="custom-select" id="inputGroupSelect01">
+                            <option selected>Active</option>
+                            <option value="1">Inactive</option>
+                          </select>
+                        </td>
+                        <td>
+                          <input type="text" value="11.00" class="form-control" style="width: 40%;">
+                        </td>
+                        <td>
+                          <button class="btn btn-success">Update</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">15</th>
+                        <td>EUR</td>
+                        <td>
+                          <select class="custom-select" id="inputGroupSelect01">
+                            <option selected>Active</option>
+                            <option value="1">Inactive</option>
+                          </select>
+                        </td>
+                        <td>
+                          <input type="text" value="3.99" class="form-control" style="width: 40%;">
+                        </td>
+                        <td>
+                          <button class="btn btn-success">Update</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">16</th>
+                        <td>GBP</td>
+                        <td>
+                          <select class="custom-select" id="inputGroupSelect01">
+                            <option selected>Active</option>
+                            <option value="1">Inactive</option>
+                          </select>
+                        </td>
+                        <td>
+                          <input type="text" value="82.00" class="form-control" style="width: 40%;">
+                        </td>
+                        <td>
+                          <button class="btn btn-success">Update</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">17</th>
+                        <td>HKD</td>
+                        <td>
+                          <select class="custom-select" id="inputGroupSelect01">
+                            <option selected>Active</option>
+                            <option value="1">Inactive</option>
+                          </select>
+                        </td>
+                        <td>
+                          <input type="text" value="89.00" class="form-control" style="width: 40%;">
+                        </td>
+                        <td>
+                          <button class="btn btn-success">Update</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">18</th>
+                        <td>HUF</td>
+                        <td>
+                          <select class="custom-select" id="inputGroupSelect01">
+                            <option selected>Active</option>
+                            <option value="1">Inactive</option>
+                          </select>
+                        </td>
+                        <td>
+                          <input type="text" value="20.00" class="form-control" style="width: 40%;">
+                        </td>
+                        <td>
+                          <button class="btn btn-success">Update</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">19</th>
+                        <td>IDR</td>
+                        <td>
+                          <select class="custom-select" id="inputGroupSelect01">
+                            <option selected>Active</option>
+                            <option value="1">Inactive</option>
+                          </select>
+                        </td>
+                        <td>
+                          <input type="text" value="20.00" class="form-control" style="width: 40%;">
+                        </td>
+                        <td>
+                          <button class="btn btn-success">Update</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">20</th>
+                        <td>ILS</td>
+                        <td>
+                          <select class="custom-select" id="inputGroupSelect01">
+                            <option selected>Active</option>
+                            <option value="1">Inactive</option>
+                          </select>
+                        </td>
+                        <td>
+                          <input type="text" value="20.00" class="form-control" style="width: 40%;">
+                        </td>
+                        <td>
+                          <button class="btn btn-success">Update</button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                 </div>
+               </div>
+             </div>
+          
+            </div>
+          </div>
+        </div>
+      
+     
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/jquery-3.2.1.slim.min.js"></script>
+<script src="../js/popper.min.js" ></script>
+<script src="../js/bootstrap.min.js" ></script>
+<script src="../js/swiper.min.js"></script>
+<script src="https://kit.fontawesome.com/1dd16d19ea.js" crossorigin="anonymous"></script>
+<script> 
+  $(document).ready(function(){
+    $("#flip-menu").click(function(){
+      $("#panel-menu").slideToggle("slow");
+    });
+  });
+  </script>
+  <script> 
+    $(document).ready(function(){
+      $("#flip-menu1").click(function(){
+        $("#panel-menu1").slideToggle("slow");
+      });
+    });
+    </script>
+    <script> 
+      $(document).ready(function(){
+        $("#flip-menu2").click(function(){
+          $("#panel-menu2").slideToggle("slow");
+        });
+      });
+      </script>
+      <script> 
+        $(document).ready(function(){
+          $("#flip-menu3").click(function(){
+            $("#panel-menu3").slideToggle("slow");
+          });
+        });
+        </script>
+
+
+</html>

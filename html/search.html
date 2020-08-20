@@ -58,7 +58,37 @@
            <div class="col-sm-12">
             <div class="main-header">
               <h4>Tekwalker</h4>
-              <button class="btn btn-main">Balance</button>
+              <div class="d-flex justify-content-end">
+                <div class="dropdown">
+                  <button class="btn btn-main dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-suitcase-rolling"></i> My trip
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="../html/my-trip.html">My trip</a>
+                  </div>
+                </div>
+                <div class="dropdown">
+                  <button class="btn btn-main dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-user"></i> MY Account
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="../html/my-profile.html">My profile</a>
+                    <a class="dropdown-item" href="#">My agency</a>
+                    <a class="dropdown-item" href="#">User</a>
+                  </div>
+                </div>
+                <div class="dropdown">
+                  <button class="btn btn-main dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-cog"></i> Setting
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </div>
+                <button class="btn btn-main"><i class="fas fa-question"></i> Help</button>
+              </div>
             </div>
            </div>
          </div>
@@ -67,552 +97,555 @@
       <div class="content-area">
         <div class="container">
           <div class="row">
-            <div class="col-sm-12">
-              <div class="search-book-main">
-                <div class="tab-book">
-                  <button class="tablinks-book active" onclick="openBook(event, 'flight1')">Flight</button>
-                  <button class="tablinks-book" onclick="openBook(event, 'hotel1')">Hotel</button>
-                  <button class="tablinks-book" onclick="openBook(event, 'transfer1')">Transfer</button>
-                  <button class="tablinks-book" onclick="openBook(event, 'holiday1')">Holiday</button>
-                  <button class="tablinks-book mr-0" onclick="openBook(event, 'visa1')">Visa</button>
-                </div>
-                <div id="flight1" class="tabcontent-book initial-active">
-                  <div class="">
-                    <div class="tab-book1">
-                      <button class="tablinks-book1 active" onclick="openBook1(event, 'one-way')">One-way</button>
-                      <button class="tablinks-book1" onclick="openBook1(event, 'return')">Return</button>
-                      <button class="tablinks-book1" onclick="openBook1(event, 'multicity')">Multicity</button>
-                    </div>
-
-                    <div id="one-way" class="tabcontent-book1 initial-active">
-                      <form>
-                        <div class="form-row">
-                          <div class="form-group col-md-4">
-                            <label for="inputEmail4">From</label>
-                            <input type="text" class="form-control flight-icon" placeholder="City or Airpot"></div>
-                          <div class="form-group col-md-4">
-                            <label for="inputPassword4">To</label>
-                            <input type="text" class="form-control location-icon" placeholder="Country, City or island">
-                          </div>
-                          <div class="form-group col-md-4">
-                            <label for="inputEmail4">Leaving on</label>
-                            <input type="date" class="form-control" id="inputEmail4">
-                          </div>
-                          <div class="form-group col-md-3">
-                            <div class="dropdown mr-1">
-                                <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
-                                0 adult
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-                                <a class="dropdown-item" href="#">Adult</a>
-                                <a class="dropdown-item" href="#">children</a>
-                                </div>
-                            </div>
-                         </div>
-                         <div class="form-group col-md-3">
-                            <div class="dropdown mr-1">
-                                <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
-                                Any Class
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-                                <a class="dropdown-item" href="#">Any Class</a>
-                                <a class="dropdown-item" href="#">Economy</a>
-                                <a class="dropdown-item" href="#">Premium Economy</a>
-                                <a class="dropdown-item" href="#">First Class</a>
-                                <a class="dropdown-item" href="#">Business</a>
-                                </div>
-                            </div>
-                         </div>
-                         <div class="form-group col-md-3">
-                          <div class="dropdown mr-1">
-                              <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
-                              Payment Method
-                              </button>
-                              <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-                              <a class="dropdown-item" href="#">Visa</a>
-                              <a class="dropdown-item" href="#">MasterCard</a>
-                              <a class="dropdown-item" href="#">Prepaid MasterCard</a>
-                              <a class="dropdown-item" href="#">American Express</a>
-                              <a class="dropdown-item" href="#">Visa Debit</a>
-                              <a class="dropdown-item" href="#">MasterCard Debit</a>
-                              <a class="dropdown-item" href="#">PayPal</a>
-                              <a class="dropdown-item" href="#">Google Pay</a>
-                              <a class="dropdown-item" href="#">Phonepe</a>
-                              </div>
-                          </div>
-                       </div>
-                       <div class="form-group col-md-3">
-                        <div class="dropdown mr-1">
-                          <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
-                          Currency
-                          </button>
-                          <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-                          <a class="dropdown-item" href="#">INR</a>
-                          <a class="dropdown-item" href="#">USD</a>
-                          <a class="dropdown-item" href="#">EUR</a>
-                          </div>
-                      </div>
-                       </div>
-                       <div class="form-group col-md-12 d-flex justify-content-center">
-                         <a class="btn btn-find btn11" href="../html/flight.html" role="button">Find </a>
-                      </div>
-                        </div>
-                      </form>
-                    </div>
-
-                    <div id="return" class="tabcontent-book1">
-                      <form>
-                        <div class="form-row">
-                          <div class="form-group col-md-4">
-                            <label for="inputEmail4">From</label>
-                            <input type="text" class="form-control flight-icon" placeholder="City or Airpot"></div>
-                          <div class="form-group col-md-4">
-                            <label for="inputPassword4">To</label>
-                            <input type="text" class="form-control location-icon" placeholder="Country, City or island">
-                          </div>
-                          <div class="form-group col-md-2">
-                            <label for="inputEmail4">Leaving on</label>
-                            <input type="date" class="form-control" id="inputEmail4">
-                          </div>
-                          <div class="form-group col-md-2">
-                            <label for="inputEmail4">Returning on</label>
-                            <input type="date" class="form-control" id="inputEmail4">
-                          </div>
-                          
-                          <div class="form-group col-md-3">
-                            <div class="dropdown mr-1">
-                                <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
-                                0 adult
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-                                <a class="dropdown-item" href="#">Adult</a>
-                                <a class="dropdown-item" href="#">children</a>
-                                </div>
-                            </div>
-                         </div>
-                         <div class="form-group col-md-3">
-                            <div class="dropdown mr-1">
-                                <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
-                                Any Class
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-                                <a class="dropdown-item" href="#">Any Class</a>
-                                <a class="dropdown-item" href="#">Economy</a>
-                                <a class="dropdown-item" href="#">Premium Economy</a>
-                                <a class="dropdown-item" href="#">First Class</a>
-                                <a class="dropdown-item" href="#">Business</a>
-                                </div>
-                            </div>
-                         </div>
-                         <div class="form-group col-md-3">
-                          <div class="dropdown mr-1">
-                              <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
-                              Payment Method
-                              </button>
-                              <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-                              <a class="dropdown-item" href="#">Visa</a>
-                              <a class="dropdown-item" href="#">MasterCard</a>
-                              <a class="dropdown-item" href="#">Prepaid MasterCard</a>
-                              <a class="dropdown-item" href="#">American Express</a>
-                              <a class="dropdown-item" href="#">Visa Debit</a>
-                              <a class="dropdown-item" href="#">MasterCard Debit</a>
-                              <a class="dropdown-item" href="#">PayPal</a>
-                              <a class="dropdown-item" href="#">Google Pay</a>
-                              <a class="dropdown-item" href="#">Phonepe</a>
-                              </div>
-                          </div>
-                       </div>
-                       <div class="form-group col-md-3">
-                        <div class="dropdown mr-1">
-                          <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
-                          Currency
-                          </button>
-                          <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-                          <a class="dropdown-item" href="#">INR</a>
-                          <a class="dropdown-item" href="#">USD</a>
-                          <a class="dropdown-item" href="#">EUR</a>
-                          </div>
-                      </div>
-                       </div>
-                       <div class="form-group col-md-12 d-flex justify-content-center">
-                         <a href="../html/flight.html" role="button" class="btn btn-find btn11"> Find</a>
-                      </div>
-                        </div>
-                      </form> 
-                    </div>
-
-                    <div id="multicity" class="tabcontent-book1">
-                      <form>
-                        <div class="form-row">
-                          <div class="form-group col-md-4">
-                            <label for="inputEmail4">From</label>
-                            <input type="text" class="form-control flight-icon" placeholder="City or Airpot"></div>
-                          <div class="form-group col-md-4">
-                            <label for="inputPassword4">To</label>
-                            <input type="text" class="form-control location-icon" placeholder="Country, City or island">
-                          </div>
-                          <div class="form-group col-md-4">
-                            <label for="inputEmail4">Date</label>
-                            <input type="date" class="form-control" id="inputEmail4">
-                          </div>
-                      
-                          <div class="form-group col-md-4">
-                            <label for="inputEmail4">From</label>
-                            <input type="text" class="form-control flight-icon" placeholder="City or Airpot"></div>
-                          <div class="form-group col-md-4">
-                            <label for="inputPassword4">To</label>
-                            <input type="text" class="form-control location-icon" placeholder="Country, City or island">
-                          </div>
-                          <div class="form-group col-md-4">
-                            <label for="inputEmail4">Date</label>
-                            <input type="date" class="form-control" id="inputEmail4">
-                          </div>
-                          
-        
-                          <div class="form-group col-md-3">
-                            <div class="dropdown mr-1">
-                                <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
-                                0 adult
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-                                <a class="dropdown-item" href="#">Adult</a>
-                                <a class="dropdown-item" href="#">children</a>
-                                </div>
-                            </div>
-                         </div>
-                         <div class="form-group col-md-3">
-                            <div class="dropdown mr-1">
-                                <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
-                                Any Class
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-                                <a class="dropdown-item" href="#">Any Class</a>
-                                <a class="dropdown-item" href="#">Economy</a>
-                                <a class="dropdown-item" href="#">Premium Economy</a>
-                                <a class="dropdown-item" href="#">First Class</a>
-                                <a class="dropdown-item" href="#">Business</a>
-                                </div>
-                            </div>
-                         </div>
-                         <div class="form-group col-md-3">
-                          <div class="dropdown mr-1">
-                              <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
-                              Payment Method
-                              </button>
-                              <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-                              <a class="dropdown-item" href="#">Visa</a>
-                              <a class="dropdown-item" href="#">MasterCard</a>
-                              <a class="dropdown-item" href="#">Prepaid MasterCard</a>
-                              <a class="dropdown-item" href="#">American Express</a>
-                              <a class="dropdown-item" href="#">Visa Debit</a>
-                              <a class="dropdown-item" href="#">MasterCard Debit</a>
-                              <a class="dropdown-item" href="#">PayPal</a>
-                              <a class="dropdown-item" href="#">Google Pay</a>
-                              <a class="dropdown-item" href="#">Phonepe</a>
-                              </div>
-                          </div>
-                       </div>
-                       <div class="form-group col-md-3">
-                        <div class="dropdown mr-1">
-                          <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
-                          Currency
-                          </button>
-                          <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-                          <a class="dropdown-item" href="#">INR</a>
-                          <a class="dropdown-item" href="#">USD</a>
-                          <a class="dropdown-item" href="#">EUR</a>
-                          </div>
-                      </div>
-                       </div>
-                       <div class="form-group col-md-12 d-flex justify-content-center">
-                        <button class="btn btn-find btn11 mr-20">Add city</button>
-                        <a href="../html/flight.html" role="button" class="btn btn-find btn11"> Find</a>
-                      </div>
-                        </div>
-                      </form>
-                    </div>
+            <div class="col-sm-12 p-0">
+              <div class="search-book-main-bg-img">
+                <div class="search-book-main">
+                  <div class="tab-book">
+                    <button class="tablinks-book active" onclick="openBook(event, 'flight1')">Flight</button>
+                    <button class="tablinks-book" onclick="openBook(event, 'hotel1')">Hotel</button>
+                    <button class="tablinks-book" onclick="openBook(event, 'transfer1')">Transfer</button>
+                    <button class="tablinks-book" onclick="openBook(event, 'holiday1')">Holiday</button>
+                    <button class="tablinks-book mr-0" onclick="openBook(event, 'visa1')">Visa</button>
                   </div>
-                </div>
-                
-                <div id="hotel1" class="tabcontent-book">
-                  <form>
-                    <div class="form-row color-white">
-                      <div class="form-group col-md-6">
-                        <label for="inputEmail4">Search hotels in</label>
-                        <input type="text" class="form-control hotel-icon" placeholder="Search hotels name"></div>
-                      <div class="form-group col-md-3">
-                        <label for="inputEmail4">Check in</label>
-                        <input type="date" class="form-control" id="inputEmail4">
+                  <div id="flight1" class="tabcontent-book initial-active">
+                    <div class="">
+                      <div class="tab-book1">
+                        <button class="tablinks-book1 active" onclick="openBook1(event, 'one-way')">One-way</button>
+                        <button class="tablinks-book1" onclick="openBook1(event, 'return')">Return</button>
+                        <button class="tablinks-book1" onclick="openBook1(event, 'multicity')">Multicity</button>
                       </div>
-                      <div class="form-group col-md-3">
-                        <label for="inputEmail4">Check out</label>
-                        <input type="date" class="form-control" id="inputEmail4">
-                      </div>
-                      <div class="form-group col-md-5">
-                        <div class="dropdown mr-1">
+  
+                      <div id="one-way" class="tabcontent-book1 initial-active">
+                        <form>
+                          <div class="form-row">
+                            <div class="form-group col-md-4">
+                              <label for="inputEmail4">From</label>
+                              <input type="text" class="form-control flight-icon" placeholder="City or Airpot"></div>
+                            <div class="form-group col-md-4">
+                              <label for="inputPassword4">To</label>
+                              <input type="text" class="form-control location-icon" placeholder="Country, City or island">
+                            </div>
+                            <div class="form-group col-md-4">
+                              <label for="inputEmail4">Leaving on</label>
+                              <input type="date" class="form-control" id="inputEmail4">
+                            </div>
+                            <div class="form-group col-md-3">
+                              <div class="dropdown mr-1">
+                                  <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                                  0 adult
+                                  </button>
+                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                                  <a class="dropdown-item" href="#">Adult</a>
+                                  <a class="dropdown-item" href="#">children</a>
+                                  </div>
+                              </div>
+                           </div>
+                           <div class="form-group col-md-3">
+                              <div class="dropdown mr-1">
+                                  <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                                  Any Class
+                                  </button>
+                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                                  <a class="dropdown-item" href="#">Any Class</a>
+                                  <a class="dropdown-item" href="#">Economy</a>
+                                  <a class="dropdown-item" href="#">Premium Economy</a>
+                                  <a class="dropdown-item" href="#">First Class</a>
+                                  <a class="dropdown-item" href="#">Business</a>
+                                  </div>
+                              </div>
+                           </div>
+                           <div class="form-group col-md-3">
+                            <div class="dropdown mr-1">
+                                <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                                Payment Method
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                                <a class="dropdown-item" href="#">Visa</a>
+                                <a class="dropdown-item" href="#">MasterCard</a>
+                                <a class="dropdown-item" href="#">Prepaid MasterCard</a>
+                                <a class="dropdown-item" href="#">American Express</a>
+                                <a class="dropdown-item" href="#">Visa Debit</a>
+                                <a class="dropdown-item" href="#">MasterCard Debit</a>
+                                <a class="dropdown-item" href="#">PayPal</a>
+                                <a class="dropdown-item" href="#">Google Pay</a>
+                                <a class="dropdown-item" href="#">Phonepe</a>
+                                </div>
+                            </div>
+                         </div>
+                         <div class="form-group col-md-3">
+                          <div class="dropdown mr-1">
                             <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
-                            2 Adult 1 Room
+                            Currency
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-                            <a class="dropdown-item" href="#">2 Adult</a>
-                            <a class="dropdown-item" href="#">1 Room</a>
+                            <a class="dropdown-item" href="#">INR</a>
+                            <a class="dropdown-item" href="#">USD</a>
+                            <a class="dropdown-item" href="#">EUR</a>
+                            </div>
+                        </div>
+                         </div>
+                         <div class="form-group col-md-12 d-flex justify-content-center">
+                           <a class="btn btn-find btn11" href="../html/flight.html" role="button">Find </a>
+                        </div>
+                          </div>
+                        </form>
+                      </div>
+  
+                      <div id="return" class="tabcontent-book1">
+                        <form>
+                          <div class="form-row">
+                            <div class="form-group col-md-4">
+                              <label for="inputEmail4">From</label>
+                              <input type="text" class="form-control flight-icon" placeholder="City or Airpot"></div>
+                            <div class="form-group col-md-4">
+                              <label for="inputPassword4">To</label>
+                              <input type="text" class="form-control location-icon" placeholder="Country, City or island">
+                            </div>
+                            <div class="form-group col-md-2">
+                              <label for="inputEmail4">Leaving on</label>
+                              <input type="date" class="form-control" id="inputEmail4">
+                            </div>
+                            <div class="form-group col-md-2">
+                              <label for="inputEmail4">Returning on</label>
+                              <input type="date" class="form-control" id="inputEmail4">
+                            </div>
+                            
+                            <div class="form-group col-md-3">
+                              <div class="dropdown mr-1">
+                                  <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                                  0 adult
+                                  </button>
+                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                                  <a class="dropdown-item" href="#">Adult</a>
+                                  <a class="dropdown-item" href="#">children</a>
+                                  </div>
+                              </div>
+                           </div>
+                           <div class="form-group col-md-3">
+                              <div class="dropdown mr-1">
+                                  <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                                  Any Class
+                                  </button>
+                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                                  <a class="dropdown-item" href="#">Any Class</a>
+                                  <a class="dropdown-item" href="#">Economy</a>
+                                  <a class="dropdown-item" href="#">Premium Economy</a>
+                                  <a class="dropdown-item" href="#">First Class</a>
+                                  <a class="dropdown-item" href="#">Business</a>
+                                  </div>
+                              </div>
+                           </div>
+                           <div class="form-group col-md-3">
+                            <div class="dropdown mr-1">
+                                <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                                Payment Method
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                                <a class="dropdown-item" href="#">Visa</a>
+                                <a class="dropdown-item" href="#">MasterCard</a>
+                                <a class="dropdown-item" href="#">Prepaid MasterCard</a>
+                                <a class="dropdown-item" href="#">American Express</a>
+                                <a class="dropdown-item" href="#">Visa Debit</a>
+                                <a class="dropdown-item" href="#">MasterCard Debit</a>
+                                <a class="dropdown-item" href="#">PayPal</a>
+                                <a class="dropdown-item" href="#">Google Pay</a>
+                                <a class="dropdown-item" href="#">Phonepe</a>
+                                </div>
+                            </div>
+                         </div>
+                         <div class="form-group col-md-3">
+                          <div class="dropdown mr-1">
+                            <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                            Currency
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                            <a class="dropdown-item" href="#">INR</a>
+                            <a class="dropdown-item" href="#">USD</a>
+                            <a class="dropdown-item" href="#">EUR</a>
+                            </div>
+                        </div>
+                         </div>
+                         <div class="form-group col-md-12 d-flex justify-content-center">
+                           <a href="../html/flight.html" role="button" class="btn btn-find btn11"> Find</a>
+                        </div>
+                          </div>
+                        </form> 
+                      </div>
+  
+                      <div id="multicity" class="tabcontent-book1">
+                        <form>
+                          <div class="form-row">
+                            <div class="form-group col-md-4">
+                              <label for="inputEmail4">From</label>
+                              <input type="text" class="form-control flight-icon" placeholder="City or Airpot"></div>
+                            <div class="form-group col-md-4">
+                              <label for="inputPassword4">To</label>
+                              <input type="text" class="form-control location-icon" placeholder="Country, City or island">
+                            </div>
+                            <div class="form-group col-md-4">
+                              <label for="inputEmail4">Date</label>
+                              <input type="date" class="form-control" id="inputEmail4">
+                            </div>
+                        
+                            <div class="form-group col-md-4">
+                              <label for="inputEmail4">From</label>
+                              <input type="text" class="form-control flight-icon" placeholder="City or Airpot"></div>
+                            <div class="form-group col-md-4">
+                              <label for="inputPassword4">To</label>
+                              <input type="text" class="form-control location-icon" placeholder="Country, City or island">
+                            </div>
+                            <div class="form-group col-md-4">
+                              <label for="inputEmail4">Date</label>
+                              <input type="date" class="form-control" id="inputEmail4">
+                            </div>
+                            
+          
+                            <div class="form-group col-md-3">
+                              <div class="dropdown mr-1">
+                                  <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                                  0 adult
+                                  </button>
+                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                                  <a class="dropdown-item" href="#">Adult</a>
+                                  <a class="dropdown-item" href="#">children</a>
+                                  </div>
+                              </div>
+                           </div>
+                           <div class="form-group col-md-3">
+                              <div class="dropdown mr-1">
+                                  <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                                  Any Class
+                                  </button>
+                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                                  <a class="dropdown-item" href="#">Any Class</a>
+                                  <a class="dropdown-item" href="#">Economy</a>
+                                  <a class="dropdown-item" href="#">Premium Economy</a>
+                                  <a class="dropdown-item" href="#">First Class</a>
+                                  <a class="dropdown-item" href="#">Business</a>
+                                  </div>
+                              </div>
+                           </div>
+                           <div class="form-group col-md-3">
+                            <div class="dropdown mr-1">
+                                <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                                Payment Method
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                                <a class="dropdown-item" href="#">Visa</a>
+                                <a class="dropdown-item" href="#">MasterCard</a>
+                                <a class="dropdown-item" href="#">Prepaid MasterCard</a>
+                                <a class="dropdown-item" href="#">American Express</a>
+                                <a class="dropdown-item" href="#">Visa Debit</a>
+                                <a class="dropdown-item" href="#">MasterCard Debit</a>
+                                <a class="dropdown-item" href="#">PayPal</a>
+                                <a class="dropdown-item" href="#">Google Pay</a>
+                                <a class="dropdown-item" href="#">Phonepe</a>
+                                </div>
+                            </div>
+                         </div>
+                         <div class="form-group col-md-3">
+                          <div class="dropdown mr-1">
+                            <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                            Currency
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                            <a class="dropdown-item" href="#">INR</a>
+                            <a class="dropdown-item" href="#">USD</a>
+                            <a class="dropdown-item" href="#">EUR</a>
+                            </div>
+                        </div>
+                         </div>
+                         <div class="form-group col-md-12 d-flex justify-content-center">
+                          <button class="btn btn-find btn11 mr-20">Add city</button>
+                          <a href="../html/flight.html" role="button" class="btn btn-find btn11"> Find</a>
+                        </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div id="hotel1" class="tabcontent-book">
+                    <form>
+                      <div class="form-row color-white">
+                        <div class="form-group col-md-6">
+                          <label for="inputEmail4">Search hotels in</label>
+                          <input type="text" class="form-control hotel-icon" placeholder="Search hotels name"></div>
+                        <div class="form-group col-md-3">
+                          <label for="inputEmail4">Check in</label>
+                          <input type="date" class="form-control" id="inputEmail4">
+                        </div>
+                        <div class="form-group col-md-3">
+                          <label for="inputEmail4">Check out</label>
+                          <input type="date" class="form-control" id="inputEmail4">
+                        </div>
+                        <div class="form-group col-md-5">
+                          <div class="dropdown mr-1">
+                              <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                              2 Adult 1 Room
+                              </button>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                              <a class="dropdown-item" href="#">2 Adult</a>
+                              <a class="dropdown-item" href="#">1 Room</a>
+                              </div>
+                          </div>
+                       </div>
+                       <div class="form-group col-md-5">
+                        <div class="dropdown mr-1">
+                            <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                            Payment Method
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                            <a class="dropdown-item" href="#">Visa</a>
+                            <a class="dropdown-item" href="#">MasterCard</a>
+                            <a class="dropdown-item" href="#">Prepaid MasterCard</a>
+                            <a class="dropdown-item" href="#">American Express</a>
+                            <a class="dropdown-item" href="#">Visa Debit</a>
+                            <a class="dropdown-item" href="#">MasterCard Debit</a>
+                            <a class="dropdown-item" href="#">PayPal</a>
+                            <a class="dropdown-item" href="#">Google Pay</a>
+                            <a class="dropdown-item" href="#">Phonepe</a>
                             </div>
                         </div>
                      </div>
-                     <div class="form-group col-md-5">
+                     <div class="form-group col-md-2">
                       <div class="dropdown mr-1">
-                          <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
-                          Payment Method
-                          </button>
-                          <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-                          <a class="dropdown-item" href="#">Visa</a>
-                          <a class="dropdown-item" href="#">MasterCard</a>
-                          <a class="dropdown-item" href="#">Prepaid MasterCard</a>
-                          <a class="dropdown-item" href="#">American Express</a>
-                          <a class="dropdown-item" href="#">Visa Debit</a>
-                          <a class="dropdown-item" href="#">MasterCard Debit</a>
-                          <a class="dropdown-item" href="#">PayPal</a>
-                          <a class="dropdown-item" href="#">Google Pay</a>
-                          <a class="dropdown-item" href="#">Phonepe</a>
-                          </div>
-                      </div>
-                   </div>
-                   <div class="form-group col-md-2">
-                    <div class="dropdown mr-1">
-                      <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
-                      Currency
-                      </button>
-                      <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-                      <a class="dropdown-item" href="#">INR</a>
-                      <a class="dropdown-item" href="#">USD</a>
-                      <a class="dropdown-item" href="#">EUR</a>
-                      </div>
-                  </div>
-                   </div>
-                   <div class="form-group col-md-12 d-flex justify-content-center">
-                     <a href="../html/hotel.html" role="button" class="btn btn-find btn11">Find</a>
-                  </div>
-                     
+                        <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                        Currency
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                        <a class="dropdown-item" href="#">INR</a>
+                        <a class="dropdown-item" href="#">USD</a>
+                        <a class="dropdown-item" href="#">EUR</a>
+                        </div>
                     </div>
-                  </form>
-                </div>
-                
-                <div id="transfer1" class="tabcontent-book">
-                  <form>
-                    <div class="form-row color-white">
-                      <div class="form-group col-md-4">
-                        <label for="inputEmail4">From</label>
-                        <input type="text" class="form-control flight-icon" placeholder="City or Airpot"></div>
-                      <div class="form-group col-md-4">
-                        <label for="inputPassword4">To</label>
-                        <input type="text" class="form-control location-icon" placeholder="Country, City or island">
+                     </div>
+                     <div class="form-group col-md-12 d-flex justify-content-center">
+                       <a href="../html/hotel.html" role="button" class="btn btn-find btn11">Find</a>
+                    </div>
+                       
                       </div>
-                      <div class="form-group col-md-2">
-                        <label for="inputEmail4">Date</label>
-                        <input type="date" class="form-control" id="inputEmail4">
-                      </div>
-                      <div class="form-group col-md-2">
-                        <label for="inputEmail4">Time</label>
-                        <select class="custom-select form-control">
-                          <option selected>Time</option>
-                          <option value="1">1:00</option>
-                          <option value="2">2:00</option>
-                          <option value="3">3:00</option>
-                        </select>
-                      </div>
-                      
-                     <div class="form-group col-md-5">
+                    </form>
+                  </div>
+                  
+                  <div id="transfer1" class="tabcontent-book">
+                    <form>
+                      <div class="form-row color-white">
+                        <div class="form-group col-md-4">
+                          <label for="inputEmail4">From</label>
+                          <input type="text" class="form-control flight-icon" placeholder="City or Airpot"></div>
+                        <div class="form-group col-md-4">
+                          <label for="inputPassword4">To</label>
+                          <input type="text" class="form-control location-icon" placeholder="Country, City or island">
+                        </div>
+                        <div class="form-group col-md-2">
+                          <label for="inputEmail4">Date</label>
+                          <input type="date" class="form-control" id="inputEmail4">
+                        </div>
+                        <div class="form-group col-md-2">
+                          <label for="inputEmail4">Time</label>
+                          <select class="custom-select form-control">
+                            <option selected>Time</option>
+                            <option value="1">1:00</option>
+                            <option value="2">2:00</option>
+                            <option value="3">3:00</option>
+                          </select>
+                        </div>
+                        
+                       <div class="form-group col-md-5">
+                          <div class="dropdown mr-1">
+                              <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                              Which Car
+                              </button>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                              <a class="dropdown-item" href="#">Cheapest</a>
+                              <a class="dropdown-item" href="#">Standard</a>
+                              <a class="dropdown-item" href="#">Premium</a>
+                              </div>
+                          </div>
+                       </div>
+                       <div class="form-group col-md-5">
                         <div class="dropdown mr-1">
                             <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
-                            Which Car
+                            Payment Method
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-                            <a class="dropdown-item" href="#">Cheapest</a>
-                            <a class="dropdown-item" href="#">Standard</a>
-                            <a class="dropdown-item" href="#">Premium</a>
+                            <a class="dropdown-item" href="#">Visa</a>
+                            <a class="dropdown-item" href="#">MasterCard</a>
+                            <a class="dropdown-item" href="#">Prepaid MasterCard</a>
+                            <a class="dropdown-item" href="#">American Express</a>
+                            <a class="dropdown-item" href="#">Visa Debit</a>
+                            <a class="dropdown-item" href="#">MasterCard Debit</a>
+                            <a class="dropdown-item" href="#">PayPal</a>
+                            <a class="dropdown-item" href="#">Google Pay</a>
+                            <a class="dropdown-item" href="#">Phonepe</a>
                             </div>
                         </div>
                      </div>
-                     <div class="form-group col-md-5">
+                     <div class="form-group col-md-2">
                       <div class="dropdown mr-1">
-                          <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
-                          Payment Method
-                          </button>
-                          <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-                          <a class="dropdown-item" href="#">Visa</a>
-                          <a class="dropdown-item" href="#">MasterCard</a>
-                          <a class="dropdown-item" href="#">Prepaid MasterCard</a>
-                          <a class="dropdown-item" href="#">American Express</a>
-                          <a class="dropdown-item" href="#">Visa Debit</a>
-                          <a class="dropdown-item" href="#">MasterCard Debit</a>
-                          <a class="dropdown-item" href="#">PayPal</a>
-                          <a class="dropdown-item" href="#">Google Pay</a>
-                          <a class="dropdown-item" href="#">Phonepe</a>
-                          </div>
-                      </div>
-                   </div>
-                   <div class="form-group col-md-2">
-                    <div class="dropdown mr-1">
-                      <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
-                      Currency
-                      </button>
-                      <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-                      <a class="dropdown-item" href="#">INR</a>
-                      <a class="dropdown-item" href="#">USD</a>
-                      <a class="dropdown-item" href="#">EUR</a>
-                      </div>
-                  </div>
-                   </div>
-                   <div class="form-group col-md-12 d-flex justify-content-center">
-                    <a href="../html/transfer.html" role="button" class="btn btn-find btn11"> Find</a>
-                  </div>
+                        <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                        Currency
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                        <a class="dropdown-item" href="#">INR</a>
+                        <a class="dropdown-item" href="#">USD</a>
+                        <a class="dropdown-item" href="#">EUR</a>
+                        </div>
                     </div>
-                  </form>
-                </div>
-
-                <div id="holiday1" class="tabcontent-book">
-                  <form>
-                    <div class="form-row color-white">
-                      <div class="form-group col-md-4">
-                        <label for="inputEmail4">From</label>
-                        <input type="text" class="form-control flight-icon" placeholder="City or Airpot"></div>
-                      <div class="form-group col-md-4">
-                        <label for="inputPassword4">To</label>
-                        <input type="text" class="form-control location-icon" placeholder="Country, City or island">
+                     </div>
+                     <div class="form-group col-md-12 d-flex justify-content-center">
+                      <a href="../html/transfer.html" role="button" class="btn btn-find btn11"> Find</a>
+                    </div>
                       </div>
-                      <div class="form-group col-md-2">
-                        <label for="inputEmail4">During</label>
-                        <input type="date" class="form-control" id="inputEmail4">
-                      </div>
-                      <div class="form-group col-md-2">
-                        <label for="inputEmail4">During</label>
-                        <input type="date" class="form-control" id="inputEmail4">
-                      </div>
-                      <div class="form-group col-md-3">
+                    </form>
+                  </div>
+  
+                  <div id="holiday1" class="tabcontent-book">
+                    <form>
+                      <div class="form-row color-white">
+                        <div class="form-group col-md-4">
+                          <label for="inputEmail4">From</label>
+                          <input type="text" class="form-control flight-icon" placeholder="City or Airpot"></div>
+                        <div class="form-group col-md-4">
+                          <label for="inputPassword4">To</label>
+                          <input type="text" class="form-control location-icon" placeholder="Country, City or island">
+                        </div>
+                        <div class="form-group col-md-2">
+                          <label for="inputEmail4">During</label>
+                          <input type="date" class="form-control" id="inputEmail4">
+                        </div>
+                        <div class="form-group col-md-2">
+                          <label for="inputEmail4">During</label>
+                          <input type="date" class="form-control" id="inputEmail4">
+                        </div>
+                        <div class="form-group col-md-3">
+                          <div class="dropdown mr-1">
+                              <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                              0 adult
+                              </button>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                              <a class="dropdown-item" href="#">Adult</a>
+                              <a class="dropdown-item" href="#">children</a>
+                              </div>
+                          </div>
+                       </div>
+                       <div class="form-group col-md-3">
+                          <div class="dropdown mr-1">
+                              <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                              Any Class
+                              </button>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                              <a class="dropdown-item" href="#">Any Class</a>
+                              <a class="dropdown-item" href="#">Economy</a>
+                              <a class="dropdown-item" href="#">Primium Economy</a>
+                              <a class="dropdown-item" href="#">First Class</a>
+                              <a class="dropdown-item" href="#">Business</a>
+                              </div>
+                          </div>
+                       </div>
+                       <div class="form-group col-md-3">
                         <div class="dropdown mr-1">
                             <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
-                            0 adult
+                            Payment Method
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-                            <a class="dropdown-item" href="#">Adult</a>
-                            <a class="dropdown-item" href="#">children</a>
+                            <a class="dropdown-item" href="#">Visa</a>
+                            <a class="dropdown-item" href="#">MasterCard</a>
+                            <a class="dropdown-item" href="#">Prepaid MasterCard</a>
+                            <a class="dropdown-item" href="#">American Express</a>
+                            <a class="dropdown-item" href="#">Visa Debit</a>
+                            <a class="dropdown-item" href="#">MasterCard Debit</a>
+                            <a class="dropdown-item" href="#">PayPal</a>
+                            <a class="dropdown-item" href="#">Google Pay</a>
+                            <a class="dropdown-item" href="#">Phonepe</a>
                             </div>
                         </div>
                      </div>
                      <div class="form-group col-md-3">
+                      <div class="dropdown mr-1">
+                        <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                        Currency
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                        <a class="dropdown-item" href="#">INR</a>
+                        <a class="dropdown-item" href="#">USD</a>
+                        <a class="dropdown-item" href="#">EUR</a>
+                        </div>
+                    </div>
+                     </div>
+                     <div class="form-group col-md-12 d-flex justify-content-center">
+                      <a href="../html/holiday.html" role="button" class="btn btn-find btn11"> Find</a>
+                    </div>
+                      </div>
+                    </form> 
+                  </div>
+                  
+                  <div id="visa1" class="tabcontent-book">
+                    <form>
+                      <div class="form-row color-white">
+                        <div class="form-group col-md-6">
+                          <label for="inputEmail4">Destination</label>
+                          <input type="text" class="form-control flight-icon" placeholder="City or Airpot"></div>
+                        <div class="form-group col-md-3">
+                          <label for="inputEmail4">Date</label>
+                          <input type="date" class="form-control" id="inputEmail4">
+                        </div>
+                        <div class="form-group col-md-3">
+                          <label for="inputEmail4">Date</label>
+                          <input type="date" class="form-control" id="inputEmail4">
+                        </div>
+                        <div class="form-group col-md-5">
+                          <div class="dropdown mr-1">
+                              <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                              0 adult
+                              </button>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                              <a class="dropdown-item" href="#">Adult</a>
+                              <a class="dropdown-item" href="#">children</a>
+                              </div>
+                          </div>
+                       </div>
+                       <div class="form-group col-md-5">
                         <div class="dropdown mr-1">
                             <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
-                            Any Class
+                            Payment Method
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-                            <a class="dropdown-item" href="#">Any Class</a>
-                            <a class="dropdown-item" href="#">Economy</a>
-                            <a class="dropdown-item" href="#">Primium Economy</a>
-                            <a class="dropdown-item" href="#">First Class</a>
-                            <a class="dropdown-item" href="#">Business</a>
+                            <a class="dropdown-item" href="#">Visa</a>
+                            <a class="dropdown-item" href="#">MasterCard</a>
+                            <a class="dropdown-item" href="#">Prepaid MasterCard</a>
+                            <a class="dropdown-item" href="#">American Express</a>
+                            <a class="dropdown-item" href="#">Visa Debit</a>
+                            <a class="dropdown-item" href="#">MasterCard Debit</a>
+                            <a class="dropdown-item" href="#">PayPal</a>
+                            <a class="dropdown-item" href="#">Google Pay</a>
+                            <a class="dropdown-item" href="#">Phonepe</a>
                             </div>
                         </div>
                      </div>
-                     <div class="form-group col-md-3">
+                     <div class="form-group col-md-2">
                       <div class="dropdown mr-1">
-                          <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
-                          Payment Method
-                          </button>
-                          <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-                          <a class="dropdown-item" href="#">Visa</a>
-                          <a class="dropdown-item" href="#">MasterCard</a>
-                          <a class="dropdown-item" href="#">Prepaid MasterCard</a>
-                          <a class="dropdown-item" href="#">American Express</a>
-                          <a class="dropdown-item" href="#">Visa Debit</a>
-                          <a class="dropdown-item" href="#">MasterCard Debit</a>
-                          <a class="dropdown-item" href="#">PayPal</a>
-                          <a class="dropdown-item" href="#">Google Pay</a>
-                          <a class="dropdown-item" href="#">Phonepe</a>
-                          </div>
-                      </div>
-                   </div>
-                   <div class="form-group col-md-3">
-                    <div class="dropdown mr-1">
-                      <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
-                      Currency
-                      </button>
-                      <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-                      <a class="dropdown-item" href="#">INR</a>
-                      <a class="dropdown-item" href="#">USD</a>
-                      <a class="dropdown-item" href="#">EUR</a>
-                      </div>
-                  </div>
-                   </div>
-                   <div class="form-group col-md-12 d-flex justify-content-center">
-                    <a href="../html/holiday.html" role="button" class="btn btn-find btn11"> Find</a>
-                  </div>
-                    </div>
-                  </form> 
-                </div>
-                
-                <div id="visa1" class="tabcontent-book">
-                  <form>
-                    <div class="form-row color-white">
-                      <div class="form-group col-md-6">
-                        <label for="inputEmail4">Destination</label>
-                        <input type="text" class="form-control flight-icon" placeholder="City or Airpot"></div>
-                      <div class="form-group col-md-3">
-                        <label for="inputEmail4">Date</label>
-                        <input type="date" class="form-control" id="inputEmail4">
-                      </div>
-                      <div class="form-group col-md-3">
-                        <label for="inputEmail4">Date</label>
-                        <input type="date" class="form-control" id="inputEmail4">
-                      </div>
-                      <div class="form-group col-md-5">
-                        <div class="dropdown mr-1">
-                            <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
-                            0 adult
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-                            <a class="dropdown-item" href="#">Adult</a>
-                            <a class="dropdown-item" href="#">children</a>
-                            </div>
+                        <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                        Currency
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                        <a class="dropdown-item" href="#">INR</a>
+                        <a class="dropdown-item" href="#">USD</a>
+                        <a class="dropdown-item" href="#">EUR</a>
                         </div>
-                     </div>
-                     <div class="form-group col-md-5">
-                      <div class="dropdown mr-1">
-                          <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
-                          Payment Method
-                          </button>
-                          <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-                          <a class="dropdown-item" href="#">Visa</a>
-                          <a class="dropdown-item" href="#">MasterCard</a>
-                          <a class="dropdown-item" href="#">Prepaid MasterCard</a>
-                          <a class="dropdown-item" href="#">American Express</a>
-                          <a class="dropdown-item" href="#">Visa Debit</a>
-                          <a class="dropdown-item" href="#">MasterCard Debit</a>
-                          <a class="dropdown-item" href="#">PayPal</a>
-                          <a class="dropdown-item" href="#">Google Pay</a>
-                          <a class="dropdown-item" href="#">Phonepe</a>
-                          </div>
-                      </div>
-                   </div>
-                   <div class="form-group col-md-2">
-                    <div class="dropdown mr-1">
-                      <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
-                      Currency
-                      </button>
-                      <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-                      <a class="dropdown-item" href="#">INR</a>
-                      <a class="dropdown-item" href="#">USD</a>
-                      <a class="dropdown-item" href="#">EUR</a>
-                      </div>
-                  </div>
-                   </div>
-                   <div class="form-group col-md-12 d-flex justify-content-center">
-                    <a href="../html/visa.html" role="button" class="btn btn-find btn11"> Find</a>
-                  </div>
                     </div>
-                  </form>
+                     </div>
+                     <div class="form-group col-md-12 d-flex justify-content-center">
+                      <a href="../html/visa.html" role="button" class="btn btn-find btn11"> Find</a>
+                    </div>
+                      </div>
+                    </form>
+                  </div>
+  
                 </div>
-
               </div>
+              
             </div>
           </div>
         </div>
@@ -625,10 +658,12 @@
 
 </body>
 
-<script src="js/jquery.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/swiper.min.js"></script>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/jquery-3.2.1.slim.min.js"></script>
+<script src="../js/popper.min.js" ></script>
+<script src="../js/bootstrap.min.js" ></script>
+<script src="../js/swiper.min.js"></script>
+<script src="https://kit.fontawesome.com/1dd16d19ea.js" crossorigin="anonymous"></script>
 
 <script> 
   $(document).ready(function(){

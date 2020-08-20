@@ -68,6 +68,13 @@
                   <li><a href="html/account-bank-detail.html" class="sidebar-btnlink btn" role="button">Account Bank detail</a></li>
                 </ul>
               </li>
+              <li id="flip-menu4"><a href="#" class="sidebar-btnlink btn" role="button">System Setting</a>
+                <ul class="sub-menu-btn" id="panel-menu4">
+                  <li><a href="html/ss-promo-code.html" class="sidebar-btnlink btn" role="button">Promo Code</a></li>
+                  <li><a href="html/ss-currency.html" class="sidebar-btnlink btn" role="button">Currency</a></li>
+                  <li><a href="html/ss-live-event.html" class="sidebar-btnlink btn" role="button">Live Event</a></li>
+                </ul>
+              </li>
             </ul>
           </div>
           
@@ -94,7 +101,7 @@
             <div class="col-sm-12">
               <div class="row">
                 <div class="col-sm-8">
-                  <div class="search-book-main">
+                  <div class="search-book-main1">
                     <div class="search-book-sub">
                       <p class="mb-20"><b>New Reservation</b></p>
                       <div class="d-flex justify-content-between">
@@ -347,6 +354,13 @@
           });
         });
         </script>
+        <script> 
+          $(document).ready(function(){
+            $("#flip-menu4").click(function(){
+              $("#panel-menu4").slideToggle("slow");
+            });
+          });
+          </script>
 <script>
   var swiper = new Swiper('.dashboard-slider', {
     spaceBetween: 30,
