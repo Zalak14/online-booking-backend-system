@@ -74,8 +74,8 @@
                   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                     <a class="dropdown-item" href="../html/my-profile.html">My profile</a>
                     <a class="dropdown-item" href="../html/my-agency.html">My agency</a>
-                    <a class="dropdown-item" href="../html/companies.html">Companies</a>
-                    <a class="dropdown-item" href="#">User</a>
+                    <a class="dropdown-item" href="../html/profile.html">Companies</a>
+                    <a class="dropdown-item" href="../html/profile.html">User</a>
                     <a class="dropdown-item" href="#">Current account</a>
                     <a class="dropdown-item" href="#">Add funds</a>
                     <a class="dropdown-item" href="#">Notification</a>
@@ -650,6 +650,110 @@
   
                 </div>
               </div>
+              <div class="">
+                <div class="search-book-slider-main">
+                  <h5 class="btn-heading">Popular Destination</h5>
+                  <div class="swiper-container search-book-slider">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="">
+                          <div class="card-deck">
+                            <div class="card" style="text-align: left;">
+                              <img class="card-img-top" src="../img/66.jpg" alt="Card image cap">
+                              <div class="card-body">
+                                <h5 class="card-title">Kauai</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <button class="btn btn-color mt-10">Book Now</button>
+                              </div>
+                            </div>
+                            
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="">
+                          <div class="card-deck">
+                            <div class="card" style="text-align: left;">
+                              <img class="card-img-top" src="../img/55.jpg" alt="Card image cap">
+                              <div class="card-body">
+                                <h5 class="card-title">Phuket</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <button class="btn btn-color mt-10">Book Now</button>
+                              </div>
+                            </div>
+                            
+                          </div>
+                        </div>
+                      </div>
+                      
+                      
+                      <div class="swiper-slide">
+                        <div class="">
+                          <div class="card-deck">
+                            <div class="card" style="text-align: left;">
+                              <img class="card-img-top" src="../img/44.jpg" alt="Card image cap">
+                              <div class="card-body">
+                                <h5 class="card-title">Railay Beach</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <button class="btn btn-color mt-10">Book Now</button>
+                              </div>
+                            </div>
+                            
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="">
+                          <div class="card-deck">
+                            <div class="card" style="text-align: left;">
+                              <img class="card-img-top" src="../img/33.jpg" alt="Card image cap">
+                              <div class="card-body">
+                                <h5 class="card-title">U.S. Vergin Islands</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <button class="btn btn-color mt-10">Book Now</button>
+                              </div>
+                            </div>
+                            
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="">
+                          <div class="card-deck">
+                            <div class="card" style="text-align: left;">
+                              <img class="card-img-top" src="../img/22.jpg" alt="Card image cap">
+                              <div class="card-body">
+                                <h5 class="card-title">Maldives</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <button class="btn btn-color mt-10">Book Now</button>
+                              </div>
+                            </div>
+                            
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="">
+                          <div class="card-deck">
+                            <div class="card" style="text-align: left;">
+                              <img class="card-img-top" src="../img/11.jpg" alt="Card image cap">
+                              <div class="card-body">
+                                <h5 class="card-title">Bali</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <button class="btn btn-color mt-10">Book Now</button>
+                              </div>
+                            </div>
+                            
+                          </div>
+                        </div>
+                      </div>
+                     
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                  </div>
+                </div>
+              </div>
               
             </div>
           </div>
@@ -676,6 +780,22 @@
       $("#panel-menu").slideToggle("slow");
     });
   });
+  </script>
+  <script>
+    var swiper = new Swiper('.search-book-slider', {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      slidesPerGroup: 3,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
   </script>
 <script>
   var swiper = new Swiper('.dashboard-slider', {

@@ -73,6 +73,7 @@
                   <li><a href="html/ss-promo-code.html" class="sidebar-btnlink btn" role="button">Promo Code</a></li>
                   <li><a href="html/ss-currency.html" class="sidebar-btnlink btn" role="button">Currency</a></li>
                   <li><a href="html/ss-live-event.html" class="sidebar-btnlink btn" role="button">Live Event</a></li>
+                  <li><a href="html/invoice.html" class="sidebar-btnlink btn" role="button">Invoice</a></li>
                 </ul>
               </li>
             </ul>
@@ -88,7 +89,54 @@
             <div class="col-sm-12">
               <div class="main-header">
                 <h4>Tekwalker</h4>
-                <button class="btn btn-main">Balance</button>
+                <div class="">
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                    <i class="fas fa-sign-in-alt"></i> Login
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLongTitle"><i class="fas fa-sign-in-alt"></i> Login</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="login-form">
+                            <img src="img/logo.svg" class="voucher-design-img"> 
+                            <form>
+                              <div class="form-row">
+                                <div class="form-group col-md-12" style="text-align: left;">
+                                  <label>Username</label>
+                                  <input type="text" class="form-control">
+                                </div>
+                              </div>
+                              <div class="form-row">
+                                <div class="form-group col-md-12" style="text-align: left;">
+                                  <label>Password</label>
+                                  <input type="password" class="form-control">
+                                </div>
+                              </div>
+                              <div class="form-row">
+                                <div class="form-group col-md-12">
+                                  <button class="btn btn-primary"><i class="fas fa-sign-in-alt"></i> Login</button>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                        <div class="modal-footer d-flex justify-content-between">
+                          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                          <a href="#">Forgot password?</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 
               </div>
             </div>

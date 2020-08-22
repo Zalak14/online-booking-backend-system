@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tekwalker Back-End</title>
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../font/stylesheet.css">
+    <link rel="stylesheet" href="../css/aos.css" />
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+        
+</head>
+<body>
+<section style="overflow: hidden;">
+  <div class="main-div">
+    <div class="left-sidebar-main">
+      <div class="side-bar-left-main">
+        <div class="tw-logo">
+          <h4>Tekwalker</h4>
+        </div>
+        <div class="profile-main">
+          <div class="d-flex justify-content-center profile-sub">
+            <div class="profile-circle">
+              <img src="../img/follow.svg">
+            </div>
+            <h5>Zalak Bhanderi</h5>
+          </div>
+        </div>
+        <div class="home-button-side">
+          <div class="sidebar-button">
+            <ul>
+              <li><a href="../index11.html" class="sidebar-btnlink btn" role="button">Dashboard</a></li>
+              <li><a href="../html/search.html" class="sidebar-btnlink btn" role="button">Search Book</a></li>
+              <li id="flip-menu"><a href="#" class="sidebar-btnlink btn"  role="button">Profile Management</a>
+                <ul class="sub-menu-btn" id="panel-menu">
+                  <li><a href="../html/profile.html" class="sidebar-btnlink btn" role="button">Company Users</a></li>
+                  <li><a href="../html/company-office-parameter.html" class="sidebar-btnlink btn" role="button">Office Parameters</a></li>
+                  <li><a href="../html/user-access-level.html" class="sidebar-btnlink btn" role="button">Users Access Level</a></li>
+                  <li><a href="../html/company-office-data.html" class="sidebar-btnlink btn" role="button">Company Office data</a></li>
+                </ul>
+              </li>
+              <li id="flip-menu1"><a href="#" class="sidebar-btnlink btn" role="button">B2B Management</a>
+                <ul class="sub-menu-btn" id="panel-menu1">
+                  <li><a href="../html/b2b-parameter-cat.html" class="sidebar-btnlink btn" role="button">B2B parameter categories</a></li>
+                  <li><a href="../html/b2b-sub-agent-group.html" class="sidebar-btnlink btn" role="button">Sub agent group</a></li>
+                  <li><a href="../html/b2b-travel-office.html" class="sidebar-btnlink btn" role="button">Travel office management</a></li>
+                  <li><a href="../html/b2b-loyality.html" class="sidebar-btnlink btn" role="button">Loyality</a></li>
+                  <li><a href="../html/b2b-inquiries.html" class="sidebar-btnlink btn" role="button">Inquiries</a></li>
+                  <li><a href="../html/b2b-commission.html" class="sidebar-btnlink btn" role="button">B2B agent Commission</a></li>
+                  <li><a href="../html/b2b-agent-list.html" class="sidebar-btnlink btn" role="button">B2B agent list</a></li>
+                  <li><a href="../html/b2b-markup.html" class="sidebar-btnlink btn" role="button">Markup</a></li>
+                </ul>
+              </li>
+              <li id="flip-menu2"><a href="#" class="sidebar-btnlink btn" role="button">Booking Management</a>
+                <ul class="sub-menu-btn" id="panel-menu2">
+                  <li><a href="../html/bm-all-booking.html" class="sidebar-btnlink btn" role="button">All booking</a></li>
+                  <li><a href="../html/bm-b2b-report.html" class="sidebar-btnlink btn" role="button">B2B Report</a></li>
+                  <li><a href="../html/bm-b2c-report.html" class="sidebar-btnlink btn" role="button">B2C Report</a></li>
+                </ul>
+              </li>
+              <li id="flip-menu3"><a href="#" class="sidebar-btnlink btn" role="button">Account Management</a>
+                <ul class="sub-menu-btn" id="panel-menu3">
+                  <li><a href="../html/account-statement.html" class="sidebar-btnlink btn" role="button">Account Statement</a></li>
+                  <li><a href="../html/account-bank-detail.html" class="sidebar-btnlink btn" role="button">Account Bank detail</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="right-sidebar-main">
+      <div class="topbar-header">
+       <div class="container pl-0 pr-0">
+         <div class="row">
+           <div class="col-sm-12">
+            <div class="main-header">
+              <h4>Tekwalker</h4>
+              <button class="btn btn-main">Balance</button>
+              
+            </div>
+           </div>
+         </div>
+       </div>
+      </div>
+      <div class="content-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+             <div class="mt-50 mb-30">
+               <div class="ss-invoice-main">
+                 <div class="">
+                  <div id="accordion">
+                    <div class="card">
+                      <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link" >
+                            Invoice design
+                          </button>
+                        </h5>
+                      </div>
+                  
+                      <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                          <div class="">
+                            
+                            <form>
+                              <div class="form-row">
+                               <div class="form-group col-md-12">
+                                 <label>Logo on invoice</label><br>
+                                <div class="custom-file">
+                                  <input type="file" class="custom-file-input" id="customFile">
+                                  <label class="custom-file-label" for="customFile">Browse...</label>
+                                  <br>
+                                  <p><small>Logo max size 300*75 pixel</small></p>
+                                </div>
+                               </div>
+                               <div class="form-group col-md-12">
+                                <label>Stamp</label><br>
+                               <div class="custom-file">
+                                 <input type="file" class="custom-file-input" id="customFile">
+                                 <label class="custom-file-label" for="customFile">Browse...</label>
+                                 <br>
+                                 <p><small>Logo max size 200*200 pixel</small></p>
+                               </div>
+                              </div>
+                              <div class="form-group col-md-12">
+                                <label>Signature</label><br>
+                               <div class="custom-file">
+                                 <input type="file" class="custom-file-input" id="customFile">
+                                 <label class="custom-file-label" for="customFile">Browse...</label>
+                                 <br>
+                                 <p><small>Logo max size 350*50 pixel</small></p>
+                               </div>
+                              </div>
+                              </div>
+                              <div class="form-row">
+                                <div class="form-group col-md-12">
+                                  <button class="btn btn-primary">Save</button>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link collapsed" >
+                            Company office parameters
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                          <Div class="">
+                            <form>
+                              <div class="form-row">
+                                <div class="form-group col-md-6">
+                                  <label>Voucher primary color</label>
+                                  <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group col-md-6">
+                                  <label>Voucher secondary color</label>
+                                  <input type="text" class="form-control">
+                                </div>
+                              </div>
+                              <div class="form-row">
+                                <div class="form-group col-md-6">
+                                  <label>E-mail on voucher</label>
+                                  <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group col-md-6">
+                                  <label>Phone on voucher</label>
+                                  <input type="text" class="form-control">
+                                </div>
+                              </div>
+                              <div class="form-row">
+                                <div class="form-group col-md-6">
+                                  <label>Voucher template</label>
+                                  <select class="form-control">
+                                    <option selected>Choose...</option>
+                                    <option>...</option>
+                                  </select>
+                                </div>
+                                <div class="form-group col-md-6">
+                                  <label>Voucher font</label>
+                                  <select class="form-control">
+                                    <option selected>Choose...</option>
+                                    <option>...</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="form-row">
+                                <div class="form-group col-md-6">
+                                  <label>Voucher header text</label>
+                                  <textarea class="form-control"></textarea>
+                                </div>
+                                <div class="form-group col-md-6">
+                                  <label>Voucher footer text</label>
+                                  <textarea class="form-control"></textarea>
+                                </div>
+                              </div>
+                              <div class="form-row">
+                                <div class="form-group col-md-12">
+                                  <button class="btn btn-primary">Save</button>
+                                </div>
+                              </div>
+                            </form>
+                          </Div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingThree" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link collapsed" >
+                            Voucher design
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body">
+                          <div class="">
+                            
+                            <form>
+                              <div class="form-row">
+                               <div class="form-group col-md-12">
+                                 <label>Voucher logo</label><br>
+                                <div class="custom-file">
+                                  <input type="file" class="custom-file-input" id="customFile">
+                                  <label class="custom-file-label" for="customFile">Browse...</label>
+                                  <br>
+                                  <p><small>Logo max size 300*75 pixel</small></p>
+                                </div>
+                               </div>
+                               <div class="form-group col-md-12">
+                                <label>Stamp</label><br>
+                               <div class="custom-file">
+                                 <input type="file" class="custom-file-input" id="customFile">
+                                 <label class="custom-file-label" for="customFile">Browse...</label>
+                                 <br>
+                                 <p><small>Logo max size 200*200 pixel</small></p>
+                               </div>
+                              </div>
+                              <div class="form-group col-md-12">
+                                <label>Signature</label><br>
+                               <div class="custom-file">
+                                 <input type="file" class="custom-file-input" id="customFile">
+                                 <label class="custom-file-label" for="customFile">Browse...</label>
+                                 <br>
+                                 <p><small>Logo max size 350*50 pixel</small></p>
+                               </div>
+                              </div>
+                              </div>
+                              <div class="form-row">
+                                <div class="form-group col-md-12">
+                                  <button class="btn btn-primary">Save</button>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                 </div>
+                 
+                 <div class="mt-30 voucher-design-main">
+                  <div class="voucher-heading-main">
+                    <h5>Voucher Preview</h5>
+                    <h5>
+                      <label><i class="fas fa-plane"></i></label>
+                      <label><i class="fas fa-hotel"></i></label>
+                      <label><i class="fas fa-car"></i></label>
+                      <label><i class="fas fa-umbrella-beach"></i></label>
+                    </h5>
+                  </div>
+                  <div class="p-20 voucher-design-border">
+                    <div class="d-flex justify-content-between" style="align-items: center;">
+                      <img src="../img/logo.svg" class="voucher-design-img">
+                      <p>Gutan abend</p>
+                    </div>
+                    <div class="voucher-design-sub">
+                      <div class="d-flex justify-content-between" style="align-items: center;">
+                        <label><b>Hotel voucher</b></label>
+                        <label><b>HB45DFG566</b></label>
+                      </div>
+                      <div class="mt-30 mb-30">
+                        <p><b>PLEASE PRESENT THIS VOUCHER UPON ARRIVAL</b></p>
+                      </div>
+                      <div class="">
+                        <label class="mb-20">Sampal hotel****</label><br>
+                        <label class="mb-20">55 princes square london United kingdom</label><br>
+                        <label class="mb-20"><i class="fas fa-phone-volume"></i> 0044 (0)1234567890</label><br>
+                        <label class="mb-20">22 Sep 20 - 2 Night</label><br>
+                        <label class="mb-20"><b>1 Twin room</b></label><br>
+                        <label class="mb-20 ml-12">- MR. Jon Doe, MRS. Jon Doe, MR. Jon Denil (8 Years old)</label>
+                      </div>
+                    </div>
+                  </div>
+                 </div>
+               </div>
+             </div>
+          
+            </div>
+          </div>
+        </div>
+      
+     
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/jquery-3.2.1.slim.min.js"></script>
+<script src="../js/popper.min.js" ></script>
+<script src="../js/bootstrap.min.js" ></script>
+<script src="../js/swiper.min.js"></script>
+<script src="https://kit.fontawesome.com/1dd16d19ea.js" crossorigin="anonymous"></script>
+<script> 
+  $(document).ready(function(){
+    $("#flip-menu").click(function(){
+      $("#panel-menu").slideToggle("slow");
+    });
+  });
+  </script>
+  <script> 
+    $(document).ready(function(){
+      $("#flip-menu1").click(function(){
+        $("#panel-menu1").slideToggle("slow");
+      });
+    });
+    </script>
+    <script> 
+      $(document).ready(function(){
+        $("#flip-menu2").click(function(){
+          $("#panel-menu2").slideToggle("slow");
+        });
+      });
+      </script>
+      <script> 
+        $(document).ready(function(){
+          $("#flip-menu3").click(function(){
+            $("#panel-menu3").slideToggle("slow");
+          });
+        });
+        </script>
+
+
+</html>
