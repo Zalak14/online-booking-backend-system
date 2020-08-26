@@ -86,16 +86,16 @@
       <div class="topbar-header">
         <div class="container pl-0 pr-0">
           <div class="row">
-            <div class="col-sm-12">
+            <div class="col-sm-12 pl-0 pr-0">
               <div class="main-header">
                 <h4>Tekwalker</h4>
-                <div class="">
-                  <!-- Button trigger modal -->
+                <!-- <div class="">
+                  
                   <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalCenter">
                     <i class="fas fa-sign-in-alt"></i> Login
                   </button>
 
-                  <!-- Modal -->
+                  
                   <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" role="document">
                       <div class="modal-content">
@@ -136,8 +136,20 @@
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> -->
                 
+                <div class="d-flex justify-content-end" style="align-items: center;">
+                  <div class="">
+                    <div class="header-circle-img">
+                      <img src="img/profile2.jpeg" alt="">
+                    </div>
+                  </div>
+                  <div class="">
+                    <h5>Joseph William</h5>
+                    <p>Administrator</p>
+                  </div>
+                </div>
+
               </div>
             </div>
           </div>
@@ -630,11 +642,11 @@ Highcharts.mapChart('container3', {
     },
 
     title: {
-        text: 'World population 2013 by country'
+        text: 'Online booking'
     },
 
     subtitle: {
-        text: 'Demo of Highcharts map with bubbles'
+        text: ''
     },
 
     legend: {
@@ -654,7 +666,7 @@ Highcharts.mapChart('container3', {
         enableMouseTracking: false
     }, {
         type: 'mapbubble',
-        name: 'Population 2016',
+        name: 'Flight',
         joinBy: ['iso-a3', 'code3'],
         data: data,
         minSize: 4,
