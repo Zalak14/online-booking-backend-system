@@ -52,7 +52,7 @@ button:focus{
 }
 .topbar-header{
   background-color: white;
-  height: 90px;
+  height: 110px;
   width: 100%;
 }
 .topbar-header1{
@@ -291,12 +291,45 @@ button:focus{
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+}
+
+
+.search-circle .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+  font-size: 13px;
+  font-weight: 500;
+}
+.monthly-graph{
+  margin-bottom: 150px;
+}
+.profile-btn-main .dropdown-toggle::after{
+  display: none;
+}
+.search-circle:hover .tooltiptext {
+  visibility: visible;
 }
 .search-circle img{
   height: 30px;
   width: auto;
 }
 
+.dashboard-bal-btn .dropdown-menu{
+  min-width: 7rem;
+  padding: 0;
+}
 .search-heading p{
   text-align: center;
   font-size: 16px !important;
@@ -620,12 +653,13 @@ font-weight: 600;
 }
 
 .search-book-main-bg-img{
-  background-image: url(../img/bg-img1.jpg);
+  background-image: url(../img/banner-2.jpg);
   height: 88vh;
   width: 100vw;
   background-repeat: no-repeat;
   object-fit: cover;
   background-size: 100vw 100vh;
+  
 }
 .search-book-main1{
   margin-top: 50px;
@@ -2702,6 +2736,29 @@ padding: 10px 4px;
   overflow-y: hidden;
   overflow-x: scroll;
 }
+.help-main .table-responsive{
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+.help-main .table-responsive table td{
+  vertical-align: top;
+}
+.help-edit-main .card-header{
+  background-color: var(--scrollbarBG);
+}
+.help-edit-main .btn-link{
+  color: white;
+}
+.help-edit-main .custom-file{
+  border: 1px solid black;
+  padding-bottom: 0 !important;
+}
+.help-edit-main .custom-file label{
+  padding: 6px 10px;
+  background-color: black;
+  color: white;
+  margin-bottom: 0 !important;
+}
 .mb-10{
   margin-bottom: 10px;
 }
@@ -3077,6 +3134,123 @@ margin-right: 10px;
   font-weight: lighter;
   opacity: 1;
 }
+
+.login-form-main .nav{
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 100%;
+  
+}
+.login-form-main .nav .nav-item{
+  width: 100%;
+}
+.login-form-main .active{
+  border: none;
+}
+.login-form-main .nav .nav-item a{
+  text-align: center;
+  background-color: white;
+  border-radius: 30px;
+  color: black !important;
+  margin-bottom: 30px;
+}
+.login-form-main .btn-color{
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+.login-form-main label{
+  color: white;
+}
+.bg-img{
+  height: 100vh;
+  width: 100vw;
+}
+.bg-img img{
+height: 100vh;
+width: 100vw;
+object-fit: cover;
+}
+.login-form-main{
+  position: absolute;
+  top: 15%;
+  left: 35%;
+  width: 32%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 50px;
+}
+
+footer{
+  background-image: linear-gradient(to right, rgba(235, 0, 141, 0.7) , rgba(153, 102, 255, 0.7));
+  padding: 100px 0px 20px 0px;
+  margin-top: 100px;
+}
+
+.tw-sign-up h1{
+  color: white;
+margin-bottom: 10px;
+}
+
+.tw-sign-up p{
+  color: white !important;
+  margin-bottom: 20px;
+}
+
+.tw-sign-up{
+  text-align: center;
+}
+
+.sign-up-form .form-control{
+  padding: 20px 20px 20px 20px;
+  border: none;
+
+}
+.sign-up-form .btn{
+  padding: 20px 25px 20px 25px;
+  background-color: white;
+  color: #646464;
+  border: none;
+}
+.sign-up-form .btn:hover{
+  opacity: 0.5;
+}
+.sign-up-form .sign-up-pp{
+  color: white;
+  text-decoration: underline;
+}
+
+.social-icon ul{
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  margin-top: 50px;
+}
+.social-icon ul li{
+  margin-right: 10px;
+}
+.social-icon ul li img{
+  height: 40px;
+  width: 40px;
+}
+.social-icon ul li img:hover{
+  opacity: 0.5;
+}
+.copyright{
+  margin-top: 50px;
+}
+
+.markup-popup-box-edit-main .input-group{
+  align-items: center;
+  display: flex;
+  background: gainsboro;
+  border: 1px solid gainsboro;
+  
+}
+.markup-popup-box-edit-main .input-group-text{
+  font-size: 14px;
+  padding: 5px;
+}
+
 
 
   @media only screen and (max-width: 1199px) {
