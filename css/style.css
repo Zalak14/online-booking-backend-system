@@ -54,7 +54,6 @@ button:focus{
   background-color: white;
   height: 90px;
   width: 100%;
-  overflow: hidden;
 }
 .topbar-header1{
   height: 77px !important;
