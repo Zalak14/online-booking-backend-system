@@ -89,6 +89,19 @@
                               <div class="home-button-side">
                                 <div class="sidebar-button">
                                   <ul>
+                                    <li>
+                                      <div class="ml-12 dashboard-bal-btn">
+                                        <div class="dropdown">
+                                          <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Balance
+                                          </button>
+                                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="#">Bal: 0.00</a>
+                                            <a class="dropdown-item" href="#">Due: 0.00</a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </li>
                                     <li><a href="../index11.html" class="sidebar-btnlink btn" role="button">Dashboard</a></li>
                                     <li><a href="../html/search.html" class="sidebar-btnlink btn" role="button">Search Book</a></li>
                                     <li id="flip-menu"><a href="#" class="sidebar-btnlink btn"  role="button">Profile Management</a>
@@ -148,14 +161,36 @@
                 <h4 class="tw-text-hide">Tekwalker</h4>
               </div>
               <div class="d-flex justify-content-end" style="align-items: center;">
-                <div class="">
-                  <div class="header-circle-img">
-                    <img src="../img/profile2.jpeg" alt="">
+                <div class="mr-10 dashboard-bal-btn bal-btn-hide">
+                  <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Balance
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Bal: 0.00</a>
+                      <a class="dropdown-item" href="#">Due: 0.00</a>
+                    </div>
                   </div>
                 </div>
-                <div class="">
-                  <h5>Joseph William</h5>
-                  <p>Administrator</p>
+                
+                <div class="dropdown profile-btn-main">
+                  
+                  <button class="d-flex justify-content-end align-items-center btn btn-default dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="">
+                      <div class="header-circle-img">
+                        <img src="../img/profile2.jpeg" alt="">
+                      </div>
+                    </div>
+                    <div class="">
+                      <h5>Joseph William</h5>
+                      <p>Administrator</p>
+                    </div>
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="../html/my-profile.html">Profile</a>
+                    <a class="dropdown-item" href="../html/change-pwd.html">Change password</a>
+                    <a class="dropdown-item" href="../html/login.html">Logout</a>
+                  </div>
                 </div>
               </div>
               

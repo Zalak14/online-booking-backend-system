@@ -76,12 +76,141 @@
     </div>
     <div class="right-sidebar-main">
       <div class="topbar-header">
-       <div class="container pl-0 pr-0">
+       <div class="container pr-0">
          <div class="row">
-           <div class="col-sm-12">
+           <div class="col-sm-12 pl-0 pr-0">
             <div class="main-header">
-              <h4>Tekwalker</h4>
-              <button class="btn btn-main">Balance</button>
+              
+              <div class="d-flex justify-content-start" style="align-items: center;">
+                <div class="modal-header-btn-main">
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-dark mr-10 btn-hide" data-toggle="modal" data-target="#exampleModalCenter">
+                    <i class="fas fa-list-ul"></i>
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        
+                        <div class="modal-body">
+                          
+                          <div class="">
+                            <div class="side-bar-left-main">
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: white;">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                              <div class="tw-logo">
+                                <h4>Tekwalker</h4>
+                              </div>
+                              
+                              <div class="home-button-side">
+                                <div class="sidebar-button">
+                                  <ul>
+                                    <li>
+                                      <div class="ml-12 dashboard-bal-btn">
+                                        <div class="dropdown">
+                                          <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Balance
+                                          </button>
+                                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="#">Bal: 0.00</a>
+                                            <a class="dropdown-item" href="#">Due: 0.00</a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </li>
+                                    <li><a href="../index11.html" class="sidebar-btnlink btn" role="button">Dashboard</a></li>
+                                    <li><a href="../html/search.html" class="sidebar-btnlink btn" role="button">Search Book</a></li>
+                                    <li id="flip-menu"><a href="#" class="sidebar-btnlink btn"  role="button">Profile Management</a>
+                                      <ul class="sub-menu-btn" id="panel-menu">
+                                        <li><a href="../html/profile.html" class="sidebar-btnlink btn" role="button">Company Users</a></li>
+                                        <li><a href="../html/company-office-parameter.html" class="sidebar-btnlink btn" role="button">Office Parameters</a></li>
+                                        <li><a href="../html/user-access-level.html" class="sidebar-btnlink btn" role="button">Users Access Level</a></li>
+                                        <li><a href="../html/company-office-data.html" class="sidebar-btnlink btn" role="button">Company Office data</a></li>
+                                      </ul>
+                                    </li>
+                                    <li id="flip-menu1"><a href="#" class="sidebar-btnlink btn" role="button">B2B Management</a>
+                                      <ul class="sub-menu-btn" id="panel-menu1">
+                                        <li><a href="../html/b2b-parameter-cat.html" class="sidebar-btnlink btn" role="button">Sub agent categories</a></li>
+                                        <li><a href="../html/b2b-sub-agent-group.html" class="sidebar-btnlink btn" role="button">Sub agent group</a></li>
+                                        <li><a href="../html/b2b-travel-office.html" class="sidebar-btnlink btn" role="button">Travel office management</a></li>
+                                        <li><a href="../html/b2b-loyality.html" class="sidebar-btnlink btn" role="button">Loyality</a></li>
+                                        <li><a href="../html/b2b-inquiries.html" class="sidebar-btnlink btn" role="button">Inquiries</a></li>
+                                        <li><a href="../html/b2b-commission.html" class="sidebar-btnlink btn" role="button">B2B agent Commission</a></li>
+                                        <li><a href="../html/b2b-agent-list.html" class="sidebar-btnlink btn" role="button">B2B agent list</a></li>
+                                        <li><a href="../html/b2b-markup.html" class="sidebar-btnlink btn" role="button">Markup</a></li>
+                                      </ul>
+                                    </li>
+                                    <li id="flip-menu2"><a href="#" class="sidebar-btnlink btn" role="button">Booking Management</a>
+                                      <ul class="sub-menu-btn" id="panel-menu2">
+                                        <li><a href="../html/bm-all-booking.html" class="sidebar-btnlink btn" role="button">All booking</a></li>
+                                        <li><a href="../html/bm-b2b-report.html" class="sidebar-btnlink btn" role="button">B2B Report</a></li>
+                                        <li><a href="../html/bm-b2c-report.html" class="sidebar-btnlink btn" role="button">B2C Report</a></li>
+                                      </ul>
+                                    </li>
+                                    <li id="flip-menu3"><a href="#" class="sidebar-btnlink btn" role="button">Account Management</a>
+                                      <ul class="sub-menu-btn" id="panel-menu3">
+                                        <li><a href="../html/account-statement.html" class="sidebar-btnlink btn" role="button">Account Statement</a></li>
+                                        <li><a href="../html/account-bank-detail.html" class="sidebar-btnlink btn" role="button">Account Bank detail</a></li>
+                                      </ul>
+                                    </li>
+                                    <li id="flip-menu4"><a href="#" class="sidebar-btnlink btn" role="button">System Setting</a>
+                                      <ul class="sub-menu-btn" id="panel-menu4">
+                                        <li><a href="../html/ss-promo-code.html" class="sidebar-btnlink btn" role="button">Promo Code</a></li>
+                                        <li><a href="../html/ss-currency.html" class="sidebar-btnlink btn" role="button">Currency</a></li>
+                                        <li><a href="../html/ss-live-event.html" class="sidebar-btnlink btn" role="button">Live Event</a></li>
+                                        <li><a href="../html/invoice.html" class="sidebar-btnlink btn" role="button">Invoice</a></li>
+                                      </ul>
+                                    </li>
+                                  </ul>
+                                </div>
+                                
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <h4 class="tw-text-hide">Tekwalker</h4>
+              </div>
+              <div class="d-flex justify-content-end" style="align-items: center;">
+                <div class="mr-10 dashboard-bal-btn bal-btn-hide">
+                  <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Balance
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Bal: 0.00</a>
+                      <a class="dropdown-item" href="#">Due: 0.00</a>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="dropdown profile-btn-main">
+                  
+                  <button class="d-flex justify-content-end align-items-center btn btn-default dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="">
+                      <div class="header-circle-img">
+                        <img src="../img/profile2.jpeg" alt="">
+                      </div>
+                    </div>
+                    <div class="">
+                      <h5>Joseph William</h5>
+                      <p>Administrator</p>
+                    </div>
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="../html/my-profile.html">Profile</a>
+                    <a class="dropdown-item" href="../html/change-pwd.html">Change password</a>
+                    <a class="dropdown-item" href="../html/login.html">Logout</a>
+                  </div>
+                </div>
+              </div>
               
             </div>
            </div>

@@ -35,6 +35,16 @@ button:focus{
   outline: none;
 }
 
+.bg-black{
+  background-color: black;
+}
+.f-color-white{
+  color: white;
+}
+.p-10{
+  padding: 10px;
+}
+
 .main-div{
   display: flex;
   overflow: hidden;
@@ -1230,6 +1240,36 @@ font-weight: 600;
   cursor: pointer;
 }
 #panel-menu4 {
+  display: none;
+}
+#flip-menu111{
+  cursor: pointer;
+}
+#panel-menu111 {
+  display: none;
+}
+#flip-menu112{
+  cursor: pointer;
+}
+#panel-menu112 {
+  display: none;
+}
+#flip-menu113{
+  cursor: pointer;
+}
+#panel-menu113 {
+  display: none;
+}
+#flip-menu114{
+  cursor: pointer;
+}
+#panel-menu114 {
+  display: none;
+}
+#flip-menu115{
+  cursor: pointer;
+}
+#panel-menu115 {
   display: none;
 }
 .mb-50{
@@ -2594,6 +2634,11 @@ margin-bottom: 20px;
   border-radius: 0px;
   border-color: transparent;
 }
+.b2b-travel-office-main .nav-tabs .nav-link.active, .nav-tabs .nav-item.show{
+  background: white !important;
+  height: 100%;
+}
+
 .b2b-travel-office-main .nav-tabs .nav-link:hover{
   border-color: transparent;
 }
@@ -2737,6 +2782,14 @@ padding: 10px 4px;
   overflow-x: scroll;
 }
 .help-main .table-responsive{
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+.receipt-main .table-responsive{
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+.my-trip-main .table-responsive{
   overflow-y: hidden;
   overflow-x: scroll;
 }
@@ -3251,6 +3304,30 @@ margin-bottom: 10px;
   padding: 5px;
 }
 
+.flight-voucher-sub{
+  color: white;
+}
+.flight-voucher-sub img{
+  height: 30px;
+  width: auto;
+  margin-right: 20px;
+}
+.my-profile-main form{
+  width: 70%;
+}
+.change-pwd-main form{
+  width: 70%;
+}
+.my-agency-main form{
+  width: 70%;
+}
+.new-company-main form{
+  width: 70%;
+}
+.manage-promo-code-main form{
+  width: 70%;
+}
+
 
 
   @media only screen and (max-width: 1199px) {
@@ -3266,6 +3343,13 @@ margin-bottom: 10px;
     .topbar-header{
       display: flex;
       align-items: center;
+    }
+    .bal-btn-hide{
+      display: none;
+    }
+    .login-form-main{
+      width: 40%;
+      left: 30%;
     }
     
   }
@@ -3283,16 +3367,88 @@ margin-bottom: 10px;
     .loyality-new-user-form{
       width: 80%;
     }
+    .my-profile-main form{
+      width: 85%;
+    }
+    .change-pwd-main form{
+      width: 85%;
+    }
+    .my-agency-main form{
+      width: 85%;
+    }
+    .new-company-main form{
+      width: 85%;
+    }
+    .manage-promo-code-main form{
+      width: 85%;
+    }
+    .login-form-main{
+      width: 50%;
+      left: 25%;
+    }
+    .mm-tt-5{
+      margin-top: 5px;
+    }
+    .recent-transactions{
+      margin-top: 30px;
+    }
+    .home-page-sub{
+      margin-bottom: 30px;
+    }
   }
   @media only screen and (max-width: 767px) {
     .company-new-user-form{
       margin: 40px 0 40px 0;
       padding: 30px 15px;
     }
+    .dd-block-576{
+      display: block !important;
+    }
+    .my-profile-main form{
+      width: 100%;
+      padding: 20px;
+    }
+    .change-pwd-main form{
+      width: 100%;
+      padding: 20px;
+    }
+    .my-agency-main form{
+      width: 100%;
+      padding: 20px;
+    }
+    .new-company-main form{
+      width: 100%;
+      padding: 20px;
+    }
+    .login-form-main{
+      width: 70%;
+      left: 15%;
+    }
+    .manage-promo-code-main form{
+      width: 100%;
+    }
+    .company-office-parameter-main form{
+      padding: 20px;
+    }
+    .company-office-data-sub{
+      padding: 20px;
+    }
+    .travel-office-new-user-form .travel-office-new-user-form-sub{
+      padding: 20px;
+    }
+    .travel-office-edit-user-form-sub{
+      padding: 20px;
+    }
+    .office-credit-line-form1{
+      padding: 20px;
+    }
   }
   @media only screen and (max-width: 575px) {
     .tw-text-hide{
       display: none;
+    }
+    .dd-block{
+      display: block !important;
     }
     .header-circle-img{
       height: 40px;
@@ -3326,6 +3482,13 @@ margin-bottom: 10px;
       margin: 10px 0;
 
     }
-    
+    .login-form-main{
+      width: 98%;
+      left: 1%;
+      padding: 15px;
+    }
+    .voucher-heading-main h5{
+      font-size: 15px;
+    }
   }
   
