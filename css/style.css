@@ -624,7 +624,7 @@ button:focus{
 }
 
 .monthly-graph .highcharts-figure, .highcharts-data-table table {
-  min-width: 850px;
+  min-width: 300px;
   max-width: 1088px;
   margin: 1em auto;
   background: white;
@@ -3242,6 +3242,8 @@ footer{
 .tw-sign-up h1{
   color: white;
 margin-bottom: 10px;
+font-weight: 600;
+    font-size: 30px;
 }
 
 .tw-sign-up p{
@@ -3327,6 +3329,21 @@ margin-bottom: 10px;
 .manage-promo-code-main form{
   width: 70%;
 }
+.route-baggage1 {
+  width: 100%;
+  padding: 10px 0px;
+  background-color: rgb(255, 241, 162);
+  text-align: center;
+  border-radius: 30px;
+  margin: 0px 10px;
+  margin-top: 20px;
+}
+
+.transfer-dayplan .flight-name img {
+  height: auto;
+  width: 235px;
+  object-fit: contain;
+}
 
 
 
@@ -3351,6 +3368,21 @@ margin-bottom: 10px;
       width: 40%;
       left: 30%;
     }
+    .hotel-detail-listing-price2{
+      margin-left: 125px !important;
+    }
+    .hotel-detail-listing-price3{
+      margin-left: 60px;
+    }
+    .holiday-book-btn {
+      padding: 15px;
+  }
+  .holiday-book-btn h2 {
+    font-size: 22px;
+}
+.btn11 {
+  width: 150px;
+}
     
   }
   @media only screen and (max-width: 991px) {
@@ -3395,6 +3427,46 @@ margin-bottom: 10px;
     .home-page-sub{
       margin-bottom: 30px;
     }
+    .flight-route .flight-price h2{
+      font-size: 15px;
+    }
+    .flight-name{
+      justify-content: start;
+    }
+    .btn-book{
+      height: 71px;
+    background-color: rgb(27, 27, 27);
+    position: absolute;
+    bottom: 0px;
+    width: 95%;
+    left: 0px;
+    }
+    .detailtabcontent{
+      height: 550px !important;
+    }
+    p{
+      font-size: 14px !important;
+    }
+    .payment-addon-img {
+      height: 150px;
+  }
+  .payment-addon ul{
+    font-size: 14px;
+  }
+  .hotel-detail-listing-price{
+    margin-left: 0px;
+    width: 290px;
+  }
+  .hotel-detail-listing-price1{
+    width: 256px !important;
+  }
+  .hotel-detail-listing-price2{
+    width: 183px;
+    margin-left: 0px !important;
+  }
+  .hotel-detail-listing-price3{
+    width: 175px !important;
+  }
   }
   @media only screen and (max-width: 767px) {
     .company-new-user-form{
@@ -3442,6 +3514,110 @@ margin-bottom: 10px;
     .office-credit-line-form1{
       padding: 20px;
     }
+    .tw-sign-up h1 {
+      font-size: 22px;
+    }
+    .sign-up-form .form-control {
+      padding: 12px 15px;
+  }
+  p{
+    font-size: 12px !important;
+  }
+  .sign-up-form .btn {
+    padding: 12px 20px;
+  }
+  .social-icon ul li img {
+    height: 35px;
+    width: 35px;
+  }
+  .detailtabcontent {
+    padding: 6px 25px;
+}
+.tabdetail {
+  padding: 0 15px;
+}
+.flight-slide-open {
+  padding-right: 30px;
+}
+.btn-book{
+  width: 93%;
+  left: 20px;
+}
+.detailtabcontent{
+  height: 460px !important;
+}
+.payment-addon-img {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.payment-addon-img img {
+  width: 250px !important;
+  
+}
+.protection-circle{
+  height: 60px ;
+  width: 60px;
+}
+.seat-select-color ul li{
+  font-size: 14px;
+}
+.seat-select-color ul li img{
+  height: 25px;
+  width: 25px;
+}
+.hotel-detail-img img {
+  height: 200px;
+  width: 100%;
+  object-position: bottom center;
+}
+.hotel-detail {
+  display: block;
+}
+.hplan .hplan-sub-tab button {
+  padding: 14px 0;
+  font-size: 16px;
+}
+.transfer-dayplan .flight-name img{
+  width: 150px;
+}
+.visa-page-sub ul li {
+  font-size: 12px;
+}
+.visa-page-sub .visa-circle {
+  height: 40px;
+  width: 40px;
+}
+.visa-circle img {
+  height: 26px;
+}
+.visa-circle {
+  height: 42px;
+  width: 42px;
+  margin-right: 16px;
+}
+.visa-circle img {
+  height: 26px;
+}
+.visa-terms-sub {
+  display: flex;
+  justify-content: start;
+  margin-bottom: 20px;
+  align-items: center;
+}
+.faq-main-div {
+  padding: 15px;
+}
+.faq-main-div .card-body {
+  padding: 15px 0;
+}
+.faq-main-div button {
+  padding: 0;
+}
+.faq-main-div ul li {
+  font-size: 12px;
+}
   }
   @media only screen and (max-width: 575px) {
     .tw-text-hide{
@@ -3490,5 +3666,151 @@ margin-bottom: 10px;
     .voucher-heading-main h5{
       font-size: 15px;
     }
+    .btn-modify{
+      display: block;
+      text-align: left;
+    }
+    .btn-modify h5{
+      margin-top: 15px;
+      padding-left: 0;
+    }
+    .flight-route .flight-price{
+      justify-content: start !important;
+    }
+    .sign-up-form .btn {
+      margin-top: 15px;
+    }
+    .tw-sign-up h1 {
+      font-size: 16px;
+  }
+  footer {
+    padding: 40px 0px 0px 0px;
+    margin-top: 20px;
+  }
+  .payment-detail .card-body .btn-add {
+    float: left !important;
+    padding: 9px !important;
+    margin-left: 20px !important;
+    height: auto;
+}
+.protection-insu img {
+  height: 50px;
+  width: 120px;
+}
+.seat-select-color ul{
+  display: block;
+  
+}
+.seat-select-color ul li{
+  margin-bottom: 10px;
+}
+.pay-color {
+  margin: 10px 0px 15px 0px;
+  width: 100%;
+}
+.btn1 {
+margin-right: 0px !important;
+}
+.payment-option-net .option-net{
+  display: block;
+}
+.hotel-detail-listing-price {
+  text-align: left !important;
+  margin-left: 5px;
+  padding: 0px 15px 20px;
+}
+.hotel-payment-gst-form {
+  display: block;
+  text-align: center;
+}
+.transfer-dis{
+  display: flex;
+  justify-content: start !important;
+}
+.transfer-price{
+  text-align: left;
+}
+.hotel-detail-listing-price{
+  width: 100% !important;
+}
+.hplan .hplan-sub-tab {
+  flex-wrap: wrap;
+}
+.hplan .hplan-sub-tab button {
+  width: 31%;
+  margin-right: 5px;
+  font-size: 15px;
+}
+.holiday-endday a {
+  position: absolute;
+  right: 34px;
+  font-size: 14px;
+}
+.hotel-detail-listing-price4{
+  position: absolute;
+  bottom: 60%;
+    left: 63%;
+}
+.hotel-detail-listing-price5{
+  position: absolute;
+  bottom: 49.3%;
+    left: -9px;
+}
+.hotel-detail-listing-price6{
+  position: absolute;
+  bottom: 35.2%;
+    left: -9px;
+}
+.hotel-detail-listing-price7{
+  position: absolute;
+  bottom: 21.1%;
+    left: -3%;
+}
+.hotel-detail-listing-price8{
+  position: absolute;
+  bottom: 32.1%;
+    left: 63%;
+}
+.hotel-detail-listing-price9{
+  position: absolute;
+  bottom: 5.1%;
+    left: 63%;
+}
+.hotel-detail-listing-price10{
+  position: absolute;
+  bottom: 46.2%;
+    left: -11px;
+}
+.hotel-detail-listing-price11{
+  position: absolute;
+  bottom: 25.2%;
+    left: -11px;
+}
+.hotel-detail-listing-price12{
+  position: absolute;
+  bottom: 4.1%;
+    left: -11px;
+}
+.visa-page-main h3 {
+  font-size: 16px;
+}
+.visa-circle {
+  height: 40px;
+  width: 60px;
+}
+.visa-circle img {
+  height: 20px;
+}
+.visa-page-sub .visa-circle {
+  height: 40px;
+  width: 80px;
+}
+.visa-circle img {
+  height: 20px;
+}
+.visa-page-sub h3 {
+  font-size: 16px !important;
+}
+
   }
   
